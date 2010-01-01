@@ -1,0 +1,817 @@
+#!/usr/bin/env fdp
+// problem is that there is an ambiguity now between the god{,dess}
+// and the hymn; better to use greek numbering like in
+// hymnoi-numerals.html?
+//
+// they are distinguished, of course, by the direction of the arrows;
+// where the link x -> y implies: "y is mentioned in a hymn dedicated
+// to x"
+//
+// the negative space wrought by the invisible ellispses jars
+// somewhat; i think we should avoid collision, however.
+//
+// could have used the concentrate predicate instead of combining
+// links manually.
+//
+// largest kinko's size: 59" x inf. 12 hours. heavy-coated bond for
+// mounting behind glass. compensate for the half-inch of margin by
+// setting size to "58!".
+//
+// should we thicken all links because of the general sparsity? wonder
+// what the effect is with plaintext nodes. too bad every experiment
+// is $100.
+//
+// last time they were able to print out a sample, i believe.
+digraph hymnoi {
+  // Mousa -> and Apollon -> haven't been combined for hymn 25
+  node [fontname="Gentium Alt",
+        fontsize="14",
+        color="white"];
+  graph [splines=true,
+         // still not convinced by this title; maybe: "map of the
+         // homeric hymns"?
+         // label="Oh, my gods!",
+         label="The Homeric Hymns",
+         labelloc="b",
+         labeljust="c",
+         fontsize="36",
+         fontname="Gentium Alt",
+         // kinko's constraint
+         size="58!",
+         // phi
+         ratio="1.61803399",
+         // dpi doesn't appear to effect the file size; on the
+         // contrary: i have to scale down the image so that it fits.
+         //
+         // it may, however, effect the font.
+         // dpi=600
+         ];
+  edge [dir=forward,
+        arrowhead=vee];
+  subgraph cluster_legend {
+    // should the god, person, place standins be singular or plural? i
+    // like singular, since it describes the next link; the
+    // implications must be, though, that 1) the graph can recurse and
+    // 2) god, person, place stand in for types (i.e. the recursion
+    // god -> god is not necessarily between the same instance).
+    //
+    // plural, on the other hand, avoids the type/instance ambiguity?
+    //
+    // singular (as long as type is understood) shows how to build a
+    // graph from simples, though; and is algorithmic.
+    //
+    // signify type instead of token, therefore, with angular
+    // brackets; or set notation?
+    graph [fontname="Gentium Alt",
+           label=<<font face="Gentium Alt Italic">x</font> → <font face="Gentium Alt Italic">y</font>: <font face="Gentium Alt Italic">y</font> is mentioned in a hymn to <font face="Gentium Alt Italic">x</font>.>,
+           fontsize="14",
+           labelloc="t",
+           labeljust="c"]
+    {
+      node [fontcolor=red4];
+      gods [label=god]
+    }
+    {
+      node [fontcolor=blue4];
+      people [label=mortal]
+    }
+    {
+      node [fontcolor=green4];
+      places [label=place]
+    }
+    gods -> gods
+    gods -> people
+    gods -> places
+  }
+  subgraph theoi {
+    node [fontcolor=red4];
+    athenaie [label="Ἀθηναίη"];
+    athene [label="Ἀθήνη"];
+    aides [label="Ἀΐδης"];
+    aidoneus [label="Ἀϊδωνεύς"];
+    akaste [label="Ἀκάστη"];
+    alpheios [label="Ἀλφειός"];
+    amphitrite [label="Ἀμφιτρίτη"];
+    apollon [label="Ἀπόλλων"];
+    argeiphontes [label="Ἀργειφόντης"];
+    ares [label="Ἄρης"];
+    harmonie [label="Ἁρμονίη"];
+    artemis [label="Ἄρτεμις"];
+    asklepios [label="Ἀσκληπιός"];
+    atlas [label="Ἄτλας"];
+    aphrodite [label="Ἀφροδίτη"];
+    bakcheios [label="Βάγχειος"];
+    gaia [label="Γαῖα"];
+    gaieochos [label="Γαιήοχος"];
+    galaxaure [label="Γαλαξαύρη"];
+    delphinios [label="Δελφίνιος"];
+    demeter [label="Δημήτηρ"];
+    deo [label="Δηώ"];
+    dionusos [label="Διόνυσος"];
+    dione [label="Διώνη"];
+    dioskuroi [label="Διόσκουροι"];
+    dolichos [label="Δόλιχος"];
+    dos [label="Δώς"];
+    eileithuia [label="Εἰλείθυια"];
+    hekaergos [label="Ἑκάεργος"];
+    hekate [label="Ἑκάτη"];
+    ennosigaios [label="Ἐννοσίγαιος"];
+    erebos [label="Ἔρεβος"];
+    hermeias [label="Ἑρμείας"];
+    hermes [label="Ἑρμῆς"];
+    hestie [label="Ἑστίη"];
+    eumolpos [label="Εὔμολπος"];
+    euruphaessa [label="Εὐρυφάεσσα"];
+    zeus [label="Ζεύς"];
+    hebe [label="Ἥβη"];
+    helios [label="Ἠέλιος"];
+    elektre [label="Ἠλέκτρη"];
+    herakles [label="Ἡρακλῆς"];
+    here [label="Ἥρη"];
+    hephaistos [label="Ἥφαιστος"];
+    themis [label="Θέμις"];
+    thetis [label="Θέτις"];
+    thuone [label="Θυώνη"];
+    iambe [label="Ἰάμβη"];
+    ianeira [label="Ἰάνειρα"];
+    iache [label="Ἰάχη"];
+    iris [label="Ἶρις"];
+    kadmeis [label="Καδμηΐς"];
+    kalliope [label="Καλλιόπη"];
+    kalliroe [label="Καλλιρόη"];
+    kalupso [label="Καλυψώ"];
+    kastop [label="Κάστωρ"];
+    koios [label="Κοῖος"];
+    koronis [label="Κορωνίς"];
+    kronides [label="Κρονίδης"];
+    kronion [label="Κρονίων"];
+    kronos [label="Κρόνος"];
+    kuprogenes [label="Κυπρογενής"];
+    kuthereia [label="Κυθέρεια"];
+    kullene [label="Κυλλήνη"];
+    kullenios [label="Κυλλήνιος"];
+    kunthios [label="Κύνθιος"];
+    kupris [label="Κύπρις"];
+    leukippe [label="Λευκίππε"];
+    lede [label="Λήδη"];
+    letoides [label="Λητοΐδης"];
+    leto [label="Λητώ"];
+    maia [label="Μαῖα"];
+    maias [label="Μαιάς"];
+    megamedeides [label="Μεγαμηδείδης"];
+    melite [label="Μελίτη"];
+    melobosis [label="Μηλόβοσις"];
+    mene [label="Μήνη"];
+    meter [label="Μήτηρ Θεῶν"];
+    mnemosune [label="Μνημοσύνη"];
+    mousa [label="Μοῦσαι"];
+    nereus [label="Νηρεύς"];
+    nike [label="Νίκη"];
+    olumpias [label="Ὀλυμπιάς"];
+    olumpios [label="Ὀλύμπιος"];
+    ouranie [label="Οὐρανίη"];
+    ouranos [label="Οὐρανός"];
+    pallas [label="Παλλάς"];
+    pallas0 [label="Πάλλας"];
+    pan [label="Πᾶν"];
+    pandeie [label="Πανδείη"];
+    parthenios [label="Παρθένιος"];
+    persephoneia [label="Περσεφόνεια"];
+    persephone [label="Περσεφόνη"];
+    ploutos [label="Πλοῦτος"];
+    plouto [label="Πλουτώ"];
+    poludeukes [label="Πολυδεύκης"];
+    poseidaon [label="Ποσειδάων"];
+    posideios [label="Ποσιδήϊος"];
+    puthios [label="Πύθιος"];
+    rhee [label="Ῥέη"];
+    rhodeia [label="Ῥόδεια"];
+    rhodope [label="Ῥοδόπη"];
+    seilenoi [label="Σειληνοί"];
+    selene [label="Σελήνη"];
+    semele [label="Σεμέλη"];
+    telphousa [label="Τελφοῦσα"];
+    tithonos [label="Τιθωνός"];
+    titen [label="Τιτήν"];
+    triopeos [label="Τριόπεος"];
+    triopos [label="Τρίοπος"];
+    triptolemos [label="Τριπτόλεμος"];
+    tritogenes [label="Τριτογενής"];
+    trophonios [label="Τροφώνιος"];
+    tursenos [label="Τυρσηνός"];
+    tuphaon [label="Τυφάων"];
+    tuphoeus [label="Τυφωεύς"];
+    tuche [label="Τύχη"];
+    huperionides [label="Ὑπεριονίδης"];
+    huperion [label="Ὑπερίων"];
+    phaino [label="Φαινώ"];
+    phoibos [label="Φοῖβος"];
+    charites [label="Χάριτες"];
+    chimaira [label="Χίμαιρα"];
+    okeanos [label="Ὠκεανός"];
+    okuroe [label="Ὠκυρόη"];
+    horai [label="Ὧραι"];
+  }
+  subgraph anthropoi {
+    node [fontcolor=blue4];
+    agamedes [label="Ἀγαμήδης"];
+    anchises [label="Ἀγχίσης"];
+    admete [label="Ἀδμήτη"];
+    aineias [label="Αἰνείας"];
+    ainienes [label="Αἰνιῆνες"];
+    aiolion [label="Αἰολίων"];
+    alkmene [label="Ἀλκμήνη"];
+    arguphee [label="Ἀργυφέη"];
+    arene [label="Ἀρήνη"];
+    azantis [label="Ἀζαντίς"];
+    ganumedes [label="Γανυμήδης"];
+    dardanides [label="Δαρδανίδης"];
+    delias [label="Δηλιάς"];
+    demophoon [label="Δημοφόων"];
+    demo [label="Δημώ"];
+    diokleus [label="Διοκλεύς"];
+    dioklos [label="Δίοκλος"];
+    druops [label="Δρύοψ"];
+    hekatebeletes [label="Ἑκατηβελέτης"];
+    elationides [label="Ἐλατιονίδης"];
+    eleusinides [label="Ἐλευσινίδης"];
+    eleusinios [label="Ἐλευσίνιος"];
+    epeios [label="Ἐπειός"];
+    erginos [label="Ἐργῖνος"];
+    ereutheus [label="Ἐρευθεύς"];
+    eurustheus [label="Εὐρυσθεύς"];
+    ianthe [label="Ἰάνθη"];
+    iaones [label="Ἰαόνες"];
+    ikaros [label="Ἴκαρος"];
+    ischus [label="Ἴσχυς"];
+    kallidike [label="Καλλιδίκη"];
+    kallithoe [label="Καλλιθόη"];
+    keleos [label="Κελεός"];
+    kres [label="Κρής"];
+    leukippos [label="Λεύκιππος"];
+    makar [label="Μάκαρ"];
+    meropes [label="Μέροπες"];
+    metaneira [label="Μετάνειρα"];
+    xenos [label="Χένος"];
+    otreus [label="Ὀτρεύς"];
+    poluxeinos [label="Πολύξεινος"];
+    puloigenes [label="Πυλοιγενής"];
+    troias [label="Τρῳάς"];
+    tros [label="Τρώς"];
+    tundarides [label="Τυνδαρίδης"];
+    huperboreos [label="Ὑπερβόρεος"];
+    phlegus [label="Φλεγύς"];
+    phorbas [label="Φόρβας"];
+    phrux [label="Φρύξ"];
+    chruseis [label="Χρυσηΐς"];
+  }
+  subgraph chthones {
+    node [fontcolor=green4];
+    athenai [label="Ἀθῆναι"];
+    athoos [label="Ἀθόως"];
+    aigai [label="Αἰγαί"];
+    aigine [label="Αἰγίνη"];
+    aiguptos [label="Αἴγυπτος"];
+    aipu [label="Αἶπυ"];
+    aisagee [label="Αἰσαγέη"];
+    haliartos [label="Ἁλίαρτος"];
+    amarunthos [label="Ἀμάρυνθος"];
+    antron [label="Ἄντρων"];
+    arkadie [label="Ἀρκαδίη"];
+    atlantis [label="Ἀτλαντίς"];
+    autokane [label="Αὐτοκάνη"];
+    delphoi [label="Δελφοί"];
+    delos [label="Δῆλος"];
+    doulichion [label="Δουλίχιον"];
+    drakanos [label="Δράκανος"];
+    dume [label="Δύμη"];
+    dotion [label="Δώτιον"];
+    eiresiai [label="Εἰρεσίαι"];
+    hermos [label="Ἕρμος"];
+    eleusis [label="Ἐλευσίς"];
+    helikon [label="Ἑλικών"];
+    euboia [label="Εὔβοια"];
+    euripos [label="Εὔριπος"];
+    europe [label="Εὐρώπη"];
+    zakunthos [label="Ζάκυνθος"];
+    elis [label="Ἦλις"];
+    thebe [label="Θήβη"];
+    thorikos [label="Θορικός"];
+    threikios [label="Θρηΐκιος"];
+    thruon [label="Θρύον"];
+    iaolkos [label="Ἰαωλκός"];
+    ide [label="Ἴδη"];
+    ithake [label="Ἰθάκη"];
+    ilion [label="Ἴλιον"];
+    imbros [label="Ἴμβρος"];
+    inopos [label="Ἰνωπός"];
+    ichnaie [label="Ἰχναίη"];
+    kallichoros [label="Καλλίχορος"];
+    karpathos [label="Κάρπαθος"];
+    kenaion [label="Κήναιον"];
+    kephisis [label="Κηφισίς"];
+    kephissos [label="Κηφισσός"];
+    klaros [label="Κλάρος"];
+    kleisidike [label="Κλεισιδίκη"];
+    knidos [label="Κνίδος"];
+    knosos [label="Κνωσός"];
+    koos [label="Κόως"];
+    krete [label="Κρήτη"];
+    krisaios [label="Κρίσαιος"];
+    krise [label="Κρίση"];
+    krounoi [label="Κρουνοί"];
+    kudne [label="Κυδνή"];
+    kunthos [label="Κύνθος"];
+    kupros [label="Κύπρος"];
+    korukos [label="Κώρυκος"];
+    lakonis [label="Λακωνίς"];
+    lektos [label="Λέκτος"];
+    lesbos [label="Λέσβος"];
+    lelanton [label="Λήλαντον"];
+    lemnos [label="Λῆμνος"];
+    lilaia [label="Λίλαια"];
+    lukie [label="Λυκίη"];
+    maleia [label="Μάλεια"];
+    meles [label="Μέλης"];
+    meionie [label="Μῃονίη"];
+    miletos [label="Μίλητος"];
+    mimas [label="Μίμας"];
+    minoios [label="Μινώϊος"];
+    mukale [label="Μυκάλη"];
+    mukalessos [label="Μυκαλησσός"];
+    naxos [label="Νάξος"];
+    nuse [label="Νύση"];
+    nusios [label="Νύσιος"];
+    onchestos [label="Ὀγχηστός"];
+    olumpos [label="Ὄλυμπος"];
+    ortugie [label="Ὀρτυγίη"];
+    parnesos [label="Παρνησός"];
+    paros [label="Πάρος"];
+    paphos [label="Πάφος"];
+    peloponnesos [label="Πελοπόννησος"];
+    peparethos [label="Πεπάρηθος"];
+    perraiboi [label="Περραιβοί"];
+    persaios [label="Πέρσαιος"];
+    pelion [label="Πήλιον"];
+    peneios [label="Πηνειός"];
+    pierie [label="Πιερίη"];
+    putho [label="Πυθώ"];
+    puthon [label="Πυθών"];
+    pulos [label="Πύλος"];
+    rharios [label="Ῥάριος"];
+    rhenaia [label="Ῥήναια"];
+    saidene [label="Σαιδήνη"]; // By Cyme
+    salamis [label="Σαλαμίς"];
+    same [label="Σάμη"];
+    samos [label="Σάμος"];
+    skuros [label="Σκῦρος"];
+    smurne [label="Σμύρνη"];
+    stux [label="Στύξ"];
+    tainaros [label="Ταίναρος"];
+    tartaros [label="Τάρταρος"];
+    taugetos [label="Ταΰγετος"];
+    telphousios [label="Τελφούσιος"];
+    teumessos [label="Τευμησσός"];
+    troie [label="Τροίη"];
+    pherai [label="Φεραί"];
+    phoinike [label="Φοινίκη"];
+    phrugie [label="Φρυγίη"];
+    phokaia [label="Φώκαια"];
+    chalkis [label="Χαλκίς"];
+    chios [label="Χίος"];
+    okalee [label="Ὠκαλέη"];
+  }
+  aphrodite -> aides;
+  aphrodite -> aineias;
+  aphrodite -> anchises;
+  aphrodite -> aphrodite [penwidth=2];
+  aphrodite -> apollon;
+  aphrodite -> ares;
+  aphrodite -> argeiphontes;
+  aphrodite -> artemis;
+  aphrodite -> athene;
+  aphrodite -> charites;
+  aphrodite -> dardanides;
+  aphrodite -> ganumedes;
+  aphrodite -> here;
+  aphrodite -> hermes;
+  aphrodite -> hestie;
+  aphrodite -> horai;
+  aphrodite -> ide;
+  aphrodite -> ilion;
+  aphrodite -> kronion;
+  aphrodite -> kronos;
+  aphrodite -> kupris;
+  aphrodite -> kuprogenes;
+  aphrodite -> kupros;
+  aphrodite -> kupros;
+  aphrodite -> kupros;
+  aphrodite -> kuthereia [penwidth=3];
+  aphrodite -> leto;
+  aphrodite -> mousa;
+  aphrodite -> okeanos;
+  aphrodite -> otreus;
+  aphrodite -> paphos;
+  aphrodite -> phrugie;
+  aphrodite -> phrux;
+  aphrodite -> poseidaon;
+  aphrodite -> rhee;
+  aphrodite -> salamis;
+  aphrodite -> seilenoi;
+  aphrodite -> themis;
+  aphrodite -> tithonos;
+  aphrodite -> troias;
+  aphrodite -> troie;
+  aphrodite -> tros;
+  aphrodite -> zeus;
+  apollon -> agamedes;
+  apollon -> aigai;
+  apollon -> aigine;
+  apollon -> ainienes;
+  apollon -> aiolion;
+  apollon -> aipu;
+  apollon -> aisagee;
+  apollon -> alpheios;
+  apollon -> amarunthos;
+  apollon -> amphitrite;
+  apollon -> aphrodite;
+  apollon -> apollon;
+  apollon -> arene;
+  apollon -> ares;
+  apollon -> argeiphontes;
+  apollon -> arguphee;
+  apollon -> artemis;
+  apollon -> athenai;
+  apollon -> athene;
+  apollon -> athoos;
+  apollon -> atlantis;
+  apollon -> autokane;
+  apollon -> azantis;
+  apollon -> chalkis;
+  apollon -> charites;
+  apollon -> chimaira;
+  apollon -> chios;
+  apollon -> delias;
+  apollon -> delos;
+  apollon -> delphinios;
+  apollon -> dione;
+  apollon -> doulichion;
+  apollon -> dume;
+  apollon -> eileithuia;
+  apollon -> eiresiai;
+  apollon -> elationides;
+  apollon -> elis;
+  apollon -> epeios;
+  apollon -> ereutheus;
+  apollon -> erginos;
+  apollon -> euboia;
+  apollon -> euripos;
+  apollon -> europe;
+  apollon -> haliartos;
+  apollon -> harmonie;
+  apollon -> hebe;
+  apollon -> hekaergos;
+  apollon -> hekatebeletes;
+  apollon -> helios;
+  apollon -> hephaistos;
+  apollon -> here;
+  apollon -> horai;
+  apollon -> huperion;
+  apollon -> iaolkos;
+  apollon -> iaones;
+  apollon -> ichnaie;
+  apollon -> ide;
+  apollon -> imbros;
+  apollon -> inopos;
+  apollon -> iris;
+  apollon -> ischus;
+  apollon -> ithake;
+  apollon -> karpathos;
+  apollon -> kenaion;
+  apollon -> kephisis;
+  apollon -> kephissos;
+  apollon -> klaros;
+  apollon -> knidos;
+  apollon -> knosos;
+  apollon -> koios;
+  apollon -> koos;
+  apollon -> korukos;
+  apollon -> kres;
+  apollon -> krete;
+  apollon -> krisaios;
+  apollon -> krise;
+  apollon -> kronides;
+  apollon -> kronos;
+  apollon -> krounoi;
+  apollon -> kudne;
+  apollon -> kunthios;
+  apollon -> kunthos;
+  apollon -> lakonis;
+  apollon -> lektos;
+  apollon -> lelanton;
+  apollon -> lemnos;
+  apollon -> lesbos;
+  apollon -> leto;
+  apollon -> leukippos;
+  apollon -> lilaia;
+  apollon -> lukie;
+  apollon -> makar;
+  apollon -> maleia;
+  apollon -> meionie;
+  apollon -> meropes;
+  apollon -> miletos;
+  apollon -> mimas;
+  apollon -> minoios;
+  apollon -> mousa;
+  apollon -> mukale;
+  apollon -> mukalessos;
+  apollon -> naxos;
+  apollon -> nereus;
+  apollon -> okalee;
+  apollon -> olumpios;
+  apollon -> olumpos;
+  apollon -> onchestos;
+  apollon -> ortugie;
+  apollon -> parnesos;
+  apollon -> paros;
+  apollon -> pelion;
+  apollon -> peloponnesos;
+  apollon -> peneios;
+  apollon -> peparethos;
+  apollon -> perraiboi;
+  apollon -> pherai;
+  apollon -> phlegus;
+  apollon -> phoibos [penwidth=2];
+  apollon -> phokaia;
+  apollon -> phorbas;
+  apollon -> pierie;
+  apollon -> posideios;
+  apollon -> puloigenes;
+  apollon -> pulos;
+  apollon -> puthios;
+  apollon -> putho;
+  apollon -> rhee;
+  apollon -> rhenaia;
+  apollon -> same;
+  apollon -> samos;
+  apollon -> skuros;
+  apollon -> stux;
+  apollon -> tainaros;
+  apollon -> tartaros;
+  apollon -> telphousa;
+  apollon -> telphousios;
+  apollon -> teumessos;
+  apollon -> thebe;
+  apollon -> themis;
+  apollon -> thetis;
+  apollon -> thorikos;
+  apollon -> threikios;
+  apollon -> titen;
+  apollon -> triopeos;
+  apollon -> triopos;
+  apollon -> trophonios;
+  apollon -> tuphaon;
+  apollon -> tuphoeus;
+  apollon -> zakunthos;
+  apollon -> zeus;
+  ares -> ares;
+  ares -> nike;
+  ares -> olumpos;
+  ares -> themis;
+  artemis -> apollon [penwidth=2];
+  artemis -> artemis [penwidth=2];
+  artemis -> charites;
+  artemis -> delphoi;
+  artemis -> klaros;
+  artemis -> leto;
+  artemis -> meles;
+  artemis -> mousa [penwidth=2];
+  artemis -> pallas;
+  artemis -> smurne;
+  artemis -> zeus;
+  asklepios -> apollon;
+  asklepios -> asklepios;
+  asklepios -> dotion;
+  asklepios -> koronis;
+  asklepios -> phlegus;
+  athene -> ares;
+  athene -> athenaie [penwidth=2];
+  athene -> atlas;
+  athene -> huperion;
+  athene -> kullene;
+  athene -> kullenios;
+  athene -> olumpos;
+  athene -> pallas;
+  athene -> phoibos;
+  athene -> tritogenes;
+  athene -> zeus;
+  demeter -> admete;
+  demeter -> aides;
+  demeter -> aidoneus;
+  demeter -> akaste;
+  demeter -> antron;
+  demeter -> aphrodite;
+  demeter -> argeiphontes;
+  demeter -> artemis;
+  demeter -> chruseis;
+  demeter -> demeter [penwidth=2];
+  demeter -> demo;
+  demeter -> demophoon;
+  demeter -> deo;
+  demeter -> diokleus;
+  demeter -> dioklos;
+  demeter -> dolichos;
+  demeter -> dos;
+  demeter -> elektre;
+  demeter -> eleusinides;
+  demeter -> eleusinios;
+  demeter -> eleusis;
+  demeter -> erebos;
+  demeter -> eumolpos;
+  demeter -> gaia;
+  demeter -> galaxaure;
+  demeter -> hekate;
+  demeter -> helios;
+  demeter -> huperion;
+  demeter -> huperionides;
+  demeter -> iache;
+  demeter -> iambe;
+  demeter -> ianeira;
+  demeter -> ianthe;
+  demeter -> iris;
+  demeter -> kallichoros;
+  demeter -> kallidike;
+  demeter -> kalliroe;
+  demeter -> kallithoe;
+  demeter -> kalupso;
+  demeter -> keleos;
+  demeter -> kleisidike;
+  demeter -> krete;
+  demeter -> kronides;
+  demeter -> kronion;
+  demeter -> kronos;
+  demeter -> leukippe;
+  demeter -> melite;
+  demeter -> melobosis;
+  demeter -> metaneira;
+  demeter -> nusios;
+  demeter -> okeanos;
+  demeter -> okuroe;
+  demeter -> olumpios;
+  demeter -> olumpos;
+  demeter -> ouranie;
+  demeter -> pallas;
+  demeter -> paros;
+  demeter -> parthenios;
+  demeter -> persaios;
+  demeter -> persephone;
+  demeter -> persephoneia [penwidth=2];
+  demeter -> phaino;
+  demeter -> plouto;
+  demeter -> ploutos;
+  demeter -> poluxeinos;
+  demeter -> rharios;
+  demeter -> rhee;
+  demeter -> rhodeia;
+  demeter -> rhodope;
+  demeter -> stux;
+  demeter -> triptolemos;
+  demeter -> tuche;
+  demeter -> zeus;
+  dionusos -> aiguptos;
+  dionusos -> aiguptos;
+  dionusos -> alpheios;
+  dionusos -> apollon;
+  dionusos -> dionusos [penwidth=3];
+  dionusos -> drakanos;
+  dionusos -> here;
+  dionusos -> huperboreos;
+  dionusos -> ikaros;
+  dionusos -> kadmeis;
+  dionusos -> kronion;
+  dionusos -> kupros;
+  dionusos -> naxos;
+  dionusos -> nuse;
+  dionusos -> nuse;
+  dionusos -> olumpos;
+  dionusos -> phoinike;
+  dionusos -> poseidaon;
+  dionusos -> semele [penwidth=3];
+  dionusos -> thebe;
+  dionusos -> thruon;
+  dionusos -> thuone;
+  dionusos -> tursenos;
+  dionusos -> zeus [penwidth=3];
+  dioskuroi -> kastop;
+  dioskuroi -> kronion;
+  dioskuroi -> lede;
+  dioskuroi -> mousa;
+  dioskuroi -> poludeukes;
+  dioskuroi -> taugetos;
+  dioskuroi -> tundarides;
+  dioskuroi -> zeus;
+  gaia -> gaia;
+  gaia -> ouranos;
+  helios -> euruphaessa;
+  helios -> gaia;
+  helios -> helios;
+  helios -> huperion;
+  helios -> kalliope;
+  helios -> mousa;
+  helios -> okeanos;
+  helios -> ouranos;
+  helios -> selene;
+  helios -> zeus;
+  hephaistos -> athenaie;
+  hephaistos -> hephaistos;
+  hephaistos -> mousa;
+  herakles -> alkmene;
+  herakles -> eurustheus;
+  herakles -> hebe;
+  herakles -> herakles;
+  herakles -> kronion;
+  herakles -> olumpos;
+  herakles -> thebe;
+  herakles -> zeus;
+  here -> here;
+  here -> olumpos;
+  here -> poseidaon;
+  here -> rhee;
+  here -> zeus;
+  hermes -> aides;
+  hermes -> alpheios;
+  hermes -> apollon;
+  hermes -> argeiphontes [penwidth=2];
+  hermes -> arkadie [penwidth=2];
+  hermes -> gaieochos;
+  hermes -> helios;
+  hermes -> hephaistos;
+  hermes -> here [penwidth=2];
+  hermes -> hermes [penwidth=2];
+  hermes -> kronides;
+  hermes -> kronion [penwidth=2];
+  hermes -> kullene;
+  hermes -> kullenios;
+  hermes -> leto;
+  hermes -> letoides;
+  hermes -> maia [penwidth=2];
+  hermes -> maias [penwidth=2];
+  hermes -> megamedeides;
+  hermes -> mnemosune;
+  hermes -> mousa;
+  hermes -> okeanos;
+  hermes -> olumpias;
+  hermes -> olumpios;
+  hermes -> olumpos;
+  hermes -> onchestos;
+  hermes -> pallas0;
+  hermes -> parnesos;
+  hermes -> phoibos;
+  hermes -> pierie;
+  hermes -> pulos;
+  hermes -> puthon;
+  hermes -> selene;
+  hermes -> stux;
+  hermes -> tartaros;
+  hermes -> zeus [penwidth=2];
+  hestie -> apollon;
+  hestie -> argeiphontes;
+  hestie -> hermes;
+  hestie -> hestie [penwidth=2];
+  hestie -> kronos;
+  hestie -> kullenios;
+  hestie -> maias;
+  hestie -> putho;
+  hestie -> zeus [penwidth=2];
+  meter -> mousa;
+  mousa -> apollon;
+  mousa -> mousa;
+  mousa -> zeus;
+  pan -> arkadie;
+  pan -> bakcheios;
+  pan -> dionusos;
+  pan -> druops;
+  pan -> hermeias;
+  pan -> mousa;
+  pan -> olumpos;
+  pan -> pan;
+  pan -> zeus;
+  poseidaon -> aigai;
+  poseidaon -> ennosigaios;
+  poseidaon -> gaieochos;
+  poseidaon -> helikon;
+  selene -> kronides;
+  selene -> mene;
+  selene -> mousa;
+  selene -> okeanos;
+  selene -> pandeie;
+  selene -> selene;
+  selene -> zeus;
+  xenos -> here;
+  xenos -> hermos;
+  xenos -> saidene;
+  xenos -> zeus;
+  zeus -> kronides;
+  zeus -> themis;
+  zeus -> zeus;
+}
