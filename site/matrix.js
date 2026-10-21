@@ -19,7 +19,7 @@ const strip = s => s.normalize('NFD').replace(/\p{M}/gu, '').replace(/[ʼ’'᾽
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
 // The poster: 24 × 38.83 in at 96 CSS px to the inch, the golden ratio of the 2009 print.
-const POSTER = {w: 2304, h: 3727, margin: 58};
+const POSTER = {w: 2304, h: 3727, margin: 52};
 
 const state = {phrases: true, doubtful: false, sort: 'first', widths: 'equal', off: new Set(),
   selected: null, hymn: null, print: false};
@@ -156,19 +156,20 @@ function geometry() {
   const g = {P, groups};
   g.W = P ? POSTER.w : Math.max(wrap.clientWidth, 760);
   g.mx = P ? POSTER.margin : 10;
-  g.title = P ? 210 : 0;            // poster title block
-  g.headH = P ? 150 : 112;          // column heads
-  g.foot = P ? 250 : 34;            // column totals (+ poster notes)
+  g.title = P ? 172 : 0;            // poster title block
+  g.headH = P ? 136 : 112;          // column heads
+  g.foot = P ? 196 : 34;            // column totals (+ poster notes)
   g.top = P ? POSTER.margin + g.title + g.headH : 6;
-  const gapRows = 0.9 * Math.max(0, groups.length - 1);
+  const GAP = P ? 0.75 : 0.9;
+  const gapRows = GAP * Math.max(0, groups.length - 1);
   if (P) {
     const avail = POSTER.h - 2 * POSTER.margin - g.title - g.headH - g.foot;
     g.row = Math.min(22, avail / (rows.length + gapRows));
   } else g.row = 17;
-  g.gap = g.row * 0.9;
-  g.font = P ? Math.min(15, g.row * 0.9) : 13.5;
+  g.gap = g.row * GAP;
+  g.font = P ? Math.min(16, g.row * 0.95) : 13.5;
   g.enFont = g.font * 0.92;
-  g.kindFont = g.font * 1.05;
+  g.kindFont = g.font * (P ? 1.5 : 1.05);
   // horizontal: [margin][kind gutter][labels] columns [count][English][margin]
   g.gutter = d3.max(KINDS, k => textWidth(KIND_PL[k], g.kindFont, '"EB Garamond"', 'italic')) + 14;
   g.labelW = d3.max(rows, r => textWidth(r.e.label, g.font)) + 12 || 80;
@@ -204,7 +205,7 @@ function geometry() {
 // mark size: 1 mention is a visible dot, CMAX fills the row
 function radius(c) {
   const rmax = Math.min(G.row * 0.5 - 0.4, d3.min(G.cols, k => k.w) * 0.42);
-  const rmin = Math.max(1.6, rmax * 0.26);
+  const rmin = Math.max(1.6, rmax * (G.P ? 0.34 : 0.26));
   return rmin + (rmax - rmin) * Math.sqrt((c - 1) / (CMAX - 1));
 }
 
@@ -280,8 +281,8 @@ function drawLabels(sel) {
   for (const gy of g.groupY) {
     const t = sel.append('text').attr('class', 'kindlab').attr('x', g.mx).attr('y', gy.y + g.row * 0.72)
       .attr('font-size', g.kindFont).style('fill', color(gy.kind)).text(KIND_PL[gy.kind]);
-    sel.append('text').attr('class', 'num').attr('x', g.mx).attr('y', gy.y + g.row * 1.72)
-      .attr('font-size', g.kindFont * 0.8).text(gy.n);
+    sel.append('text').attr('class', 'num').attr('x', g.mx).attr('y', gy.y + g.row * 0.72 + g.kindFont)
+      .attr('font-size', g.kindFont * 0.72).text(gy.n);
     void t;
   }
   sel.selectAll('text.rl').data(rows).join('text').attr('class', 'rl')
@@ -306,7 +307,7 @@ function drawMarks(sel) {
       if (ticks) {
         const pad = Math.min(3, c.w * 0.12), span = c.w - 2 * pad, len = H.get(hn).lines;
         sel.append('rect').attr('x', c.x + 0.5).attr('y', r.y + 0.5).attr('width', c.w - 1).attr('height', g.row - 1)
-          .attr('fill', fill).attr('opacity', 0.1);
+          .attr('fill', fill).attr('opacity', c.w > 60 ? 0.06 : 0.12);
         for (const line of new Set(ms.map(m => m.line))) {
           const x = c.x + pad + span * Math.min(1, Math.max(0, (lineNum(line) - 0.5) / len));
           sel.append('line').attr('class', 'tick').attr('x1', x).attr('x2', x)
@@ -318,7 +319,7 @@ function drawMarks(sel) {
         sel.append('circle').attr('cx', c.cx).attr('cy', cy).attr('r', rr).attr('fill', fill);
         if (ms.length > 1 && c.w >= 2 * radius(CMAX) + (g.P ? 30 : 26)) {
           sel.append('text').attr('class', 'cnt').attr('x', c.cx + rr + 2.5).attr('y', cy + g.font * 0.3)
-            .attr('font-size', g.font * 0.72).text(ms.length);
+            .attr('font-size', g.font * 0.8).text(ms.length);
         }
       }
     }
@@ -374,11 +375,12 @@ function posterTitle(sel) {
   }
   sizeKey(sel.append('g').attr('transform', `translate(${kx},${ky + 52})`), 22, true);
   sel.append('line').attr('class', 'headrule').attr('x1', g.mx).attr('x2', g.W - g.mx)
-    .attr('y1', y + g.title - 34).attr('y2', y + g.title - 34);
+    .attr('y1', y + g.title - 24).attr('y2', y + g.title - 24);
 }
 
 // the size key: marks for 1, 5, 20 and CMAX mentions, and a ringed addressee; anchored right
 function sizeKey(sel, fs, right) {
+  if (state.widths === 'lines') return tickKey(sel, fs, right);
   const parts = [[1, '1'], [5, '5'], [20, '20'], [CMAX, CMAX + ' mentions']];
   const items = [];
   for (const [c, t] of parts) items.push({c, t, w: 2 * radius(c) + 6 + textWidth(t, fs, '"EB Garamond"') + 18});
@@ -396,14 +398,35 @@ function sizeKey(sel, fs, right) {
   return total;
 }
 
+// the key for columns by length: a tick, and a boxed cell
+function tickKey(sel, fs, right) {
+  const GAR = '"EB Garamond"', t1 = 'a line that names it', t2 = 'the hymn’s addressee', h = Math.max(10, fs * 0.8);
+  const w1 = 10 + textWidth(t1, fs, GAR) + 22, w2 = 26 + textWidth(t2, fs, GAR);
+  let x = right ? -(w1 + w2) : 0;
+  const tick = x0 => sel.append('line').attr('x1', x0).attr('x2', x0).attr('y1', -h / 2 + 1).attr('y2', h / 2 - 1)
+    .attr('stroke', color('god')).attr('stroke-width', 1.6);
+  tick(x + 3);
+  sel.append('text').attr('class', 'lat').attr('x', x + 10).attr('y', fs * 0.32).attr('font-size', fs).text(t1);
+  x += w1;
+  sel.append('rect').attr('class', 'dedcell').attr('x', x).attr('y', -h / 2).attr('width', 18).attr('height', h);
+  tick(x + 7); tick(x + 11);
+  sel.append('text').attr('class', 'lat').attr('x', x + 26).attr('y', fs * 0.32).attr('font-size', fs).text(t2);
+  return w1 + w2;
+}
+
 function posterNotes(sel) {
-  const g = G, y = g.bottom + 90, fs = 19;
-  const lines = [
+  const g = G, y = g.bottom + 84, fs = 19;
+  const lines = state.widths === 'lines' ? [
+    'Each row is a being, group or place, each column a hymn, as wide as the hymn is long, headed by its numeral, its addressee and its length in lines. A tick marks each line that names',
+    'the row, by name, epithet, patronymic, ethnic or periphrasis, at its place in the hymn; a box marks the god the hymn is addressed to. The numbers at the right count every mention.',
+  ] : [
     'Each row is a being, group or place, each column a hymn, headed by its numeral, its addressee and its length in lines. A mark is sized by how many times the hymn names the row,',
     'by name, epithet, patronymic, ethnic or periphrasis, each counted at its line; a ring marks the god the hymn is addressed to. The numbers at the right count every mention.',
+  ];
+  lines.push(
     'Greek: H. G. Evelyn-White, Hesiod, the Homeric Hymns and Homerica (1914), via the Perseus Digital Library; Hymn 34, Εἰς Ξένους, from T. W. Allen, Homeri Opera V (1912).',
     'Compiled by hand by Peter Danenberg in 2009, from the index of a Loeb edition; read again line by line against the Greek, with a citation for every mention, in 2026.',
-  ];
+  );
   sel.append('line').attr('class', 'grouprule').attr('x1', g.mx).attr('x2', g.W - g.mx).attr('y1', y - 36).attr('y2', y - 36);
   lines.forEach((t, i) => sel.append('text').attr('class', 'lat').attr('x', g.mx).attr('y', y + i * fs * 1.45)
     .attr('font-size', fs).style('fill', i < 2 ? 'var(--ink)' : 'var(--muted)').text(t));

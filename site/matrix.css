@@ -58,4 +58,5 @@ svg .kindlab { font-family: "EB Garamond", serif; font-style: italic; }
   #wrap { overflow: visible; }
   #matrix { break-inside: avoid; position: absolute; left: 0; top: 0; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .colrule { stroke-width: .5; opacity: .8; }
 }
