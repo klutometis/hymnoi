@@ -15,6 +15,7 @@ Output schema:
              plural for groups, the text's own words for beings it never names.
   mention_cols + mentions: rows of [hymn, line, form, lemma, entity, type, certainty, note, shown]
   greek:     [[hymn, line, text, note]]   english: [[hymn, line, text]]
+  routes:    {route: [[entity, hymn, line, note]]}   journeys as ordered stops (data/routes.csv)
 
 `shown` applies the defaults of REVIEW.md, which Peter accepted on 2026-10-21.
 """
@@ -41,6 +42,15 @@ def shown(m):
 def table(name, key='id'):
     p = D(name)
     return {r[key]: r for r in csv.DictReader(open(p))} if os.path.exists(p) else {}
+
+
+def routes():
+    p = D('routes.csv')
+    out = collections.defaultdict(list)
+    if os.path.exists(p):
+        for r in sorted(csv.DictReader(open(p)), key=lambda r: (r['route'], int(r['seq']))):
+            out[r['route']].append([r['entity'], int(r['hymn']), r['line'], r['note']])
+    return out
 
 
 def main():
@@ -78,6 +88,7 @@ def main():
                       m['certainty'], m['note'], shown(m)] for m in mentions],
         'greek': [[int(r['hymn']), r['line'], r['text'], r['note']] for r in greek],
         'english': [[int(r['hymn']), r['line'], r['text']] for r in english],
+        'routes': routes(),
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w') as f:
