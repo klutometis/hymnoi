@@ -68,6 +68,11 @@ function toHash() {
   if (n && n.ent) p.set('e', n.ent);
   else if (n && n.hymn) p.set('h', n.hymn.n);
   history.replaceState(null, '', p.toString() ? '#' + p : location.pathname);
+  const q = n && n.ent ? '#e=' + n.ent : n && n.hymn ? '#h=' + n.hymn.n : '';
+  for (const id of ['to-matrix', 'to-map']) {
+    const a = document.getElementById(id);
+    if (a) a.href = a.href.split('#')[0] + (id === 'to-matrix' && p.toString() ? '#' + p : q);
+  }
 }
 
 function visibleMentions() {
@@ -309,6 +314,23 @@ function bindMarks(el) {
   }));
 }
 
+const EXT = {pleiades: ['Pleiades', v => `https://pleiades.stoa.org/places/${v}`],
+  topostext: ['ToposText', v => /^https?:/.test(v) ? v : `https://topostext.org/place/${v}`],
+  wikidata: ['Wikidata', v => `https://www.wikidata.org/wiki/${v}`], theoi: ['Theoi', v => v],
+  wikipedia: ['Wikipedia', v => `https://en.wikipedia.org/wiki/${encodeURIComponent(v.replace(/ /g, '_'))}`]};
+
+function extLinks(e) {
+  const as = Object.entries(e.links || {}).filter(([k]) => EXT[k])
+    .map(([k, v]) => `<a href="${esc(EXT[k][1](v))}" target="_blank" rel="noopener">${EXT[k][0]}</a>`);
+  return as.length ? `<div class="extlinks">${as.join('')}</div>` : '';
+}
+
+function placeLine(e, id) {
+  if (!e.precision) return '';
+  const at = e.lat != null ? ` · ${e.lat.toFixed(2)}° N, ${e.lon.toFixed(2)}° E · <a href="map.html#e=${id}">on the map</a>` : '';
+  return `<div class="where">${esc(e.precision)}${at}${e.place_note ? '<br>' + esc(e.place_note) : ''}</div>`;
+}
+
 function showEntity(id) {
   const e = E[id], det = document.getElementById('detail');
   const mine = M.filter(m => m.entity === id);
@@ -317,6 +339,7 @@ function showEntity(id) {
   let html = `<h2 class="grc k-${e.kind}">${esc(e.label)}<span class="en">${esc(e.label_en)}</span></h2>
     <div class="meta">${e.kind}${e.subkind ? ' · ' + esc(e.subkind) : ''} · ${mine.length} mention${mine.length > 1 ? 's' : ''}
     in ${byHymn.size} hymn${byHymn.size > 1 ? 's' : ''} · <button class="link-btn" id="toggle-en">English</button></div>
+    ${placeLine(e, id)}${extLinks(e)}
     <div class="cites">`;
   for (const [h, ms] of [...byHymn].sort((a, b) => a[0] - b[0])) {
     const hy = H.get(h);

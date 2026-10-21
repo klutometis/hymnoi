@@ -10,12 +10,12 @@ links.csv (Wikidata, Theoi, ...).
 Output schema:
   hymns:     [{n, numeral, roman, title_grc, title_en, dedicatees: [id], lines}]
   entities:  {id: {kind, subkind, label, label_en, grc (LSJ lemma), en, n (shown mentions),
-                   unnamed, lat?, lon?, precision?, links?: {wikidata, theoi, pleiades, ...}}}
+                   unnamed, precision?, place_note?, lat?, lon?, links?: {wikidata, theoi, pleiades, ...}}}
              `label` is the display name: Greek, in the hymns' own (epic-Ionic) forms,
              plural for groups, the text's own words for beings it never names.
   mention_cols + mentions: rows of [hymn, line, form, lemma, entity, type, certainty, note, shown]
   greek:     [[hymn, line, text, note]]   english: [[hymn, line, text]]
-  routes:    {route: [[entity, hymn, line, note]]}   journeys as ordered stops (data/routes.csv)
+  routes:    [{id, grc, en, stops: [[entity, hymn, line, note]]}]   journeys (data/routes.csv)
 
 `shown` applies the defaults of REVIEW.md, which Peter accepted on 2026-10-21.
 """
@@ -44,13 +44,29 @@ def table(name, key='id'):
     return {r[key]: r for r in csv.DictReader(open(p))} if os.path.exists(p) else {}
 
 
+ROUTE_TITLES = {  # route id: (Greek, English); order = display order
+    'leto': ('Λητοῦς πλάνη', "Leto's wanderings, 3.30–49"),
+    'apollo_road': ('Ἀπόλλωνος ὁδός', "Apollo's road to Pytho, 3.216–282"),
+    'cretan_ship': ('νηῦς Κρητῶν', 'The Cretan ship, 3.388–439'),
+    'hermes_cattle': ('βόες Ἀπόλλωνος', "Hermes drives off Apollo's cattle, Hymn 4"),
+    'apollo_search': ('Ἀπόλλων ζητῶν', "Apollo's search, Hymn 4"),
+    'cattle_return': ('βοῶν ἀπόδοσις', 'The cattle given back, Hymn 4'),
+    'demeter': ('Δημήτηρ', "Demeter's wandering, Hymn 2"),
+    'doso_tale': ('Δωσοῦς μῦθος', "Doso's false tale, 2.122–126"),
+    'persephone_return': ('Περσεφονείης ἄνοδος', "Persephone's return, Hymn 2"),
+    'aphrodite_ida': ('Ἀφροδίτη εἰς Ἴδην', 'Aphrodite to Ida, 5.58–68'),
+}
+
+
 def routes():
     p = D('routes.csv')
-    out = collections.defaultdict(list)
+    stops = collections.defaultdict(list)
     if os.path.exists(p):
         for r in sorted(csv.DictReader(open(p)), key=lambda r: (r['route'], int(r['seq']))):
-            out[r['route']].append([r['entity'], int(r['hymn']), r['line'], r['note']])
-    return out
+            stops[r['route']].append([r['entity'], int(r['hymn']), r['line'], r['note']])
+    order = list(ROUTE_TITLES) + sorted(set(stops) - set(ROUTE_TITLES))
+    return [{'id': k, 'grc': ROUTE_TITLES.get(k, ('', k))[0], 'en': ROUTE_TITLES.get(k, ('', k))[1],
+             'stops': stops[k]} for k in order if k in stops]
 
 
 def main():
@@ -69,8 +85,10 @@ def main():
              'label': lab.get('label_grc') or e['name_grc'], 'label_en': lab.get('label_en') or e['name_en'],
              'n': count[k], 'unnamed': k in UNNAMED}
         p = places.get(k)
-        if p and p.get('lat') and p.get('lon'):
-            o.update(lat=float(p['lat']), lon=float(p['lon']), precision=p.get('precision', ''))
+        if p:
+            o.update(precision=p.get('precision', ''), place_note=p.get('note', ''))
+            if p.get('lat') and p.get('lon'):
+                o.update(lat=float(p['lat']), lon=float(p['lon']))
         ln = {c: v for c, v in {**links.get(k, {}), **{c: p.get(c, '') for c in ('pleiades', 'topostext', 'wikidata')
                                                       if p}}.items() if v and c in
               ('wikidata', 'theoi', 'pleiades', 'topostext', 'wikipedia')}

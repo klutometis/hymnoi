@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ὕμνοι · map</title>
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="map.css">
+</head>
+<body>
+<header>
+  <h1><span class="grc">Ὕμνοι</span> <small>the places of the Homeric Hymns, and who gathers round them</small></h1>
+  <nav class="views"><a href="index.html" id="to-graph">graph</a> · <a href="matrix.html" id="to-matrix">matrix</a> · <b>map</b></nav>
+  <nav id="controls">
+    <span class="group">
+      <label title="Gods, nymphs, heroes, mortals, groups: free, drawn toward the hymns that name them"><input type="checkbox" id="beings" checked> beings</label>
+      <label title="The hymns: free, drawn toward the places they name"><input type="checkbox" id="hymns" checked> hymns</label>
+      <label title="A line from each hymn to every name in it"><input type="checkbox" id="links"> links</label>
+      <label title="The journeys the hymns narrate"><input type="checkbox" id="routes" checked> journeys</label>
+      <label title="Mentions marked uncertain (REVIEW.md)"><input type="checkbox" id="doubtful"> doubtful</label>
+    </span>
+  </nav>
+</header>
+<main>
+  <div id="chart"><svg id="map"></svg><div id="legend"></div><div id="tip" hidden></div></div>
+  <aside id="panel">
+    <div id="intro">
+      <p>Every place the Hymns name, pinned where it lies (identifications from the Pleiades gazetteer; lands
+      at a central point, in italics). Nothing else is pinned: each hymn is drawn toward the places it names,
+      and each god, hero or mortal toward the hymns that name them.</p>
+      <p>Places no one can locate (Nysa, Ortygia, Erebos) float with the rest, in hollow circles.
+      Scroll to zoom, drag to pan; labels appear as you zoom. Click anything for its lines.</p>
+      <h3>Journeys</h3>
+      <div id="routes-list"></div>
+      <p class="fine">Coastlines and rivers: Natural Earth. Places: Pleiades (pleiades.stoa.org), with each
+      identification noted. Greek: Evelyn-White (1914) via Perseus; Hymn 34 from Allen (1912).</p>
+    </div>
+    <div id="detail" hidden></div>
+  </aside>
+</main>
+<script src="vendor/d3.v7.9.0.min.js"></script>
+<script src="map.js"></script>
+</body>
+</html>

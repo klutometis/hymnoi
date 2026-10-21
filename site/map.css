@@ -1,0 +1,41 @@
+/* map view (map.html, map.js) */
+#map { width: 100%; height: 100%; display: block; cursor: grab; }
+.sea { fill: #e8ece6; }
+.land { fill: #f8f2e3; stroke: #b6a98f; stroke-width: .7; }
+.lake { fill: #e8ece6; stroke: #b6a98f; stroke-width: .5; }
+.river { fill: none; stroke: #a9bcc0; stroke-width: .8; }
+.graticule { fill: none; stroke: #d3d6cc; stroke-width: .5; }
+
+.mlink { stroke: #8c7f6c; stroke-opacity: .3; fill: none; }
+.route { fill: none; stroke-width: 2; stroke-opacity: .75; stroke-linecap: round; stroke-linejoin: round; }
+.route.hl { stroke-width: 3.5; stroke-opacity: 1; }
+.route.dim { stroke-opacity: .1; }
+.stop { stroke: #fff; stroke-width: .8; opacity: .85; }
+
+.pnode circle { stroke: var(--paper); stroke-width: 1; cursor: pointer; }
+.pnode.hymn circle { fill: var(--hymn); stroke: var(--ink); stroke-width: 1.2; }
+.pnode.place.approximate circle { fill-opacity: .7; }
+.pnode.place.region circle { fill-opacity: .3; stroke: var(--place); stroke-dasharray: 2 1.5; }
+.pnode.place.floating circle { fill: var(--paper) !important; stroke: var(--place); stroke-width: 1.4; }
+.pnode text { pointer-events: none; paint-order: stroke; stroke: #f8f2e3; stroke-width: 3px; stroke-linejoin: round;
+  font-family: "GFS Porson", "EB Garamond", serif; fill: var(--ink); }
+.pnode.place text { fill: #3f5522; }
+.pnode.hymn text { stroke: none; }
+.pnode text.hide { display: none; }
+
+svg.focus .pnode { opacity: .2; }
+svg.focus .pnode.lit { opacity: 1; }
+svg.focus .pnode.lit text.hide { display: inline; }
+svg.focus .mlink.lit { stroke-opacity: .75; stroke: var(--ink); }
+svg.focus .route { stroke-opacity: .2; }
+.pnode.selected circle { stroke: var(--ink); stroke-width: 2.4; }
+
+#routes-list label { display: flex; gap: .45rem; align-items: baseline; margin: .25rem 0; cursor: pointer; }
+#routes-list i { width: 1.5rem; height: .25rem; flex: none; display: inline-block; border-radius: 1px; transform: translateY(-.2rem); }
+#routes-list .grc { font-size: 1rem; }
+#routes-list .en { color: var(--muted); font-size: .85rem; }
+#intro h3, #detail h3 { font-weight: 500; font-size: 1.05rem; margin: 1rem 0 .3rem; border-bottom: 1px solid var(--rule); }
+.where { font-size: .88rem; color: var(--muted); margin: .25rem 0 .5rem; line-height: 1.35; }
+.extlinks { margin: .3rem 0 .6rem; }
+.extlinks a { margin-right: .8rem; font-size: .9rem; color: var(--ink); }
+.back { cursor: pointer; }

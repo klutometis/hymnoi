@@ -83,3 +83,10 @@ button.link-btn { font: inherit; font-size: .85rem; background: none; border: 1p
 #legend .routekey span { cursor: pointer; }
 #legend .routekey span.off { opacity: .45; }
 #legend .routekey span.off b { opacity: .5; }
+
+nav.views { font-size: .95rem; }
+nav.views a { color: var(--ink); }
+nav.views b { font-weight: 600; }
+.where { font-size: .88rem; color: var(--muted); margin: .25rem 0 .5rem; line-height: 1.35; }
+.extlinks { margin: .3rem 0 .6rem; }
+.extlinks a { margin-right: .8rem; font-size: .9rem; color: var(--ink); }
