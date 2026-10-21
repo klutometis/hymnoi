@@ -47,6 +47,7 @@ svg.focus .route { stroke-opacity: .2; }
 .pnode.anchor-free circle { fill-opacity: .28; stroke: currentColor; stroke-opacity: .35; }
 .pnode.anchor-free text { fill: var(--muted); }
 svg.focus .tether { stroke-opacity: .12; }
+svg.focus .tether.lit { stroke-opacity: .9; stroke-width: 1.2; }
 #legend .anchors { margin-top: .25rem; }
 #legend .anchors i { width: .7rem; height: .7rem; border-radius: 50%; display: inline-block; background: var(--god); }
 #legend .anchors i.a-pin { background: var(--place); border: 1px solid var(--paper); }

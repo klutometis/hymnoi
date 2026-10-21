@@ -289,11 +289,23 @@ function neighbours(n) {
   return lit;
 }
 
+function visibleNode(n) {
+  return !((n.type === 'hymn' && !state.hymns) || (n.type === 'being' && !state.beings));
+}
+
+// Light a node, its hymns (links) and its homes (tethers). A link is drawn only when both of its ends
+// are visible: with the hymns switched off, a being's links would otherwise end in nothing.
 function light(n) {
   const lit = neighbours(n);
+  for (const t of tethers) {
+    if (t.source === n) lit.add(t.target.id);
+    if (t.target === n) lit.add(t.source.id);
+  }
   nodeSel.classed('lit', d => lit.has(d.id));
-  linkSel.classed('lit', l => l.source.id === n.id || l.target.id === n.id)
-    .style('display', l => (l.source.id === n.id || l.target.id === n.id) ? null : (state.links && state.hymns ? null : 'none'));
+  const mine = l => l.source.id === n.id || l.target.id === n.id;
+  linkSel.classed('lit', mine)
+    .style('display', l => !visibleNode(l.source) || !visibleNode(l.target) ? 'none' : (mine(l) || state.links ? null : 'none'));
+  tetherSel.classed('lit', mine);
 }
 
 function focus(n, ev) {
