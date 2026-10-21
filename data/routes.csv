@@ -1,0 +1,102 @@
+route,seq,entity,hymn,line,note
+leto,1,krete,3,30,
+leto,2,athenai,3,30,δῆμος Ἀθηνῶν
+leto,3,aigina,3,31,
+leto,4,euboia,3,31,
+leto,5,aigai,3,32,"Euboian Aigai, REVIEW.md B4"
+leto,6,peiresiai,3,32,
+leto,7,peparethos,3,32,
+leto,8,athos,3,33,Θρηίκιος Ἀθόως
+leto,9,pelion,3,33,
+leto,10,samothrake,3,34,Θρηικίη Σάμος
+leto,11,ide,3,34,
+leto,12,skyros,3,35,
+leto,13,phokaia,3,35,
+leto,14,autokane,3,35,
+leto,15,imbros,3,36,
+leto,16,lemnos,3,36,
+leto,17,lesbos,3,37,
+leto,18,chios,3,38,
+leto,19,mimas,3,39,
+leto,20,korykos,3,39,
+leto,21,klaros,3,40,
+leto,22,aisagee,3,40,unlocated
+leto,23,samos,3,41,
+leto,24,mykale,3,41,
+leto,25,miletos,3,42,
+leto,26,kos,3,42,πόλις Μερόπων ἀνθρώπων
+leto,27,knidos,3,43,
+leto,28,karpathos,3,43,
+leto,29,naxos,3,44,
+leto,30,paros,3,44,
+leto,31,rheneia,3,44,
+leto,32,delos,3,49,where she gave birth: the end of the wandering
+apollo_road,1,olympos,3,216,start: down from Olympos
+apollo_road,2,pieria,3,216,
+apollo_road,3,lekton,3,217,"unlocated: the Troad cape is off the route, REVIEW.md B6"
+apollo_road,4,ainianes,3,217,people
+apollo_road,5,perrhaiboi,3,218,people: διὰ Περραιβούς
+apollo_road,6,iolkos,3,218,
+apollo_road,7,kenaion,3,219,Κηναίου ... Εὐβοίης
+apollo_road,8,lelanton,3,220,"he thought of building here, but not"
+apollo_road,9,euripos,3,222,crossed
+apollo_road,10,messapion,3,223,"ὄρος ζάθεον, unnamed; Messapion a guess (REVIEW.md B27, hidden)"
+apollo_road,11,mykalessos,3,224,
+apollo_road,12,teumessos,3,224,
+apollo_road,13,thebai,3,225,still uninhabited forest
+apollo_road,14,onchestos,3,230,Poseidon's grove
+apollo_road,15,kephisos,3,240,crossed; it flows from Lilaia (3.241)
+apollo_road,16,okalea,3,242,
+apollo_road,17,haliartos,3,243,
+apollo_road,18,telphousa,3,244,the spring; he lays foundations and is talked out of it
+apollo_road,19,phlegyai,3,278,"their city, by the Kephisian lake (3.280)"
+apollo_road,20,krisa,3,282,under snowy Parnassos: the temple founded
+cretan_ship,1,knosos,3,393,"the Cretans sail from Knossos, bound for Pylos (3.398)"
+cretan_ship,2,maleia,3,409,rounded
+cretan_ship,3,lakonike,3,410,along the Lakonian coast
+cretan_ship,4,tainaron,3,412,they want to land and cannot
+cretan_ship,5,arene,3,422,
+cretan_ship,6,argyphea,3,422,unlocated
+cretan_ship,7,thryon,3,423,"Θρύον, Ἀλφειοῖο πόρον"
+cretan_ship,8,alpheios,3,423,the ford at Thryon
+cretan_ship,9,aipy,3,423,
+cretan_ship,10,pylos,3,424,"their destination, passed"
+cretan_ship,11,krounoi,3,425,
+cretan_ship,12,chalkis_elis,3,425,
+cretan_ship,13,dyme,3,425,"out of order, REVIEW.md B8"
+cretan_ship,14,elis,3,426,where the Epeians rule
+cretan_ship,15,pherai_elis,3,427,"Pheia, REVIEW.md B7"
+cretan_ship,16,ithake,3,428,sighted: Ἰθάκης ὄρος αἰπύ
+cretan_ship,17,doulichion,3,429,sighted
+cretan_ship,18,same,3,429,sighted
+cretan_ship,19,zakynthos,3,429,sighted
+cretan_ship,20,krisa,3,438,into the gulf of Krisa (3.431) and to its harbour
+cretan_ship,21,pytho,3,517,"on foot behind Apollo, up to Pytho under Parnassos (3.521)"
+hermes_cattle,1,kyllene,4,2,start: the cave on Kyllene (he leaves it at 4.65)
+hermes_cattle,2,pieria,4,70,the gods' cattle in Pieria's mountains
+hermes_cattle,3,onchestos,4,88,driving the cattle past the old man
+hermes_cattle,4,alpheios,4,101,the cattle stalled; the sacrifice by the river
+hermes_cattle,5,kyllene,4,142,home again by dawn
+apollo_search,1,pieria,4,191,start: βοῦς ἀπὸ Πιερίης διζήμενος
+apollo_search,2,onchestos,4,186,he questions the old man
+apollo_search,3,pylos,4,216,the tracks
+apollo_search,4,kyllene,4,228,Maia's cave
+apollo_search,5,olympos,4,322,"to Zeus, with Hermes"
+cattle_return,1,olympos,4,325,start
+cattle_return,2,pylos,4,398,ἐς Πύλον ἠμαθόεντα ἐπʼ Ἀλφειοῦ πόρον
+cattle_return,3,alpheios,4,398,"the ford, where the cattle are penned"
+cattle_return,4,olympos,4,505,back to Olympos with the lyre
+demeter,1,olympos,2,92,she leaves the gods
+demeter,2,eleusis,2,97,to Keleos' house
+demeter,3,parthenion_phrear,2,99,she sits by the Maiden Well
+demeter,4,olympos,2,484,back to Olympos after founding the rites
+doso_tale,1,krete,2,123,carried off by pirates
+doso_tale,2,thorikos,2,126,where the pirates land; she escapes
+doso_tale,3,eleusis,2,133,δεῦρʼ ἱκόμην (Eleusis named 2.97)
+persephone_return,1,olympos,2,341,Hermes leaves Olympos
+persephone_return,2,erebos,2,335,to Hades in Erebos
+persephone_return,3,eleusis,2,385,to Demeter before her temple (Eleusis named 2.356)
+aphrodite_ida,1,kypros,5,58,
+aphrodite_ida,2,paphos,5,59,her temple and precinct
+aphrodite_ida,3,troia,5,66,she speeds toward Troy
+aphrodite_ida,4,ide,5,68,to Anchises on Ida

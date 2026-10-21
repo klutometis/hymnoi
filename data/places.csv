@@ -1,0 +1,128 @@
+id,pleiades,lat,lon,precision,wikidata,topostext,note
+aigai,540603,38.5982,23.5526,approximate,Q4687523,386236UAig,"3.32, 22.3: which Aigai is disputed (Euboia or Achaea); Euboian Aigai per REVIEW.md B4"
+aigina,579844,37.7346,23.4893,exact,Q191082,378234PAig,
+aigyptos,981503,27.1000,30.7000,region,Q11768,271307REgy,"7.28: Egypt, the land; the Pleiades representative point lies in Nubia, so a central point in Egypt is used"
+aigyptos_river,727172,29.8500,31.2500,approximate,Q3392,312301WNil,"1.9: Αἰγύπτοιο ῥοάων taken as the Nile per REVIEW.md B14; the Pleiades point lies in South Sudan, so placed on the Egyptian Nile at Memphis"
+aipy,570226,37.5658,21.7847,approximate,Q12872855,376218PEpe,"3.423: Homer's Aipy, identified with Ep(e)ion in Triphylia, as Pleiades and Wikidata do; Strabo 8.3.24 also offers Margalai"
+aisagee,,,,unlocated,,,"3.40: Αἰσαγέης ὄρος, named with Klaros in Leto's catalogue; unidentified, not in Pleiades"
+alpheios,570067,37.5148,21.8725,exact,Q911084,376215WAlp,
+antron,540644,38.9510,22.9675,exact,Q16483685,390230PAnt,
+arene,573114,37.5259,21.5962,approximate,Q131911375,,"3.422: Homeric Arene in Triphylia, unlocated in Pleiades; placed at Samikon, where Strabo 8.3.19 and Paus. 5.6.2 put it"
+argyphea,,,,unlocated,,,"3.422: Ἀργυφέη, a town of the Triphylian coast between Arene and Thryon; unidentified, not in Pleiades"
+arkadia,570102,37.5650,22.2992,region,Q12898802,375223RArk,"4.2, 18.2, 19.30: the land"
+asphodelos_leimon,,,,mythical,,,"4.344 (and 4.221): the meadow the cattle tracks lead to, in the words of the underworld meadow (Od. 11.539); left unplaced"
+athenai,579885,37.9716,23.7240,exact,Q844930,380237PAth,
+athos,501366,40.1572,24.3264,exact,Q130321,402243LAth,
+autokane,550616,38.9692,26.8597,approximate,,,"3.35: Autokane, the height of Mount Kane (Kara Dağ) in Aeolis; Pleiades 550618 names Kane/Autokane but has only a rough point at sea, so the mountain's point (550616) is used"
+chalkis_elis,573160,37.5550,21.5600,approximate,,,"3.425: Chalkis on the Triphylian coast, unlocated; Strabo 8.3.13 puts it with Krounoi between the Alpheios mouth and Samikon, placed there"
+chios,550497,38.3836,26.0142,exact,Q160483,384261IChi,
+delos,599588,37.3920,25.2702,exact,Q173148,,
+dotion,540741,39.5892,22.6173,exact,,,
+doulichion,530845,38.3225,21.1482,approximate,Q3038108,383213IDol,"3.429: Homeric Doulichion, sighted from the Cretan ship; identification disputed (Lefkas, part of Kephallenia, the Echinades); Pleiades identifies it with Dolicha in the Echinades"
+drakanon,599599,37.6914,26.3657,approximate,,,"1.1: location disputed, a headland on Ikaros or on Kos; Pleiades' Drakanon promontory on Ikaros, which 1.1 names beside it"
+dyme,570205,38.1446,21.5514,exact,Q1231662,381216PDym,"3.425: out of order in the voyage (Dyme is north of Elis and Pheia); kept, REVIEW.md B8"
+eleusis,579920,38.0411,23.5374,exact,Q11918833,380235PEle,
+elis,570221,37.7477,21.6884,region,Q6536845,378215REle,3.426: the land of the Epeians
+erebos,832339226,,,mythical,Q131122,,"2.335, 2.349, 2.409: the underworld"
+euboia,540775,38.5300,23.8700,exact,Q173096,385239IEub,
+euripos,540783,38.4628,23.5894,exact,Q1137741,385236WEur,
+europe_mainland,536074,38.9000,22.4000,region,,,"3.251, 3.291: Europe as mainland Greece, beside the Peloponnese and the islands; unlocated in Pleiades, point chosen in central Greece"
+haliartos,540801,38.3783,23.0866,exact,Q359627,384231PHal,
+helikon,540808,38.3528,22.8225,approximate,Q215516,384228LHel,"22.3: Mount Helikon as printed; Helike in Achaea (Poseidon Helikonios) is the alternative, REVIEW.md B5"
+hermos,550575,38.6310,28.5799,exact,Q1351474,385281WHer,
+ide,550592,39.6927,26.8192,exact,Q1127771,397268LIda,
+ikaros,599667,37.6322,26.1412,exact,Q209576,378263IIka,
+ilios,550595,39.9574,26.2385,exact,Q22647,400262UIli,
+imbros,501439,40.1633,25.8567,exact,Q658437,402259PImb,
+inopos,,37.3981,25.2694,approximate,Q108363834,,"3.18: the stream of Delos, not in Pleiades; point from Wikidata"
+iolkos,540837,39.3663,22.9689,exact,Q662613,394230UIol,
+ithake,530906,38.4003,20.6928,exact,Q187471,383207IIth,
+kallichoron,,38.0413,23.5385,approximate,,,"2.272: the well at Eleusis (excavated outside the Greater Propylaia), not in Pleiades; placed at the sanctuary"
+karpathos,589841,35.5966,27.1597,exact,Q204757,356271IKar,
+kastalia,203037083,38.4831,22.5054,approximate,Q152348,385225WCas,"3.300: an unnamed κρήνη at Pytho; Kastalia is a guess, REVIEW.md B27 (hidden)"
+kenaion,540858,38.8404,22.8665,exact,,,
+kephisis,540715,38.4471,23.0687,exact,Q1234240,384231WCop,
+kephisos,540700,38.5112,22.8942,exact,Q1235405,388228WKep,
+klaros,599719,38.0047,27.1930,exact,Q1933754,380272SKla,
+knidos,599576,36.7356,27.6994,exact,Q690575,367274PKni,3.43: Knidos at Burgaz (the older city); the later city at Tekir is Pleiades 599575
+knosos,589872,35.2978,25.1631,exact,Q173527,353252PKno,
+korykos,550666,38.2145,26.5863,exact,Q31515083,382266LKor,
+kos,599581,36.8229,27.1374,exact,Q187027,,
+krete,589748,35.2148,25.0741,exact,Q34374,,
+krisa,540889,38.4654,22.4596,exact,Q4241204,384225UKri,
+krounoi,573314,37.5850,21.5450,approximate,,,"3.425: Krounoi on the Triphylian coast, unlocated; Strabo 8.3.13 puts it between the Alpheios mouth and Samikon, placed there"
+kyllene,570391,37.9397,22.3969,exact,Q1232572,379224LKyl,
+kynthos,599740,37.3956,25.2724,exact,Q285086,374253LKyn,
+kypros,707498,34.9954,33.2225,exact,Q644636,350330RCyp,
+lakonike,570406,37.0457,22.6604,region,Q11931074,370225RLak,3.410: the Lakonian land
+lekton,550691,,,unlocated,Q527902,395261LLek,"3.217: the only Lekton is the cape in the Troad (Pleiades 550691), off Apollo's road from Pieria into Thessaly; possibly corrupt, REVIEW.md B6"
+lelanton,540911,38.4300,23.6900,approximate,Q165570,383238LLel,"3.220: the plain between Chalkis and Eretria; the Pleiades point is Euboia's centre, so placed in the plain"
+lemnos,550693,39.9050,25.2291,exact,Q192483,399253ILem,
+lesbos,550696,39.1775,26.2375,exact,Q128087,392261ILes,
+lilaia,540915,38.6320,22.5013,exact,Q1267602,386225PLil,
+lykia,638965,36.6341,29.5751,region,Q18927,365295RLyc,3.179: the land
+maionia,550701,38.5865,28.7461,region,Q620765,385280RLyd,"3.179: Maionia, i.e. Lydia"
+maleia,570455,36.4504,23.2017,exact,Q1471621,364232LMal,
+meles,550729,38.4320,27.1660,approximate,,,"9.3: the river of Smyrna; the Pleiades point is rough, placed at the Halkapınar springs, the usual identification"
+messapion,543787,38.4640,23.4884,approximate,Q25019011,385235LMes,"3.223: ὄρος ζάθεον, unnamed; Messapion is a guess, REVIEW.md B27 (hidden)"
+miletos,599799,37.5305,27.2788,exact,Q169460,375273PMil,
+mimas,550744,38.5885,26.4695,exact,Q31529408,386265LMim,
+mykale,599805,37.6667,27.0833,exact,Q1330828,377271LMyc,
+mykalessos,540953,38.4167,23.5196,exact,Q1529070,384235PMyk,
+naxos,599822,37.0582,25.4819,exact,Q188527,,
+neon_teichos,550773,38.6588,27.0915,approximate,Q11938576,387270UNeo,34.2: the city is unnamed (πόλιν αἰπεινήν); Neon Teichos per the Vita Herodotea 9-10 (Evelyn-White's Vita: Kyme)
+nysa,,,,mythical,,,"1.8, 2.17, 26.5: the mountain where Dionysos was nursed, ""far from Phoenicia, near the streams of Aigyptos"" (1.8-9); mythical"
+okalea,540978,38.3505,23.0481,exact,Q7075656,384230UOka,
+olympos,491677,40.0856,22.3586,exact,Q80344,401224LOly,seat of the gods; pinned to the Thessalian mountain
+onchestos,540984,38.3733,23.1503,exact,Q3063303,384232UOnc,
+ortygia,,,,unlocated,,,"3.16: Artemis' birthplace: its own island, Rheneia, a grove near Ephesos, or Delos; place unknown, REVIEW.md B3"
+paphos,707596,34.7053,32.5791,exact,Q22988494,347326PPal,5.59: the sanctuary at Old Paphos (Palaipaphos)
+parnassos,541012,38.5352,22.6221,exact,Q105261,385226LPar,
+paros,599868,37.0637,25.1981,exact,Q201272,,
+parthenion_phrear,,38.0411,23.5374,approximate,,,"2.99: the Maiden Well beside the road at Eleusis, not in Pleiades and not securely identified (sometimes taken for the Kallichoron); placed at Eleusis"
+peiresiai,540674,39.4985,22.1521,approximate,Q16489071,395222UAst,"3.32: Peiresiai, which Pleiades identifies with Asterion/Peirasia in Thessaly; others place it in Magnesia"
+pelion,541021,39.4082,23.0665,exact,Q1334825,394230LPel,
+peloponnesos,570577,37.0928,22.3360,region,Q78967,375222RPel,"3.250, 3.419 etc.: the land"
+peneios,541022,39.6694,22.1705,exact,Q376328,399227WPen,
+peparethos,541024,39.1353,23.6853,exact,,,
+pherai_elis,570592,37.6607,21.3113,approximate,Q3563531,377213UPhe,"3.427: Φεράς as printed; Odyssey 15.297 reads Φεάς, Pheia in Elis, REVIEW.md B7"
+phoinike,678334,33.2500,35.2500,region,Q41642,335354RPho,1.9: the land
+phokaia,550823,38.6703,26.7566,exact,Q428732,387268UPho,
+phrygia,609502,38.7830,30.4730,region,,,5.112: the land
+pieria,491696,40.3601,22.4872,region,Q7800388,402225RPie,"3.216, 4.70 etc.: the land below Olympos"
+pylos,573490,37.4569,21.6447,approximate,,,"3.398, 3.424, 4.216 etc.: Triphylian Pylos (by the Alpheios ford, 4.398), REVIEW.md B13; unlocated in Pleiades, placed at Kakovatos, the usual candidate"
+pytho,540726,38.4823,22.5012,exact,Q75459,385225PDel,Pytho = Delphi (27.14 Δελφῶν δῆμον)
+rharion,585954,38.0411,23.5374,approximate,Q2750628,381236LRaP,"2.450: the Rharian plain near Eleusis, unlocated; Pleiades places it at Eleusis"
+rheneia,599919,37.4041,25.2280,exact,Q1475379,374252PRhe,
+saidene,,38.7100,27.0200,approximate,,,"34.3: a mountain of Kyme (Steph. Byz. Σαιδηνή, ὄρος Κύμης), unidentified, not in Pleiades; placed in the hills between Kyme and Neon Teichos"
+salamis_kypros,707617,35.1796,33.9029,approximate,Q767089,352339PSal,"10.4: Salamis on Cyprus (paired with Κύπρου), not the island off Attica, REVIEW.md B15"
+same,531093,38.2508,20.6476,exact,Q7409183,383207PSam,"3.429: Homeric Same, i.e. Kephallenia; the Pleiades point is the town of Same on it"
+samos,599926,37.7325,26.8391,exact,Q156882,,
+samothrake,501597,40.4523,25.5762,exact,Q203175,,
+skyros,541108,38.9030,24.5654,exact,Q208566,389246PSky,
+smyrna,550893,38.4172,27.1414,exact,Q1379299,384271PSmy,
+tainaron,570703,36.3855,22.4831,exact,Q849911,364225LTai,
+tartaros,595204976,,,mythical,Q101322,,"3.336, 4.256, 4.374: below the earth"
+taygetos,570706,36.9535,22.3500,exact,Q515809,370223LTay,
+teumessos,541133,38.3576,23.3823,exact,Q15627845,384234UTeu,
+thebai,541138,38.3199,23.3177,exact,Q11225429,383233PThe,
+thorikos,580119,37.7379,24.0536,exact,Q353184,377241DTho,
+thrake,501638,41.5178,26.9624,region,Q41741,,"3.33, 3.34: Thracian Athos, Thracian Samos"
+thryon,573559,37.6321,21.4760,approximate,Q12878005,,"3.423: Thryon, ford of the Alpheios, unlocated; placed at Epitalion, which Strabo 8.3.24 identifies with it"
+troia,550944,39.8905,26.2977,region,Q2454671,399263RTro,5.66: the Troad
+zakynthos,531155,37.7780,20.7804,exact,Q144880,378209PZak,
+telphousa,541148,38.3711,22.9945,approximate,,,"nymph: her spring, the Tilphousa below Mount Tilphossion near Haliartos (3.244), on Apollo's road; placed at Pleiades' Tilphosaion"
+ainianes,540611,38.8699,22.1763,region,,,"people: homeland; 3.217: Homer's Enienes, later of Ainis in the Spercheios valley"
+eleusinioi,579920,38.0411,23.5374,region,,,people: homeland; 2.266: Eleusis
+epeioi,570221,37.7477,21.6884,region,,,people: homeland; 3.426: Elis
+hyperboreoi,,,,mythical,,,people: homeland; 7.29: beyond the north wind; mythical
+iones,550597,38.2991,26.8016,region,,,people: homeland; 3.147: Ionia
+kretes,589748,35.2148,25.0741,region,,,people: homeland; 3.393: Crete
+krisaioi,540889,38.4654,22.4596,region,,,people: homeland; 3.446: Krisa
+meropes,599581,36.8229,27.1374,region,,,people: homeland; 3.42: Kos
+perrhaiboi,491689,39.9466,22.0875,region,,,people: homeland; 3.218: Perrhaibia
+phlegyai,540987,38.4933,22.9747,region,,,"people: homeland; 3.278-280: their city by the Kephisian lake; placed at Orchomenos, Phlegyas' city"
+phryges,609502,38.7830,30.4730,region,,,people: homeland; 5.137: Phrygia
+pylioi,573490,37.4569,21.6447,region,,,"people: homeland; 3.398, 3.424: Triphylian Pylos (placed at Kakovatos)"
+troes,550944,39.8905,26.2977,region,,,people: homeland; 5.103: the Troad
+tyrsenoi,413122,42.6734,11.5338,region,,,people: homeland; 7.8: the Tyrsenian pirates; Etruria (Lemnos is the other candidate)
