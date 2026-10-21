@@ -198,18 +198,26 @@ judgement calls for Peter.
 
 ### Views
 
-Built so far (`site/`): **hymns as hubs** and **gods as hubs (2009)**, with a reader
-pane for each name and each hymn. Planned:
+Built so far (`site/`, first draft):
 
 - **Hymns as hubs**: a force layout with the 34 hymns as nodes; names in a single hymn
   petal around it, shared ones (Zeus, the Muses, Olympos) pull to the middle.
-- **Names as hubs**: the 2009 topology, rebuilt from the cited data.
+  The dedication of each hymn is a dashed line to its god.
+- **Gods as hubs (2009)**: the hymns folded into their gods, the topology of
+  the 2009 poster, rebuilt from the cited data.
+- A reader pane: click a name for every line that names it (Greek, English on
+  request), or a hymn for its whole text with each name marked and linked.
+- Toggles for periphrases and doubtful mentions, a legend that hides kinds,
+  a search box, and deep links (`#e=leto`, `#h=29`, `#hubs=gods`).
+
+Planned:
+
 - **Matrix**: hymns across, names down, a mark per mention.
 - **Map**: places pinned to their coordinates, everything else left free
   under the force layout; the journeys (Leto's wanderings, Apollo's road
   to Delphi, the Cretan ship, Hermes' cattle drive) as routes.
 - **Radial**: hymns around the rim, as a square poster.
-- A reader: every hymn in Greek and English with each name linked.
+- **Name forms**: Apollo split back into Φοῖβος, Ἑκάεργος, Λητοΐδης …
 
 Each view that has a fixed layout can be exported to SVG/PDF for a poster at
 the golden ratio of the original (24 × 38.8 in).
