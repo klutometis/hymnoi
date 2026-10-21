@@ -42,8 +42,8 @@ function init(data) {
   controls();
   const dl = d3.select('#names');
   Object.entries(E).filter(([, e]) => e.n).forEach(([, e]) => {
-    dl.append('option').attr('value', e.grc);
-    dl.append('option').attr('value', e.en);
+    dl.append('option').attr('value', e.label);
+    dl.append('option').attr('value', e.label_en);
   });
   fromHash();
   render(true);
@@ -130,7 +130,7 @@ function label(n) {
   if (n.type === 'hymn') return n.hymn.numeral;
   if (n.type === 'hub') return n.label;
   const e = E[n.ent];
-  return e.unnamed ? e.en : e.grc;
+  return e.label;
 }
 
 function render(first) {
@@ -235,7 +235,7 @@ function focus(n, e) {
     html = `<div class="grc">${esc(n.label)}</div>`;
   } else {
     const e = E[n.ent];
-    html = `<div class="grc k-${e.kind}">${esc(e.grc)}</div><i>${esc(e.en)}</i><br>${e.kind}${e.subkind ? ' · ' + esc(e.subkind) : ''}
+    html = `<div class="grc k-${e.kind}">${esc(e.label)}</div><i>${esc(e.label_en)}</i><br>${e.kind}${e.subkind ? ' · ' + esc(e.subkind) : ''}
       · ${n.n} mention${n.n > 1 ? 's' : ''} in ${n.hymns.size} hymn${n.hymns.size > 1 ? 's' : ''}`;
   }
   tip.innerHTML = html;
@@ -294,7 +294,7 @@ function marked(text, ms, self) {
     const f = k && forms.find(f => f.words.has(k));
     if (!f) return esc(tok);
     const e = E[f.m.entity];
-    return `<mark class="k-${e.kind}${f.m.entity === self ? ' self' : ''}" data-entity="${f.m.entity}" title="${esc(e.en)}">${esc(tok)}</mark>`;
+    return `<mark class="k-${e.kind}${f.m.entity === self ? ' self' : ''}" data-entity="${f.m.entity}" title="${esc(e.label_en)}">${esc(tok)}</mark>`;
   }).join('');
 }
 
@@ -314,7 +314,7 @@ function showEntity(id) {
   const mine = M.filter(m => m.entity === id);
   const byHymn = d3.group(mine, m => m.hymn);
   const vis = new Set(visibleMentions());
-  let html = `<h2 class="grc k-${e.kind}">${esc(e.unnamed ? e.en : e.grc)}<span class="en">${esc(e.unnamed ? '' : e.en)}</span></h2>
+  let html = `<h2 class="grc k-${e.kind}">${esc(e.label)}<span class="en">${esc(e.label_en)}</span></h2>
     <div class="meta">${e.kind}${e.subkind ? ' · ' + esc(e.subkind) : ''} · ${mine.length} mention${mine.length > 1 ? 's' : ''}
     in ${byHymn.size} hymn${byHymn.size > 1 ? 's' : ''} · <button class="link-btn" id="toggle-en">English</button></div>
     <div class="cites">`;
@@ -346,7 +346,7 @@ function showHymn(h) {
     · <button class="link-btn" id="toggle-en">English</button></div><div class="chips">`;
   for (const [id, c] of counts) {
     const e = E[id];
-    html += `<span class="chip k-${e.kind}" data-entity="${id}">${esc(e.unnamed ? e.en : e.grc)}<sup>${c > 1 ? c : ''}</sup></span>`;
+    html += `<span class="chip k-${e.kind}" data-entity="${id}">${esc(e.label)}<sup>${c > 1 ? c : ''}</sup></span>`;
   }
   html += '</div><div class="text">';
   const byLine = d3.group(vis, m => m.line);
@@ -384,7 +384,7 @@ function controls() {
   }
   document.getElementById('find').addEventListener('change', e => {
     const v = e.target.value.trim();
-    const id = Object.keys(E).find(k => E[k].grc === v || E[k].en === v || k === v);
+    const id = Object.keys(E).find(k => E[k].label === v || E[k].label_en === v || E[k].grc === v || k === v);
     if (!id) return;
     const n = current.nodes.find(d => d.ent === id);
     if (n) select(n); else { state.selected = null; document.getElementById('intro').hidden = true;

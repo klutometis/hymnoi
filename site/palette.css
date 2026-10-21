@@ -1,0 +1,10 @@
+/* Kind colours, shared by every view and the poster. One file, so a palette is one swap. */
+:root {
+  --god: #b0412e;      /* terracotta */
+  --nymph: #2a7f86;    /* aegean teal */
+  --hero: #c08a1e;     /* ochre */
+  --mortal: #2f4f8f;   /* lapis */
+  --group: #74508f;    /* murex */
+  --creature: #3b3631; /* black-figure */
+  --place: #5d7c34;    /* olive */
+}

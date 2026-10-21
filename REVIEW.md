@@ -1,5 +1,10 @@
 # Judgement calls for Peter
 
+**Status, 2026-10-21: Peter accepted every default below.** They are applied in
+`tools/build.py` (what is shown) and in the data (identifications). Anything
+here can still be revisited; this file is the record of why each call fell
+the way it did.
+
 The extraction (`data/mentions.csv`, 1,399 mentions of 286 beings, groups and
 places) records everything it found, doubtful or not; these are the calls that
 decide what the graph *shows*. Each has a default, already applied in the views,

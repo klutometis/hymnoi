@@ -7,13 +7,6 @@
   --muted: #7a6f60;
   --paper: #faf6ec;
   --rule: #d9cfbb;
-  --god: #b0412e;      /* terracotta */
-  --nymph: #2a7f86;    /* aegean teal */
-  --hero: #c08a1e;     /* ochre */
-  --mortal: #2f4f8f;   /* lapis */
-  --group: #74508f;    /* murex */
-  --creature: #3b3631; /* black-figure */
-  --place: #5d7c34;    /* olive */
   --hymn: #f3ead6;
 }
 * { box-sizing: border-box; }
@@ -43,7 +36,6 @@ main { flex: 1; display: flex; min-height: 0; }
 .node text { pointer-events: none; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round;
   font-family: "GFS Porson", "EB Garamond", serif; fill: var(--ink); }
 .node.hymn text { stroke: none; font-family: "GFS Porson", "EB Garamond", serif; }
-.node.unnamed text { font-family: "EB Garamond", serif; font-style: italic; }
 .node text.hide { display: none; }
 svg.focus .link { stroke-opacity: .05; }
 svg.focus .node { opacity: .15; }
