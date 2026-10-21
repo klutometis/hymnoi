@@ -1,0 +1,12 @@
+pig1 ['#902f24', '#017b80', '#9a6427', '#27559b', '#6f3157', '#312d25', '#6b7355']
+   god #902f24 7.43 8.9
+   nymph #017b80 4.69 5.6
+   hero #9a6427 4.6 13.2
+   mortal #27559b 6.81 0.0
+   group #6f3157 8.64 0.0
+   creature #312d25 12.7 0.0
+   place #6b7355 4.62 22.8
+   normal [(21.7, 'nymph', 'place'), (21.8, 'god', 'hero'), (22.2, 'god', 'group')]
+   deutan [(11.5, 'god', 'hero'), (12.0, 'hero', 'place'), (12.2, 'god', 'place')]
+   protan [(10.8, 'hero', 'place'), (12.1, 'god', 'creature'), (14.4, 'mortal', 'group')]
+   tritan [(11.3, 'god', 'group'), (11.6, 'nymph', 'mortal'), (13.4, 'god', 'hero')]

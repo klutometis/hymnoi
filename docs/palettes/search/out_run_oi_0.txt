@@ -1,0 +1,20 @@
+-1.6030085614412548
+== oi-adapt #c95223 #179d6f #e0ad3c #095f9e #ae789e #2f2b23 #94c6e6
+  god      #c95223 L 50.2 C 66.7 h   47 cr 4.13 dEpaper 43.5 rt 0.81 cmyk[14, 78, 99, 7]
+  nymph    #179d6f L 57.5 C 47.3 h  162 cr 3.20 dEpaper 36.9 rt 0.22 cmyk[81, 9, 70, 3]
+  hero     #e0ad3c L 73.6 C 62.6 h   83 cr 1.91 dEpaper 27.5 rt 0.00 cmyk[12, 33, 87, 3]
+  mortal   #095f9e L 39.1 C 40.6 h  272 cr 6.19 dEpaper 53.8 rt 0.34 cmyk[96, 61, 9, 3]
+  group    #ae789e L 57.0 C 29.6 h  336 cr 3.25 dEpaper 38.4 rt 0.36 cmyk[35, 60, 15, 4]
+  creature #2f2b23 L 17.7 C  5.9 h   88 cr13.05 dEpaper 72.4 rt 0.69 cmyk[67, 66, 79, 82]
+  place    #94c6e6 L 77.5 C 22.8 h  248 cr 1.70 dEpaper 24.2 rt 0.00 cmyk[46, 10, 4, 0]
+   normal [(31.6, 'mortal', 'creature'), (31.7, 'god', 'group'), (31.9, 'god', 'hero')]
+   deutan [(16.5, 'group', 'place'), (16.8, 'god', 'nymph'), (18.0, 'god', 'hero')]
+   protan [(15.9, 'mortal', 'group'), (17.3, 'nymph', 'hero'), (18.6, 'god', 'nymph')]
+   tritan [(15.8, 'hero', 'group'), (16.9, 'nymph', 'place'), (17.8, 'god', 'group')]
+#D55E00 #c95223 7.6
+#009E73 #179d6f 1.1
+#E69F00 #e0ad3c 5.7
+#0072B2 #095f9e 7.0
+#CC79A7 #ae789e 6.1
+#221d17 #2f2b23 4.6
+#56B4E9 #94c6e6 8.1

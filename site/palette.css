@@ -1,10 +1,18 @@
-/* Kind colours, shared by every view and the poster. One file, so a palette is one swap. */
+/* Kind colours, shared by every view and the poster. One file, so a palette is one swap.
+   Pigmenta: pigments attested in Greek painting, tuned in CIELAB for colour-vision deficiency
+   and the FOGRA39 gamut, each hue kept inside its pigment's range. See docs/palettes/index.html.
+   'text #…' is the colour for coloured Greek labels on the paper (>= 4.5:1 WCAG, chosen so the
+   seven text colours stay distinct too); the --<kind>-text variables below carry it (style.css falls back to the fill). */
 :root {
-  --god: #b0412e;      /* terracotta */
-  --nymph: #2a7f86;    /* aegean teal */
-  --hero: #c08a1e;     /* ochre */
-  --mortal: #2f4f8f;   /* lapis */
-  --group: #74508f;    /* murex */
-  --creature: #3b3631; /* black-figure */
-  --place: #5d7c34;    /* olive */
+  --god: #b93827;      /* cinnabar (kinnabari); text #902f24 */
+  --nymph: #09847e;    /* verdigris (ios chalkou); text #017b80 */
+  --hero: #c48430;     /* yellow ochre (ochra); text #9a6427 */
+  --mortal: #27559b;   /* Egyptian blue (kyanos) */
+  --group: #6f3157;    /* murex purple (porphyra) */
+  --creature: #312d25; /* carbon black (melan) */
+  --place: #a4b88d;    /* green earth (terre verte); text #6b7355 */
+  --god-text: #902f24;
+  --nymph-text: #017b80;
+  --hero-text: #9a6427;
+  --place-text: #6b7355;
 }

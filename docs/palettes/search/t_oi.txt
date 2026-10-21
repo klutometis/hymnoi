@@ -1,0 +1,12 @@
+okabe ['#902f23', '#0f6847', '#98651f', '#253f71', '#774963', '#2e2b23', '#1e7899']
+   god #902f23 7.44 16.7
+   nymph #0f6847 6.29 19.1
+   hero #98651f 4.61 24.5
+   mortal #253f71 9.59 12.8
+   group #774963 6.67 19.7
+   creature #2e2b23 13.09 0.7
+   place #1e7899 4.63 26.3
+   normal [(21.4, 'god', 'group'), (22.5, 'mortal', 'place'), (23.3, 'mortal', 'group')]
+   deutan [(11.4, 'god', 'hero'), (12.2, 'god', 'nymph'), (12.9, 'nymph', 'group')]
+   protan [(10.2, 'god', 'nymph'), (11.2, 'mortal', 'group'), (12.6, 'god', 'creature')]
+   tritan [(10.2, 'nymph', 'place'), (11.1, 'hero', 'group'), (12.9, 'nymph', 'mortal')]

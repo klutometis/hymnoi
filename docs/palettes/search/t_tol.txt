@@ -1,0 +1,12 @@
+tol ['#692839', '#0e7d77', '#777227', '#ab5556', '#206836', '#3b337d', '#06485b']
+   god #692839 9.91 6.0
+   nymph #0e7d77 4.61 18.0
+   hero #777227 4.61 14.9
+   mortal #ab5556 4.67 12.7
+   group #206836 6.29 4.2
+   creature #3b337d 9.95 2.1
+   place #06485b 9.33 50.9
+   normal [(17.6, 'creature', 'place'), (17.8, 'nymph', 'group'), (18.6, 'god', 'mortal')]
+   deutan [(8.6, 'hero', 'mortal'), (9.0, 'creature', 'place'), (10.8, 'god', 'group')]
+   protan [(8.7, 'hero', 'group'), (10.1, 'mortal', 'group'), (10.5, 'god', 'place')]
+   tritan [(9.0, 'group', 'place'), (9.7, 'nymph', 'group'), (11.5, 'creature', 'place')]

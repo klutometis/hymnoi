@@ -1,0 +1,12 @@
+oi ['#922f24', '#217e58', '#9a6523', '#095f9e', '#84617e', '#2f2b23', '#0e3f4e']
+   god #922f24 7.33 16.6
+   nymph #217e58 4.64 10.9
+   hero #9a6523 4.57 24.6
+   mortal #095f9e 6.19 0.0
+   group #84617e 4.87 12.0
+   creature #2f2b23 13.05 0.0
+   place #0e3f4e 10.58 53.3
+   normal [(16.9, 'mortal', 'place'), (18.9, 'creature', 'place'), (22.9, 'god', 'hero')]
+   deutan [(11.4, 'god', 'hero'), (13.3, 'god', 'nymph'), (15.5, 'nymph', 'hero')]
+   protan [(10.9, 'mortal', 'group'), (11.7, 'nymph', 'hero'), (12.8, 'god', 'creature')]
+   tritan [(9.9, 'nymph', 'mortal'), (11.2, 'hero', 'group'), (13.6, 'god', 'hero')]

@@ -1,0 +1,21 @@
+/* Kind colours, shared by every view and the poster. One file, so a palette is one swap.
+   Tol muted: Paul Tol's 'muted' qualitative scheme, each colour moved <= 5 dE2000 to clear
+   cream paper and coated stock. See docs/palettes/index.html.
+   'text #…' is the colour for coloured Greek labels on the paper (>= 4.5:1 WCAG, chosen so the
+   seven text colours stay distinct too); the --<kind>-text variables below carry it (style.css falls back to the fill). */
+:root {
+  --god: #832849;      /* Tol wine #882255; text #692839 */
+  --nymph: #37b19b;    /* Tol teal #44AA99; text #0e7d77 */
+  --hero: #a0992d;     /* Tol olive #999933; text #777227 */
+  --mortal: #db677a;   /* Tol rose #CC6677; text #ab5556 */
+  --group: #2a7234;    /* Tol green #117733; text #206836 */
+  --creature: #3c3489; /* Tol indigo #332288; text #3b337d */
+  --place: #97d1f4;    /* Tol cyan #88CCEE; text #06485b */
+  --god-text: #692839;
+  --nymph-text: #0e7d77;
+  --hero-text: #777227;
+  --mortal-text: #ab5556;
+  --group-text: #206836;
+  --creature-text: #3b337d;
+  --place-text: #06485b;
+}

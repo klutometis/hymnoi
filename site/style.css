@@ -77,9 +77,11 @@ mark.self { font-weight: 600; }
 .back { font-size: .85rem; cursor: pointer; color: var(--muted); }
 button.link-btn { font: inherit; font-size: .85rem; background: none; border: 1px solid var(--rule); cursor: pointer; padding: 0 .4rem; }
 
-.k-god { color: var(--god); } .k-nymph { color: var(--nymph); } .k-hero { color: var(--hero); }
-.k-mortal { color: var(--mortal); } .k-group { color: var(--group); } .k-creature { color: var(--creature); }
-.k-place { color: var(--place); }
+/* coloured Greek text: a darker --<kind>-text where the fill is too light to read on the paper */
+.k-god { color: var(--god-text, var(--god)); } .k-nymph { color: var(--nymph-text, var(--nymph)); }
+.k-hero { color: var(--hero-text, var(--hero)); } .k-mortal { color: var(--mortal-text, var(--mortal)); }
+.k-group { color: var(--group-text, var(--group)); } .k-creature { color: var(--creature-text, var(--creature)); }
+.k-place { color: var(--place-text, var(--place)); }
 #legend .routekey span { cursor: pointer; }
 #legend .routekey span.off { opacity: .45; }
 #legend .routekey span.off b { opacity: .5; }

@@ -1,0 +1,20 @@
+/* Kind colours, shared by every view and the poster. One file, so a palette is one swap.
+   Okabe-Ito: the colour-universal-design set, each colour moved <= 8.1 dE2000 to fit FOGRA39
+   and put gods first, places last. See docs/palettes/index.html.
+   'text #…' is the colour for coloured Greek labels on the paper (>= 4.5:1 WCAG, chosen so the
+   seven text colours stay distinct too); the --<kind>-text variables below carry it (style.css falls back to the fill). */
+:root {
+  --god: #c95223;      /* O-I vermillion #D55E00; text #902f23 */
+  --nymph: #179d6f;    /* O-I bluish green #009E73; text #0f6847 */
+  --hero: #e0ad3c;     /* O-I orange #E69F00; text #98651f */
+  --mortal: #095f9e;   /* O-I blue #0072B2; text #253f71 */
+  --group: #ae789e;    /* O-I reddish purple #CC79A7; text #774963 */
+  --creature: #2f2b23; /* O-I black, warmed */
+  --place: #94c6e6;    /* O-I sky blue #56B4E9; text #1e7899 */
+  --god-text: #902f23;
+  --nymph-text: #0f6847;
+  --hero-text: #98651f;
+  --mortal-text: #253f71;
+  --group-text: #774963;
+  --place-text: #1e7899;
+}

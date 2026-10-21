@@ -1,0 +1,12 @@
+pigmenta ['#922f27', '#037a7e', '#9c6327', '#1f4c92', '#61284e', '#302c25', '#6c7355']
+   god #922f27 7.32 8.8
+   nymph #037a7e 4.76 5.5
+   hero #9c6327 4.6 13.4
+   mortal #1f4c92 7.76 3.0
+   group #61284e 10.13 3.5
+   creature #302c25 12.86 0.7
+   place #6c7355 4.61 22.7
+   normal [(21.6, 'god', 'hero'), (21.6, 'nymph', 'place'), (22.6, 'hero', 'place')]
+   deutan [(11.3, 'god', 'hero'), (11.6, 'god', 'place'), (12.0, 'hero', 'place')]
+   protan [(10.8, 'hero', 'place'), (12.4, 'god', 'creature'), (14.1, 'mortal', 'group')]
+   tritan [(12.9, 'god', 'hero'), (13.6, 'god', 'group'), (13.6, 'nymph', 'mortal')]

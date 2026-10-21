@@ -1,0 +1,13 @@
+-1.9177279965216358
+== pig s1 #b93827 #09847e #c48430 #27559b #6f3157 #312d25 #a4b88d
+  god      #b93827 L 43.2 C 64.4 h   38 cr 5.32 dEpaper 49.4 rt 0.40 cmyk[18, 91, 98, 13]
+  nymph    #09847e L 49.6 C 31.4 h  190 cr 4.22 dEpaper 42.0 rt 0.55 cmyk[84, 22, 51, 15]
+  hero     #c48430 L 60.3 C 55.6 h   72 cr 2.91 dEpaper 33.9 rt 0.00 cmyk[19, 50, 93, 10]
+  mortal   #27559b L 36.5 C 43.8 h  283 cr 6.81 dEpaper 56.2 rt 0.55 cmyk[95, 70, 6, 2]
+  group    #6f3157 L 30.1 C 33.9 h  343 cr 8.64 dEpaper 62.1 rt 0.00 cmyk[55, 93, 33, 32]
+  creature #312d25 L 18.6 C  5.8 h   89 cr12.70 dEpaper 71.1 rt 0.32 cmyk[67, 65, 78, 80]
+  place    #a4b88d L 72.3 C 24.5 h  127 cr 1.98 dEpaper 22.0 rt 0.00 cmyk[41, 15, 52, 4]
+   normal [(27.4, 'nymph', 'place'), (27.6, 'group', 'creature'), (27.6, 'god', 'group')]
+   deutan [(14.0, 'nymph', 'group'), (14.8, 'god', 'hero'), (15.2, 'group', 'creature')]
+   protan [(14.4, 'mortal', 'group'), (17.4, 'hero', 'place'), (18.5, 'god', 'creature')]
+   tritan [(14.4, 'nymph', 'mortal'), (18.0, 'god', 'group'), (19.0, 'god', 'hero')]

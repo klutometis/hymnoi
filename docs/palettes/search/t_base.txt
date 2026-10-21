@@ -1,0 +1,12 @@
+base ['#a54142', '#00757f', '#9c6327', '#2e508c', '#5d2b62', '#38312b', '#3f5c2c']
+   god #a54142 5.67 7.3
+   nymph #00757f 5.05 4.2
+   hero #9c6327 4.6 16.1
+   mortal #2e508c 7.36 0.7
+   group #5d2b62 9.79 12.1
+   creature #38312b 11.85 2.0
+   place #3f5c2c 7.0 12.2
+   normal [(22.0, 'mortal', 'group'), (22.4, 'god', 'hero'), (23.9, 'nymph', 'mortal')]
+   deutan [(8.2, 'god', 'hero'), (8.4, 'god', 'place'), (8.6, 'mortal', 'group')]
+   protan [(8.1, 'god', 'place'), (8.4, 'hero', 'place'), (9.7, 'mortal', 'group')]
+   tritan [(8.4, 'god', 'hero'), (10.7, 'mortal', 'place'), (11.4, 'nymph', 'mortal')]
