@@ -10,9 +10,21 @@ domain migration (`mercurial-stele`) or to Peter.
 
 Status 2026-10-21 16:20: all three domains are at Porkbun with DNS on Cloudflare
 (ganz/paige.ns.cloudflare.com), no DS records (the stale Google Domains DNSSEC is
-gone), and **empty zones**. `mercurial-stele` has the records below and is holding
-until step 1 is done: A/AAAA records pointing at GitHub before the repo claims the
-domain would let any Pages site claim hymnoi.org.
+gone), and **empty zones**.
+
+Status 2026-10-21 17:00: **step 1 done.** Peter approved the push; `master` is
+`66a4caf`, Pages is enabled (workflow), the first deploy succeeded, and the repo's
+custom domain is hymnoi.org. hymnoi.org was *already* a verified domain on the
+klutometis account (github.com/settings/pages); its challenge record (below) is
+being restored so GitHub's periodic re-check keeps passing. Records sent to
+`mercurial-stele` to add. Remaining: DNS (2, 3), then HTTPS enforcement and the
+checks in 4.
+
+Verification record (hymnoi.org zone):
+
+| Type | Name | Content |
+|---|---|---|
+| TXT | _github-pages-challenge-klutometis | c341b58dcbc7b91e9aa4d335adfd70 |
 
 ## 1. GitHub Pages (this repo)
 
@@ -21,9 +33,9 @@ The site is static: `site/` as committed, with `site/data/hymnoi.json` built by
 `site/` on every push to `master`.
 
 ```
-git push origin hymnoi:master                       # after review; fast-forward from b0dd08c
-gh api -X POST repos/klutometis/hymnoi/pages -f build_type=workflow
-gh api -X PUT  repos/klutometis/hymnoi/pages -f cname=hymnoi.org
+gh api -X POST repos/klutometis/hymnoi/pages -f build_type=workflow   # done 2026-10-21 (before the push, so it deploys)
+gh api -X PUT  repos/klutometis/hymnoi/pages -f cname=hymnoi.org      # done
+git push origin hymnoi:master                                          # done: b0dd08c..66a4caf
 # after DNS resolves and the certificate is issued (minutes to an hour):
 gh api -X PUT  repos/klutometis/hymnoi/pages -F https_enforced=true
 ```
