@@ -1,0 +1,140 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+3	1	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	1	ἑκάτοιο	ἕκατος	apollon	Apollo	god	olympian	epithet	certain	
+3	2	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	5	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+3	5	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	8	πατρὸς ἑοῖο	πατήρ	zeus	Zeus	god	olympian	periphrasis	uncertain	"his father" = Zeus; relational common noun, not a title
+3	10	πατὴρ	πατήρ	zeus	Zeus	god	olympian	periphrasis	uncertain	"the father" = Zeus (pours nectar for his son); relational common noun, possibly the title Father
+3	12	Λητώ	Λητώ	leto	Leto	god	titan	name	certain	
+3	14	Λητοῖ	Λητώ	leto	Leto	god	titan	name	certain	
+3	15	Ἀπόλλωνά	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	15	Ἄρτεμιν	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+3	16	Ὀρτυγίῃ	Ὀρτυγία	ortygia	Ortygia	place	island	name	probable	birthplace of Artemis; identity disputed (distinct island, Rheneia, or a grove near Ephesus; sometimes = Delos itself)
+3	16	Δήλῳ	Δῆλος	delos	Delos	place	island	name	certain	
+3	17	μακρὸν ὄρος	ὄρος	kynthos	Mount Kynthos (Delos)	place	mountain	periphrasis	uncertain	"the long mountain" beside the Kynthian hill; probably Kynthos itself (cf. Κύνθου ὄρος 3.26)
+3	17	Κύνθιον	Κύνθιος	kynthos	Mount Kynthos (Delos)	place	mountain	adjective	certain	Κύνθιον ὄχθον, the Kynthian hill
+3	18	Ἰνωποῖο	Ἰνωπός	inopos	Inopos (river of Delos)	place	river	name	certain	
+3	20	Φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	25	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+3	26	Κύνθου	Κύνθος	kynthos	Mount Kynthos (Delos)	place	mountain	name	certain	
+3	27	Δήλῳ	Δῆλος	delos	Delos	place	island	name	certain	
+3	30	Κρήτη	Κρήτη	krete	Crete	place	island	name	certain	
+3	30	Ἀθηνῶν	Ἀθῆναι	athenai	Athens	place	city	name	certain	
+3	31	Αἰγίνη	Αἴγινα	aigina	Aegina	place	island	name	certain	
+3	31	Εὔβοια	Εὔβοια	euboia	Euboea	place	island	name	certain	
+3	32	Αἰγαί	Αἰγαί	aigai	Aigai	place	city	name	probable	which Aigai is unclear: usually taken as Aigai in Euboea (seat of Poseidon); listed among Thessalian/N. Aegean places
+3	32	Πειρεσίαι	Πειρεσίαι	peiresiai	Peiresiai (Magnesia, Thessaly)	place	city	name	certain	
+3	32	Πεπάρηθος	Πεπάρηθος	peparethos	Peparethos	place	island	name	certain	
+3	33	Θρηίκιός	Θρηΐκιος	thrake	Thrace	place	region	adjective	certain	Θρηίκιος Ἀθόως, Thracian Athos
+3	33	Ἀθόως	Ἄθως	athos	Mount Athos	place	mountain	name	certain	
+3	33	Πηλίου	Πήλιον	pelion	Mount Pelion	place	mountain	name	certain	
+3	34	Θρηικίη	Θρηΐκιος	thrake	Thrace	place	region	adjective	certain	Θρηικίη Σάμος, Thracian Samos = Samothrace
+3	34	Σάμος	Σάμος	samothrake	Samothrace (Thracian Samos)	place	island	name	certain	Θρηικίη Σάμος = Samothrace, not Ionian Samos (3.41)
+3	34	Ἴδης	Ἴδη	ide	Mount Ida (Troad)	place	mountain	name	certain	
+3	35	Σκῦρος	Σκῦρος	skyros	Skyros	place	island	name	certain	
+3	35	Φώκαια	Φώκαια	phokaia	Phokaia	place	city	name	certain	
+3	35	Αὐτοκάνης	Αὐτοκάνη	autokane	Mount Autokane (Aeolis)	place	mountain	name	certain	
+3	36	Ἴμβρος	Ἴμβρος	imbros	Imbros	place	island	name	certain	
+3	36	Λῆμνος	Λῆμνος	lemnos	Lemnos	place	island	name	certain	
+3	37	Λέσβος	Λέσβος	lesbos	Lesbos	place	island	name	certain	
+3	37	Μάκαρος	Μάκαρ	makar	Makar (king of Lesbos)	mortal	king	name	certain	
+3	37	Αἰολίωνος	Αἰολίων	makar	Makar (king of Lesbos)	mortal	king	patronymic	certain	"son of Aiolos", of Makar; implies Aiolos as father
+3	38	Χίος	Χίος	chios	Chios	place	island	name	certain	
+3	39	Μίμας	Μίμας	mimas	Mount Mimas (Ionia)	place	mountain	name	certain	
+3	39	Κωρύκου	Κώρυκος	korykos	Mount Korykos (Ionia, near Erythrai)	place	mountain	name	certain	Ionian promontory opposite Chios, not the Korykian cave of Parnassos
+3	40	Κλάρος	Κλάρος	klaros	Klaros	place	sanctuary	name	certain	
+3	40	Αἰσαγέης	Αἰσαγέη	aisagee	Mount Aisagee	place	mountain	name	probable	otherwise unknown mountain, presumably in Ionia near Klaros
+3	41	Σάμος	Σάμος	samos	Samos	place	island	name	certain	
+3	41	Μυκάλης	Μυκάλη	mykale	Mount Mykale	place	mountain	name	certain	
+3	42	Μίλητός	Μίλητος	miletos	Miletus	place	city	name	certain	
+3	42	Κόως	Κῶς	kos	Kos	place	island	name	certain	
+3	42	Μερόπων	Μέροψ	meropes	Meropes (people of Kos)	group	people	ethnic	probable	capitalized as the Meropes of Kos; could be the formula μέροπες ἄνθρωποι "articulate men"
+3	43	Κνίδος	Κνίδος	knidos	Knidos	place	city	name	certain	
+3	43	Κάρπαθος	Κάρπαθος	karpathos	Karpathos	place	island	name	certain	
+3	44	Νάξος	Νάξος	naxos	Naxos	place	island	name	certain	
+3	44	Πάρος	Πάρος	paros	Paros	place	island	name	certain	
+3	44	Ῥήναιά	Ῥήνεια	rheneia	Rheneia	place	island	name	certain	
+3	45	Ἑκηβόλον	ἑκηβόλος	apollon	Apollo	god	olympian	epithet	certain	stands alone for Apollo (the unborn child)
+3	45	Λητώ	Λητώ	leto	Leto	god	titan	name	certain	
+3	48	Φοῖβον	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	49	Δήλου	Δῆλος	delos	Delos	place	island	name	certain	
+3	49	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+3	51	δῆλʼ	Δῆλος	delos	Delos	place	island	name	certain	vocative printed lowercase at start of speech
+3	52	Φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	52	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	56	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	56	ἑκαέργου	ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+3	61	Δῆλος	Δῆλος	delos	Delos	place	island	name	certain	the island personified, speaking
+3	62	Λητοῖ	Λητώ	leto	Leto	god	titan	name	certain	
+3	62	Κοίοιο	Κοῖος	koios	Koios	god	titan	name	certain	father of Leto
+3	63	ἑκάτοιο ἄνακτος	ἕκατος	apollon	Apollo	god	olympian	epithet	certain	"the far-shooting lord", stands for Apollo
+3	66	Λητοῖ	Λητώ	leto	Leto	god	titan	name	certain	
+3	67	Ἀπόλλωνα	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	71	ἠελίοιο	ἥλιος	helios	Helios (the Sun)	god	titan	personification	uncertain	φάος ἠελίοιο "light of the sun" = be born; plainly the sun as thing
+3	83	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+3	84	Γαῖα	Γαῖα	gaia	Gaia (Earth)	god	primordial	name	certain	invoked as witness of the oath
+3	84	Οὐρανὸς	Οὐρανός	ouranos	Ouranos (Sky)	god	primordial	name	certain	invoked as witness of the oath
+3	85	Στυγὸς	Στύξ	styx	Styx	nymph	oceanid	name	certain	Στυγὸς ὕδωρ, the oath-water of the gods; Styx is both underworld river and Oceanid goddess (Hes. Th. 361, 383)
+3	87	Φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	90	Δῆλος	Δῆλος	delos	Delos	place	island	name	certain	
+3	90	ἑκάτοιο ἄνακτος	ἕκατος	apollon	Apollo	god	olympian	epithet	certain	"the far-shooting lord", stands for Apollo
+3	91	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+3	93	Διώνη	Διώνη	dione	Dione	god	titan	name	certain	
+3	93	Ῥείη	Ῥέα	rhea	Rhea	god	titan	name	certain	
+3	94	Ἰχναίη	Ἰχναῖος	themis	Themis	god	titan	epithet	certain	cult title of Themis from Ichnai (Thessaly or Macedonia)
+3	94	Θέμις	Θέμις	themis	Themis	god	titan	name	certain	
+3	94	Ἀμφιτρίτη	Ἀμφιτρίτη	amphitrite	Amphitrite	nymph	nereid	name	certain	
+3	95	Ἥρης	Ἥρα	hera	Hera	god	olympian	name	certain	
+3	96	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	97	Εἰλείθυια	Εἰλείθυια	eileithyia	Eileithyia	god	birth	name	certain	
+3	98	Ὀλύμπῳ	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+3	99	Ἥρης	Ἥρα	hera	Hera	god	olympian	name	certain	
+3	101	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+3	102	Ἶριν	Ἶρις	iris	Iris	god	messenger	name	certain	
+3	103	Εἰλείθυιαν	Εἰλείθυια	eileithyia	Eileithyia	god	birth	name	certain	
+3	105	Ἥρης	Ἥρα	hera	Hera	god	olympian	name	certain	
+3	107	Ἶρις	Ἶρις	iris	Iris	god	messenger	name	certain	
+3	109	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+3	110	Εἰλείθυιαν	Εἰλείθυια	eileithyia	Eileithyia	god	birth	name	certain	
+3	112	Ὀλύμπια	Ὀλύμπιος	olympos	Mount Olympos	place	mountain	adjective	certain	Ὀλύμπια δώματα, the Olympian halls
+3	115	Δήλου	Δῆλος	delos	Delos	place	island	name	certain	
+3	115	Εἰλείθυια	Εἰλείθυια	eileithyia	Eileithyia	god	birth	name	certain	
+3	118	γαῖʼ	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	probable	"the earth beneath smiled" at the birth: earth personified, but could be the ground under Leto
+3	120	ἤιε	ἤιος	apollon	Apollo	god	olympian	epithet	certain	cult epithet (from the cry ἰή)
+3	120	Φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	123	Ἀπόλλωνα	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	123	μήτηρ	μήτηρ	leto	Leto	god	titan	periphrasis	uncertain	"his mother" = Leto; relational common noun
+3	124	Θέμις	Θέμις	themis	Themis	god	titan	name	certain	
+3	125	Λητώ	Λητώ	leto	Leto	god	titan	name	certain	
+3	127	Φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	130	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	130	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	132	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	134	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	134	ἑκατηβόλος	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	
+3	135	Δῆλος	Δῆλος	delos	Delos	place	island	name	certain	
+3	136	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	in bracketed ll. 136-8 (alternative to 139)
+3	136	Λητοὺς	Λητώ	leto	Leto	god	titan	name	certain	in bracketed ll. 136-8 (alternative to 139)
+3	136	Διὸς Λητοὺς τε γενέθλην	γενέθλη	apollon	Apollo	god	olympian	periphrasis	probable	"the offspring of Zeus and Leto" = Apollo; in bracketed ll. 136-8
+3	140	ἑκατηβόλʼ	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	
+3	140	Ἄπολλον	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	141	Κύνθου	Κύνθος	kynthos	Mount Kynthos (Delos)	place	mountain	name	certain	
+3	146	Δήλῳ	Δῆλος	delos	Delos	place	island	name	certain	
+3	146	Φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	147	Ἰάονες	Ἰάων	iones	Ionians	group	people	ethnic	certain	
+3	152	Ἰάονες	Ἰάων	iones	Ionians	group	people	ethnic	certain	
+3	157	κοῦραι Δηλιάδες	Δηλιάς	deliades	Delian Maidens	group	chorus	name	certain	
+3	157	Δηλιάδες	Δηλιάς	delos	Delos	place	island	adjective	certain	proper adjective of the Delian Maidens
+3	157	ἑκατηβελέταο	ἑκατηβελέτης	apollon	Apollo	god	olympian	epithet	certain	stands alone for Apollo
+3	158	Ἀπόλλωνʼ	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	159	Λητώ	Λητώ	leto	Leto	god	titan	name	certain	
+3	159	Ἄρτεμιν	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+3	165	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	165	Ἀρτέμιδι	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+3	169	κοῦραι	κούρη	deliades	Delian Maidens	group	chorus	periphrasis	probable	"maidens", the Delian Maidens addressed in the stranger's question; common noun
+3	172	τυφλὸς ἀνήρ	ἀνήρ	homeros	Homer (the blind singer of Chios)	mortal	poet	periphrasis	uncertain	the singer's self-description; identified with Homer from Thuc. 3.104 on (scholia on Pindar name Kynaithos of Chios)
+3	172	Χίῳ	Χίος	chios	Chios	place	island	name	certain	
+3	177	ἑκηβόλον	ἑκηβόλος	apollon	Apollo	god	olympian	epithet	certain	
+3	177	Ἀπόλλωνα	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	178	Λητώ	Λητώ	leto	Leto	god	titan	name	certain	

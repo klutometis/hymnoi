@@ -1,0 +1,131 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+4	1	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	1	Μοῦσα	Μοῦσα	mousai	the Muses	group	muse	name	probable	singular Muse invoked; referred to the group of Muses
+4	1	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	1	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	2	Κυλλήνης	Κυλλήνη	kyllene_mountain	Mount Kyllene	place	mountain	name	certain	
+4	2	Ἀρκαδίης	Ἀρκαδία	arkadia	Arcadia	place	region	name	certain	
+4	3	Μαῖα	Μαῖα	maia	Maia	nymph	pleiad	name	certain	
+4	4	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	6	Κρονίων	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	7	νύμφῃ ἐυπλοκάμῳ	νύμφη	maia	Maia	nymph	pleiad	periphrasis	uncertain	νύμφη alone standing for Maia; common noun used as reference, reviewer decides whether it is a mention
+4	7	νυκτὸς	νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"in the dead of night": time of day, not the goddess
+4	8	ὕπνος	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	"sweet sleep held Hera": sleep as a state; cf. Hypnos lulling Zeus in Il. 14, but no sign of the god here
+4	8	Ἥρην	Ἥρα	hera	Hera	god	olympian	name	certain	
+4	10	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	11	οὐρανῷ	οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	"the tenth month was fixed in the sky": the sky, not the god
+4	15	νυκτὸς	νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"watcher of the night": time, not the goddess
+4	18	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	19	Μαῖα	Μαῖα	maia	Maia	nymph	pleiad	name	certain	
+4	22	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	25	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	28	Διὸς ἐριούνιος υἱὸς	υἱός	hermes	Hermes	god	olympian	periphrasis	certain	
+4	28	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	46	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	57	Δία	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	57	Κρονίδην	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+4	57	Μαιάδα	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	60	νύμφης	νύμφη	maia	Maia	nymph	pleiad	periphrasis	uncertain	νύμφη alone standing for Maia; common noun used as reference, reviewer decides whether it is a mention
+4	67	νυκτὸς	νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"in the hour of black night": time, not the goddess
+4	68	ἠέλιος	ἥλιος	helios	Helios (the Sun)	god	titan	personification	probable	the sun sinks to Ocean "with his horses and chariot": the charioteer god
+4	68	χθονὸς	χθών	gaia	Gaia (Earth)	god	primordial	personification	uncertain	"beneath the earth": the ground, almost certainly not the goddess
+4	68	Ὠκεανόνδε	Ὠκεανός	okeanos	Okeanos (Ocean stream)	place	river	name	certain	Ocean stream as destination of the setting sun; also the Titan
+4	69	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	70	Πιερίης	Πιερία	pieria	Pieria	place	region	name	certain	
+4	73	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	73	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+4	84	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+4	85	Πιερίηθεν	Πιερία	pieria	Pieria	place	region	name	certain	
+4	87	γέρων	γέρων	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters
+4	88	Ὀγχηστὸν	Ὀγχηστός	onchestos	Onchestos	place	city	name	certain	
+4	89	Μαίης ἐρικυδέος υἱός	υἱός	hermes	Hermes	god	olympian	periphrasis	certain	
+4	89	Μαίης	Μαῖα	maia	Maia	nymph	pleiad	name	certain	
+4	90	γέρον	γέρων	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters
+4	96	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	97	δαιμονίη νύξ	νύξ	nyx	Nyx (Night)	god	primordial	personification	probable	"dark Night, his helper, divine": personified as ally (ἐπίκουρος, δαιμονίη)
+4	99	Σελήνη	Σελήνη	selene	Selene (Moon)	god	titan	name	certain	δῖα Σελήνη, daughter of Pallas: the goddess
+4	100	Πάλλαντος	Πάλλας	pallas_megamedeides	Pallas son of Megamedes (father of Selene)	god	titan	name	probable	Pallas son of Megamedes, father of Selene; only here. Not Hesiod's Titan Pallas (son of Krios) unless identified; kind/subkind guessed
+4	100	Μεγαμηδείδαο	Μεγαμηδείδης	pallas_megamedeides	Pallas son of Megamedes (father of Selene)	god	titan	patronymic	certain	
+4	100	Μεγαμηδείδαο	Μεγαμηδείδης	megamedes	Megamedes (father of Pallas)	god	titan	patronymic	uncertain	extra row so Megamedes (father named only via this patronymic, unique here) is not lost; the word itself refers to Pallas
+4	101	Ἀλφειὸν	Ἀλφειός	alpheios	Alpheios (river)	place	river	name	certain	
+4	101	Διὸς ἄλκιμος υἱὸς	υἱός	hermes	Hermes	god	olympian	periphrasis	certain	
+4	101	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	102	Φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+4	102	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	111	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	115	Ἡφαίστοιο	Ἥφαιστος	hephaistos	Hephaistos	god	olympian	name	certain	βίη κλυτοῦ Ἡφαίστοιο = fire (metonymy)
+4	127	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	130	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	139	Ἀλφειὸν	Ἀλφειός	alpheios	Alpheios (river)	place	river	name	certain	
+4	141	Σελήνης	Σελήνη	selene	Selene (Moon)	god	titan	name	probable	"the fair light of the Moon": moonlight; editor capitalizes, goddess named at 4.99
+4	142	Κυλλήνης	Κυλλήνη	kyllene_mountain	Mount Kyllene	place	mountain	name	certain	
+4	145	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	145	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	150	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	155	ποικιλομῆτα	ποικιλομήτης	hermes	Hermes	god	olympian	epithet	uncertain	vocative epithet ("you wily one", Maia to Hermes); descriptive address rather than a name
+4	155	νυκτὸς	νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"at this hour of night": time, not the goddess
+4	158	Λητοίδου	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	printed without diaeresis here (cf. Λητοΐδης 4.253)
+4	162	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	173	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	176	Λητοῦς ἐρικυδέος υἱός	υἱός	apollon	Apollo	god	olympian	periphrasis	certain	
+4	176	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+4	178	Πυθῶνα	Πυθώ	pytho	Pytho (Delphi)	place	sanctuary	name	certain	
+4	183	υἱός αἰγιόχοιο Διὸς	υἱός	hermes	Hermes	god	olympian	periphrasis	certain	
+4	183	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	183	Μαῖα	Μαῖα	maia	Maia	nymph	pleiad	name	certain	
+4	184	Ἠὼς	Ἠώς	eos	Eos (Dawn)	god	titan	name	certain	Ἠὼς ἠριγένεια rising from Ocean: the goddess
+4	185	Ὠκεανοῖο	Ὠκεανός	okeanos	Okeanos (Ocean stream)	place	river	name	certain	Ocean stream from which Dawn rises; also the Titan
+4	185	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	186	Ὀγχηστόνδʼ	Ὀγχηστός	onchestos	Onchestos	place	city	name	certain	with grove (ἄλσος) of Poseidon
+4	187	Γαιηόχου	γαιήοχος	poseidon	Poseidon	god	olympian	epithet	certain	"Earth-holder" standing alone for Poseidon
+4	187	γέροντα	γέρων	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters
+4	189	Λητοῦς ἐρικυδέος υἱός	υἱός	apollon	Apollo	god	olympian	periphrasis	certain	
+4	189	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+4	190	Ὀγχηστοῖο	Ὀγχηστός	onchestos	Onchestos	place	city	name	certain	
+4	190	γέρον βατοδρόπε	γέρων	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters; "bramble-picker of Onchestos"
+4	191	Πιερίης	Πιερία	pieria	Pieria	place	region	name	certain	
+4	197	ἠελίοιο	ἥλιος	helios	Helios (the Sun)	god	titan	personification	uncertain	"as the sun was setting": time of day
+4	199	γεραιὲ παλαιγενές	γεραιός	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters
+4	201	γέρων	γέρων	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters
+4	206	ἠέλιον	ἥλιος	helios	Helios (the Sun)	god	titan	personification	uncertain	"till sunset": time of day
+4	212	γέρων	γέρων	geron_onchestos	the old man of Onchestos (Battos in later tradition)	mortal	farmer	periphrasis	uncertain	unnamed old man at Onchestos (later named Battos); not a name, recorded in case the graph keeps unnamed characters
+4	214	Διὸς παῖδα Κρονίωνος	παῖς	hermes	Hermes	god	olympian	periphrasis	certain	
+4	214	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	214	Κρονίωνος	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	215	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	215	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	216	Πύλον	Πύλος	pylos	Pylos	place	city	name	probable	sandy Pylos by the Alpheios (Triphylian/Elean?), where Hermes drove the cattle; which Pylos is disputed
+4	218	Ἑκηβόλος	ἑκηβόλος	apollon	Apollo	god	olympian	epithet	certain	
+4	224	Κενταύρου	Κένταυρος	kentauroi	the Centaurs	group	creatures	name	certain	generic "a shaggy-necked Centaur": any of the race
+4	227	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	227	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	228	Κυλλήνης	Κυλλήνη	kyllene_mountain	Mount Kyllene	place	mountain	name	certain	
+4	229	νύμφη	νύμφη	maia	Maia	nymph	pleiad	periphrasis	uncertain	νύμφη alone standing for Maia; common noun used as reference, reviewer decides whether it is a mention (νύμφη ἀμβροσίη, 4.229-230)
+4	230	Διὸς παῖδα Κρονίωνος	παῖς	hermes	Hermes	god	olympian	periphrasis	certain	
+4	230	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	230	Κρονίωνος	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	234	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	235	Διὸς καὶ Μαιάδος υἱὸς	υἱός	hermes	Hermes	god	olympian	periphrasis	certain	
+4	235	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	235	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	236	Ἀπόλλωνα	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	239	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	239	Ἑκάεργον	ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	241	ὕπνον	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	"calling on sweet sleep" (Hermes feigning): sleep as a state
+4	243	Διὸς καὶ Λητοῦς υἱὸς	υἱός	apollon	Apollo	god	olympian	periphrasis	certain	
+4	243	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	243	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+4	244	νύμφην οὐρείην	νύμφη	maia	Maia	nymph	pleiad	periphrasis	uncertain	νύμφη alone standing for Maia; common noun used as reference, reviewer decides whether it is a mention
+4	250	νύμφης	νύμφη	maia	Maia	nymph	pleiad	periphrasis	uncertain	νύμφη alone standing for Maia; common noun used as reference, reviewer decides whether it is a mention
+4	253	Λητοΐδης	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	
+4	253	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	256	Τάρταρον	Τάρταρος	tartaros	Tartaros	place	underworld	name	certain	
+4	258	γαίῃ	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	"under the earth": the ground/underworld, not the goddess
+4	260	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	261	Λητοΐδη	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	
+4	267	ὕπνος	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	"sleep is my care": sleep as a state
+4	273	χθών	χθών	gaia	Gaia (Earth)	god	primordial	personification	uncertain	"rough is the ground beneath": the ground, not the goddess
+4	281	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	289	ὕπνον	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	"sleep your last sleep": sleep (death), not the god
+4	290	μελαίνης νυκτὸς ἑταῖρε	ἑταῖρος	hermes	Hermes	god	olympian	periphrasis	uncertain	vocative "comrade of black night" (Apollo to Hermes); descriptive address, recorded as possible periphrasis
+4	290	νυκτὸς	νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"comrade of black night": night as the thief's time; faintly personified

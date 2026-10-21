@@ -1,0 +1,167 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+3	179	Λυκίην	Λυκία	lykia	Lycia	place	region	name	certain	
+3	179	Μῃονίην	Μῃονία	maionia	Maeonia (Lydia)	place	region	name	certain	
+3	180	Μίλητον	Μίλητος	miletos	Miletus	place	city	name	certain	
+3	181	Δήλοιο	Δῆλος	delos	Delos	place	island	name	certain	
+3	182	Λητοῦς	Λητώ	leto	Leto	god	goddess	name	certain	
+3	182	Λητοῦς ἐρικυδέος υἱὸς	Λητοῦς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	
+3	183	Πυθὼ	Πυθώ	pytho	Pytho (Delphi)	place	sanctuary	name	certain	
+3	186	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympus	place	mountain	name	certain	
+3	187	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	189	Μοῦσαι	Μοῦσα	mousai	the Muses	group	muses	name	certain	
+3	193	θανάτοιο	θάνατος	thanatos	Thanatos (Death)	god	personification	personification	uncertain	θανάτοιό τʼ ἄκος: death as the human lot, not the god
+3	193	γήραος	γῆρας	geras	Geras (Old Age)	god	personification	personification	uncertain	γήραος ἄλκαρ: old age as condition, not the god
+3	194	Χάριτες	Χάρις	charites	the Charites (Graces)	group	charites	name	certain	
+3	194	Ὧραι	Ὥρα	horai	the Horai (Seasons)	group	horai	name	certain	
+3	195	Ἁρμονίη	Ἁρμονία	harmonia	Harmonia	god	goddess	name	certain	
+3	195	Ἥβη	Ἥβη	hebe	Hebe	god	goddess	name	certain	
+3	195	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	Διὸς θυγάτηρ in apposition to Ἀφροδίτη
+3	195	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+3	199	Ἄρτεμις	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+3	199	Ἀπόλλωνι	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	200	Ἄρης	Ἄρης	ares	Ares	god	olympian	name	certain	
+3	200	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+3	201	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	201	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	205	Λητώ	Λητώ	leto	Leto	god	goddess	name	certain	
+3	205	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	209	Ἀζαντίδα κούρην	Ἀζαντίς	koronis	Koronis	mortal	heroine	patronymic	probable	"the Azantid maiden" (descendant of Azan, Arcadian); usually taken as Koronis, wooed with/against Ischys; unnamed in the text
+3	209	Ἀζαντίδα	Ἀζάν	azan	Azan (Arcadian eponym)	mortal	eponym	adjective	uncertain	eponymous ancestor implied by the patronymic adjective only; not a character here
+3	210	Ἴσχυʼ	Ἴσχυς	ischys	Ischys	mortal		name	certain	
+3	210	Ἐλατιονίδῃ	Ἐλατιονίδης	ischys	Ischys (son of Elatos)	mortal		patronymic	certain	son of Elatos; Elatos himself not named
+3	211	Φόρβαντι	Φόρβας	phorbas	Phorbas	mortal		name	certain	rival or companion in Apollo's wooing; obscure myth
+3	211	Τριοπέῳ	Τριόπεος	phorbas	Phorbas (son of Triopas)	mortal		patronymic	probable	Τριοπέῳ γένος "Triopeian by race" qualifies Phorbas; implies Triopas (cf. Τρίοπος 213)
+3	211	Ἐρευθεῖ	Ἐρευθεύς	ereutheus	Ereutheus	mortal		name	probable	obscure rival; identity unknown
+3	212	Λευκίππῳ	Λεύκιππος	leukippos	Leukippos	mortal		name	certain	
+3	212	Λευκίπποιο	Λεύκιππος	leukippos	Leukippos	mortal		name	certain	
+3	212	Λευκίπποιο δάμαρτι	δάμαρ	leukippos_wife	wife of Leukippos (unnamed)	mortal		periphrasis	uncertain	unnamed wife of Leukippos; passage obscure and possibly corrupt (2009 graph had a node Leukippe)
+3	213	Τρίοπός	Τρίοψ	triopas	Triopas (Triops)	mortal		name	probable	gen. of Τρίοψ = Triopas, father of Phorbas (211); "he did not fall short of Triops"
+3	215	γαῖαν	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	κατὰ γαῖαν "over the earth": plainly the land
+3	215	ἑκατηβόλʼ	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	ἑκατηβόλος beside the name; recorded as a cult epithet used as a name (cf. Ἑκάεργος, Ἑκάτος)
+3	215	Ἄπολλον	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	216	Πιερίην	Πιερία	pieria	Pieria	place	region	name	certain	
+3	216	Οὐλύμποιο	Ὄλυμπος	olympos	Mount Olympus	place	mountain	name	certain	
+3	217	Λέκτον	Λέκτον	lekton	Lekton	place		name	probable	sandy Lekton on a route from Pieria to Thessaly; the Troad promontory does not fit, text may be corrupt; identification uncertain
+3	217	Ἐνιῆνας	Ἐνιῆνες	ainianes	Ainianes (Enienes)	group	people	ethnic	certain	
+3	218	Περραιβούς	Περραιβοί	perrhaiboi	Perrhaiboi	group	people	ethnic	certain	
+3	218	Ἰαωλκὸν	Ἰωλκός	iolkos	Iolkos	place	city	name	certain	Homeric spelling Ἰαωλκός
+3	219	Κηναίου	Κήναιον	kenaion	Kenaion (NW promontory of Euboia)	place	promontory	name	certain	
+3	219	Εὐβοίης	Εὔβοια	euboia	Euboia	place	island	name	certain	
+3	220	Ληλάντῳ πεδίῳ	Λήλαντον	lelanton	Lelantine Plain	place	plain	name	certain	
+3	222	Εὔριπον	Εὔριπος	euripos	Euripos	place	strait	name	certain	
+3	222	ἑκατηβόλʼ	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	ἑκατηβόλος beside the name; recorded as a cult epithet used as a name (cf. Ἑκάεργος, Ἑκάτος)
+3	222	Ἄπολλον	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	223	ὄρος ζάθεον, χλωρόν	ὄρος	messapion	Mount Messapion (?)	place	mountain	periphrasis	uncertain	unnamed "holy green mountain" beyond the Euripos; commonly identified as Messapion
+3	224	Μυκαλησσὸν	Μυκαλησσός	mykalessos	Mykalessos	place	city	name	certain	
+3	224	Τευμησσὸν	Τευμησσός	teumessos	Teumessos	place	city	name	certain	
+3	225	Θήβης	Θήβη	thebai	Thebes (Boeotia)	place	city	name	certain	singular Θήβη for Θῆβαι; the city site, not the nymph
+3	226	Θήβῃ	Θήβη	thebai	Thebes (Boeotia)	place	city	name	certain	singular Θήβη for Θῆβαι; the city site, not the nymph
+3	228	Θήβης	Θήβη	thebai	Thebes (Boeotia)	place	city	name	certain	singular Θήβη for Θῆβαι; the city site, not the nymph
+3	229	ἑκατηβόλʼ	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	ἑκατηβόλος beside the name; recorded as a cult epithet used as a name (cf. Ἑκάεργος, Ἑκάτος)
+3	229	Ἄπολλον	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	230	Ὀγχηστὸν	Ὀγχηστός	onchestos	Onchestos	place	sanctuary	name	certain	town with sacred grove of Poseidon
+3	230	Ποσιδήιον	Ποσιδήιος	poseidon	Poseidon	god	olympian	adjective	certain	Ποσιδήιον ἄλσος, the grove of Poseidon at Onchestos
+3	237	ἄνακτι	ἄναξ	poseidon	Poseidon	god	olympian	epithet	uncertain	"they pray to the lord" = Poseidon of Onchestos, unnamed except via Ποσιδήιον 230; generic title
+3	238	μοῖρα	μοῖρα	moira	Moira (Fate)	god	personification	personification	uncertain	δίφρον θεοῦ μοῖρα φυλάσσει: the god's "portion" (the chariot is the god's due), hardly the goddess
+3	239	ἑκατηβόλʼ	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	ἑκατηβόλος beside the name; recorded as a cult epithet used as a name (cf. Ἑκάεργος, Ἑκάτος)
+3	239	Ἄπολλον	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	240	Κηφισσὸν	Κηφισός	kephisos	Kephisos (river)	place	river	name	certain	spelled Κηφισσός here
+3	241	Λιλαίηθεν	Λίλαια	lilaia	Lilaia	place	city	name	certain	"from Lilaia", source of the Kephisos
+3	242	Ἑκάεργε	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+3	242	Ὠκαλέην	Ὠκαλέη	okalea	Okalea	place	city	name	certain	
+3	243	Ἁλίαρτον	Ἁλίαρτος	haliartos	Haliartos	place	city	name	certain	
+3	244	Τελφούσης	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	ἐπὶ Τελφούσης: the spring as place; same being who speaks below
+3	247	Τελφοῦσʼ	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	
+3	250	Πελοπόννησον	Πελοπόννησος	peloponnesos	Peloponnese	place	region	name	certain	
+3	251	Εὐρώπην	Εὐρώπη	europe_mainland	Europe (mainland Greece)	place	region	name	certain	the mainland as opposed to the Peloponnese and islands; not the heroine
+3	254	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	254	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	256	Τελφοῦσα	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	
+3	257	φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	vocative, printed lowercase
+3	257	ἑκάεργε	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	vocative, printed lowercase
+3	269	Κρίσῃ	Κρῖσα	krisa	Krisa	place	city	name	certain	
+3	269	Παρνησοῖο	Παρνασός	parnassos	Mount Parnassos	place	mountain	name	certain	Epic Παρνησός
+3	272	Ἰηπαιήονι	Ἰηπαιήων	apollon	Apollo	god	olympian	epithet	certain	cult title from the paean cry ἰὴ παιών
+3	275	Ἑκάτου	Ἑκάτος	apollon	Apollo	god	olympian	epithet	certain	
+3	276	Τελφούσῃ	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	
+3	276	Ἑκάτοιο	Ἑκάτος	apollon	Apollo	god	olympian	epithet	certain	
+3	277	ἑκατηβόλʼ	ἑκατηβόλος	apollon	Apollo	god	olympian	epithet	certain	ἑκατηβόλος beside the name; recorded as a cult epithet used as a name (cf. Ἑκάεργος, Ἑκάτος)
+3	277	Ἄπολλον	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	278	Φλεγύων	Φλεγύαι	phlegyai	Phlegyai	group	people	ethnic	certain	
+3	279	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	280	Κηφισίδος	Κηφισίς	kephisis	Lake Kephisis (Kopais)	place	lake	name	certain	
+3	282	Κρίσην	Κρῖσα	krisa	Krisa	place	city	name	certain	
+3	282	Παρνησὸν	Παρνασός	parnassos	Mount Parnassos	place	mountain	name	certain	
+3	283	Ζέφυρον	Ζέφυρος	zephyros	Zephyros (West Wind)	god	wind	personification	uncertain	πρὸς Ζέφυρον τετραμμένον "facing west": a compass direction, not the god
+3	285	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	285	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	290	Πελοπόννησον	Πελοπόννησος	peloponnesos	Peloponnese	place	region	name	certain	
+3	291	Εὐρώπην	Εὐρώπη	europe_mainland	Europe (mainland Greece)	place	region	name	certain	repeat of 251
+3	294	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	294	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	296	Τροφώνιος	Τροφώνιος	trophonios	Trophonios	hero	oracular hero	name	certain	builder; later oracular hero at Lebadeia
+3	296	Ἀγαμήδης	Ἀγαμήδης	agamedes	Agamedes	mortal		name	certain	builder, brother of Trophonios
+3	297	Ἐργίνου	Ἐργῖνος	erginos	Erginos	mortal	king	name	certain	father of Trophonios and Agamedes (king of Orchomenos)
+3	300	κρήνη καλλίρροος	κρήνη	kastalia	Kastalia (?) (spring at Pytho)	place	spring	periphrasis	uncertain	unnamed fair-flowing spring at Pytho where the drakaina was killed; identified variously (Kastalia, Kassotis, Delphousa)
+3	300	δράκαιναν	δράκαινα	drakaina	the Pythian drakaina (she-dragon, later "Python")	creature	serpent	name	certain	common noun used as her only designation; the hymn never names her
+3	301	Διὸς υἱός	Διὸς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	with ἄναξ; Apollo not named in the sentence
+3	301	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	305	Ἥρης	Ἥρη	hera	Hera	god	olympian	name	certain	
+3	306	Τυφάονα	Τυφάων	typhaon	Typhaon (Typhon)	creature	monster	name	certain	
+3	307	Ἥρη	Ἥρη	hera	Hera	god	olympian	name	certain	
+3	307	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	308	Κρονίδης	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+3	308	Ἀθήνην	Ἀθήνη	athena	Athena	god	olympian	name	certain	
+3	309	Ἥρη	Ἥρη	hera	Hera	god	olympian	name	certain	
+3	312	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	314	Ἀθήνην	Ἀθήνη	athena	Athena	god	olympian	name	certain	
+3	317	Ἥφαιστος	Ἥφαιστος	hephaistos	Hephaistos	god	olympian	name	certain	
+3	317a	οὐρανῷ	οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	plainly heaven as place; and the whole line is a bracketed Allen–Sikes supplement filling a lacuna
+3	318	πόντῳ	πόντος	pontos	Pontos (Sea)	god	primordial	personification	uncertain	εὐρέι πόντῳ: plainly the sea
+3	319	Νηρῆος	Νηρεύς	nereus	Nereus	god	sea god	name	certain	
+3	319	Θέτις	Θέτις	thetis	Thetis	nymph	nereid	name	certain	
+3	320	ᾗσι κασιγνήτῃσι	κασιγνήτη	nereides	the Nereids	group	nereids	periphrasis	probable	"her sisters", i.e. Thetis' sisters the daughters of Nereus
+3	322	ποικιλομῆτα	ποικιλομήτης	zeus	Zeus	god	olympian	epithet	certain	Hera's vocative to Zeus, standing alone (elsewhere Odysseus/Hermes)
+3	323	Ἀθήνην	Ἀθήνη	athena	Athena	god	olympian	name	certain	
+3	325	οὐρανὸν	οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	οὐρανὸν εὐρὺν ἔχουσι: plainly the sky as the gods' home
+3	332	Ἥρη	Ἥρη	hera	Hera	god	olympian	name	certain	
+3	334	Γαῖα	Γαῖα	gaia	Gaia (Earth)	god	primordial	name	certain	invoked by Hera as a goddess
+3	334	Οὐρανὸς	Οὐρανός	ouranos	Ouranos (Sky)	god	primordial	name	certain	invoked by Hera as a god
+3	335	Τιτῆνές	Τιτάν	titanes	the Titans	group	titans	name	certain	
+3	336	Τάρταρον	Τάρταρος	tartaros	Tartaros	place	underworld	name	certain	place around which the Titans dwell
+3	338	Διός	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	339	Κρόνου	Κρόνος	kronos	Kronos	god	titan	name	certain	
+3	339	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	341	Γαῖα	Γαῖα	gaia	Gaia (Earth)	god	primordial	personification	probable	earth stirs in answer to Hera's prayer: the goddess responding, via the ground she struck
+3	344	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	348	Ἥρη	Ἥρη	hera	Hera	god	olympian	name	certain	
+3	350	ὧραι	ὥρα	horai	the Horai (Seasons)	group	horai	personification	uncertain	ἐπήλυθον ὧραι: the seasons of the year coming round
+3	352	Τυφάονα	Τυφάων	typhaon	Typhaon (Typhon)	creature	monster	name	certain	
+3	353	Ἥρη	Ἥρη	hera	Hera	god	olympian	name	certain	
+3	354	κακῷ	κακός	drakaina	the Pythian drakaina	creature	serpent	periphrasis	uncertain	κακῷ κακόν "evil to evil": substantive adjective for the drakaina
+3	354	κακόν	κακός	typhaon	Typhaon (Typhon)	creature	monster	periphrasis	uncertain	κακῷ κακόν: substantive adjective for Typhaon
+3	357	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	printed lowercase, beside the name
+3	357	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	362	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	362	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	365	γαίης	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	γαίης πολυφόρβου καρπόν: plainly the soil
+3	367	θάνατόν	θάνατος	thanatos	Thanatos (Death)	god	personification	personification	uncertain	θάνατον δυσηλεγέα: death as event, object of ἀρκέσει
+3	367	Τυφωεὺς	Τυφωεύς	typhaon	Typhoeus (Typhon)	creature	monster	name	probable	Τυφωεύς form; presumably the same monster as Typhaon 306/352 (cf. Hes. Th. 821), though traditions differ
+3	368	Χίμαιρα	Χίμαιρα	chimaira	Chimaira	creature	monster	name	certain	
+3	369	Γαῖα	Γαῖα	gaia	Gaia (Earth)	god	primordial	personification	probable	Γαῖα μέλαινα paired with Hyperion as agents of rotting: earth and goddess at once
+3	369	Ὑπερίων	Ὑπερίων	helios	Hyperion (Helios)	god	sun	epithet	probable	ἠλέκτωρ Ὑπερίων = the Sun (cf. Ἠελίοιο 371, 374), not the Titan father
+3	371	Ἠελίοιο	Ἥλιος	helios	Helios (Sun)	god	sun	personification	probable	ἱερὸν μένος Ἠελίοιο: the sun's heat rotting the carcass; printed capital
+3	372	Πυθὼ	Πυθώ	pytho	Pytho (Delphi)	place	sanctuary	name	certain	aetiology: named from πύθειν "rot"
+3	373	Πύθιον	Πύθιος	apollon	Apollo	god	olympian	epithet	certain	cult title from Pytho (372), with ἄνακτα 372
+3	374	πέλωρ	πέλωρ	drakaina	the Pythian drakaina	creature	serpent	periphrasis	certain	"the monster" as subject of πῦσε
+3	374	Ἠελίοιο	Ἥλιος	helios	Helios (Sun)	god	sun	personification	probable	μένος ὀξέος Ἠελίοιο: the sun's heat; printed capital
+3	375	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	375	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	376	κρήνη καλλίρροος	κρήνη	telphousa	Telphousa (spring and its nymph)	nymph	spring	periphrasis	probable	"the fair-flowing spring deceived him" = Telphousa
+3	377	Τελφούσῃ	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	
+3	379	Τελφοῦσʼ	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	
+3	382	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	printed lowercase, beside the name
+3	382	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	385	κρήνης καλλιρρόου	κρήνη	telphousa	Telphousa (spring and its nymph)	nymph	spring	periphrasis	probable	the spring by the altar = Telphousa
+3	386	Τελφουσίῳ	Τελφούσιος	apollon	Apollo	god	olympian	epithet	certain	cult title from Telphousa; with ἄνακτι 385
+3	387	Τελφούσης	Τελφοῦσα	telphousa	Telphousa (spring and its nymph)	nymph	spring	name	certain	

@@ -1,0 +1,98 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+2	1	Δήμητρʼ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	2	θύγατρα τανύσφυρον	θυγάτηρ τανύσφυρος	persephone	Persephone	god	chthonic	periphrasis	probable	Demeter's daughter (αὐτὴν ἠδὲ θύγατρα); first reference to Persephone, who is not named until 2.56; kinship noun or periphrasis?
+2	2	Ἀιδωνεὺς	Ἀϊδωνεύς	hades	Hades	god	chthonic	name	certain	
+2	3	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	4	Δήμητρος	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	5	Ὠκεανοῦ	Ὠκεανός	okeanos	Okeanos	god	titan	name	certain	
+2	5	κούρῃσι Ὠκεανοῦ βαθυκόλποις	κούρη Ὠκεανοῦ	okeanides	the Oceanids (daughters of Okeanos)	nymph	oceanid	periphrasis	certain	Persephone's playmates; several are named in the catalogue at 2.418–424
+2	8	καλυκώπιδι κούρῃ	καλυκῶπις κούρη	persephone	Persephone	god	chthonic	periphrasis	probable	'the flower-faced girl'; κούρη may echo Persephone's cult title Kore
+2	9	Γαῖα	Γαῖα	gaia	Gaia (Earth)	god	primordial	name	certain	makes the narcissus grow at Zeus' will: the goddess
+2	9	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	9	Πολυδέκτῃ	Πολυδέκτης	hades	Hades	god	chthonic	epithet	certain	'Receiver of Many', title of Hades
+2	13	οὐρανὸς	Οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	'all wide heaven above laughed': poetic animation of the sky, probably not the god
+2	14	γαῖά	Γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	'the whole earth laughed' with sky and sea: poetic animation, probably the thing
+2	17	Νύσιον	Νύσιος	nysa	Nysa (the Nysian plain)	place	region	adjective	certain	Νύσιον πεδίον, the plain where Persephone is seized; location disputed and perhaps not the Nysa of Hymn 1
+2	17	Πολυδέγμων	Πολυδέγμων	hades	Hades	god	chthonic	epithet	certain	'Host of Many', title of Hades
+2	18	Κρόνου	Κρόνος	kronos	Kronos	god	titan	name	certain	
+2	18	Κρόνου πολυώνυμος υἱός	Κρόνου πολυώνυμος υἱός	hades	Hades	god	chthonic	periphrasis	certain	
+2	21	Κρονίδην	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+2	24	Περσαίου θυγάτηρ	Περσαίου θυγάτηρ	hekate	Hekate	god	titan	periphrasis	certain	subject of the clause; Ἑκάτη follows in apposition on 2.25
+2	24	Περσαίου	Περσαῖος	perses	Perses (Persaios), Titan, father of Hekate	god	titan	name	certain	Hesiod's Πέρσης (Th. 409)
+2	25	Ἑκάτη	Ἑκάτη	hekate	Hekate	god	titan	name	certain	
+2	26	Ἠέλιός	Ἥλιος	helios	Helios	god	titan	name	certain	
+2	26	Ὑπερίονος	Ὑπερίων	hyperion_titan	Hyperion, Titan, father of Helios	god	titan	name	certain	the Titan, father of Helios (not Helios himself called Hyperion)
+2	27	κούρης	κούρη	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare κούρη 'the girl' for Persephone; common noun, or her title Kore?
+2	27	Κρονίδην	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+2	30	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	31	Πολυσημάντωρ	Πολυσημάντωρ	hades	Hades	god	chthonic	epithet	certain	'Ruler of Many', title of Hades
+2	31	Πολυδέγμων	Πολυδέγμων	hades	Hades	god	chthonic	epithet	certain	'Host of Many', title of Hades
+2	32	Κρόνου	Κρόνος	kronos	Kronos	god	titan	name	certain	
+2	32	Κρόνου πολυώνυμος υἱός	Κρόνου πολυώνυμος υἱός	hades	Hades	god	chthonic	periphrasis	certain	
+2	33	γαῖάν	Γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	earth beside starry sky and sea, as what Persephone can see: plainly the thing
+2	33	οὐρανὸν	Οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	'starry heaven' as what Persephone can see: plainly the thing
+2	35	ἠελίου	ἥλιος	helios	Helios	god	titan	personification	uncertain	αὐγάς ἠελίου 'the rays of the sun': plainly the sun as light
+2	47	Δηὼ	Δηώ	demeter	Demeter	god	olympian	name	certain	Deo, by-name of Demeter
+2	51	ἠώς	Ἠώς	eos	Eos (Dawn)	god	personification	personification	uncertain	'the tenth dawn': dawn as a time of day
+2	52	Ἑκάτη	Ἑκάτη	hekate	Hekate	god	titan	name	certain	
+2	54	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	55	οὐρανίων	οὐράνιος	ouranos	Ouranos (Sky)	god	primordial	adjective	uncertain	θεῶν οὐρανίων 'gods of heaven': ordinary adjective of the sky, not the god
+2	56	Περσεφόνην	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	59	Ἑκάτη	Ἑκάτη	hekate	Hekate	god	titan	name	certain	
+2	60	Ῥείης	Ῥέα	rhea	Rhea	god	titan	name	certain	
+2	60	Ῥείης ἠυκόμου θυγάτηρ	Ῥείης ἠΰκομος θυγάτηρ	demeter	Demeter	god	olympian	periphrasis	certain	subject of the clause, Demeter not named
+2	62	Ἠέλιον	Ἥλιος	helios	Helios	god	titan	name	certain	
+2	63	δῖα θεάων	δῖα θεάων	demeter	Demeter	god	olympian	periphrasis	probable	stock formula 'bright among goddesses', here the unnamed subject = Demeter
+2	64	ἠέλιʼ	Ἥλιος	helios	Helios	god	titan	name	certain	vocative, printed lowercase: Demeter addresses the god
+2	74	Ὑπεριονίδης	Ὑπεριονίδης	helios	Helios	god	titan	patronymic	certain	
+2	75	Ῥείης	Ῥέα	rhea	Rhea	god	titan	name	certain	
+2	75	Δήμητερ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	78	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	79	Ἀίδῃ	ᾍδης	hades	Hades	god	chthonic	name	certain	
+2	84	Πολυσημάντωρ	Πολυσημάντωρ	hades	Hades	god	chthonic	epithet	certain	'Ruler of Many', title of Hades
+2	84	Ἀιδωνεύς	Ἀϊδωνεύς	hades	Hades	god	chthonic	name	certain	
+2	91	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+2	92	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+2	96	Κελεοῖο	Κελεός	keleos	Keleos	mortal	king	name	certain	
+2	97	Ἐλευσῖνος	Ἐλευσίς	eleusis	Eleusis	place	city	name	certain	
+2	99	Παρθενίῳ φρέατι	Παρθένιον φρέαρ	parthenion_phrear	the Maiden Well (Parthenion) at Eleusis	place	spring	name	certain	proper name of the well; Παρθένιος here from παρθένος, not from a place
+2	102	Ἀφροδίτης	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	δῶρα Ἀφροδίτης = love and childbearing, but the goddess is named
+2	105	Κελεοῖο	Κελεός	keleos	Keleos	mortal	king	name	certain	
+2	105	Ἐλευσινίδαο	Ἐλευσινίδης	keleos	Keleos	mortal	king	patronymic	certain	Keleos as 'son of Eleusis/Eleusinos', the eponymous hero, who is not otherwise in the hymn; could also be taken as 'the Eleusinian'
+2	105	Κελεοῖο Ἐλευσινίδαο θύγατρες	Κελεοῦ Ἐλευσινίδου θυγατέρες	keleos_daughters	the daughters of Keleos	group	family	periphrasis	probable	collective subject; the four are named in apposition at 2.109–110
+2	109	Καλλιδίκη	Καλλιδίκη	kallidike	Kallidike, daughter of Keleos	mortal	princess	name	certain	
+2	109	Κλεισιδίκη	Κλεισιδίκη	kleisidike	Kleisidike, daughter of Keleos	mortal	princess	name	certain	
+2	109	Δημώ	Δημώ	demo	Demo, daughter of Keleos	mortal	princess	name	certain	
+2	110	Καλλιθόη	Καλλιθόη	kallithoe	Kallithoe, eldest daughter of Keleos	mortal	princess	name	certain	
+2	118	πότνα θεάων	πότνα θεάων	demeter	Demeter	god	olympian	periphrasis	probable	stock formula 'queen among goddesses', here the unnamed subject = Demeter
+2	122	Δωσὼ	Δωσώ	demeter	Demeter	god	olympian	name	certain	Doso, the false name Demeter gives herself; Hermann's emendation (M has Δώς; some edd. Δηώ)
+2	123	Κρήτηθεν	Κρήτη	krete	Crete	place	island	name	certain	in Demeter's fictitious tale ('from Crete')
+2	126	Θόρικόνδε	Θορικός	thorikos	Thorikos (in Attica)	place	city	name	certain	in Demeter's fictitious tale ('to Thorikos')
+2	135	Ὀλύμπια	Ὀλύμπιος	olympos	Mount Olympos	place	mountain	adjective	certain	Ὀλύμπια δώματʼ ἔχοντες 'those who hold the Olympian halls' = the gods collectively
+2	146	Καλλιδίκη	Καλλιδίκη	kallidike	Kallidike, daughter of Keleos	mortal	princess	name	certain	
+2	146	Κελεοῖο	Κελεός	keleos	Keleos	mortal	king	name	certain	
+2	153	Τριπτολέμου	Τριπτόλεμος	triptolemos	Triptolemos	mortal	eleusinian lord	name	certain	one of the Eleusinian lords; later a cult hero
+2	153	Διόκλου	Διοκλῆς	diokles	Diokles	mortal	eleusinian lord	name	certain	form Διόκλου here, Διοκλέα at 2.474
+2	154	Πολυξείνου	Πολύξεινος	polyxeinos	Polyxeinos	mortal	eleusinian lord	name	certain	
+2	154	Εὐμόλποιο	Εὔμολπος	eumolpos	Eumolpos	mortal	eleusinian lord	name	certain	ancestor of the Eumolpidai
+2	155	Δολίχου	Δόλιχος	dolichos	Dolichos	mortal	eleusinian lord	name	certain	
+2	155	πατρὸς ἀγήνορος ἡμετέροιο	πατὴρ ἀγήνωρ ἡμέτερος	keleos	Keleos	mortal	king	periphrasis	certain	'our noble father' stands for Keleos in a list of named lords
+2	161	Μετανείρῃ	Μετάνειρα	metaneira	Metaneira	mortal	queen	name	certain	
+2	184	Κελεοῖο	Κελεός	keleos	Keleos	mortal	king	name	certain	
+2	192	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	195	Ἰάμβη	Ἰάμβη	iambe	Iambe	mortal	servant	name	certain	
+2	202	Ἰάμβη	Ἰάμβη	iambe	Iambe	mortal	servant	name	certain	
+2	203	πότνιαν ἁγνήν	πότνια ἁγνή	demeter	Demeter	god	olympian	periphrasis	uncertain	'the holy lady' = Demeter, unnamed; πότνια as a title, or ordinary noun + adjective?
+2	206	Μετάνειρα	Μετάνειρα	metaneira	Metaneira	mortal	queen	name	certain	
+2	211	Δηώ	Δηώ	demeter	Demeter	god	olympian	name	certain	Deo, by-name of Demeter; sentence has no main verb (lacuna after 2.211 in most edd.)
+2	212	Μετάνειρα	Μετάνειρα	metaneira	Metaneira	mortal	queen	name	certain	
+2	224	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	233	Κελεοῖο	Κελεός	keleos	Keleos	mortal	king	name	certain	
+2	234	Δημοφόωνθʼ	Δημοφῶν	demophon	Demophon, son of Keleos	mortal	prince	name	certain	
+2	234	Μετάνειρα	Μετάνειρα	metaneira	Metaneira	mortal	queen	name	certain	
+2	236a	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	line 236a is an editorial supplement for a lacuna after 2.236
+2	239	νύκτας	Νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	'by night': night as a time, plainly not the goddess
+2	243	Μετάνειρα	Μετάνειρα	metaneira	Metaneira	mortal	queen	name	certain	
+2	244	νύκτʼ	Νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	'at night': night as a time, plainly not the goddess
+2	248	Δημοφόων	Δημοφῶν	demophon	Demophon, son of Keleos	mortal	prince	name	certain	vocative
+2	250	δῖα θεάων	δῖα θεάων	demeter	Demeter	god	olympian	periphrasis	probable	stock formula 'bright among goddesses', here = Demeter

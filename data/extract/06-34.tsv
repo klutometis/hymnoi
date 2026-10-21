@@ -1,0 +1,268 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+6	1	Ἀφροδίτην	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+6	2	Κύπρου	Κύπρος	kypros	Cyprus	place	island	name	certain	
+6	3	Ζεφύρου	Ζέφυρος	zephyros	Zephyros (West Wind)	god	wind	name	probable	Ζεφύρου μένος ὑγρὸν ἀέντος: the west wind as force; god or wind
+6	5	Ὧραι	Ὥρα	horai	the Horai (Seasons)	group	horai	name	certain	
+6	12	Ὧραι	Ὥρα	horai	the Horai (Seasons)	group	horai	name	certain	
+6	13	πατρός	πατήρ	zeus	Zeus	god	olympian	periphrasis	probable	δώματα πατρός: bare kinship term, the Horai's father Zeus
+6	18	Κυθερείης	Κυθέρεια	aphrodite	Aphrodite	god	olympian	epithet	certain	Kythereia, from Kythera
+6	20	νίκην	νίκη	nike	Nike	god	personification	personification	uncertain	δὸς νίκην "grant victory" in the contest: plainly the thing
+7	1	Διώνυσον	Διόνυσος	dionysos	Dionysos	god	olympian	name	certain	
+7	1	Σεμέλης	Σεμέλη	semele	Semele (Thyone)	hero	deified mortal	name	certain	
+7	7	πόντον	πόντος	pontos	Pontos	god	primordial	personification	uncertain	οἴνοπα πόντον: plainly the sea
+7	8	Τυρσηνοί	Τυρσηνός	tyrsenoi	Tyrsenians (pirates)	group	people	ethnic	certain	
+7	19	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+7	19	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+7	20	Ποσειδάων	Ποσειδῶν	poseidon	Poseidon	god	olympian	name	certain	
+7	21	Ὀλύμπια	Ὀλύμπιος	olympos	Mount Olympos	place	mountain	adjective	certain	Ὀλύμπια δώματα
+7	28	Αἴγυπτον	Αἴγυπτος	aigyptos	Egypt	place	region	name	certain	
+7	28	Κύπρον	Κύπρος	kypros	Cyprus	place	island	name	certain	
+7	29	Ὑπερβορέους	Ὑπερβόρεοι	hyperboreoi	Hyperboreans	group	people	ethnic	certain	
+7	44	γῇ	γῆ	gaia	Gaia	god	primordial	personification	uncertain	γῇ πελάαν "bring to land": plainly the thing
+7	56	Διόνυσος	Διόνυσος	dionysos	Dionysos	god	olympian	name	certain	
+7	57	Καδμηὶς	Καδμηΐς	semele	Semele (Thyone)	hero	deified mortal	patronymic	certain	"daughter of Kadmos" (Kadmos himself not named)
+7	57	Σεμέλη	Σεμέλη	semele	Semele (Thyone)	hero	deified mortal	name	certain	
+7	57	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+7	58	τέκος Σεμέλης	τέκος	dionysos	Dionysos	god	olympian	periphrasis	certain	vocative address, no name on the line
+7	58	Σεμέλης	Σεμέλη	semele	Semele (Thyone)	hero	deified mortal	name	certain	
+8	1	Ἆρες	Ἄρης	ares	Ares	god	olympian	name	certain	
+8	3	Ὀλύμπου	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	ἕρκος Ὀλύμπου
+8	4	Νίκης	Νίκη	nike	Nike	god	personification	name	certain	Nike as daughter of Ares (unusual genealogy)
+8	4	Θέμιστος	Θέμις	themis	Themis	god	titan	name	certain	
+8	7	αἰθέρος	αἰθήρ	aither	Aither	god	primordial	personification	uncertain	κύκλον αἰθέρος (planetary orbit): plainly the upper air
+8	9	ἥβης	ἥβη	hebe	Hebe	god	olympian	personification	uncertain	δοτὴρ εὐθαρσέος ἥβης "giver of youthful courage": plainly the thing
+8	11	ἀρήιον	ἀρήιος	ares	Ares	god	olympian	adjective	uncertain	κάρτος ἀρήιον "martial strength", adjective from Ares' name; probably just common "warlike"
+8	16	εἰρήνης	εἰρήνη	eirene	Eirene (Peace)	god	personification	personification	uncertain	εἰρήνης θεσμοῖς "laws of peace": abstract, though this hymn personifies Nike, Themis, Keres
+8	17	Κῆράς	Κήρ	keres	the Keres (death-spirits)	group	personification	name	probable	Κῆράς τε βιαίους: printed capitalized; death-spirits or simply "violent deaths"
+9	1	Ἄρτεμιν	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+9	1	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	singular, unnamed Muse
+9	1	Ἑκάτοιο	Ἕκατος	apollon	Apollo	god	olympian	epithet	certain	Hekatos "far-shooter"
+9	2	ἰοχέαιραν	ἰοχέαιρα	artemis	Artemis	god	olympian	epithet	certain	title-like epithet beside the name (9.1)
+9	2	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+9	3	Μέλητος	Μέλης	meles	Meles (river at Smyrna)	place	river	name	certain	
+9	4	Σμύρνης	Σμύρνα	smyrna	Smyrna	place	city	name	certain	
+9	5	Κλάρον	Κλάρος	klaros	Klaros	place	sanctuary	name	certain	Apollo's oracle at Klaros
+9	5	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+9	6	ἰοχέαιραν	ἰοχέαιρα	artemis	Artemis	god	olympian	epithet	certain	stands alone for Artemis
+10	1	κυπρογενῆ	Κυπρογενής	aphrodite	Aphrodite	god	olympian	epithet	certain	Kyprogenes, from Kypros
+10	1	Κυθέρειαν	Κυθέρεια	aphrodite	Aphrodite	god	olympian	epithet	certain	Kythereia, from Kythera
+10	4	Σαλαμῖνος	Σαλαμίς	salamis_kypros	Salamis (Cyprus)	place	city	name	probable	paired with Κύπρου (10.5), so the Cypriot Salamis, not the Saronic island
+10	5	Κύπρου	Κύπρος	kypros	Cyprus	place	island	name	certain	
+11	1	Παλλάδʼ	Παλλάς	athena	Athena	god	olympian	epithet	certain	Pallas
+11	1	Ἀθηναίην	Ἀθηναίη	athena	Athena	god	olympian	name	certain	
+11	2	Ἄρηι	Ἄρης	ares	Ares	god	olympian	name	certain	
+11	5	τύχην	τύχη	tyche	Tyche (Fortune)	god	personification	personification	uncertain	δὸς τύχην "grant fortune": plainly the thing
+12	1	Ἥρην	Ἥρα	hera	Hera	god	olympian	name	certain	
+12	1	Ῥείη	Ῥείη	rhea	Rhea	god	titan	name	certain	
+12	3	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+12	4	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+12	5	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+13	1	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	text note: Perseus doubled reading Δημήτηρ’ Δημήτρ’
+13	2	Περσεφόνειαν	Περσεφόνεια	persephone	Persephone	god	chthonian	name	certain	
+14	1	μητέρα μοι πάντων τε θεῶν πάντων τʼ ἀνθρώπων	μήτηρ	meter_theon	Mother of the Gods (Kybele/Rhea)	god	mother of the gods	periphrasis	certain	dedicatee; the Mother of the Gods (Kybele/Rhea), never named
+14	2	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	singular, unnamed Muse
+14	2	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+15	1	Ἡρακλέα	Ἡρακλῆς	herakles	Herakles	hero	deified hero	name	certain	
+15	1	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+15	2	Θήβῃς	Θῆβαι	thebai	Thebes (Boeotia)	place	city	name	certain	
+15	3	Ἀλκμήνη	Ἀλκμήνη	alkmene	Alkmene	mortal	queen	name	certain	
+15	3	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+15	4	γαῖαν	γαῖα	gaia	Gaia	god	primordial	personification	uncertain	κατὰ γαῖαν ἀθέσφατον: plainly the earth (land and sea)
+15	5	Εὐρυσθῆος	Εὐρυσθεύς	eurystheus	Eurystheus	mortal	king	name	certain	
+15	7	Ὀλύμπου	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+15	8	Ἥβην	Ἥβη	hebe	Hebe	god	olympian	name	certain	
+15	9	Διὸς υἱέ	υἱός	herakles	Herakles	hero	deified hero	periphrasis	certain	vocative address
+15	9	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+16	1	Ἀσκληπιὸν	Ἀσκληπιός	asklepios	Asklepios	hero	deified hero	name	certain	
+16	2	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+16	2	Κορωνὶς	Κορωνίς	koronis	Koronis	mortal	princess	name	certain	
+16	3	Δωτίῳ	Δώτιον	dotion	Dotian plain (Thessaly)	place	plain	name	certain	Δωτίῳ ἐν πεδίῳ
+16	3	Φλεγύου	Φλεγύας	phlegyas	Phlegyas	mortal	king	name	certain	
+17	1	Κάστορα	Κάστωρ	kastor	Kastor	hero	dioskouroi	name	certain	
+17	1	Πολυδεύκε	Πολυδεύκης	polydeukes	Polydeukes (Pollux)	hero	dioskouroi	name	certain	
+17	1	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	singular, unnamed Muse
+17	2	Τυνδαρίδας	Τυνδαρίδης	dioskouroi	the Dioskouroi (Kastor and Polydeukes)	hero	dioskouroi	patronymic	certain	"sons of Tyndareos" (Tyndareos not named; here sons of Zeus)
+17	2	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+17	2	Ὀλυμπίου	Ὀλύμπιος	zeus	Zeus	god	olympian	epithet	certain	cult title from Olympos
+17	3	Τηϋγέτου	Ταΰγετος	taygetos	Mount Taygetos	place	mountain	name	certain	
+17	3	Λήδη	Λήδη	leda	Leda	mortal	queen	name	certain	
+17	4	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+17	5	Τυνδαρίδαι	Τυνδαρίδης	dioskouroi	the Dioskouroi (Kastor and Polydeukes)	hero	dioskouroi	patronymic	certain	
+18	1	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+18	1	Κυλλήνιον	Κυλλήνιος	hermes	Hermes	god	olympian	epithet	certain	from Mount Kyllene
+18	1	Ἀργειφόντην	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+18	2	Κυλλήνης	Κυλλήνη	kyllene_mountain	Mount Kyllene	place	mountain	name	certain	
+18	2	Ἀρκαδίης	Ἀρκαδία	arkadia	Arkadia	place	region	name	certain	
+18	3	Μαῖα	Μαῖα	maia	Maia	nymph	pleiad	name	certain	
+18	4	Ἄτλαντος	Ἄτλας	atlas	Atlas	god	titan	name	certain	
+18	4	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+18	6	Κρονίων	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+18	7	νύμφῃ ἐυπλοκάμῳ	νύμφη	maia	Maia	nymph	pleiad	periphrasis	probable	common noun "nymph" standing for Maia, no name in the clause
+18	7	νυκτὸς	νύξ	nyx	Nyx	god	primordial	personification	uncertain	νυκτὸς ἀμολγῷ "in the dead of night": plainly time of day
+18	8	ὕπνος	ὕπνος	hypnos	Hypnos	god	personification	personification	uncertain	γλυκὺς ὕπνος held Hera: plainly sleep
+18	8	Ἥρην	Ἥρα	hera	Hera	god	olympian	name	certain	
+18	10	Διὸς καὶ Μαιάδος υἱέ	υἱός	hermes	Hermes	god	olympian	periphrasis	certain	vocative address, no name on the line
+18	10	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+18	10	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+18	12	Ἑρμῆ	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	line bracketed in the edition (suspect)
+18	12	διάκτορε	διάκτορος	hermes	Hermes	god	olympian	epithet	probable	title-like epithet (διάκτορος), beside the name; line bracketed
+19	1	Ἑρμείαο φίλον γόνον	γόνος	pan	Pan	god	rustic	periphrasis	certain	dedicatee before he is named (19.5)
+19	1	Ἑρμείαο	Ἑρμείας	hermes	Hermes	god	olympian	name	certain	
+19	1	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	singular, unnamed Muse
+19	3	νύμφαις	νύμφη	nymphai	the Nymphs	group	nymphs	name	certain	lowercase; dancing nymphs
+19	5	Πᾶν	Πάν	pan	Pan	god	rustic	name	certain	
+19	14	ἕσπερος	ἕσπερος	hesperos	Hesperos (Evening Star)	god	astral	personification	uncertain	τότε δ᾽ ἕσπερος "then at evening": plainly the time
+19	15	μοῦσαν	μοῦσα	mousai	the Muse(s)	group	muse	personification	uncertain	δονάκων ὕπο μοῦσαν ἀθύρων "playing music on the reeds": plainly the thing
+19	19	Νύμφαι	νύμφη	nymphai	the Nymphs	group	nymphs	name	certain	ὀρεστιάδες, mountain nymphs
+19	21	Ἠχώ	Ἠχώ	echo	Echo	nymph	nymph	personification	probable	printed capitalized; the echo moaning round the peak, perhaps the nymph
+19	27	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+19	28	Ἑρμείην	Ἑρμείας	hermes	Hermes	god	olympian	name	certain	
+19	30	Ἀρκαδίην	Ἀρκαδία	arkadia	Arkadia	place	region	name	certain	
+19	31	Κυλληνίου	Κυλλήνιος	hermes	Hermes	god	olympian	epithet	certain	from Mount Kyllene
+19	34	νύμφῃ ἐυπλοκάμῳ Δρύοπος	νύμφη	dryope	daughter of Dryops (mother of Pan; later called Dryope)	nymph	nymph	periphrasis	probable	Pan's mother, unnamed in the hymn ("Dryops' daughter"); later sources call her Dryope
+19	34	Δρύοπος	Δρύοψ	dryops	Dryops	mortal	king	name	certain	
+19	36	Ἑρμείῃ	Ἑρμείας	hermes	Hermes	god	olympian	name	certain	
+19	40	Ἑρμείας	Ἑρμείας	hermes	Hermes	god	olympian	name	certain	
+19	44	Ζηνὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+19	46	Βάκχειος	Βάκχειος	dionysos	Dionysos	god	olympian	epithet	certain	Bakcheios
+19	46	Διόνυσος	Διόνυσος	dionysos	Dionysos	god	olympian	name	certain	
+19	47	Πᾶνα	Πάν	pan	Pan	god	rustic	name	certain	
+20	1	Ἥφαιστον	Ἥφαιστος	hephaistos	Hephaistos	god	olympian	name	certain	
+20	1	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	singular, unnamed Muse
+20	2	Ἀθηναίης	Ἀθηναίη	athena	Athena	god	olympian	name	certain	
+20	5	Ἥφαιστον	Ἥφαιστος	hephaistos	Hephaistos	god	olympian	name	certain	
+20	8	Ἥφαιστε	Ἥφαιστος	hephaistos	Hephaistos	god	olympian	name	certain	
+21	1	φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	dedicatee; Phoibos, printed lowercase
+21	3	Πηνειόν	Πηνειός	peneios	Peneios (river)	place	river	name	certain	
+22	1	Ποσειδάωνα	Ποσειδῶν	poseidon	Poseidon	god	olympian	name	certain	
+22	2	γαίης	γαῖα	gaia	Gaia	god	primordial	personification	uncertain	γαίης κινητῆρα "mover of the earth": plainly the thing
+22	3	Ἑλικῶνα	Ἑλικών	helikon	Helikon	place	mountain	name	probable	text Ἑλικῶνα (Boeotian mountain); with Αἰγάς, perhaps for Helike in Achaea, seat of Poseidon Helikonios
+22	3	Αἰγάς	Αἰγαί	aigai	Aigai	place	city	name	probable	Aigai of Poseidon (Il. 13.21): Achaea or Euboea
+22	4	Ἐννοσίγαιε	Ἐννοσίγαιος	poseidon	Poseidon	god	olympian	epithet	certain	Ennosigaios "earth-shaker"
+22	6	Ποσείδαον	Ποσειδῶν	poseidon	Poseidon	god	olympian	name	certain	
+23	1	Ζῆνα	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+23	2	Θέμιστι	Θέμις	themis	Themis	god	titan	name	certain	
+23	4	Κρονίδη	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+24	1	Ἑστίη	Ἑστίη	hestia	Hestia	god	olympian	name	certain	
+24	1	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+24	1	ἑκάτοιο	Ἕκατος	apollon	Apollo	god	olympian	epithet	certain	Hekatos, printed lowercase, beside the name
+24	2	Πυθοῖ	Πυθώ	pytho	Pytho (Delphi)	place	sanctuary	name	certain	
+24	5	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+24	5	χάριν	χάρις	charis	Charis (Grace)	god	personification	personification	uncertain	χάριν ὄπασσον ἀοιδῇ "grant grace to my song": plainly the thing
+25	1	μουσάων	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	dedicatees, printed lowercase
+25	1	Ἀπόλλωνός	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+25	1	Διός	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+25	2	Μουσάων	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	
+25	2	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+25	4	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+25	4	Μοῦσαι	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	
+25	6	τέκνα Διός	τέκνον	mousai	the Muse(s)	group	muse	periphrasis	certain	vocative address to the Muses
+25	6	Διός	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+26	1	Διόνυσον	Διόνυσος	dionysos	Dionysos	god	olympian	name	certain	
+26	2	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+26	2	Σεμέλης	Σεμέλη	semele	Semele (Thyone)	hero	deified mortal	name	certain	
+26	3	Νύμφαι	νύμφη	nymphai	the Nymphs	group	nymphs	name	certain	the nymphs of Nysa
+26	3	πατρὸς ἄνακτος	πατήρ	zeus	Zeus	god	olympian	periphrasis	probable	"from his father the lord": bare kinship term for Zeus
+26	5	Νύσης	Νῦσα	nysa	Nysa	place	mountain	name	certain	
+26	5	πατρὸς	πατήρ	zeus	Zeus	god	olympian	periphrasis	probable	πατρὸς ἕκητι: bare kinship term for Zeus
+26	10	Νύμφαι	νύμφη	nymphai	the Nymphs	group	nymphs	name	certain	
+26	11	Διόνυσε	Διόνυσος	dionysos	Dionysos	god	olympian	name	certain	
+26	12	ὥρας	ὥρα	horai	the Horai (Seasons)	group	horai	personification	uncertain	ἐς ὥρας "to the seasons" (again): plainly the thing
+26	13	ὡράων	ὥρα	horai	the Horai (Seasons)	group	horai	personification	uncertain	plainly the seasons
+27	1	Ἄρτεμιν	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+27	2	ἰοχέαιραν	ἰοχέαιρα	artemis	Artemis	god	olympian	epithet	certain	title-like epithet in apposition to the name
+27	3	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+27	8	γαῖα	γαῖα	gaia	Gaia	god	primordial	personification	uncertain	the earth shudders at the hunt: probably the thing
+27	9	πόντος	πόντος	pontos	Pontos	god	primordial	personification	uncertain	πόντος ἰχθυόεις: plainly the sea
+27	11	ἰοχέαιρα	ἰοχέαιρα	artemis	Artemis	god	olympian	epithet	certain	stands alone for Artemis
+27	14	Φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	Phoibos
+27	14	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+27	14	Δελφῶν	Δελφοί	delphoi	Delphi	place	city	name	certain	Δελφῶν δῆμον, the land of Delphi
+27	15	Μουσῶν	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	
+27	15	Χαρίτων	Χάρις	charites	the Charites (Graces)	group	charites	name	certain	
+27	19	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+27	21	τέκνα Διὸς καὶ Λητοῦς	τέκνον	artemis	Artemis	god	olympian	periphrasis	certain	vocative to Artemis and Apollo together (one row each)
+27	21	τέκνα Διὸς καὶ Λητοῦς	τέκνον	apollon	Apollo	god	olympian	periphrasis	certain	vocative to Artemis and Apollo together (one row each)
+27	21	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+27	21	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+28	1	Παλλάδ	Παλλάς	athena	Athena	god	olympian	epithet	certain	Pallas
+28	1	Ἀθηναίην	Ἀθηναίη	athena	Athena	god	olympian	name	certain	
+28	4	Τριτογενῆ	Τριτογένεια	athena	Athena	god	olympian	epithet	certain	Tritogeneia (acc. of Τριτογενής)
+28	4	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+28	7	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+28	9	Ὄλυμπος	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+28	10	γλαυκώπιδος	γλαυκῶπις	athena	Athena	god	olympian	epithet	certain	stands alone for Athena
+28	10	γαῖα	γαῖα	gaia	Gaia	god	primordial	personification	uncertain	earth cries out at Athena's birth: cosmic reaction, probably the thing
+28	11	πόντος	πόντος	pontos	Pontos	god	primordial	personification	uncertain	the sea is stirred: probably the thing
+28	13	Ὑπερίονος ἀγλαὸς υἱὸς	υἱός	helios	Helios	god	titan	periphrasis	certain	Helios, named only by his father
+28	13	Ὑπερίονος	Ὑπερίων	hyperion_titan	Hyperion (Titan, father of Helios)	god	titan	name	certain	father of Helios
+28	16	Παλλὰς	Παλλάς	athena	Athena	god	olympian	epithet	certain	Pallas
+28	16	Ἀθηναίη	Ἀθηναίη	athena	Athena	god	olympian	name	certain	
+28	16	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+28	17	Διὸς τέκος αἰγιόχοιο	τέκος	athena	Athena	god	olympian	periphrasis	certain	vocative address, no name on the line
+28	17	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+29	1	ἑστίη	Ἑστίη	hestia	Hestia	god	olympian	name	certain	dedicatee, printed lowercase (could also be read "hearth")
+29	6	Ἑστίῃ	Ἑστίη	hestia	Hestia	god	olympian	name	certain	
+29	7	Ἀργειφόντα	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+29	7	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+29	7	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+29	10	αἰδοίῃ τε φίλῃ τε	αἰδοῖος	hestia	Hestia	god	olympian	periphrasis	uncertain	"with the revered and dear one" = Hestia; the editions read Ἑστίῃ at the start of 29.11, which this text prints as εἰδότες (see report)
+29	12	ἥβῃ	ἥβη	hebe	Hebe	god	olympian	personification	uncertain	νόῳ θ᾽ ἕσπεσθε καὶ ἥβῃ "follow wisdom and youth/strength": plainly the thing
+29	13	Κρόνου θύγατερ	θυγάτηρ	hestia	Hestia	god	olympian	periphrasis	certain	vocative address
+29	13	Κρόνου	Κρόνος	kronos	Kronos	god	titan	name	certain	
+29	13	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+30	1	γαῖαν	Γαῖα	gaia	Gaia	god	primordial	personification	certain	dedicatee, the goddess Earth, printed lowercase
+30	3	πόντον	πόντος	pontos	Pontos	god	primordial	personification	uncertain	ὅσα πόντον (ἐπέρχεται): plainly the sea
+30	11	εὐνομίῃσι	εὐνομία	eunomia	Eunomia (one of the Horai)	god	personification	personification	uncertain	plural "good order": plainly the thing
+30	12	πλοῦτος	πλοῦτος	ploutos	Ploutos (Wealth)	god	personification	personification	uncertain	ὄλβος καὶ πλοῦτος ὀπηδεῖ "wealth attends": faintly personifying, probably the thing
+30	13	εὐφροσύνῃ	εὐφροσύνη	euphrosyne	Euphrosyne (one of the Charites)	god	personification	personification	uncertain	εὐφροσύνῃ νεοθηλέι "fresh joy": plainly the thing
+30	17	θεῶν μήτηρ ἄλοχʼ Οὐρανοῦ ἀστερόεντος	μήτηρ	gaia	Gaia	god	primordial	periphrasis	certain	vocative address to Gaia
+30	17	Οὐρανοῦ	Οὐρανός	ouranos	Ouranos	god	primordial	name	certain	
+31	1	ἥλιον	Ἥλιος	helios	Helios	god	titan	personification	certain	dedicatee, the god Helios, printed lowercase
+31	1	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+31	1	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	here Kalliope (31.2)
+31	2	Καλλιόπη	Καλλιόπη	kalliope	Kalliope (Muse)	god	muse	name	certain	
+31	2	φαέθοντα	φαέθων	helios	Helios	god	titan	epithet	uncertain	φαέθων, used as a name of Helios, here probably descriptive ("shining") of ἥλιον 31.1
+31	2	Εὐρυφάεσσα	Εὐρυφάεσσα	euryphaessa	Euryphaessa (mother of Helios)	god	titan	name	certain	mother of Helios; elsewhere Theia
+31	3	Γαίης παιδὶ καὶ Οὐρανοῦ ἀστερόεντος	παῖς	hyperion_titan	Hyperion (Titan, father of Helios)	god	titan	periphrasis	certain	Hyperion, named on the next line
+31	3	Γαίης	Γαῖα	gaia	Gaia	god	primordial	name	certain	
+31	3	Οὐρανοῦ	Οὐρανός	ouranos	Ouranos	god	primordial	name	certain	
+31	4	Εὐρυφάεσσαν	Εὐρυφάεσσα	euryphaessa	Euryphaessa (mother of Helios)	god	titan	name	certain	
+31	4	Ὑπερίων	Ὑπερίων	hyperion_titan	Hyperion (Titan, father of Helios)	god	titan	name	certain	father of Helios
+31	6	Ἠῶ	Ἠώς	eos	Eos	god	titan	name	certain	
+31	6	Σελήνην	Σελήνη	selene	Selene	god	titan	name	certain	
+31	7	Ἠέλιόν	Ἠέλιος	helios	Helios	god	titan	name	certain	
+31	15a	οὐρανοῦ	οὐρανός	ouranos	Ouranos	god	primordial	personification	uncertain	ἄκρου ἐπʼ οὐρανοῦ: plainly the sky; line bracketed in the edition
+31	16	οὐρανοῦ	οὐρανός	ouranos	Ouranos	god	primordial	personification	uncertain	διʼ οὐρανοῦ: plainly the sky
+31	16	Ὠκεανόνδε	Ὠκεανός	okeanos	Okeanos	god	titan	name	certain	"to Okeanos": the world-river as place
+32	1	μήνην	μήνη	selene	Selene	god	titan	name	certain	dedicatee, printed lowercase
+32	1	Μοῦσαι	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	
+32	2	Κρονίδεω	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	beside Διός
+32	2	Διός	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+32	3	γαῖαν	γαῖα	gaia	Gaia	god	primordial	personification	uncertain	her light circles the earth: plainly the thing
+32	7	Ὠκεανοῖο	Ὠκεανός	okeanos	Okeanos	god	titan	name	certain	bathing in Okeanos: the world-river
+32	8	Σελήνη	Σελήνη	selene	Selene	god	titan	name	certain	
+32	14	Κρονίδης	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+32	15	Πανδείην	Πανδεία	pandeia	Pandeia (daughter of Zeus and Selene)	god	minor	name	certain	
+32	17	Σελήνη	Σελήνη	selene	Selene	god	titan	name	certain	
+32	20	Μουσάων	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	
+33	1	Διὸς κούρους	Διόσκουροι	dioskouroi	the Dioskouroi (Kastor and Polydeukes)	hero	dioskouroi	periphrasis	certain	
+33	1	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+33	1	Μοῦσαι	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	
+33	2	Τυνδαρίδας	Τυνδαρίδης	dioskouroi	the Dioskouroi (Kastor and Polydeukes)	hero	dioskouroi	patronymic	certain	
+33	2	Λήδης	Λήδη	leda	Leda	mortal	queen	name	certain	
+33	3	Κάστορά	Κάστωρ	kastor	Kastor	hero	dioskouroi	name	certain	
+33	3	Πολυδεύκεα	Πολυδεύκης	polydeukes	Polydeukes (Pollux)	hero	dioskouroi	name	certain	
+33	4	Ταϋγέτου	Ταΰγετος	taygetos	Mount Taygetos	place	mountain	name	certain	
+33	5	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+33	8	πόντον	πόντος	pontos	Pontos	god	primordial	personification	uncertain	κατὰ πόντον ἀμείλιχον: plainly the sea
+33	9	Διὸς κούρους μεγάλοιο	Διόσκουροι	dioskouroi	the Dioskouroi (Kastor and Polydeukes)	hero	dioskouroi	periphrasis	certain	
+33	9	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+33	13	αἰθέρος	αἰθήρ	aither	Aither	god	primordial	personification	uncertain	δι᾽ αἰθέρος "through the air": plainly the thing
+33	18	Τυνδαρίδαι	Τυνδαρίδης	dioskouroi	the Dioskouroi (Kastor and Polydeukes)	hero	dioskouroi	patronymic	certain	
+34	2	πόλιν αἰπεινὴν	πόλις	neon_teichos	Neon Teichos (city near Kyme)	place	city	periphrasis	uncertain	the city addressed; Vita Herodotea 9-10 sets the poem at Neon Teichos, colony of Kyme; Evelyn-White's Vita text has "city of Cyme"
+34	2	νύμφης ἐρατώπιδος Ἥρης	νύμφη	hera_nymph	Hera (nymph of the city in Εἰς Ξένους)	nymph	nymph	periphrasis	uncertain	Allen's text: city of "the nymph Hera", presumably the eponymous nymph; Vita reads Κύμην ἐριώπιδα κούρην (the nymph Kyme); νύμφη could also be "bride", i.e. the goddess Hera
+34	2	Ἥρης	Ἥρα	hera_nymph	Hera (nymph of the city in Εἰς Ξένους)	nymph	nymph	name	uncertain	nymph (eponym of the city) rather than the goddess? see the periphrasis row; Vita reads Κύμην
+34	3	Σαιδήνης	Σαιδήνη	saidene	Saidene (mountain near Kyme)	place	mountain	name	certain	Steph. Byz. Σαιδηνή, ὄρος Κύμης; Vita reads Σαρδήνης
+34	5	Ἕρμου	Ἕρμος	hermos	Hermos (river)	place	river	name	certain	river (codd. Ἔβρου, Allen prints Herodotean Ἕρμου), here son of Zeus, i.e. river-god
+34	5	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	

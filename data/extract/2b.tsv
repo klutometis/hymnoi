@@ -1,0 +1,163 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+2	251	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	252	παῖδα φίλον	παῖς	demophoon	Demophoon (son of Keleos)	mortal	eleusinian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	255	Μετάνειραν	Μετάνειρα	metaneira	Metaneira	mortal	eleusinian	name	certain	
+2	259	Στυγὸς	Στύξ	styx	Styx	nymph	oceanid	name	certain	the oath-river; same entity as the Oceanid Styx at 2.423 (Hes. Th. 383-403)
+2	261	παῖδα φίλον	παῖς	demophoon	Demophoon (son of Keleos)	mortal	eleusinian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	262	θάνατον	Θάνατος	thanatos	Thanatos (Death)	god	personification	personification	uncertain	death as fate, plainly the thing; Thanatos only by extension
+2	262	κῆρας	Κήρ	keres	Keres (death-spirits)	group	personification	personification	uncertain	"death and the fates": may be the Keres as spirits, more likely common noun
+2	265	ὥρῃσιν	Ὥρα	horai	Horai (Seasons)	group	horai	personification	uncertain	seasons of the revolving year; plainly time, not the Horai
+2	266	Ἐλευσινίων	Ἐλευσίνιος	eleusinioi	Eleusinians	group	people	ethnic	certain	
+2	268	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	272	Καλλιχόρου	Καλλίχορον	kallichoron	Kallichoron (well at Eleusis)	place	well	name	certain	
+2	282	παιδὸς	παῖς	demophoon	Demophoon (son of Keleos)	mortal	eleusinian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	284	κασίγνηται	κασιγνήτη	keleos_daughters	daughters of Keleos	group	family	periphrasis	uncertain	the child's sisters, daughters of Keleos (named 2.109-110); bare kinship/role noun standing for a named being; include only if such references are wanted
+2	286	παῖδʼ	παῖς	demophoon	Demophoon (son of Keleos)	mortal	eleusinian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	288	μητέρʼ	μήτηρ	metaneira	Metaneira	mortal	eleusinian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	293	ἠοῖ	Ἠώς	eos	Eos (Dawn)	god	personification	personification	uncertain	dawn as time of day
+2	294	Κελεῷ	Κελεός	keleos	Keleos	mortal	eleusinian	name	certain	
+2	295	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	297	Δημήτερι	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	302	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	304	θυγατρός	θυγάτηρ	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	305	χθόνα	χθών	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	306	γαῖα	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	307	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	309	γαίῃ	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	312	Ὀλύμπια	Ὀλύμπιος	olympos	Mount Olympos	place	mountain	adjective	certain	Ὀλύμπια δώματʼ ἔχοντας = the gods
+2	313	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	314	Ἶριν	Ἶρις	iris	Iris	god	messenger	name	certain	
+2	315	Δήμητρʼ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	316	Ζηνὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	316	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+2	318	Ἐλευσῖνος	Ἐλευσίς	eleusis	Eleusis	place	city	name	certain	
+2	319	Δημήτερα	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	321	Δήμητερ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	321	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	323	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	325	πατὴρ	πατήρ	zeus	Zeus	god	olympian	epithet	probable	πατήρ standing alone for Zeus (subject of the sentence, picked up from 2.321)
+2	331	Οὐλύμποιο	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+2	332	γῆς	γῆ	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	333	κούρην	κούρη	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	334	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	335	Ἔρεβος	Ἔρεβος	erebos	Erebos (the underworld)	place	underworld	name	certain	
+2	335	Ἀργειφόντην	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+2	336	Ἀίδην	Ἅιδης	hades	Hades	god	chthonic	name	certain	
+2	337	Περσεφόνειαν	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	337	ζόφου ἠερόεντος	ζόφος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name
+2	338	μήτηρ	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	340	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+2	340	κεύθεα γαίης	κεῦθος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name; γαίης part of the phrase, no separate Gaia row
+2	341	Οὐλύμποιο	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+2	342	ἄνακτα	ἄναξ	hades	Hades	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	343	παρακοίτι	παράκοιτις	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	344	μητρὸς	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	346	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+2	347	Ἅιδη	Ἅιδης	hades	Hades	god	chthonic	name	certain	
+2	348	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	348	Περσεφόνειαν	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	349	Ἐρέβευσφι	Ἔρεβος	erebos	Erebos (the underworld)	place	underworld	name	certain	
+2	349	μήτηρ	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	353	γῆς	γῆ	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	356	Ἐλευσῖνος	Ἐλευσίς	eleusis	Eleusis	place	city	name	certain	
+2	357	Ἀιδωνεὺς	Ἀιδωνεύς	hades	Hades	god	chthonic	name	certain	
+2	358	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	359	Περσεφονείῃ	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	360	Περσεφόνη	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	360	μητέρα	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	364	Διός	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	370	Περσεφόνεια	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	374	Δημήτερι	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	376	Πολυσημάντωρ	Πολυσημάντωρ	hades	Hades	god	chthonic	epithet	certain	capitalized title beside Ἀιδωνεύς ("Ruler of Many")
+2	376	Ἀιδωνευς	Ἀιδωνεύς	hades	Hades	god	chthonic	name	certain	printed without accent
+2	377	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+2	380	θάλασσα	θάλασσα	thalassa	Thalassa (Sea)	god	personification	personification	uncertain	plainly the sea crossed by the chariot
+2	384	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	386	μαινὰς	μαινάς	mainades	Maenads	group	votaries	name	uncertain	simile, "like a maenad": generic, not a particular group
+2	387	Περσεφόνη	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	388	μητρὸς	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	390	παῖδα	παῖς	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	393	τέκνον	τέκνον	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	395	Ἀίδαο	Ἅιδης	hades	Hades	god	chthonic	name	certain	
+2	396	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+2	398	κεύθεσι γαίης	κεῦθος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name; γαίης part of the phrase, no separate Gaia row
+2	399	ὡρέων	Ὥρα	horai	Horai (Seasons)	group	horai	personification	uncertain	seasons as divisions of the year, not the Horai
+2	401	γαῖʼ	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	402	ζόφου ἠερόεντος	ζόφος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name
+2	403a	ζόφον ἠερόεντα	ζόφος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name
+2	404	Πολυδέγμων	Πολυδέγμων	hades	Hades	god	chthonic	epithet	certain	
+2	405	Περσεφόνη	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	
+2	406	μῆτερ	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	407	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+2	408	Κρονίδαο	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+2	408	Οὐρανιώνων	Οὐρανίων	ouraniones	Ouraniones (the heavenly gods)	group	gods	patronymic	probable	the gods collectively, "heavenly ones" / descendants of Ouranos
+2	409	Ἐρέβευς	Ἔρεβος	erebos	Erebos (the underworld)	place	underworld	name	certain	
+2	414	Κρονίδεω	Κρονίδης	zeus	Zeus	god	olympian	patronymic	probable	Zeus by apposition to πατρὸς ἐμοῖο (415); a son of Kronos could also be Hades, but the plan is Zeus's (cf. 2.9, 2.30)
+2	415	κεύθεα γαίης	κεῦθος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name; γαίης part of the phrase, no separate Gaia row
+2	418	Λευκίππη	Λευκίππη	leukippe	Leukippe	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5); not in Hesiod's Oceanid catalogue (Th. 349-361)
+2	418	Φαινώ	Φαινώ	phaino	Phaino	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5); not in Hesiod's Oceanid catalogue (Th. 349-361)
+2	418	Ἠλέκτρη	Ἠλέκτρα	elektra_oceanid	Elektra (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	418	Ἰάνθη	Ἰάνθη	ianthe	Ianthe	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	419	Μελίτη	Μελίτη	melite_oceanid	Melite (companion of Persephone)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5); not in Hesiod's Oceanid catalogue (Th. 349-361)
+2	419	Ἰάχη	Ἰάχη	iache	Iache	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5); not in Hesiod's Oceanid catalogue (Th. 349-361)
+2	419	Ῥόδειά	Ῥόδεια	rhodeia	Rhodeia	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	419	Καλλιρόη	Καλλιρόη	kallirhoe	Kallirhoe (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	420	Μηλόβοσίς	Μηλόβοσις	melobosis	Melobosis	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	420	Τύχη	Τύχη	tyche_oceanid	Tyche (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	420	Ὠκυρόη	Ὠκυρόη	okyrhoe	Okyrhoe	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	421	Χρυσηίς	Χρυσηίς	chryseis_oceanid	Chryseis (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	421	Ἰάνειρά	Ἰάνειρα	ianeira	Ianeira	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	421	Ἀκάστη	Ἀκάστη	akaste	Akaste	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	421	Ἀδμήτη	Ἀδμήτη	admete_oceanid	Admete (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	422	Ῥοδόπη	Ῥοδόπη	rhodope	Rhodope	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5); not in Hesiod's Oceanid catalogue (Th. 349-361)
+2	422	Πλουτώ	Πλουτώ	plouto	Plouto (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	422	Καλυψὼ	Καλυψώ	kalypso_oceanid	Kalypso (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	423	Στὺξ	Στύξ	styx	Styx	nymph	oceanid	name	certain	Oceanid companion (Hes. Th. 361); same entity as the oath-river at 2.259
+2	423	Οὐρανίη	Οὐρανία	ourania_oceanid	Ourania (Oceanid)	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	423	Γαλαξαύρη	Γαλαξαύρα	galaxaura	Galaxaura	nymph	oceanid	name	certain	companion of Persephone, daughter of Okeanos (2.5)
+2	424	Παλλάς	Παλλάς	athena	Athena	god	olympian	epithet	certain	Pallas = Athena
+2	424	Ἄρτεμις	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+2	428	χθών	χθών	gaia	Gaia (Earth)	god	primordial	personification	probable	εὐρεῖα χθών makes the narcissus grow as a lure, as Γαῖα does at 2.8-9 at Zeus's will
+2	429	γαῖα	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	430	Πολυδέγμων	Πολυδέγμων	hades	Hades	god	chthonic	epithet	certain	
+2	431	γαῖαν	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	438	Ἑκάτη	Ἑκάτη	hekate	Hekate	god	chthonic	name	certain	
+2	439	κόρην Δημήτερος ἁγνήν	κόρη	persephone	Persephone	god	chthonic	periphrasis	certain	
+2	439	Δημήτερος	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	440	ἄνασσα	ἄνασσα	hekate	Hekate	god	chthonic	periphrasis	uncertain	subject of ἔπλετο: Hekate became Persephone's attendant; bare kinship/role noun standing for a named being; include only if such references are wanted
+2	441	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	442	Ῥείην	Ῥέα	rhea	Rhea	god	titan	name	certain	
+2	442	Δημήτερα	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	445	κούρην	κούρη	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	446	ζόφον ἠερόεντα	ζόφος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name
+2	447	μητρὶ	μήτηρ	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	448	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	449	Οὐλύμποιο	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+2	450	Ῥάριον	Ῥάριον	rharion	Rharian plain	place	plain	name	certain	
+2	453	Δήμητρος	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	457	αἰθέρος	αἰθήρ	aither	Aither (upper air)	god	primordial	personification	uncertain	the upper air Rhea descends from; plainly the thing
+2	459	Ῥέη	Ῥέα	rhea	Rhea	god	titan	name	certain	
+2	460	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	460	τέκος	τέκος	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	463	κούρην	κούρη	persephone	Persephone	god	chthonic	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	467	τέκνον	τέκνον	demeter	Demeter	god	olympian	periphrasis	uncertain	bare kinship/role noun standing for a named being; include only if such references are wanted
+2	468	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+2	470	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	
+2	472	χθὼν	χθών	gaia	Gaia (Earth)	god	primordial	personification	uncertain	plainly the thing (earth/ground), not the goddess
+2	474	Τριπτολέμῳ	Τριπτόλεμος	triptolemos	Triptolemos	mortal	eleusinian	name	certain	
+2	474	Διοκλεῖ	Διοκλῆς	diokles	Diokles	mortal	eleusinian	name	certain	
+2	475	Εὐμόλπου τε βίῃ	Εὔμολπος	eumolpos	Eumolpos	mortal	eleusinian	name	certain	βίη + genitive = Eumolpos himself
+2	475	Κελεῷ	Κελεός	keleos	Keleos	mortal	eleusinian	name	certain	
+2	477	Τριπτολέμῳ	Τριπτόλεμος	triptolemos	Triptolemos	mortal	eleusinian	name	certain	476-477 repeat the list of 474-475 (doublet?)
+2	477	Πολυξείνῳ	Πολύξεινος	polyxeinos	Polyxeinos	mortal	eleusinian	name	certain	
+2	477	Διοκλεῖ	Διοκλῆς	diokles	Diokles	mortal	eleusinian	name	certain	476-477 repeat the list of 474-475 (doublet?)
+2	482	ζόφῳ ἠερόεντι	ζόφος	erebos	Erebos (the underworld)	place	underworld	periphrasis	uncertain	phrase = the underworld (cf. Ἔρεβος 2.335); not a name
+2	483	δῖα θεάων	δῖος	demeter	Demeter	god	olympian	periphrasis	probable	"bright among goddesses" standing for Demeter (subject)
+2	484	Οὔλυμπόνδε	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+2	485	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+2	489	Πλοῦτον	Πλοῦτος	ploutos	Ploutos (Wealth)	god	personification	name	certain	Wealth sent as hearth-guest by Demeter and Persephone
+2	490	Ἐλευσῖνος	Ἐλευσίς	eleusis	Eleusis	place	city	name	certain	
+2	491	Πάρον	Πάρος	paros	Paros	place	island	name	certain	
+2	491	Ἀντρῶνά	Ἀντρών	antron	Antron (Thessaly)	place	city	name	certain	
+2	492	Δηοῖ	Δηώ	demeter	Demeter	god	olympian	name	certain	Deo = Demeter
+2	493	Περσεφόνεια	Περσεφόνη	persephone	Persephone	god	chthonic	name	certain	

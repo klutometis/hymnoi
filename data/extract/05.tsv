@@ -1,0 +1,137 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+5	1	μοῦσά	Μοῦσα	mousai	Muse(s)	group	muse	name	certain	singular Muse invoked, printed lowercase; mapped to the Muses as a group
+5	1	Ἀφροδίτης	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	2	Κύπριδος	Κύπρις	aphrodite	Aphrodite	god	olympian	epithet	certain	from Cyprus
+5	5	πόντος	πόντος	pontos	Pontos (Sea)	god	primordial	personification	uncertain	the sea as habitat of beasts; plainly the thing
+5	6	Κυθερείης	Κυθέρεια	aphrodite	Aphrodite	god	olympian	epithet	certain	from Kythera
+5	8	Διός	Ζεύς	zeus	Zeus	god	olympian	name	certain	in κούρην αἰγιόχοιο Διός, apposition to Ἀθήνην (no periphrasis row)
+5	8	Ἀθήνην	Ἀθήνη	athena	Athena	god	olympian	name	certain	
+5	9	Ἀφροδίτης	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	10	Ἄρηος	Ἄρης	ares	Ares	god	olympian	name	certain	ἔργον Ἄρηος, metonymy for war
+5	16	Ἀρτέμιδα	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+5	17	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	21	Ἀφροδίτης	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	22	Ἱστίῃ	Ἑστία	hestia	Hestia	god	olympian	name	certain	Ionic Ἱστίη
+5	22	Κρόνος	Κρόνος	kronos	Kronos	god	titan	name	certain	
+5	23	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	24	Ποσειδάων	Ποσειδῶν	poseidon	Poseidon	god	olympian	name	certain	
+5	24	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+5	27	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	πατρὸς Διὸς: Zeus as father generally (Hestia is daughter of Kronos)
+5	28	δῖα θεάων	Ἑστία	hestia	Hestia	god	olympian	periphrasis	uncertain	formulaic honorific standing in apposition to the unexpressed subject (Hestia); no name in clause
+5	29	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	34	Ἀφροδίτην	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	36	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	40	Ἥρης	Ἥρα	hera	Hera	god	olympian	name	certain	
+5	42	Κρόνος	Κρόνος	kronos	Kronos	god	titan	name	certain	
+5	43	Ῥείη	Ῥέα	rhea	Rhea	god	titan	name	certain	Ionic Ῥείη
+5	43	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	45	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	49	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	53	Ἀγχίσεω	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	54	Ἴδης	Ἴδη	ide	Mount Ida (Troad)	place	mountain	name	certain	
+5	56	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	57	ἵμερος	ἵμερος	himeros	Himeros (Desire)	god	personification	personification	uncertain	ἵμερος εἷλεν: desire as subject (Himeros attends Aphrodite in Theog. 201); most likely just the feeling
+5	58	Κύπρον	Κύπρος	kypros	Cyprus	place	island	name	certain	
+5	59	Πάφον	Πάφος	paphos	Paphos (Cyprus)	place	city	name	certain	her temple and precinct at Paphos
+5	61	Χάριτες	Χάρις	charites	Charites (Graces)	group	charites	name	certain	
+5	65	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	66	Τροίης	Τροία	troia	Troy (the Troad)	place	region	name	certain	ἐπὶ Τροίης: toward Troy / the Troad
+5	66	Κύπρον	Κύπρος	kypros	Cyprus	place	island	name	certain	
+5	68	Ἴδην	Ἴδη	ide	Mount Ida (Troad)	place	mountain	name	certain	
+5	77	Ἀγχίσην	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	81	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	81	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	84	Ἀγχίσης	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	89	σελήνη	σελήνη	selene	Selene (Moon)	god	titan	personification	uncertain	simile: shone like the moon; plainly the thing
+5	91	Ἀγχίσην	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	91	ἔρος	ἔρος	eros	Eros	god	primordial	personification	uncertain	ἔρος εἷλεν: desire as subject; most likely the feeling, not the god
+5	93	Ἄρτεμις	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+5	93	Λητὼ	Λητώ	leto	Leto	god	titan	name	certain	
+5	93	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	94	Θέμις	Θέμις	themis	Themis	god	titan	name	certain	
+5	94	Ἀθήνη	Ἀθήνη	athena	Athena	god	olympian	name	certain	
+5	95	Χαρίτων	Χάρις	charites	Charites (Graces)	group	charites	name	certain	
+5	97	Νυμφάων	Νύμφη	nymphai	Nymphs	group	nymphs	name	certain	nymphs of the groves
+5	98	Νυμφῶν	Νύμφη	nymphai	Nymphs	group	nymphs	name	certain	nymphs of this mountain, springs and meadows
+5	98	ὄρος τόδε	Ἴδη	ide	Mount Ida (Troad)	place	mountain	periphrasis	uncertain	deictic "this mountain" = Ida; arguably just a demonstrative
+5	102	ὥρῃσιν	ὥρα	horai	Horai (Seasons)	group	horai	personification	uncertain	ὥρῃσιν πάσῃσι "in all seasons"; plainly time, not the Horai
+5	103	Τρώεσσιν	Τρώς	troes	Trojans	group	people	ethnic	certain	
+5	105	ἠελίοιο	ἥλιος	helios	Helios (Sun)	god	titan	personification	uncertain	φάος ἠελίοιο, formula for being alive; plainly the sun
+5	107	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	107	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	108	Ἀγχίση	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	111	Ὀτρεὺς	Ὀτρεύς	otreus	Otreus (king of Phrygia)	mortal	king	name	certain	fictitious father in Aphrodite's lying tale
+5	112	Φρυγίης	Φρυγία	phrygia	Phrygia	place	region	name	certain	
+5	114	Τρῳὰς	Τρῳάς	troes	Trojans	group	people	adjective	certain	τροφὸς Τρῳάς, a Trojan nurse
+5	117	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+5	118	Ἀρτέμιδος	Ἄρτεμις	artemis	Artemis	god	olympian	name	certain	
+5	119	νύμφαι	Νύμφη	nymphai	Nymphs	group	nymphs	name	probable	playmates in Artemis' chorus; νύμφαι could mean young women/brides rather than nymphs
+5	121	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+5	125	αἴης	αἶα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	φυσιζόου αἴης, the ground underfoot; plainly the thing
+5	126	Ἀγχίσεω	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	129	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+5	130	ἀνάγκη	ἀνάγκη	ananke	Ananke (Necessity)	god	personification	personification	uncertain	κρατερὴ ἀνάγκη "strong necessity"; plainly the abstract
+5	131	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	137	Φρύγας	Φρύξ	phryges	Phrygians	group	people	ethnic	certain	
+5	144	Ἀγχίσην	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	144	ἔρος	ἔρος	eros	Eros	god	primordial	personification	uncertain	ἔρος εἷλεν: desire as subject; most likely the feeling, not the god
+5	146	Ὀτρεὺς	Ὀτρεύς	otreus	Otreus (king of Phrygia)	mortal	king	name	certain	Aphrodite's fictitious father, repeated by Anchises
+5	148	Ἑρμέω	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	διακτόρου (147) is an attached epithet, no separate row
+5	151	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+5	154	Ἄιδος	Ἅιδης	hades	Hades	god	chthonic	name	certain	δόμον Ἄιδος, the underworld
+5	155	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	166	Ἀγχίσης	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	166	αἴσῃ	αἶσα	aisa	Aisa (Destiny)	god	personification	personification	uncertain	θεῶν ἰότητι καὶ αἴσῃ "by the will and dispensation of the gods"; plainly the abstract
+5	170	Ἀγχίσῃ	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	170	ὕπνον	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	she poured sleep on him; plainly the thing
+5	172	δῖα θεάων	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	periphrasis	uncertain	formulaic honorific as subject of ἔστη (173), no name in clause
+5	175	Κυθερείης	Κυθέρεια	aphrodite	Aphrodite	god	olympian	epithet	certain	from Kythera
+5	176	ὕπνου	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	woke him from sleep; plainly the thing
+5	177	Δαρδανίδη	Δαρδανίδης	anchises	Anchises	mortal	trojan prince	patronymic	certain	descendant of Dardanos (Dardanos himself not otherwise named)
+5	177	ὕπνον	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	νήγρετον ὕπνον; plainly the thing
+5	180	ὕπνοιο	ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	woke from sleep; plainly the thing
+5	181	Ἀφροδίτης	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	187	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	191	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	191	Ἀφροδίτη	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	name	certain	
+5	192	Ἀγχίση	Ἀγχίσης	anchises	Anchises	mortal	trojan prince	name	certain	
+5	196	Τρώεσσιν	Τρώς	troes	Trojans	group	people	ethnic	certain	
+5	198	Αἰνείας	Αἰνείας	aineias	Aeneas	hero	trojan	name	certain	son of Aphrodite; name punned on αἰνὸν ἄχος
+5	202	Γανυμήδεα	Γανυμήδης	ganymedes	Ganymede	hero	deified mortal	name	certain	made immortal and ageless (214)
+5	202	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	204	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	207	Τρῶα	Τρώς	tros	Tros (king, father of Ganymede)	mortal	king	name	certain	Tros the king, father of Ganymede (not the people)
+5	210	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	213	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	213	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	διάκτορος attached, no separate row
+5	215	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	218	Τιθωνὸν	Τιθωνός	tithonos	Tithonos	hero	trojan prince	name	certain	made immortal but not ageless; kind hero for that reason, arguably mortal
+5	218	Ἠώς	Ἠώς	eos	Eos (Dawn)	god	titan	name	certain	
+5	220	Κρονίωνα	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+5	222	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	223	Ἠὼς	Ἠώς	eos	Eos (Dawn)	god	titan	name	certain	
+5	224	ἥβην	ἥβη	hebe	Hebe (Youth)	god	olympian	personification	uncertain	ἥβην αἰτῆσαι "ask for youth"; plainly the abstract
+5	224	γῆρας	γῆρας	geras	Geras (Old Age)	god	personification	personification	uncertain	scrape off old age; plainly the abstract
+5	225	ἥβη	ἥβη	hebe	Hebe (Youth)	god	olympian	personification	uncertain	πολυήρατος ἥβη as subject (ἔχεν); probably the abstract, not the goddess
+5	226	Ἠοῖ	Ἠώς	eos	Eos (Dawn)	god	titan	name	certain	ἠριγενείῃ attached epithet, no separate row
+5	227	Ὠκεανοῖο	Ὠκεανός	okeanos	Okeanos	god	titan	name	certain	Ὠκεανοῖο ῥοαί, the world-river at the ends of the earth
+5	227	γαίης	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	πείρασι γαίης "ends of the earth"; plainly the thing
+5	230	Ἠώς	Ἠώς	eos	Eos (Dawn)	god	titan	name	certain	
+5	233	γῆρας	γῆρας	geras	Geras (Old Age)	god	personification	personification	uncertain	old age as subject (ἔπειγεν); probably the abstract
+5	244	γῆρας	γῆρας	geras	Geras (Old Age)	god	personification	personification	uncertain	old age as subject (ἀμφικαλύψει); probably the abstract
+5	256	ἠελίοιο	ἥλιος	helios	Helios (Sun)	god	titan	personification	uncertain	φάος ἠελίοιο, birth formula; plainly the sun
+5	257	Νύμφαι	Νύμφη	nymphai	Nymphs	group	nymphs	name	certain	mountain nymphs of Ida (ὀρεσκῷοι), nurses of Aeneas
+5	258	τόδε ὄρος	Ἴδη	ide	Mount Ida (Troad)	place	mountain	periphrasis	uncertain	deictic "this mountain" = Ida; arguably just a demonstrative
+5	262	Σειληνοὶ	Σειληνός	seilenoi	Seilenoi (Silens)	group	silens	name	certain	
+5	262	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+5	269	μοῖρα	μοῖρα	moira	Moira (Fate)	god	personification	personification	uncertain	μοῖρα θανάτοιο "fate of death"; plainly the abstract
+5	269	θανάτοιο	θάνατος	thanatos	Thanatos (Death)	god	personification	personification	uncertain	μοῖρα θανάτοιο; plainly the abstract
+5	272	ἠελίοιο	ἥλιος	helios	Helios (Sun)	god	titan	personification	uncertain	φάος ἠελίοιο; plainly the sun
+5	280	Ἴλιον	Ἴλιος	ilios	Ilios (Troy)	place	city	name	certain	
+5	284	Νύμφης	Νύμφη	nymphai	Nymphs	group	nymphs	name	probable	"a nymph" as Aeneas' cover-story mother; unnamed individual, mapped to the Nymphs
+5	285	τόδε ὄρος	Ἴδη	ide	Mount Ida (Troad)	place	mountain	periphrasis	uncertain	deictic "this mountain" = Ida; arguably just a demonstrative
+5	287	Κυθερείῃ	Κυθέρεια	aphrodite	Aphrodite	god	olympian	epithet	certain	from Kythera
+5	288	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+5	291	οὐρανὸν	οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	she sped to the windy sky; plainly the thing
+5	292	Κύπροιο	Κύπρος	kypros	Cyprus	place	island	name	certain	
+5	292	Κύπροιο ἐυκτιμένης μεδέουσα	Ἀφροδίτη	aphrodite	Aphrodite	god	olympian	periphrasis	probable	"ruler of well-built Cyprus", vocative with generic θεά; no name in clause

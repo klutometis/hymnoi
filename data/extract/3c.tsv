@@ -1,0 +1,92 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+3	388	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	388	Απόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	printed without breathing (Απόλλων for Ἀπόλλων)
+3	390	Πυθοῖ	Πυθώ	pytho	Pytho (Delphi)	place	sanctuary	name	certain	
+3	393	Κρῆτες	Κρής	kretes	Cretans	group	people	ethnic	certain	
+3	393	Κνωσοῦ	Κνωσός	knosos	Knossos	place	city	name	certain	
+3	393	Μινωίου	Μινώιος	minos	Minos (king of Crete)	mortal	king	adjective	certain	Κνωσοῦ Μινωίου: "Minoan Knossos", Knossos of Minos
+3	395	φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	printed lowercase
+3	395	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	396	Παρνησοῖο	Παρνασσός	parnassos	Mount Parnassos	place	mountain	name	certain	
+3	398	Πύλον	Πύλος	pylos	Pylos	place	city	name	certain	
+3	398	Πυλοιγενέας	Πυλοιγενής	pylioi	Pylians (people of Pylos)	group	people	adjective	certain	Πυλοιγενέας ἀνθρώπους, "Pylos-born men"
+3	399	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	399	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	408	Νότος	Νότος	notos	Notos (South Wind)	god	wind	personification	probable	the wind driving the ship; capitalized by the editor; god or weather
+3	409	Μάλειαν	Μάλεια	maleia	Cape Malea	place	cape	name	certain	
+3	410	Λακωνίδα	Λακωνίς	lakonike	Laconia	place	region	adjective	certain	Λακωνίδα γαῖαν
+3	410	γαῖαν	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	"the Laconian land": plainly the land, not the goddess
+3	411	Ἠελίοιο	Ἥλιος	helios	Helios (the Sun)	god	titan	name	certain	his land and flocks at Tainaron
+3	412	Ταίναρον	Ταίναρον	tainaron	Tainaron (Cape Matapan)	place	cape	name	certain	
+3	413	Ἠελίοιο	Ἥλιος	helios	Helios (the Sun)	god	titan	name	certain	Ἠελίοιο ἄνακτος, owner of the flocks
+3	419	Πελοπόννησον	Πελοπόννησος	peloponnesos	the Peloponnese	place	region	name	certain	
+3	420	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+3	420	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	422	Ἀρήνην	Ἀρήνη	arene	Arene (Triphylia)	place	city	name	certain	
+3	422	Ἀργυφέην	Ἀργυφέα	argyphea	Argyphea	place	city	name	probable	unknown elsewhere; a town on the coast of Elis/Triphylia
+3	423	Θρύον	Θρύον	thryon	Thryon (Thryoessa), ford of the Alpheios	place	city	name	certain	
+3	423	Ἀλφειοῖο	Ἀλφειός	alpheios	River Alpheios	place	river	name	certain	Ἀλφειοῖο πόρον, the ford at Thryon
+3	423	Αἶπυ	Αἶπυ	aipy	Aipy	place	city	name	certain	
+3	424	Πύλον	Πύλος	pylos	Pylos	place	city	name	certain	
+3	424	Πυλοιγενέας	Πυλοιγενής	pylioi	Pylians (people of Pylos)	group	people	adjective	certain	repeats 398
+3	425	Κρουνοὺς	Κρουνοί	krounoi	Krounoi (Elis)	place	spring	name	certain	"the Springs", a place on the Elean coast (cf. Od. 15.295)
+3	425	Χαλκίδα	Χαλκίς	chalkis_elis	Chalkis (Elis)	place	city	name	certain	the Elean Chalkis of Od. 15.295, not Euboean Chalkis
+3	425	Δύμην	Δύμη	dyme	Dyme (Achaia)	place	city	name	probable	Dyme lies north of Elis, out of order in the voyage; perhaps a different place or a textual problem
+3	426	Ἤλιδα	Ἦλις	elis	Elis	place	region	name	certain	
+3	426	Ἐπειοί	Ἐπειοί	epeioi	Epeians	group	people	ethnic	certain	
+3	427	Φερὰς	Φεραί	pherai_elis	Pherai (Pheai, Elis)	place	city	name	probable	Od. 15.297 has Φεάς at this point (Pheia in Elis); the hymn reads Φεράς, also the name of towns in Messenia and Thessaly
+3	427	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	428	Ἰθάκης	Ἰθάκη	ithake	Ithaca	place	island	name	certain	Ἰθάκης ὄρος αἰπύ, the mountain of Ithaca (Neriton, unnamed)
+3	429	Δουλίχιόν	Δουλίχιον	doulichion	Doulichion	place	island	name	certain	
+3	429	Σάμη	Σάμη	same	Same (Kephallenia)	place	island	name	certain	
+3	429	Ζάκυνθος	Ζάκυνθος	zakynthos	Zakynthos	place	island	name	certain	
+3	430	Πελοπόννησον	Πελοπόννησος	peloponnesos	the Peloponnese	place	region	name	certain	
+3	431	Κρίσης	Κρίσα	krisa	Krisa	place	city	name	certain	Κρίσης κόλπος, the Gulf of Krisa (Corinthian Gulf)
+3	432	Πελοπόννησον	Πελοπόννησος	peloponnesos	the Peloponnese	place	region	name	certain	
+3	433	Ζέφυρος	Ζέφυρος	zephyros	Zephyros (West Wind)	god	wind	personification	probable	ἄνεμος Ζέφυρος, sent ἐκ Διὸς αἴσης; the wind as weather, capitalized by the editor
+3	433	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	436	ἠῶ	ἠώς	eos	Eos (Dawn)	god	titan	personification	uncertain	πρὸς ἠῶ τʼ ἠέλιόν τε: direction, "towards the east"; plainly not the goddess
+3	436	ἠέλιον	ἥλιος	helios	Helios (the Sun)	god	titan	personification	uncertain	paired with ἠῶ as a direction (east); plainly the sun, though Helios is a god at 411
+3	437	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	437	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	438	Κρίσην	Κρίσα	krisa	Krisa	place	city	name	certain	
+3	440	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+3	440	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	442	οὐρανὸν	οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	σέλας εἰς οὐρανὸν ἷκεν: the sky; plainly not the god
+3	445	Κρίσην	Κρίσα	krisa	Krisa	place	city	name	certain	
+3	446	Κρισαίων	Κρισαῖος	krisaioi	Krisaians (people of Krisa)	group	people	ethnic	certain	
+3	447	Φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+3	456	γαῖαν	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	ἐπὶ γαῖαν ἐκβῆτε: dry land; plainly not the goddess
+3	463	Κρητῶν	Κρής	kretes	Cretans	group	people	ethnic	certain	
+3	463	Κρητῶν ἀγὸς	ἀγός	kreton_agos	leader of the Cretans (unnamed)	mortal	cretan	periphrasis	uncertain	an unnamed individual speaker; record only if the graph keeps unnamed characters
+3	468	γαῖα	γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	τίς γαῖα; "what land is this?"; plainly not the goddess
+3	470	Πύλον	Πύλος	pylos	Pylos	place	city	name	certain	
+3	470	Κρήτης	Κρήτη	krete	Crete	place	island	name	certain	
+3	474	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+3	474	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	475	Κνωσὸν	Κνωσός	knosos	Knossos	place	city	name	certain	
+3	480	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	480	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	495	Δελφινίῳ	Δελφίνιος	apollon	Apollo	god	olympian	epithet	certain	cult title "Delphinios", from his dolphin (δελφίς) form; aition linked to Delphi
+3	496	Δελφίνιος	Δελφίνιος	apollon	Apollo	god	olympian	adjective	probable	describes the altar (ὁ βωμὸς αὐτὸς Δελφίνιος), named after Apollo Delphinios / the dolphin; no place as referent
+3	498	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+3	500	ἰηπαιήονʼ	Ἰηπαιήων	apollon	Apollo	god	olympian	epithet	uncertain	here the paean-song (LSJ s.v. II, citing h.Ap. 500, 517), named from the cry ἰὴ παιῆον invoking Apollo; LSJ I is the epithet of Apollo
+3	512	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+3	514	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	514	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	517	Κρῆτες	Κρής	kretes	Cretans	group	people	ethnic	certain	
+3	517	Πυθὼ	Πυθώ	pytho	Pytho (Delphi)	place	sanctuary	name	certain	
+3	517	ἰηπαιήονʼ	Ἰηπαιήων	apollon	Apollo	god	olympian	epithet	uncertain	the paean-song (LSJ s.v. II), named from the cry invoking Apollo; cf. 500
+3	518	Κρητῶν	Κρής	kretes	Cretans	group	people	ethnic	certain	
+3	518	παιήονες	παιήων	apollon	Apollo	god	olympian	epithet	uncertain	Κρητῶν παιήονες: paeans (or paean-singers) of the Cretans; common noun from Paieon/Paian, Apollo as healer
+3	518	Μοῦσα	Μοῦσα	mousai	the Muses	group	muse	name	certain	singular θεὰ Μοῦσα, unspecified Muse
+3	521	Παρνησὸν	Παρνασσός	parnassos	Mount Parnassos	place	mountain	name	certain	
+3	525	Κρητῶν	Κρής	kretes	Cretans	group	people	ethnic	certain	
+3	525	Κρητῶν ἀγὸς	ἀγός	kreton_agos	leader of the Cretans (unnamed)	mortal	cretan	periphrasis	uncertain	same unnamed speaker as 463
+3	526	αἴης	αἶα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	πατρίδος αἴης, "fatherland"; αἶα is a by-form of γαῖα; plainly not the goddess
+3	531	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	531	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+3	541	θέμις	θέμις	themis	Themis	god	titan	personification	uncertain	ἣ θέμις ἐστὶ: "as is the custom"; plainly the abstract, though Themis is a goddess earlier in this hymn
+3	545	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+3	545	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+3	545	Διὸς καὶ Λητοῦς υἱέ	υἱός	apollon	Apollo	god	olympian	periphrasis	certain	vocative address in the closing formula, no name beside it

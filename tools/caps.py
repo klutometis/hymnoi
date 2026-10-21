@@ -15,6 +15,7 @@ TOK = re.compile(r"[^\W\d_]+", re.U)
 
 
 def lines(spec):
+    spec = ' '.join(spec).split()  # accept "3 1 178" quoted as one argument, too
     rows = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'text', 'greek.tsv')), delimiter='\t'))
     if len(spec) == 1 and '-' in spec[0]:
         a, b = map(int, spec[0].split('-'))

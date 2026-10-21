@@ -1,0 +1,23 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+1	1	Δρακάνῳ	Δράκανον	drakanon	Drakanon (headland, Ikaros or Kos)	place	promontory	name	certain	location disputed: headland on Ikaros or Kos
+1	1	Ἰκάρῳ	Ἴκαρος	ikaros	Ikaros (Ikaria)	place	island	name	certain	
+1	2	Νάξῳ	Νάξος	naxos	Naxos	place	island	name	certain	
+1	2	δῖον γένος	γένος	dionysos	Dionysos	god	olympian	periphrasis	probable	"divine offspring", in apposition to σε (Dionysos): an address rather than a name
+1	2	εἰραφιῶτα	εἰραφιώτης	dionysos	Dionysos	god	olympian	epithet	certain	
+1	3	Ἀλφειῷ	Ἀλφειός	alpheios	Alpheios (river)	place	river	name	certain	Ἀλφειῷ ποταμῷ
+1	4	Σεμέλην	Σεμέλη	semele	Semele (Thyone)	hero	deified mortal	name	certain	
+1	4	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+1	5	Θήβῃσιν	Θῆβαι	thebai	Thebes (Boeotia)	place	city	name	certain	
+1	6	πατὴρ ἀνδρῶν τε θεῶν τε	πατήρ	zeus	Zeus	god	olympian	periphrasis	certain	
+1	7	Ἥρην	Ἥρα	hera	Hera	god	olympian	name	certain	
+1	8	Νύση	Νῦσα	nysa	Nysa	place	mountain	name	certain	ὕπατον ὄρος
+1	9	Φοινίκης	Φοινίκη	phoinike	Phoenicia	place	region	name	certain	
+1	9	Αἰγύπτοιο	Αἴγυπτος	aigyptos_river	Aigyptos (the Nile)	place	river	name	probable	Αἰγύπτοιο ῥοάων: Homeric masc. Αἴγυπτος = the Nile; could be the land
+1	13	Κρονίων	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+1	15	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
+1	16	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+1	17	εἰραφιῶτα	εἰραφιώτης	dionysos	Dionysos	god	olympian	epithet	certain	
+1	20	Διώνυσʼ	Διόνυσος	dionysos	Dionysos	god	olympian	name	certain	
+1	20	εἰραφιῶτα	εἰραφιώτης	dionysos	Dionysos	god	olympian	epithet	certain	beside the name
+1	21	Σεμέλῃ	Σεμέλη	semele	Semele (Thyone)	hero	deified mortal	name	certain	
+1	21	Θυώνην	Θυώνη	semele	Semele (Thyone)	hero	deified mortal	name	certain	Thyone, the name of the deified Semele

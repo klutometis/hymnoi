@@ -1,0 +1,190 @@
+hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	note
+4	293	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+4	293	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	294	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+4	297	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	298	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	300	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	301	σπαργανιῶτα	σπαργανιώτης	hermes	Hermes	god	olympian	epithet	uncertain	ad hoc comic vocative title for Hermes, standing alone; epithet-as-name or mere description? ("swaddling-baby", mocking)
+4	301	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	301	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	301	Διὸς καὶ Μαιάδος υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	304	Κυλλήνιος	Κυλλήνιος	hermes	Hermes	god	olympian	epithet	certain	epithet from Mount Kyllene
+4	304	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	307	Ἑκάεργε	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	312	Ζηνὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	312	Κρονίωνι	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	312	δίκην	Δίκη	dike	Dike (Justice)	god	personification	personification	uncertain	"give and take justice" before Zeus: plainly the thing
+4	314	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	314	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+4	314	Λητοῦς ἀγλαὸς υἱός	Λητοῦς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	Apollo, phrase standing alone for him
+4	316	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	318	Κυλλήνιος	Κυλλήνιος	hermes	Hermes	god	olympian	epithet	certain	epithet from Mount Kyllene; stands alone
+4	318	Ἀργυρότοξον	Ἀργυρότοξος	apollon	Apollo	god	olympian	epithet	certain	stands alone for Apollo
+4	321	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	321	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+4	321	Διὸς καὶ Λητοῦς υἱός	Διὸς καὶ Λητοῦς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	Apollo, phrase standing alone for him
+4	322	Οὐλύμποιο	Ὄλυμπος	olympos	Mount Olympus	place	mountain	name	certain	
+4	323	Κρονίωνα	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	323	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	323	Διὸς περικαλλέα τέκνα	Διὸς τέκνα	hermes	Hermes	god	olympian	periphrasis	certain	dual reference: Hermes and Apollo together (one row each), in apposition to the unexpressed/pronominal subject
+4	323	Διὸς περικαλλέα τέκνα	Διὸς τέκνα	apollon	Apollo	god	olympian	periphrasis	certain	dual reference: Hermes and Apollo together (one row each), in apposition to the unexpressed/pronominal subject
+4	324	δίκης	Δίκη	dike	Dike (Justice)	god	personification	personification	uncertain	"scales of judgement": plainly the thing
+4	325	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympus	place	mountain	name	certain	
+4	326	Ἠῶ	Ἠώς	eos	Eos (Dawn)	god	personification	personification	probable	"after gold-throned Dawn": a time of day, but printed capitalized and with the goddess's epithet χρυσόθρονος
+4	327	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	327	ἀργυρότοξος	Ἀργυρότοξος	apollon	Apollo	god	olympian	epithet	probable	beside the name here, but used as a name at 4.318
+4	327	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	328	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	329	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	330	φοῖβε	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	printed lowercase; vocative standing alone
+4	333	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	333	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	337	Κυλλήνης	Κυλλήνη	kyllene	Mount Kyllene	place	mountain	name	certain	Κυλλήνης ἐν ὄρεσσι, the mountain
+4	339	γαίῃ	Γαῖα	gaia	Gaia (Earth)	god	primordial	personification	uncertain	"upon the earth": plainly the thing
+4	342	Πύλονδʼ	Πύλος	pylos	Pylos (on the Alpheios)	place	city	name	certain	Πύλονδε "to Pylos"; the Pylos by the Alpheios ford (4.398), i.e. Elean/Triphylian Pylos
+4	343	ἀγαυοῦ δαίμονος	δαίμων	hermes	Hermes	god	olympian	periphrasis	uncertain	"works of a mighty daimon": generic on its face, but Apollo means the thief, Hermes
+4	344	ἀσφοδελὸν λειμῶνα	ἀσφοδελὸς λειμών	asphodelos_leimon	the asphodel meadow	place	meadow	name	uncertain	the meadow the cattle tracks led to; same words as the underworld Asphodel Meadow of Od. 11.539, but here probably just a flowery meadow
+4	354	βροτὸς ἀνὴρ	βροτὸς ἀνήρ	old_man_of_onchestos	the old man of Onchestos (later Battos)	mortal	herdsman	periphrasis	uncertain	the old man at Onchestos who saw Hermes (4.87ff.); unnamed in the hymn, Battos in later tradition; id invented
+4	355	Πύλον	Πύλος	pylos	Pylos (on the Alpheios)	place	city	name	certain	
+4	358	νυκτὶ	Νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	simile "like black night" (cf. Il. 1.47): the thing
+4	365	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+4	365	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	366	Ερμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	printed without breathing (Ερμῆς) in the source text
+4	367	Κρονίωνα	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	368	Ζεῦ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	371	ἠελίοιο	Ἥλιος	helios	Helios	god	personification	personification	uncertain	"as the sun was newly rising": time of day, the thing
+4	374	Τάρταρον	Τάρταρος	tartaros	Tartarus	place	underworld	name	certain	
+4	375	ἥβης	Ἥβη	hebe	Hebe (Youth)	god	olympian	personification	uncertain	"bloom of glorious youth": the thing
+4	381	Ἠέλιον	Ἥλιος	helios	Helios	god	personification	name	certain	revered as a god alongside "other daimones"
+4	387	Κυλλήνιος	Κυλλήνιος	hermes	Hermes	god	olympian	epithet	certain	epithet from Mount Kyllene
+4	387	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+4	389	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	392	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	392	διάκτορον	διάκτορος	hermes	Hermes	god	olympian	epithet	probable	beside the name here; a name-like title of Hermes (alone at 4.514)
+4	395	Κρονίδης	Κρονίδης	zeus	Zeus	god	olympian	patronymic	certain	
+4	395	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	396	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	397	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	397	Διὸς περικαλλέα τέκνα	Διὸς τέκνα	hermes	Hermes	god	olympian	periphrasis	certain	dual reference: Hermes and Apollo together (one row each), in apposition to the unexpressed/pronominal subject
+4	397	Διὸς περικαλλέα τέκνα	Διὸς τέκνα	apollon	Apollo	god	olympian	periphrasis	certain	dual reference: Hermes and Apollo together (one row each), in apposition to the unexpressed/pronominal subject
+4	398	Πύλον	Πύλος	pylos	Pylos (on the Alpheios)	place	city	name	certain	Πύλον ἠμαθόεντα, by the Alpheios
+4	398	Ἀλφειοῦ	Ἀλφειός	alpheios	Alpheios (river)	place	river	name	certain	
+4	400	νυκτὸς	Νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"at night-time": the thing
+4	401	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	403	Λητοΐδης	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	
+4	404	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	405	δολομῆτα	δολομήτης	hermes	Hermes	god	olympian	epithet	probable	vocative standing alone for Hermes ("crafty one"); a Homeric epithet (of Zeus, Il. 1.540)
+4	408	Κυλλήνιε	Κυλλήνιος	hermes	Hermes	god	olympian	epithet	certain	epithet from Mount Kyllene; vocative alone
+4	408	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	408	Μαιάδος υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	409a	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	line 409a is bracketed in the text (editorial supplement)
+4	413	Ἑρμέω	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	413	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	414	Ἀργειφόντης	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
+4	416	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	
+4	416	Λητοῦς ἐρικυδέος υἱὸν	Λητοῦς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	Apollo, phrase standing alone for him (with ἑκηβόλον 417)
+4	417	ἑκηβόλον	Ἑκηβόλος	apollon	Apollo	god	olympian	epithet	probable	in apposition to "son of Leto" (416); used as a name at 4.509, 4.522
+4	420	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+4	420	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	424	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	424	Μαιάδος υἱὸς	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	425	Φοίβου	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+4	425	Ἀπόλλωνος	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	427	γαῖαν	Γαῖα	gaia	Gaia (Earth)	god	primordial	personification	probable	Hermes's theogony: "the immortal gods and dark earth, how they first came to be" — cosmogonic Earth
+4	428	μοῖραν	Μοῖρα	moira	Moira (Fate)	god	personification	personification	uncertain	"each got his portion": the thing
+4	429	Μνημοσύνην	Μνημοσύνη	mnemosyne	Mnemosyne	god	titan	name	certain	
+4	430	Μουσάων	Μοῦσα	mousai	the Muses	group	muse	name	certain	
+4	430	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	430	Μαιάδος υἱόν	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	432	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	432	Διὸς ἀγλαὸς υἱός	Διὸς υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	434	ἔρος	Ἔρως	eros	Eros	god	primordial	personification	uncertain	"longing seized his heart": the feeling
+4	436	βουφόνε	βουφόνος	hermes	Hermes	god	olympian	epithet	uncertain	ad hoc comic vocative title for Hermes, standing alone; epithet-as-name or mere description? ("ox-slayer")
+4	436	μηχανιῶτα	μηχανιώτης	hermes	Hermes	god	olympian	epithet	uncertain	ad hoc comic vocative title for Hermes, standing alone; epithet-as-name or mere description? ("contriver")
+4	436	δαιτὸς ἑταῖρε	δαιτὸς ἑταῖρος	hermes	Hermes	god	olympian	periphrasis	uncertain	ad hoc comic vocative title for Hermes, standing alone; epithet-as-name or mere description? ("comrade of the feast"); πονεύμενε, a participle, not recorded
+4	439	πολύτροπε	πολύτροπος	hermes	Hermes	god	olympian	epithet	uncertain	vocative beside "son of Maia"; descriptive or title? (Odysseus's epithet)
+4	439	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	439	Μαιάδος υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	445	Ὀλύμπια	Ὀλύμπιος	olympos	Mount Olympus	place	mountain	adjective	certain	Ὀλύμπια δώματα
+4	446	φηλῆτα	φηλήτης	hermes	Hermes	god	olympian	epithet	uncertain	ad hoc comic vocative title for Hermes, standing alone; epithet-as-name or mere description? ("thief")
+4	446	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	446	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	446	Διὸς καὶ Μαιάδος υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	447	μοῦσα	Μοῦσα	mousai	the Muses	group	muse	personification	uncertain	"what music (art of song) for hopeless cares": probably the thing, music, not a Muse
+4	449	εὐφροσύνην	Εὐφροσύνη	euphrosyne	Euphrosyne (Mirth)	god	charis	personification	uncertain	triad mirth, love, sleep: the things, though all three are deities in Hesiod
+4	449	ἔρωτα	Ἔρως	eros	Eros	god	primordial	personification	uncertain	triad mirth, love, sleep: the thing
+4	449	ὕπνον	Ὕπνος	hypnos	Hypnos (Sleep)	god	personification	personification	uncertain	"sweet sleep": the thing
+4	450	Μούσῃσιν	Μοῦσα	mousai	the Muses	group	muse	name	certain	
+4	450	Ὀλυμπιάδεσσιν	Ὀλυμπιάς	olympos	Mount Olympus	place	mountain	adjective	certain	Μούσῃσιν Ὀλυμπιάδεσσιν "Olympian Muses"; describes the Muses
+4	455	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	455	Διὸς υἱέ	Διὸς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	Hermes addressing Apollo, vocative alone
+4	463	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	464	Ἑκάεργε	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	468	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	468	Διὸς υἱέ	Διὸς υἱός	apollon	Apollo	god	olympian	periphrasis	certain	Hermes addressing Apollo, vocative alone
+4	469	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	471	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	472	Ἑκάεργε	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	472	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	482	εὐφροσύνην	Εὐφροσύνη	euphrosyne	Euphrosyne (Mirth)	god	charis	personification	uncertain	"a joy by night and by day": the thing
+4	482	νυκτός	Νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"by night and by day": the thing
+4	490	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	490	Διὸς ἀγλαὲ κοῦρε	Διὸς κοῦρος	apollon	Apollo	god	olympian	periphrasis	certain	Hermes addressing Apollo, vocative alone
+4	492	Ἑκάεργε	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	496	Φοῖβος	Φοῖβος	apollon	Apollo	god	olympian	epithet	certain	
+4	496	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	497	Ἐρμῇ	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	printed with smooth breathing (Ἐρμῇ) in the source text; read Ἑρμῇ
+4	498	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	498	Μαιάδος υἱὸς	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	500	Λητοῦς	Λητώ	leto	Leto	god	titan	name	certain	Λητοῦς ἀγλαὸς υἱός in apposition to Ἀπόλλων, so no periphrasis row
+4	500	ἑκάεργος	Ἑκάεργος	apollon	Apollo	god	olympian	epithet	certain	
+4	500	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	504	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	504	Διὸς περικαλλέα τέκνα	Διὸς τέκνα	hermes	Hermes	god	olympian	periphrasis	certain	dual reference: Hermes and Apollo together (one row each), in apposition to the unexpressed/pronominal subject
+4	504	Διὸς περικαλλέα τέκνα	Διὸς τέκνα	apollon	Apollo	god	olympian	periphrasis	certain	dual reference: Hermes and Apollo together (one row each), in apposition to the unexpressed/pronominal subject
+4	505	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympus	place	mountain	name	certain	
+4	506	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	507	Ἑρμῆς	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	508	Λητοΐδην	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	
+4	509	Ἑκηβόλῳ	Ἑκηβόλος	apollon	Apollo	god	olympian	epithet	certain	
+4	513	Λητοΐδης	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	
+4	513	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	514	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	514	Μαιάδος υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	514	διάκτορε	διάκτορος	hermes	Hermes	god	olympian	epithet	certain	vocative standing alone
+4	514	ποικιλομῆτα	ποικιλομήτης	hermes	Hermes	god	olympian	epithet	probable	vocative standing alone ("of subtle counsel"); Homeric epithet of Odysseus
+4	516	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	519	Στυγὸς	Στύξ	styx	Styx	nymph	oceanid	name	certain	"the dread water of Styx", the gods' oath; river and Oceanid
+4	521	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	521	Μαιάδος υἱὸς	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	522	Ἑκηβόλος	Ἑκηβόλος	apollon	Apollo	god	olympian	epithet	certain	
+4	523	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	524	Λητοΐδης	Λητοΐδης	apollon	Apollo	god	olympian	patronymic	certain	
+4	526	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	Διὸς γόνον "offspring of Zeus", generic (no one of Zeus's children), so no periphrasis row
+4	526a	πατήρ	πατήρ	zeus	Zeus	god	olympian	epithet	probable	"the Father sent an eagle": absolute πατήρ = Zeus; line 526a is bracketed in the text (editorial supplement)
+4	532	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	535	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	538	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	539	χρυσόρραπι	χρυσόρραπις	hermes	Hermes	god	olympian	epithet	certain	"golden-wand", vocative with κασίγνητε, standing for Hermes
+4	540	Ζεύς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	550	Μαίης	Μαῖα	maia	Maia	nymph	pleiad	name	certain	
+4	550	Μαίης ἐρικυδέος υἱὲ	Μαίης υἱός	hermes	Hermes	god	olympian	periphrasis	certain	phrase continues καὶ Διὸς αἰγιόχοιο (551); vocative alone for Hermes
+4	551	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	551	ἐριούνιε	ἐριούνιος	hermes	Hermes	god	olympian	epithet	certain	θεῶν ἐριούνιε δαῖμον, vocative
+4	552	σεμναὶ κασίγνηται γεγαυῖαι	Θριαί	thriai	the Thriai (bee-maidens of Parnassus)	nymph	bee-maidens	periphrasis	probable	"holy ones, sisters born, three maidens" (552-4) who dwell under Parnassus and are fed on honey; unnamed in the text, identified with the Thriai by commentators (Evelyn-White's note)
+4	555	Παρνησοῖο	Παρνασός	parnassos	Mount Parnassus	place	mountain	name	certain	
+4	567	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	567	Μαιάδος υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	568a	οὐρανόθεν	Οὐρανός	ouranos	Ouranos (Sky)	god	primordial	personification	uncertain	adverb "from heaven": the sky, the thing; line 568a is bracketed (editorial supplement)
+4	568a	Ζεὺς	Ζεύς	zeus	Zeus	god	olympian	name	certain	line 568a is bracketed in the text (editorial supplement)
+4	571	Ἑρμῆν	Ἑρμῆς	hermes	Hermes	god	olympian	name	certain	
+4	572	Ἀΐδην	Ἀΐδης	hades	Hades	god	underworld	name	probable	εἰς Ἀΐδην "messenger to Hades": the god (relative ὅς … δώσει γέρας 573 makes him a person), though εἰς Ἀΐδην can mean the place
+4	574	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	574	Μαιάδος υἱὸν	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, phrase standing alone for him
+4	574	Ἀπόλλων	Ἀπόλλων	apollon	Apollo	god	olympian	name	certain	
+4	575	Κρονίων	Κρονίων	zeus	Zeus	god	olympian	patronymic	certain	
+4	578	νύκτα	Νύξ	nyx	Nyx (Night)	god	primordial	personification	uncertain	"through the dark night": the thing
+4	579	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
+4	579	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
+4	579	Διὸς καὶ Μαιάδος, υἱέ	Μαιάδος υἱός	hermes	Hermes	god	olympian	periphrasis	certain	Hermes, closing farewell; the comma before υἱέ is as printed
