@@ -41,7 +41,6 @@ chios,place,island,Χίος,Chios
 chryseis_oceanid,nymph,oceanid,Χρυσηίς,Chryseis (Oceanid)
 deliades,group,chorus,Δηλιάς,Delian Maidens
 delos,place,island,Δῆλος,Delos
-delphoi,place,city,Δελφοί,Delphi
 demeter,god,olympian,Δημήτηρ,Demeter
 demo,mortal,princess,Δημώ,"Demo, daughter of Keleos"
 demophoon,mortal,eleusinian,Δημοφῶν,Demophoon (son of Keleos)
@@ -170,7 +169,7 @@ mainades,group,votaries,μαινάς,Maenads
 maionia,place,region,Μῃονία,Maeonia (Lydia)
 makar,mortal,king,Μάκαρ,Makar (king of Lesbos)
 maleia,place,cape,Μάλεια,Cape Malea
-megamedes,god,titan,Μεγαμηδείδης,Megamedes (father of Pallas)
+megamedes,god,obscure,Μεγαμηδείδης,Megamedes (father of Pallas)
 meles,place,river,Μέλης,Meles (river at Smyrna)
 melite_oceanid,nymph,oceanid,Μελίτη,Melite (companion of Persephone)
 melobosis,nymph,oceanid,Μηλόβοσις,Melobosis
@@ -196,7 +195,7 @@ nymphai,group,nymphs,Νύμφη,Nymphs
 nysa,place,mountain,Νῦσα,Nysa
 nyx,god,primordial,νύξ,Nyx (Night)
 okalea,place,city,Ὠκαλέη,Okalea
-okeanides,nymph,oceanid,κούρη Ὠκεανοῦ,the Oceanids (daughters of Okeanos)
+okeanides,group,oceanid,κούρη Ὠκεανοῦ,the Oceanids (daughters of Okeanos)
 okeanos,god,titan,Ὠκεανός,Okeanos
 okyrhoe,nymph,oceanid,Ὠκυρόη,Okyrhoe
 olympos,place,mountain,Ὄλυμπος,Mount Olympos
@@ -206,7 +205,7 @@ otreus,mortal,king,Ὀτρεύς,Otreus (king of Phrygia)
 ourania_oceanid,nymph,oceanid,Οὐρανία,Ourania (Oceanid)
 ouraniones,group,gods,Οὐρανίων,Ouraniones (the heavenly gods)
 ouranos,god,primordial,Οὐρανός,Ouranos (Sky)
-pallas_megamedeides,god,titan,Πάλλας,Pallas son of Megamedes (father of Selene)
+pallas_megamedeides,god,obscure,Πάλλας,Pallas son of Megamedes (father of Selene)
 pan,god,rustic,Πάν,Pan
 pandeia,god,minor,Πανδεία,Pandeia (daughter of Zeus and Selene)
 paphos,place,city,Πάφος,Paphos (Cyprus)

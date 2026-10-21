@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ὕμνοι · the names, hymn by hymn</title>
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="matrix.css">
+</head>
+<body class="matrix">
+<header>
+  <h1><span class="grc">Ὕμνοι</span> <small>the names, hymn by hymn</small></h1>
+  <nav id="controls">
+    <span class="group views"><a id="to-graph" href="index.html" title="The graph: hymns and names as a network">graph</a> <b>matrix</b></span>
+    <span class="group">
+      <label title="Periphrases (Κρόνου πολυώνυμος υἱός) and personifications (Γαῖα)"><input type="checkbox" id="phrases" checked> periphrases</label>
+      <label title="Mentions marked uncertain, and collectives hidden by default (REVIEW.md)"><input type="checkbox" id="doubtful"> doubtful</label>
+    </span>
+    <span class="group">
+      <label>sort <select id="sort">
+        <option value="first">by first appearance</option>
+        <option value="hymns">by number of hymns</option>
+        <option value="mentions">by mentions</option>
+        <option value="alpha">alphabetically</option>
+      </select></label>
+      <label title="Equal columns, or columns as wide as the hymns are long, with a tick at each line that names the being">columns <select id="widths">
+        <option value="equal">equal</option>
+        <option value="lines">by length</option>
+      </select></label>
+    </span>
+    <span class="group"><input type="search" id="find" placeholder="find a name…" autocomplete="off" list="names"><datalist id="names"></datalist></span>
+  </nav>
+</header>
+<main>
+  <div id="wrap">
+    <svg id="head"></svg>
+    <svg id="matrix"></svg>
+  </div>
+  <aside id="panel">
+    <div id="intro">
+      <p>The thirty-four Homeric Hymns across, every being and place they name down, grouped by kind. A mark is
+      sized by how often the hymn names it, by name, epithet, patronymic or periphrasis; a ring marks the god a hymn
+      is addressed to.</p>
+      <p>Hover a mark for the lines; click a name or a mark for every citation, and a hymn’s numeral for the hymn in
+      the graph. <em>Columns by length</em> gives each hymn the width of its lines and puts a tick at each line that
+      names the being: the four long hymns, to Demeter, Apollo, Hermes and Aphrodite, hold four lines in five.</p>
+      <div id="key"></div>
+      <p class="fine">Greek: Evelyn-White (1914), via Perseus; Hymn 34, Εἰς Ξένους, from Allen (1912).
+      A draft: see REVIEW.md for the judgement calls still open. Printing this page gives a 24 × 38.8 in poster.</p>
+    </div>
+    <div id="detail" hidden></div>
+  </aside>
+</main>
+<div id="tip" hidden></div>
+<script src="vendor/d3.v7.9.0.min.js"></script>
+<script src="matrix.js"></script>
+</body>
+</html>

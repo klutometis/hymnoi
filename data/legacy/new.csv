@@ -2,7 +2,7 @@ hymn,entity,name_en,kind,dedicatee_self,count,lines,forms
 1,aigyptos_river,Aigyptos (the Nile),place,,1,1.9,Αἰγύπτοιο
 2,ouraniones,Ouraniones (the heavenly gods),group,,1,2.408,Οὐρανιώνων
 2,thorikos,Thorikos (in Attica),place,,1,2.126,Θόρικόνδε
-3,drakaina,the Pythian drakaina,creature,,1,3.300,δράκαιναν
+3,drakaina,the drakaina (Python),creature,,1,3.300,δράκαιναν
 3,gaia,Gaia (Earth),god,,2,3.84;3.334,Γαῖα
 3,ouranos,Ouranos (Sky),god,,2,3.84;3.334,Οὐρανὸς
 3,samothrake,Samothrace (Thracian Samos),place,,1,3.34,Σάμος

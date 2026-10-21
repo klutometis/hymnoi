@@ -1,9 +1,286 @@
 id,label_grc,label_en,note
-geron_onchestos,γέρων βατοδρόπος,the old man of Onchestos,"4.190 ὦ γέρον, Ὀγχηστοῖο βατοδρόπε; Battos in later tradition"
-kreton_agos,Κρητῶν ἀγός,the leader of the Cretans,3.463 and 3.525
-leukippos_wife,Λευκίπποιο δάμαρ,the wife of Leukippos,3.212 (dative δάμαρτι); 2009 Λευκίππη
-keleos_daughters,Κελεοῖο θύγατρες,the daughters of Keleos,2.105
-homeros,τυφλὸς ἀνήρ,the blind man of Chios,"3.172; Homer, by Thucydides 3.104"
+admete_oceanid,Ἀδμήτη,Admete,
+agamedes,Ἀγαμήδης,Agamedes,
+aigai,Αἰγαί,Aigai,3.32 nominative
+aigina,Αἰγίνη,Aegina,"3.31 νῆσός τ᾽ Αἰγίνη, nominative"
+aigyptos,Αἴγυπτος,Egypt,
+aigyptos_river,Αἴγυπτος,Aigyptos (the Nile),"1.9 Αἰγύπτοιο ῥοάων; masculine, as in Homer"
+aineias,Αἰνείας,Aeneas,
+ainianes,Ἐνιῆνες,Ainianes,constructed from acc. Ἐνιῆνας; 2009 Αἰνιῆνες
+aipy,Αἶπυ,Aipy,
+aisa,Αἶσα,Aisa,constructed from dat. αἴσῃ
+aisagee,Αἰσαγέη,Mount Aisagee,from gen. Αἰσαγέης
+aither,Αἰθήρ,Aither,from gen. αἰθέρος
+akaste,Ἀκάστη,Akaste,
+alkmene,Ἀλκμήνη,Alkmene,
+alpheios,Ἀλφειός,Alpheios,
+amphitrite,Ἀμφιτρίτη,Amphitrite,
+ananke,Ἀνάγκη,Ananke,
+anchises,Ἀγχίσης,Anchises,
+antron,Ἀντρών,Antron,from acc. Ἀντρῶνα
+aphrodite,Ἀφροδίτη,Aphrodite,
+apollon,Ἀπόλλων,Apollo,
+arene,Ἀρήνη,Arene,
+ares,Ἄρης,Ares,
+argyphea,Ἀργυφέη,Argyphea,"from acc. Ἀργυφέην; epic -η, as 2009"
+arkadia,Ἀρκαδίη,Arkadia,"from Ἀρκαδίης, Ἀρκαδίην"
+artemis,Ἄρτεμις,Artemis,
+asklepios,Ἀσκληπιός,Asklepios,
+asphodelos_leimon,ἀσφοδελὸς λειμών,the asphodel meadow,"from acc. ἀσφοδελὸν λειμῶνα; a description, so lowercase"
+athena,Ἀθήνη,Athena,"Ἀθήνη 5× (nom. 5.94), Ἀθηναίη 4× (nom. 28.16)"
+athenai,Ἀθῆναι,Athens,from gen. Ἀθηνῶν 3.30
+athos,Ἀθόως,Mount Athos,"3.33 Θρηίκιός τ᾽ Ἀθόως: nominative, uncontracted"
+atlas,Ἄτλας,Atlas,
+autokane,Αὐτοκάνη,Mount Autokane,
+azan,Ἀζάν,Azan,implied only by the adjective Ἀζαντίδα 3.209
+chalkis_elis,Χαλκίς,Chalkis (Elis),
+charis,Χάρις,Charis,"24.5 χάριν, the thing; capitalized as a name"
+charites,Χάριτες,the Charites,
+chimaira,Χίμαιρα,Chimaira,
+chios,Χίος,Chios,
+chryseis_oceanid,Χρυσηίς,Chryseis,2.421 as printed (no diaeresis)
+deliades,Δηλιάδες,the Delian Maidens,κοῦραι Δηλιάδες
+delos,Δῆλος,Delos,
+demeter,Δημήτηρ,Demeter,
+demo,Δημώ,Demo,
+demophoon,Δημοφόων,Demophoon,nominative as printed
+dike,Δίκη,Dike,
+diokles,Διοκλῆς,Diokles,"from dat. Διοκλεῖ 2.474, 2.477; 2.153 has gen. Διόκλου (as if Δίοκλος)"
+dione,Διώνη,Dione,
+dionysos,Διόνυσος,Dionysos,nominative as printed; Διώνυσος in some oblique cases
+dioskouroi,Διόσκουροι,the Dioskouroi,"the verse has Τυνδαρίδαι (17.5, 33.18) and Διὸς κούρους; Διόσκουροι from the titles (Εἰς Διοσκούρους) and 2009"
+dolichos,Δόλιχος,Dolichos,
+dotion,Δώτιον,the Dotian plain,Δωτίῳ (πεδίῳ)
+doulichion,Δουλίχιον,Doulichion,
 drakaina,δράκαινα,the drakaina (Python),3.300; the hymn never calls her Python
-thriai,σεμναὶ κασίγνηται,the three sisters (Thriai),4.552; the name Thriai is the commentators'
+drakanon,Δράκανον,Drakanon,dat. Δρακάνῳ 1.1 fits Δράκανον or Δράκανος (2009); Δράκανον as Strabo
+dryope,νύμφη Δρύοπος,the daughter of Dryops (Dryope),19.34 νύμφῃ ἐυπλοκάμῳ Δρύοπος; never named
+dryops,Δρύοψ,Dryops,
+dyme,Δύμη,Dyme,
+echo,Ἠχώ,Echo,
+eileithyia,Εἰλείθυια,Eileithyia,
+eirene,Εἰρήνη,Eirene,
+elektra_oceanid,Ἠλέκτρη,Elektra,
+eleusinioi,Ἐλευσίνιοι,the Eleusinians,
+eleusis,Ἐλευσίς,Eleusis,from gen. Ἐλευσῖνος
+elis,Ἦλις,Elis,
+eos,Ἠώς,Eos,
+epeioi,Ἐπειοί,the Epeians,
+erebos,Ἔρεβος,Erebos,
+ereutheus,Ἐρευθεύς,Ereutheus,
+erginos,Ἐργῖνος,Erginos,
+eros,Ἔρος,Eros,"the hymns' form: ἔρος 3× (4.434, 5.91, 5.144), ἔρωτα once"
+euboia,Εὔβοια,Euboea,
+eumolpos,Εὔμολπος,Eumolpos,
+eunomia,Εὐνομίη,Eunomia,from εὐνομίῃσι
+euphrosyne,Εὐφροσύνη,Euphrosyne,
+euripos,Εὔριπος,Euripos,
+europe_mainland,Εὐρώπη,Europe (mainland),
+euryphaessa,Εὐρυφάεσσα,Euryphaessa,
+eurystheus,Εὐρυσθεύς,Eurystheus,
+gaia,Γαῖα,Gaia,
+galaxaura,Γαλαξαύρη,Galaxaura,
+ganymedes,Γανυμήδης,Ganymede,
+geras,Γῆρας,Geras,
+geron_onchestos,γέρων βατοδρόπος,the old man of Onchestos,"4.190 ὦ γέρον, Ὀγχηστοῖο βατοδρόπε; Battos in later tradition"
+hades,Ἀΐδης,Hades,"Ἀΐδης 5× (+ Ἄιδος 5.154) against Ἀιδωνεύς 4×, all in Hymn 2; 2009 Ἀΐδης"
+haliartos,Ἁλίαρτος,Haliartos,
+harmonia,Ἁρμονίη,Harmonia,
+hebe,Ἥβη,Hebe,
+hekate,Ἑκάτη,Hekate,
+helikon,Ἑλικών,Helikon,
+helios,Ἠέλιος,Helios,2.26 Ἠέλιός τε
+hephaistos,Ἥφαιστος,Hephaistos,
+hera,Ἥρη,Hera,
 hera_nymph,Ἥρη,Hera (the nymph of Kyme),34.2 νύμφης ἐρατώπιδος Ἥρης
+herakles,Ἡρακλέης,Herakles,"epic nominative (Hes. Th. 318), from acc. Ἡρακλέα 15.1; 2009 Ἡρακλῆς"
+hermes,Ἑρμῆς,Hermes,
+hermos,Ἕρμος,Hermos,
+hesperos,Ἕσπερος,Hesperos,
+hestia,Ἑστίη,Hestia,
+himeros,Ἵμερος,Himeros,
+homeros,τυφλὸς ἀνήρ,the blind man of Chios,"3.172; Homer, by Thucydides 3.104"
+horai,Ὧραι,the Horai,
+hyperboreoi,Ὑπερβόρεοι,the Hyperboreans,
+hyperion_titan,Ὑπερίων,Hyperion,31.4
+hypnos,Ὕπνος,Hypnos,
+iache,Ἰάχη,Iache,
+iambe,Ἰάμβη,Iambe,
+ianeira,Ἰάνειρα,Ianeira,
+ianthe,Ἰάνθη,Ianthe,
+ide,Ἴδη,Mount Ida,
+ikaros,Ἴκαρος,Ikaros,
+ilios,Ἴλιος,Ilios,"acc. Ἴλιον 5.280 with fem. ἠνεμόεσσαν, so Ἴλιος (2009 Ἴλιον)"
+imbros,Ἴμβρος,Imbros,
+inopos,Ἰνωπός,Inopos,
+iolkos,Ἰαωλκός,Iolkos,from acc. Ἰαωλκόν
+iones,Ἰάονες,the Ionians,nominative as printed
+iris,Ἶρις,Iris,
+ischys,Ἴσχυς,Ischys,
+ithake,Ἰθάκη,Ithaca,
+kallichoron,Καλλίχορον,Kallichoron,from gen. Καλλιχόρου
+kallidike,Καλλιδίκη,Kallidike,
+kalliope,Καλλιόπη,Kalliope,
+kallirhoe,Καλλιρόη,Kallirhoe,
+kallithoe,Καλλιθόη,Kallithoe,
+kalypso_oceanid,Καλυψώ,Kalypso,
+karpathos,Κάρπαθος,Karpathos,
+kastalia,κρήνη καλλίρροος,the fair-flowing spring (Kastalia?),"3.300; unnamed, identification a guess"
+kastor,Κάστωρ,Kastor,
+keleos,Κελεός,Keleos,
+keleos_daughters,Κελεοῖο θύγατρες,the daughters of Keleos,2.105
+kenaion,Κήναιον,Kenaion,
+kentauroi,Κένταυροι,the Centaurs,"4.224 gen. sg. Κενταύρου, generic"
+kephisis,Κηφισίς,Lake Kephisis,
+kephisos,Κηφισσός,Kephisos,from acc. Κηφισσόν
+keres,Κῆρες,the Keres,
+klaros,Κλάρος,Klaros,
+kleisidike,Κλεισιδίκη,Kleisidike,
+knidos,Κνίδος,Knidos,
+knosos,Κνωσός,Knossos,
+koios,Κοῖος,Koios,
+koronis,Κορωνίς,Koronis,
+korykos,Κώρυκος,Mount Korykos,
+kos,Κόως,Kos,"3.42 Μίλητός τε Κόως τε: nominative, uncontracted"
+krete,Κρήτη,Crete,
+kretes,Κρῆτες,the Cretans,
+kreton_agos,Κρητῶν ἀγός,the leader of the Cretans,3.463 and 3.525
+krisa,Κρίση,Krisa,"from Κρίσην, Κρίσῃ, Κρίσης (Homer Κρῖσα)"
+krisaioi,Κρισαῖοι,the Krisaians,
+kronos,Κρόνος,Kronos,
+krounoi,Κρουνοί,Krounoi,
+kyllene,Κυλλήνη,Mount Kyllene,
+kynthos,Κύνθος,Mount Kynthos,
+kypros,Κύπρος,Cyprus,
+lakonike,Λακωνίς,Laconia,3.410 Λακωνίδα γαῖαν
+leda,Λήδη,Leda,
+lekton,Λέκτον,Lekton,
+lelanton,Λήλαντον,the Lelantine plain,Ληλάντῳ πεδίῳ
+lemnos,Λῆμνος,Lemnos,
+lesbos,Λέσβος,Lesbos,
+leto,Λητώ,Leto,
+leukippe,Λευκίππη,Leukippe,
+leukippos,Λεύκιππος,Leukippos,
+leukippos_wife,Λευκίπποιο δάμαρ,the wife of Leukippos,3.212 (dative δάμαρτι); 2009 Λευκίππη
+lilaia,Λίλαια,Lilaia,"from Λιλαίηθεν; Homer Λίλαιαν (Il. 2.523), 2009 Λίλαια"
+lykia,Λυκίη,Lycia,
+maia,Μαῖα,Maia,nominative Μαῖα 4×; the genitive is mostly Μαιάδος (from Μαιάς)
+mainades,Μαινάδες,the Maenads,"2.386 μαινάς, one, in a simile"
+maionia,Μῃονίη,Maeonia,
+makar,Μάκαρ,Makar,
+maleia,Μάλεια,Cape Malea,
+megamedes,Μεγαμήδης,Megamedes,constructed from the patronymic Μεγαμηδείδαο 4.100
+meles,Μέλης,Meles,
+melite_oceanid,Μελίτη,Melite,
+melobosis,Μηλόβοσις,Melobosis,
+meropes,Μέροπες,the Meropes,
+messapion,ὄρος ζάθεον,the holy mountain (Messapion?),"3.223 ὄρος ζάθεον, χλωρόν; unnamed"
+metaneira,Μετάνειρα,Metaneira,
+meter_theon,Μήτηρ θεῶν,the Mother of the Gods,14.1 μητέρα ... πάντων τε θεῶν; title Εἰς Μητέρα θεῶν; 2009 Μήτηρ Θεῶν
+miletos,Μίλητος,Miletus,
+mimas,Μίμας,Mount Mimas,
+minos,Μίνως,Minos,from the adjective Μινωίου
+mnemosyne,Μνημοσύνη,Mnemosyne,
+moira,Μοῖρα,Moira,
+mousai,Μοῦσαι,the Muses,
+mykale,Μυκάλη,Mount Mykale,
+mykalessos,Μυκαλησσός,Mykalessos,
+naxos,Νάξος,Naxos,
+neon_teichos,πόλις αἰπεινή,the steep city (Neon Teichos),34.2 πόλιν αἰπεινήν; the name is from the Vita Herodotea
+nereides,Νηρηΐδες,the Nereids,"3.320 ᾗσι κασιγνήτῃσι, Thetis' sisters; never named"
+nereus,Νηρεύς,Nereus,
+nike,Νίκη,Nike,
+notos,Νότος,Notos,
+nymphai,Νύμφαι,the Nymphs,
+nysa,Νύση,Nysa,
+nyx,Νύξ,Nyx,
+okalea,Ὠκαλέη,Okalea,
+okeanides,κοῦραι Ὠκεανοῦ,the daughters of Okeanos,2.5 κούρῃσι σὺν Ὠκεανοῦ; the text's words rather than Hesiod's Ὠκεανῖναι
+okeanos,Ὠκεανός,Okeanos,
+okyrhoe,Ὠκυρόη,Okyrhoe,
+olympos,Ὄλυμπος,Olympos,Ὄλυμπος beside Οὔλυμπος (gen. Οὐλύμποιο 5×)
+onchestos,Ὀγχηστός,Onchestos,
+ortygia,Ὀρτυγίη,Ortygia,
+otreus,Ὀτρεύς,Otreus,
+ourania_oceanid,Οὐρανίη,Ourania,
+ouraniones,Οὐρανίωνες,the Ouraniones,2.408 gen. Οὐρανιώνων
+ouranos,Οὐρανός,Ouranos,
+pallas_megamedeides,Πάλλας,Pallas (son of Megamedes),4.100 gen. Πάλλαντος
+pan,Πάν,Pan,"only acc. Πᾶνα, Πᾶν᾽; nominative Πάν (2009 Πᾶν)"
+pandeia,Πανδείη,Pandeia,
+paphos,Πάφος,Paphos,
+parnassos,Παρνησός,Parnassos,
+paros,Πάρος,Paros,
+parthenion_phrear,Παρθένιον φρέαρ,the Maiden Well,Παρθενίῳ φρέατι
+peiresiai,Πειρεσίαι,Peiresiai,3.32 as printed; 2009 Εἰρεσίαι
+pelion,Πήλιον,Mount Pelion,
+peloponnesos,Πελοπόννησος,the Peloponnese,
+peneios,Πηνειός,Peneios,
+peparethos,Πεπάρηθος,Peparethos,
+perrhaiboi,Περραιβοί,the Perrhaiboi,
+persephone,Περσεφόνεια,Persephone,"Περσεφόνεια 6× (nom. 2.370, 2.493), Περσεφόνη 4× (nom. 2.360, 2.387, 2.405); Homer has only Περσεφόνεια"
+perses,Περσαῖος,Perses,from gen. Περσαίου
+phaino,Φαινώ,Phaino,
+pherai_elis,Φεραί,Pheia (printed Pherai),3.427 Φεράς; Od. 15.297 Φεάς (REVIEW B7)
+phlegyai,Φλεγύαι,the Phlegyai,
+phlegyas,Φλεγύας,Phlegyas,
+phoinike,Φοινίκη,Phoenicia,
+phokaia,Φώκαια,Phokaia,
+phorbas,Φόρβας,Phorbas,
+phryges,Φρύγες,the Phrygians,
+phrygia,Φρυγίη,Phrygia,
+pieria,Πιερίη,Pieria,
+plouto,Πλουτώ,Plouto,
+ploutos,Πλοῦτος,Ploutos,
+polydeukes,Πολυδεύκης,Polydeukes,
+polyxeinos,Πολύξεινος,Polyxeinos,
+pontos,Πόντος,Pontos,
+poseidon,Ποσειδάων,Poseidon,
+pylioi,Πυλοιγενέες,the Pylians,"3.398, 3.424 Πυλοιγενέας ἀνθρώπους"
+pylos,Πύλος,Pylos,
+pytho,Πυθώ,Pytho,
+rharion,Ῥάριον,Rharion,
+rhea,Ῥείη,Rhea,
+rheneia,Ῥήναια,Rheneia,"3.44 Ῥήναιά τε, as printed"
+rhodeia,Ῥόδεια,Rhodeia,
+rhodope,Ῥοδόπη,Rhodope,
+saidene,Σαιδήνη,Saidene,
+salamis_kypros,Σαλαμίς,Salamis (Cyprus),
+same,Σάμη,Same,
+samos,Σάμος,Samos,
+samothrake,Θρηικίη Σάμος,Samothrace,3.34 Θρηικίη τε Σάμος
+seilenoi,Σειληνοί,the Seilenoi,
+selene,Σελήνη,Selene,
+semele,Σεμέλη,Semele,
+skyros,Σκῦρος,Skyros,
+smyrna,Σμύρνη,Smyrna,from gen. Σμύρνης
+styx,Στύξ,Styx,
+tainaron,Ταίναρον,Tainaron,
+tartaros,Τάρταρος,Tartaros,
+taygetos,Τηΰγετος,Mount Taygetos,17.3 Τηϋγέτου (epic); 33.4 Ταϋγέτου
+telphousa,Τελφοῦσα,Telphousa,
+teumessos,Τευμησσός,Teumessos,
+thalassa,Θάλασσα,Thalassa,
+thanatos,Θάνατος,Thanatos,
+thebai,Θήβη,Thebes,"Θήβη sg. 3× in Hymn 3; pl. Θήβῃσιν 1.5, Θήβῃς 15.2"
+themis,Θέμις,Themis,
+thetis,Θέτις,Thetis,
+thorikos,Θορικός,Thorikos,
+thrake,Θρῄκη,Thrace,"only the adjectives Θρηίκιος Ἀθόως, Θρηικίη Σάμος 3.33, 3.34"
+thriai,σεμναὶ κασίγνηται,the three sisters (Thriai),4.552; the name Thriai is the commentators'
+thryon,Θρύον,Thryon,
+titanes,Τιτῆνες,the Titans,"Τιτῆνές τε, as printed"
+tithonos,Τιθωνός,Tithonos,
+triopas,Τρίοψ,Triops (Triopas),from gen. Τρίοπος
+triptolemos,Τριπτόλεμος,Triptolemos,
+troes,Τρῶες,the Trojans,
+troia,Τροίη,Troy (the Troad),
+trophonios,Τροφώνιος,Trophonios,
+tros,Τρώς,Tros,
+tyche,Τύχη,Tyche (Fortune),
+tyche_oceanid,Τύχη,Tyche (Oceanid),
+typhaon,Τυφάων,Typhaon,Τυφάονα 2× against Τυφωεύς once
+tyrsenoi,Τυρσηνοί,the Tyrsenians,
+zakynthos,Ζάκυνθος,Zakynthos,
+zephyros,Ζέφυρος,Zephyros,
+zeus,Ζεύς,Zeus,

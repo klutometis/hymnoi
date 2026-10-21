@@ -1309,7 +1309,7 @@ hymn,line,form,lemma,entity,mention_type,certainty,note
 27,11,ἰοχέαιρα,ἰοχέαιρα,artemis,epithet,certain,stands alone for Artemis
 27,14,Φοίβου,Φοῖβος,apollon,epithet,certain,Phoibos
 27,14,Ἀπόλλωνος,Ἀπόλλων,apollon,name,certain,
-27,14,Δελφῶν,Δελφοί,delphoi,name,certain,"Δελφῶν δῆμον, the land of Delphi"
+27,14,Δελφῶν,Δελφοί,pytho,name,certain,"Δελφῶν δῆμον, the land of Delphi; Delphi = Pytho (merged 2026-10-21)"
 27,15,Μουσῶν,Μοῦσα,mousai,name,certain,
 27,15,Χαρίτων,Χάρις,charites,name,certain,
 27,19,Λητὼ,Λητώ,leto,name,certain,

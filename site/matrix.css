@@ -1,0 +1,61 @@
+/* The matrix view: hymns across, names down. Builds on palette.css and style.css. */
+body.matrix { overflow: hidden; }
+.views a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.views a:hover { color: var(--ink); border-color: var(--ink); }
+.views b { font-weight: 500; }
+#controls select { font: inherit; font-size: .85rem; background: #fff; border: 1px solid var(--rule); padding: 0 .2rem; }
+
+#wrap { flex: 1; min-width: 0; overflow: auto; position: relative; }
+#head { position: sticky; top: 0; z-index: 2; display: block; background: var(--paper); }
+#matrix { display: block; }
+
+svg text { font-family: "GFS Porson", "EB Garamond", serif; fill: var(--ink); }
+svg .en, svg .lat { font-family: "EB Garamond", serif; }
+svg .en { font-style: italic; fill: var(--muted); }
+svg .num { font-family: "EB Garamond", serif; fill: var(--muted); font-variant-numeric: oldstyle-nums; }
+svg .kindlab { font-family: "EB Garamond", serif; font-style: italic; }
+.colrule { stroke: var(--rule); stroke-width: .6; }
+.grouprule { stroke: var(--rule); stroke-width: 1; }
+.fiverule { stroke: var(--rule); stroke-width: .5; stroke-dasharray: 1 2; }
+.headrule { stroke: var(--ink); stroke-width: .8; }
+.hcol { cursor: pointer; }
+.hcol:hover .numeral, .hcol.lit .numeral { fill: var(--god); }
+.rl { cursor: pointer; }
+.rl.lit, .rl.sel { font-weight: 700; }
+.band { fill: var(--hymn); }
+.band.sel { fill: #efe2c4; }
+.colband { fill: var(--hymn); opacity: .55; }
+.ring { fill: none; stroke: var(--ink); stroke-width: 1; }
+.ring.empty { stroke-dasharray: 1.5 1.5; }
+.dedcell { fill: none; stroke: var(--ink); stroke-width: .9; }
+.tick { stroke-linecap: butt; }
+.cnt { font-family: "EB Garamond", serif; fill: var(--muted); font-variant-numeric: oldstyle-nums; }
+#matrix.hovering { cursor: pointer; }
+
+/* tooltip: fixed to the viewport, since the matrix scrolls */
+#tip { position: fixed; z-index: 10; max-width: 34rem; }
+#tip .tl { display: grid; grid-template-columns: 3.4rem 1fr; gap: 0 .5rem; margin-top: .15rem; }
+#tip .tl .ln { color: var(--muted); font-size: .8rem; text-align: right; padding-top: .15rem; font-variant-numeric: oldstyle-nums; }
+#tip .tl .gr { font-family: "GFS Porson", "EB Garamond", serif; font-size: 1.02rem; line-height: 1.3; }
+#tip .hd { border-bottom: 1px solid var(--rule); padding-bottom: .15rem; margin-bottom: .2rem; }
+#tip .more { color: var(--muted); font-size: .8rem; font-style: italic; margin-top: .2rem; }
+#tip mark { border-bottom-width: 2px; font-weight: 600; }
+
+#key { margin: .9rem 0; font-size: .9rem; }
+#key .kinds span { display: inline-flex; align-items: center; gap: .25rem; margin-right: .7rem; cursor: pointer; user-select: none; }
+#key .kinds span.off { opacity: .3; }
+#key .kinds i { width: .75rem; height: .75rem; border-radius: 50%; display: inline-block; }
+#key svg { display: block; margin-top: .4rem; }
+#detail .cites h3.here { background: var(--hymn); }
+#detail .graph-link { font-size: .85rem; color: var(--muted); }
+
+/* The poster: the SVG is laid out at the full page (2304 × 3727 CSS px) and paints its own paper and margins. */
+@page { size: 24in 38.83in; margin: 0; }
+@media print {
+  html, body, body.matrix { height: auto; overflow: visible; background: var(--paper); display: block; }
+  header, #panel, #tip, #head { display: none !important; }
+  main { display: block; }
+  #wrap { overflow: visible; }
+  #matrix { break-inside: avoid; position: absolute; left: 0; top: 0; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
