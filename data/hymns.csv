@@ -1,0 +1,35 @@
+hymn,numeral,roman,title_grc,title_en,dedicatees,lines,last_line
+1,αʹ,I,Εἰς Διόνυσον,To Dionysus,dionysos,21,21
+2,βʹ,II,Εἰς Δημήτραν,To Demeter,demeter,498,495
+3,γʹ,III,Εἰς Ἀπόλλωνα,To Apollo,apollon,552,546
+4,δʹ,IV,Εἰς Ἑρμῆν,To Hermes,hermes,586,580
+5,εʹ,V,Εἰς Ἀφροδίτην,To Aphrodite,aphrodite,293,293
+6,ϛʹ,VI,Εἰς Ἀφροδίτην,To Aphrodite,aphrodite,21,21
+7,ζʹ,VII,Εἰς Διόνυσον,To Dionysus,dionysos,59,59
+8,ηʹ,VIII,Εἰς Ἄρεα,To Ares,ares,17,17
+9,θʹ,IX,Εἰς Ἄρτεμιν,To Artemis,artemis,9,9
+10,ιʹ,X,Εἰς Ἀφροδίτην,To Aphrodite,aphrodite,6,6
+11,ιαʹ,XI,Εἰς Ἀθηνᾶν,To Athena,athena,5,5
+12,ιβʹ,XII,Εἰς Ἥραν,To Hera,hera,5,5
+13,ιγʹ,XIII,Εἰς Δημήτραν,To Demeter,demeter,3,3
+14,ιδʹ,XIV,Εἰς Μητέρα θεῶν,To the Mother of the Gods,meter_theon,6,6
+15,ιεʹ,XV,Εἰς Ἡρακλέα λεοντόθυμον,To Heracles the Lion-Hearted,herakles,9,9
+16,ιϛʹ,XVI,Εἰς Ἀσκληπιόν,To Asclepius,asklepios,5,5
+17,ιζʹ,XVII,Εἰς Διοσκούρους,To the Dioscuri,dioskouroi,5,5
+18,ιηʹ,XVIII,Εἰς Ἑρμῆν,To Hermes,hermes,12,12
+19,ιθʹ,XIX,Εἰς Πᾶνα,To Pan,pan,49,49
+20,κʹ,XX,Εἰς Ἥφαιστον,To Hephaestus,hephaistos,8,8
+21,καʹ,XXI,Εἰς Ἀπόλλωνα,To Apollo,apollon,5,5
+22,κβʹ,XXII,Εἰς Ποσειδῶνα,To Poseidon,poseidon,7,7
+23,κγʹ,XXIII,Εἰς ὕπατον Κρονίδην,"To the Son of Cronos, Most High",zeus,4,4
+24,κδʹ,XXIV,Εἰς Ἑστίαν,To Hestia,hestia,5,5
+25,κεʹ,XXV,Εἰς Μούσας καὶ Ἀπόλλωνα,To the Muses and Apollo,mousai;apollon,7,7
+26,κϛʹ,XXVI,Εἰς Διόνυσον,To Dionysus,dionysos,13,13
+27,κζʹ,XXVII,Εἰς Ἄρτεμιν,To Artemis,artemis,22,22
+28,κηʹ,XXVIII,Εἰς Ἀθηνᾶν,To Athena,athena,18,18
+29,κθʹ,XXIX,Εἰς Ἑστίαν καὶ Ἑρμῆν,To Hestia and Hermes,hestia;hermes,14,14
+30,λʹ,XXX,Εἰς Γῆν μητέρα πάντων,"To Earth, Mother of All",gaia,19,19
+31,λαʹ,XXXI,Εἰς Ἥλιον,To Helios,helios,20,19
+32,λβʹ,XXXII,Εἰς Σελήνην,To Selene,selene,20,20
+33,λγʹ,XXXIII,Εἰς Διοσκούρους,To the Dioscuri,dioskouroi,19,19
+34,λδʹ,XXXIV,Εἰς Ξένους,To Guest-friends,,5,5

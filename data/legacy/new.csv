@@ -1,0 +1,20 @@
+hymn,entity,name_en,kind,dedicatee_self,count,lines,forms
+1,aigyptos_river,Aigyptos (the Nile),place,,1,1.9,Αἰγύπτοιο
+2,ouraniones,Ouraniones (the heavenly gods),group,,1,2.408,Οὐρανιώνων
+2,thorikos,Thorikos (in Attica),place,,1,2.126,Θόρικόνδε
+3,drakaina,the Pythian drakaina,creature,,1,3.300,δράκαιναν
+3,gaia,Gaia (Earth),god,,2,3.84;3.334,Γαῖα
+3,ouranos,Ouranos (Sky),god,,2,3.84;3.334,Οὐρανὸς
+3,samothrake,Samothrace (Thracian Samos),place,,1,3.34,Σάμος
+3,thryon,"Thryon (Thryoessa), ford of the Alpheios",place,,1,3.423,Θρύον
+4,eos,Eos (Dawn),god,,1,4.184,Ἠὼς
+4,kentauroi,the Centaurs,group,,1,4.224,Κενταύρου
+5,eos,Eos (Dawn),god,,4,5.218;5.223;5.226;5.230,Ἠώς;Ἠὼς;Ἠοῖ
+5,nymphai,Nymphs,group,,5,5.97;5.98;5.119;5.257;5.284,Νυμφάων;Νυμφῶν;νύμφαι;Νύμφαι;Νύμφης
+6,zephyros,Zephyros (West Wind),god,,1,6.3,Ζεφύρου
+8,keres,Keres (death-spirits),group,,1,8.17,Κῆράς
+14,zeus,Zeus,god,,1,14.2,Διὸς
+18,atlas,Atlas,god,,1,18.4,Ἄτλαντος
+19,nymphai,Nymphs,group,,2,19.3;19.19,νύμφαις;Νύμφαι
+26,nymphai,Nymphs,group,,2,26.3;26.10,Νύμφαι
+31,eos,Eos (Dawn),god,,1,31.6,Ἠῶ
