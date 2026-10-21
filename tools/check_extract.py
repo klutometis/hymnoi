@@ -20,7 +20,8 @@ ID = re.compile(r'^[a-z][a-z0-9_]*$')
 
 def strip(s):
     s = unicodedata.normalize('NFD', s)
-    return ''.join(c for c in s if unicodedata.category(c) != 'Mn').lower().replace('ς', 'σ').replace('ʼ', "'")
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn').lower().replace('ς', 'σ')
+    return re.sub("[\u02bc\u2019\u1fbd']", '', s)  # elision marks: match Δημήτηρʼ to Δημήτηρ
 
 
 def main():

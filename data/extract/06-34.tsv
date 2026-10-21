@@ -57,7 +57,7 @@ hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	no
 12	3	Ζηνὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
 12	4	Ὄλυμπον	Ὄλυμπος	olympos	Mount Olympos	place	mountain	name	certain	
 12	5	Διὶ	Ζεύς	zeus	Zeus	god	olympian	name	certain	
-13	1	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	text note: Perseus doubled reading Δημήτηρ’ Δημήτρ’
+13	1	Δημήτηρ	Δημήτηρ	demeter	Demeter	god	olympian	name	certain	text note: Perseus doubled reading Δημήτηρʼ Δημήτρʼ
 13	2	Περσεφόνειαν	Περσεφόνεια	persephone	Persephone	god	chthonian	name	certain	
 14	1	μητέρα μοι πάντων τε θεῶν πάντων τʼ ἀνθρώπων	μήτηρ	meter_theon	Mother of the Gods (Kybele/Rhea)	god	mother of the gods	periphrasis	certain	dedicatee; the Mother of the Gods (Kybele/Rhea), never named
 14	2	Μοῦσα	Μοῦσα	mousai	the Muse(s)	group	muse	name	certain	singular, unnamed Muse
@@ -206,7 +206,7 @@ hymn	line	form	lemma	referent	referent_en	kind	subkind	mention_type	certainty	no
 29	7	Ἀργειφόντα	Ἀργειφόντης	hermes	Hermes	god	olympian	epithet	certain	
 29	7	Διὸς	Ζεύς	zeus	Zeus	god	olympian	name	certain	
 29	7	Μαιάδος	Μαιάς	maia	Maia	nymph	pleiad	name	certain	
-29	10	αἰδοίῃ τε φίλῃ τε	αἰδοῖος	hestia	Hestia	god	olympian	periphrasis	uncertain	"with the revered and dear one" = Hestia; the editions read Ἑστίῃ at the start of 29.11, which this text prints as εἰδότες (see report)
+29	11	Ἑστίῃ	Ἑστίη	hestia	Hestia	god	olympian	name	certain	Perseus printed εἰδότες here; restored from Allen and Evelyn-White's translation
 29	12	ἥβῃ	ἥβη	hebe	Hebe	god	olympian	personification	uncertain	νόῳ θ᾽ ἕσπεσθε καὶ ἥβῃ "follow wisdom and youth/strength": plainly the thing
 29	13	Κρόνου θύγατερ	θυγάτηρ	hestia	Hestia	god	olympian	periphrasis	certain	vocative address
 29	13	Κρόνου	Κρόνος	kronos	Kronos	god	titan	name	certain	

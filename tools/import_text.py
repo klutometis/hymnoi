@@ -37,7 +37,25 @@ FIXES = {
              'Perseus has a doubled unaccented "Ατλαντος" before Ἄτλαντος; removed.'),
     '13.1': ('Δημήτηρ’ ἠύκομον, σεμνὴν θεάν, ἄρχομ’ ἀείδειν,',
              'Perseus has "Δημήτηρ’ Δημήτρ’" (two readings run together); kept Δημήτηρ’.'),
+    '29.11': ('Ἑστίῃ· ἀμφότεροι γὰρ ἐπιχθονίων ἀνθρώπων',
+              'Perseus has εἰδότες, repeated from 29.12; Ἑστίῃ as in Allen 1912 (p. 88) and as '
+              'Evelyn-White translates ("you and Hestia"). Perseus prints 29.10 before 29.9, '
+              'Evelyn-White\'s transposition; this file keeps numerical order.'),
 }
+
+# Word-level typos in the Perseus digitization: (line, wrong, right).
+SUBS = [
+    ('2.187', 'παρ αὐτὴν', 'παρʼ αὐτὴν'),
+    ('2.376', 'Ἀιδωνευς', 'Ἀιδωνεύς'),
+    ('3.388', 'Απόλλων', 'Ἀπόλλων'),
+    ('3.395', 'φοίβου', 'Φοίβου'),
+    ('4.158', 'Λητοίδου', 'Λητοΐδου'),
+    ('4.366', 'Ερμῆς', 'Ἑρμῆς'),
+    ('4.497', 'Ἐρμῇ', 'Ἑρμῇ'),
+]
+
+# Perseus mixes U+2019 and U+02BC for elision; use U+02BC (the majority) throughout.
+APOS = ('\u2019', '\u02bc')
 
 XENOI_GREEK = [
     'Αἰδεῖσθε ξενίων κεχρημένον ἠδὲ δόμοιο',
@@ -64,6 +82,16 @@ LATIN = re.compile(r'[A-Za-z]')
 
 
 def clean(path, text):
+    verse, note = _clean(path, text)
+    for p, wrong, right in SUBS:
+        if p == path:
+            assert wrong in verse, (path, wrong)
+            verse = verse.replace(wrong, right)
+            note = (note + ' ' if note else '') + f'Perseus prints {wrong}.'
+    return verse.replace(*APOS), note
+
+
+def _clean(path, text):
     if path in FIXES:
         return FIXES[path]
     m = LATIN.search(text)
