@@ -80,3 +80,6 @@ button.link-btn { font: inherit; font-size: .85rem; background: none; border: 1p
 .k-god { color: var(--god); } .k-nymph { color: var(--nymph); } .k-hero { color: var(--hero); }
 .k-mortal { color: var(--mortal); } .k-group { color: var(--group); } .k-creature { color: var(--creature); }
 .k-place { color: var(--place); }
+#legend .routekey span { cursor: pointer; }
+#legend .routekey span.off { opacity: .45; }
+#legend .routekey span.off b { opacity: .5; }
