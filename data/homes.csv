@@ -1,0 +1,94 @@
+entity,place,tie,hymn,line,weight,note
+dionysos,nysa,born,1,8,1,"ἔστι δέ τις Νύση, ὕπατον ὄρος … τηλοῦ Φοινίκης: the text's own answer after calling Drakanon, Ikaros, Naxos, the Alpheios and Thebes ψευδόμενοι (1.1–6); reared there too, Νύσης ἐν γυάλοις (26.5). Nysa is unlocated (mythical)"
+semele,thebai,origin,7,57,0.5,"judgement call: Καδμηὶς Σεμέλη, Kadmos' daughter, i.e. Theban; Thebes is not named here (1.5 names it only as Dionysos' rejected birthplace)"
+demeter,eleusis,cult,2,356,1,"ἀπάνευθε θυώδεος ἔνδοθι νηοῦ ἧσται Ἐλευσῖνος κραναὸν πτολίεθρον ἔχουσα; temple ordered at 2.270–272, Ἐλευσῖνος … δῆμον ἔχουσα 2.490"
+demeter,olympos,dwells,2,485,0.5,βάν ῥʼ ἴμεν Οὔλυμπόνδε … ἔνθα δὲ ναιετάουσι παραὶ Διί (with Persephone)
+demeter,paros,cult,2,491,0.5,καὶ Πάρον ἀμφιρύτην (… δῆμον ἔχουσα 2.490); Ἀντρῶνά τε πετρήεντα in the same line is left out for the three-row cap
+persephone,erebos,dwells,2,399,1,"ὑπὸ κεύθεσι γαίης οἰκήσεις ὡρέων τρίτατον μέρος; ἐξ Ἐρέβευς 2.409; queen there, δεσπόσσεις πάντων 2.365. Erebos is mythical, unlocated"
+persephone,olympos,dwells,2,485,0.5,"ἔνθα δὲ ναιετάουσι παραὶ Διί: she and Demeter, two thirds of the year (2.400, 2.447)"
+persephone,eleusis,cult,2,493,0.5,αὐτὴ καὶ κούρη περικαλλὴς Περσεφόνεια: invoked with Demeter as holding Eleusis (2.490)
+hades,erebos,dwells,2,335,1,"εἰς Ἔρεβος πέμψε … τέτμε δὲ τόν γε ἄνακτα δόμων ἔντοσθεν ἐόντα (2.342); καταφθιμένοισιν ἀνάσσων 2.347. Erebos is mythical, unlocated"
+keleos,eleusis,dwells,2,97,1,"Κελεοῖο δαΐφρονος … δῶμα, ὃς τότʼ Ἐλευσῖνος θυοέσσης κοίρανος ἦεν"
+metaneira,eleusis,dwells,2,161,1,"μητρὶ βαθυζώνῳ Μετανείρῃ: Keleos' wife, in his house at Eleusis (2.96–97)"
+keleos_daughters,eleusis,dwells,2,105,1,"Κελεοῖο Ἐλευσινίδαο θύγατρες, fetching water for φίλα πρὸς δώματα πατρός"
+kallidike,eleusis,dwells,2,109,1,one of Κελεοῖο Ἐλευσινίδαο θύγατρες (2.105); speaks for them at 2.146
+kleisidike,eleusis,dwells,2,109,1,one of Κελεοῖο Ἐλευσινίδαο θύγατρες (2.105)
+demo,eleusis,dwells,2,109,1,"Δημώ τʼ ἐρόεσσα, one of Κελεοῖο Ἐλευσινίδαο θύγατρες (2.105)"
+kallithoe,eleusis,dwells,2,110,1,the eldest of Κελεοῖο Ἐλευσινίδαο θύγατρες (2.105)
+demophoon,eleusis,born,2,234,1,"Κελεοῖο … υἱὸν Δημοφόωνθʼ, ὃν ἔτικτεν … Μετάνειρα; born and reared ἐνὶ μεγάροισιν (2.235, 2.252) in Keleos' house at Eleusis"
+triptolemos,eleusis,dwells,2,153,1,"among the men οἷσιν ἔπεστι μέγα κράτος ἐνθάδε (2.150), i.e. at Eleusis; taught the rites at 2.474"
+diokles,eleusis,dwells,2,153,1,"among the men οἷσιν ἔπεστι μέγα κράτος ἐνθάδε (2.150), i.e. at Eleusis"
+polyxeinos,eleusis,dwells,2,154,1,"among the men οἷσιν ἔπεστι μέγα κράτος ἐνθάδε (2.150), i.e. at Eleusis"
+eumolpos,eleusis,dwells,2,154,1,"ἀμύμονος Εὐμόλποιο, among the men with κράτος ἐνθάδε (2.150), i.e. at Eleusis"
+dolichos,eleusis,dwells,2,155,1,"Δολίχου, among the men with κράτος ἐνθάδε (2.150), i.e. at Eleusis"
+iambe,eleusis,dwells,2,195,1,servant in Keleos' house at Eleusis: Ἰάμβη … θῆκεν … πηκτὸν ἕδος
+rhea,olympos,dwells,2,449,0.5,"judgement call: Zeus' messenger ἤιξε κατʼ Οὐλύμποιο καρήνων; the text shows her leaving Olympos, not living there"
+apollon,delos,born,3,16,1,"τὸν δὲ κραναῇ ἐνὶ Δήλῳ (born 3.115–119); Δήλῳ, Φοῖβε, μάλιστʼ ἐπιτέρπεαι ἦτορ 3.146; Δήλοιο … μέγʼ ἀνάσσεις 3.181"
+apollon,pytho,cult,3,372,1,his temple and oracle (3.287–299): ἐξ οὗ νῦν Πυθὼ κικλήσκεται· οἳ δὲ ἄνακτα Πύθιον (3.372–373); Πυθοῖ ἐν ἠγαθέῃ ἱερὸν δόμον 24.2
+apollon,klaros,cult,9,5,0.5,"ἐς Κλάρον ἀμπελόεσσαν, ὅθʼ ἀργυρότοξος Ἀπόλλων ἧσται; also holds Lykia, Maeonia and Miletos (3.179–180), left out for the cap"
+artemis,ortygia,born,3,16,1,τὴν μὲν ἐν Ὀρτυγίῃ: her birthplace; Ortygia is unlocated (identity disputed)
+artemis,meles,dwells,9,3,0.5,"ἵππους ἄρσασα βαθυσχοίνοιο Μέλητος: waters her horses at the Meles, then drives through Smyrna"
+artemis,klaros,cult,9,5,0.5,"judgement call: drives ἐς Κλάρον, where Apollo sits waiting for her (9.5–6); the seat is his"
+leto,olympos,dwells,3,5,0.5,"judgement call: Λητὼ δʼ οἴη μίμνε παραὶ Διί, in Zeus' house (κατὰ δῶμα Διός 3.2); Olympos not named in the passage"
+makar,lesbos,dwells,3,37,1,Λέσβος … Μάκαρος ἕδος Αἰολίωνος
+homeros,chios,dwells,3,172,1,"τυφλὸς ἀνήρ, οἰκεῖ δὲ Χίῳ ἔνι παιπαλοέσσῃ"
+deliades,delos,dwells,3,157,1,"κοῦραι Δηλιάδες, ἑκατηβελέταο θεράπναι"
+eileithyia,olympos,dwells,3,98,1,ἧστο γὰρ ἄκρῳ Ὀλύμπῳ ὑπὸ χρυσέοισι νέφεσσιν; fetched ἀπὲκ μεγάροιο 3.110
+hera,olympos,dwells,12,4,1,ἣν πάντες μάκαρες κατὰ μακρὸν Ὄλυμπον … τίουσιν; ἧστο γὰρ ἐν μεγάροισι Διός 3.96
+zeus,olympos,dwells,4,322,1,τέρθρον … θυώδεος Οὐλύμποιο ἐς πατέρα Κρονίωνα; Διὸς πρὸς δῶμα 3.186–187; Ζηνὸς Ὀλυμπίου 17.2
+mousai,olympos,dwells,4,450,1,Μούσῃσιν Ὀλυμπιάδεσσιν; sing at Zeus' house on Olympos 3.186–190
+charites,olympos,dwells,3,194,0.5,judgement call: dance with the gods at Zeus' house on Olympos (3.186–196)
+charites,paphos,cult,5,61,0.5,"judgement call: ἔνθα δέ μιν Χάριτες λοῦσαν, in Aphrodite's temple at Paphos (5.58–59)"
+horai,olympos,dwells,3,194,0.5,judgement call: ἐύφρονες Ὧραι dance at Zeus' house on Olympos (3.186–196); go ἐς … δώματα πατρός 6.13
+harmonia,olympos,dwells,3,195,0.5,judgement call: dances at Zeus' house on Olympos (3.186–196)
+hebe,olympos,dwells,15,8,1,Herakles κατὰ καλὸν ἕδος νιφόεντος Ὀλύμπου ναίει … καὶ ἔχει καλλίσφυρον Ἥβην (15.7–8); dances there 3.195
+ares,olympos,dwells,8,3,1,"ἕρκος Ὀλύμπου, bulwark of Olympos; dances at Zeus' house 3.200"
+athena,olympos,born,28,9,0.5,"judgement call: sprang from Zeus' head and μέγας δʼ ἐλελίζετʼ Ὄλυμπος; the place of the birth is implied, not stated"
+titanes,tartaros,dwells,3,336,1,"Τιτῆνές τε θεοί, τοὶ ὑπὸ χθονὶ ναιετάοντες Τάρταρον ἀμφὶ μέγαν; Tartaros is mythical, unlocated"
+poseidon,aigai,dwells,22,3,1,ὅσθʼ Ἑλικῶνα καὶ εὐρείας ἔχει Αἰγάς
+poseidon,helikon,dwells,22,3,0.5,ὅσθʼ Ἑλικῶνα … ἔχει (Helikon here may stand for Helike)
+poseidon,onchestos,cult,3,230,0.5,Ὀγχηστὸν … Ποσιδήιον ἀγλαὸν ἄλσος; ἄλσος ἁγνὸν … Γαιηόχου 4.186–187
+trophonios,pytho,cult,3,296,1,"builders, not worshipped: λάινον οὐδὸν ἔθηκε Τροφώνιος ἠδʼ Ἀγαμήδης, the stone threshold of Apollo's temple"
+agamedes,pytho,cult,3,296,1,"builders, not worshipped: λάινον οὐδὸν ἔθηκε Τροφώνιος ἠδʼ Ἀγαμήδης, the stone threshold of Apollo's temple"
+drakaina,pytho,dwells,3,372,1,killed and left to rot there: ἐξ οὗ νῦν Πυθὼ κικλήσκεται (3.372–374)
+drakaina,kastalia,dwells,3,300,0.5,"ἀγχοῦ δὲ κρήνη καλλίρροος, ἔνθα δράκαιναν κτεῖνεν; the spring's identity (Kastalia?) is uncertain"
+typhaon,pytho,dwells,3,305,0.5,"judgement call: the drakaina δεξαμένη … ἔτρεφεν … Τυφάονα, so reared at Pytho"
+minos,knosos,dwells,3,393,1,Κρῆτες ἀπὸ Κνωσοῦ Μινωίου: Knossos of Minos
+kreton_agos,knosos,origin,3,475,1,"τοὶ Κνωσὸν πολυδένδρεον ἀμφενέμεσθε τὸ πρίν; ἐκ Κρήτης, ἔνθεν γένος εὐχόμεθʼ εἶναι 3.470"
+kreton_agos,pytho,dwells,3,522,0.5,"settled at Pytho as Apollo's priests: χῶρον ἐπήρατον, ἔνθʼ ἄρʼ ἔμελλον οἰκήσειν (3.521–522)"
+helios,tainaron,dwells,3,412,1,"Ταίναρον, ἔνθα τε μῆλα … βόσκεται αἰεὶ Ἠελίοιο ἄνακτος, ἔχει δʼ ἐπιτερπέα χῶρον (3.411–413)"
+hermes,kyllene,born,4,228,1,"Κυλλήνης … ὄρος … ἔνθα τε νύμφη … ἐλόχευσε Διὸς παῖδα (4.228–230); Κυλλήνης μεδέοντα 4.2, 18.2"
+hermes,arkadia,dwells,4,2,0.5,Κυλλήνης μεδέοντα καὶ Ἀρκαδίης πολυμήλου (= 18.2); τέμενος Κυλληνίου in Arkadia 19.31
+hermes,olympos,dwells,2,341,0.5,λιπὼν ἕδος Οὐλύμποιο; returns πρὸς Ὄλυμπον 4.505
+maia,kyllene,dwells,4,6,1,"ἄντρον ἔσω ναίουσα παλισκίον (= 18.6), the cave on Kyllene (4.228–229)"
+thriai,parnassos,dwells,4,555,1,οἰκία ναιετάουσιν ὑπὸ πτυχὶ Παρνησοῖο
+geron_onchestos,onchestos,dwells,4,190,1,"ὦ γέρον, Ὀγχηστοῖο βατοδρόπε ποιήεντος"
+aphrodite,paphos,cult,5,59,1,"ἐς Κύπρον … θυώδεα νηὸν ἔδυνεν, ἐς Πάφον· ἔνθα δέ οἱ τέμενος βωμός τε θυώδης (5.58–59)"
+aphrodite,kypros,dwells,6,2,0.5,"ἣ πάσης Κύπρου κρήδεμνα λέλογχεν; landed there from the sea (6.3–5); Κύπροιο … μεδέουσα 5.292, 10.5"
+aphrodite,salamis_kypros,dwells,10,4,0.5,Σαλαμῖνος ἐυκτιμένης μεδέουσα
+anchises,ide,dwells,5,54,1,ἐν ἀκροπόλοις ὄρεσιν πολυπιδάκου Ἴδης βουκολέεσκεν βοῦς
+anchises,ilios,origin,5,280,0.5,"ἄξεις δʼ αὐτίκα νιν ποτὶ Ἴλιον: his city, among the Τρῶες (5.103)"
+aineias,ide,born,5,258,1,"when first he sees the light, Νύμφαι … θρέψουσιν … αἳ τόδε ναιετάουσιν ὄρος (5.256–258), i.e. Ida"
+aineias,ilios,dwells,5,280,0.5,ἄξεις δʼ αὐτίκα νιν ποτὶ Ἴλιον; ὃς ἐν Τρώεσσιν ἀνάξει 5.196
+tros,troia,origin,5,207,1,"Τρῶα, father of Ganymede, of Anchises' line (ὑμετέρης γενεῆς 5.201); Troy is not named in the passage"
+ganymedes,troia,origin,5,202,1,"Tros' son (5.207), of Anchises' line (ὑμετέρης γενεῆς 5.201); Troy is not named in the passage"
+ganymedes,olympos,dwells,5,204,0.5,Διὸς κατὰ δῶμα θεοῖς ἐπιοινοχοεύοι; Olympos not named here (Zeus' house is on Olympos at 3.186–187)
+tithonos,troia,origin,5,219,1,"Τιθωνὸν … ὑμετέρης γενεῆς: of Anchises' Trojan line; afterwards ναῖε παρʼ Ὠκεανοῖο ῥοῇς (5.227), no place id"
+otreus,phrygia,dwells,5,112,1,ὃς πάσης Φρυγίης εὐτειχήτοιο ἀνάσσει
+nymphai,ide,dwells,5,258,1,"Νύμφαι … ὀρεσκῷοι … αἳ τόδε ναιετάουσιν ὄρος μέγα τε ζάθεόν τε (also 5.98, 5.285)"
+nymphai,nysa,dwells,26,5,0.5,"ἠύκομοι Νύμφαι … Νύσης ἐν γυάλοις, nurses of Dionysos; Nysa is unlocated (mythical)"
+seilenoi,ide,dwells,5,262,0.5,"judgement call: Σειληνοὶ … μίσγοντʼ ἐν φιλότητι μυχῷ σπείων, with the nymphs of Ida"
+herakles,thebai,born,15,2,1,γείνατʼ … Θήβῃς ἔνι καλλιχόροισιν Ἀλκμήνη
+herakles,olympos,dwells,15,8,0.5,νῦν δʼ ἤδη κατὰ καλὸν ἕδος νιφόεντος Ὀλύμπου ναίει (15.7–8)
+alkmene,thebai,dwells,15,2,0.5,"judgement call: bore Herakles Θήβῃς ἔνι; her residence is implied, not stated"
+asklepios,dotion,born,16,3,1,τὸν ἐγείνατο δῖα Κορωνὶς Δωτίῳ ἐν πεδίῳ
+koronis,dotion,dwells,16,3,0.5,"judgement call: bore Asklepios Δωτίῳ ἐν πεδίῳ, κούρη Φλεγύου βασιλῆος; residence implied"
+dioskouroi,taygetos,born,17,3,1,τοὺς ὑπὸ Τηϋγέτου κορυφῇς τέκε πότνια Λήδη (= 33.4)
+kastor,taygetos,born,17,3,1,τοὺς ὑπὸ Τηϋγέτου κορυφῇς τέκε … Λήδη (= 33.4)
+polydeukes,taygetos,born,17,3,1,τοὺς ὑπὸ Τηϋγέτου κορυφῇς τέκε … Λήδη (= 33.4)
+leda,taygetos,dwells,33,4,0.5,"judgement call: bore the twins ὑπὸ Ταϋγέτου κορυφῇ (17.3, λάθρη); residence implied"
+pan,arkadia,born,19,30,1,Hermes ἐς Ἀρκαδίην πολυπίδακα … ἐξίκετο and there Dryops' daughter τέκε δʼ ἐν μεγάροισιν (19.35)
+dryope,arkadia,dwells,19,34,1,"νύμφῃ … Δρύοπος, in Arkadia (19.30); τέκε δʼ ἐν μεγάροισιν 19.35"
+dryops,arkadia,dwells,19,34,1,"Δρύοπος, the mortal Hermes herds for (ἀνδρὶ πάρα θνητῷ 19.33) in Arkadia (19.30)"
+hestia,pytho,dwells,24,2,1,Ἀπόλλωνος … Πυθοῖ ἐν ἠγαθέῃ ἱερὸν δόμον ἀμφιπολεύεις
+hera_nymph,neon_teichos,dwells,34,2,1,"πόλιν αἰπεινὴν νύμφης ἐρατώπιδος Ἥρης; the city's identity (Neon Teichos, or Kyme) is uncertain"
