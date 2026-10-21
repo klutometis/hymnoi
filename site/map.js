@@ -1,11 +1,20 @@
-// Hymnoi map: places pinned to their coordinates; hymns and beings float under a force layout,
-// hymns drawn toward the places they name, beings toward the hymns that name them.
+// Hymnoi map: places pinned to their coordinates; hymns and beings float under a force layout.
+// A being is anchored, in order of preference:
+//   home  where the text puts it (data/homes.csv: born, dwells, cult, origin, with the line), or a
+//         people's homeland (data/places.csv): pulled hard toward it, with a tether to each home;
+//   near  toward the places named within three lines of its mentions (entities[].near, computed by
+//         tools/build.py), more firmly the more those places agree;
+//   free  nothing: only the links to its hymns place it, and it is drawn faded.
+// Hymns are drawn toward the places they name.
 // Data: data/hymnoi.json (tools/build.py), data/basemap.json (tools/basemap.py).
 'use strict';
 
 const KINDS = ['god', 'nymph', 'hero', 'mortal', 'group', 'creature', 'place'];
 const KIND_PL = {god: 'gods', nymph: 'nymphs', hero: 'heroes', mortal: 'mortals', group: 'groups',
   creature: 'creatures', place: 'places'};
+const ANCHOR = {home: 0.5, near: 0.3};  // pull strengths; near is scaled by how much its places agree
+const ANCHOR_TEXT = {home: 'where the text puts it', near: 'drawn toward the places named near it',
+  free: 'no place named near it: placed only by its hymns'};
 const ROUTE_COLORS = ['#9b2f1f', '#1f4e8c', '#b5781a', '#1d7a72', '#6d3f8a', '#4f6b23', '#8a5a3c', '#c0506a', '#3b3631', '#2f8fbf'];
 const LINKS = {pleiades: ['Pleiades', id => `https://pleiades.stoa.org/places/${id}`],
   topostext: ['ToposText', id => /^https?:/.test(id) ? id : `https://topostext.org/place/${id}`],
@@ -19,7 +28,7 @@ const lineNum = l => parseInt(l, 10) + (/[a-z]$/.test(l) ? (l.charCodeAt(l.lengt
 
 const state = {beings: true, hymns: true, links: false, routes: true, doubtful: false, off: new Set(),
   routeOff: new Set(), selected: null, k: 1};
-let D, E, H, M, greekBy, basemap, proj, svg, root, zoom, nodes, links, sim, nodeSel, linkSel, width, height;
+let D, E, H, M, greekBy, basemap, proj, svg, root, zoom, nodes, links, tethers, sim, nodeSel, linkSel, tetherSel, width, height;
 
 Promise.all([fetch('data/hymnoi.json').then(r => r.json()), fetch('data/basemap.json').then(r => r.json())])
   .then(([d, b]) => { D = d; basemap = b; init(); });
@@ -43,6 +52,7 @@ function init() {
   drawBasemap();
   root.append('g').attr('class', 'routes');
   root.append('g').attr('class', 'mlinks');
+  root.append('g').attr('class', 'tethers');
   root.append('g').attr('class', 'pnodes');
   zoom = d3.zoom().scaleExtent([0.35, 24]).on('zoom', zoomed);
   svg.call(zoom).on('dblclick.zoom', null);
@@ -74,6 +84,32 @@ function visible() {
   return M.filter(m => (m.shown || state.doubtful) && !state.off.has(E[m.entity].kind));
 }
 
+// Where a being is pulled: the weighted mean of its homes, or of the places named near it.
+function anchor(n, e) {
+  const at = id => { const p = E[id]; return p && p.lat != null && p.precision !== 'unlocated' && p.precision !== 'mythical'
+    ? proj([p.lon, p.lat]) : null; };
+  const mean = list => {  // [[xy, w]]
+    const t = d3.sum(list, d => d[1]);
+    return [d3.sum(list, d => d[0][0] * d[1]) / t, d3.sum(list, d => d[0][1] * d[1]) / t];
+  };
+  const homes = (e.homes || []).map(h => [at(h[0]), h[4], h[0]]).filter(h => h[0]);
+  n.anchor = 'free';
+  if (homes.length) {
+    [n.ax, n.ay] = mean(homes);
+    n.anchor = 'home'; n.pull = ANCHOR.home; n.homes = homes.map(h => h[2]);
+  } else if (e.lat != null) {  // a people's homeland
+    [n.ax, n.ay] = proj([e.lon, e.lat]);
+    n.anchor = 'home'; n.pull = ANCHOR.home; n.homes = [];
+  } else if (e.near && e.near.length) {
+    const near = e.near.map(([p, share]) => [at(p), share]).filter(d => d[0]);
+    if (near.length) {
+      [n.ax, n.ay] = mean(near);
+      // agreement: the share of the strongest place (1 for Anchises at Ida, 0.14 for Apollo)
+      n.anchor = 'near'; n.pull = ANCHOR.near * Math.max(0.25, d3.max(e.near, d => d[1]));
+    }
+  }
+}
+
 function layout() {
   const ms = visible();
   const byId = new Map();
@@ -81,10 +117,9 @@ function layout() {
     if (!byId.has(id)) {
       const e = E[id], n = {id: 'e:' + id, ent: id, type: e.kind === 'place' ? 'place' : 'being', kind: e.kind, n: 0,
         hymns: new Set()};
-      if (e.lat != null) {
-        const [x, y] = proj([e.lon, e.lat]);
-        if (e.kind === 'place') { n.fx = n.x = x; n.fy = n.y = y; n.pinned = true; } else { n.ax = x; n.ay = y; }
-      }
+      if (e.kind === 'place') {
+        if (e.lat != null) { const [x, y] = proj([e.lon, e.lat]); n.fx = n.x = x; n.fy = n.y = y; n.pinned = true; }
+      } else anchor(n, e);
       byId.set(id, n);
     }
     return byId.get(id);
@@ -100,6 +135,8 @@ function layout() {
   }
   nodes = [...hymns.values(), ...byId.values()];
   links = [...lmap.values()];
+  tethers = [];
+  for (const n of byId.values()) for (const h of n.homes || []) if (byId.has(h)) tethers.push({source: n, target: byId.get(h)});
   // start each hymn at the centroid of its pinned places, each being at the centroid of its hymns
   for (const h of hymns.values()) {
     const ps = links.filter(l => l.source === h && l.target.pinned).map(l => l.target);
@@ -123,8 +160,8 @@ function layout() {
       .strength(l => (l.target.pinned ? 0.6 : 0.9) / Math.min(l.source.deg, l.target.deg)))
     .force('charge', d3.forceManyBody().strength(n => n.pinned ? 0 : -10 - n.r * 3).distanceMax(140))
     .force('collide', d3.forceCollide(n => n.r + 1.2).iterations(2))
-    .force('ax', d3.forceX(n => n.ax ?? n.x).strength(n => n.ax != null ? 0.35 : 0))
-    .force('ay', d3.forceY(n => n.ay ?? n.y).strength(n => n.ay != null ? 0.35 : 0))
+    .force('ax', d3.forceX(n => n.ax ?? n.x).strength(n => n.ax != null ? n.pull : 0))
+    .force('ay', d3.forceY(n => n.ay ?? n.y).strength(n => n.ay != null ? n.pull : 0))
     .stop();
   for (const n of nodes) n.deg = 0;
   for (const l of links) { l.source.deg++; l.target.deg++; }
@@ -137,6 +174,8 @@ function draw() {
   linkSel = root.select('.mlinks').selectAll('line').data(links).join('line')
     .attr('class', 'mlink').attr('vector-effect', 'non-scaling-stroke')
     .attr('stroke-width', l => 0.5 + Math.sqrt(l.w) * 0.4);
+  tetherSel = root.select('.tethers').selectAll('line').data(tethers).join('line')
+    .attr('class', 'tether').attr('vector-effect', 'non-scaling-stroke').attr('stroke', t => color(t.source.kind));
   nodeSel = root.select('.pnodes').selectAll('g.pnode').data(nodes, n => n.id).join(enter => {
     const g = enter.append('g');
     g.append('circle');
@@ -147,7 +186,7 @@ function draw() {
     .attr('class', n => {
       const e = n.ent && E[n.ent];
       const prec = e && e.precision ? ' ' + e.precision : '';
-      return 'pnode ' + n.type + (n.type === 'place' && !n.pinned ? ' floating' : '') + (n.type === 'being' ? ' free' : '') + prec;
+      return 'pnode ' + n.type + (n.type === 'place' && !n.pinned ? ' floating' : '') + (n.anchor ? ' anchor-' + n.anchor : '') + prec;
     })
     .sort((a, b) => (a.type === 'hymn') - (b.type === 'hymn'))
     .on('mouseenter', (e, n) => focus(n, e))
@@ -176,6 +215,7 @@ function draw() {
 
 function tick() {
   linkSel.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
+  tetherSel.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
   nodeSel.attr('transform', n => `translate(${n.x},${n.y}) scale(${1 / state.k})`);
 }
 
@@ -200,6 +240,7 @@ function applyToggles() {
     if (l.target.type === 'being' && !state.beings) return 'none';
     return state.links ? null : 'none';
   });
+  root.select('.tethers').style('display', state.beings ? null : 'none');
   root.select('.routes').style('display', state.routes ? null : 'none');
   root.selectAll('.route-g').style('display', r => state.routeOff.has(r.id) ? 'none' : null);
   labels();
@@ -272,11 +313,20 @@ function focus(n, ev) {
     const e = E[n.ent];
     const where = e.kind === 'place' || e.lat != null ? ` · ${esc(e.precision || '')}` : '';
     html = `<div class="grc k-${e.kind}">${esc(e.label)}</div><i>${esc(e.label_en)}</i><br>${e.kind}${e.subkind ? ' · ' + esc(e.subkind) : ''}${where}
-      · ${n.n} mention${n.n > 1 ? 's' : ''} in ${n.hymns.size} hymn${n.hymns.size > 1 ? 's' : ''}`;
+      · ${n.n} mention${n.n > 1 ? 's' : ''} in ${n.hymns.size} hymn${n.hymns.size > 1 ? 's' : ''}` +
+      (n.anchor ? `<br><span class="fine">${anchorLine(n, e)}</span>` : '');
   }
   tip.innerHTML = html;
   tip.hidden = false;
   moveTip(ev);
+}
+
+function anchorLine(n, e) {
+  if (n.anchor === 'home' && e.homes && e.homes.length)
+    return 'home: ' + e.homes.map(h => `${esc(E[h[0]].label_en)} (${h[1]}, ${h[2]}.${h[3]})`).join('; ');
+  if (n.anchor === 'home') return 'home: its land';
+  if (n.anchor === 'near') return 'near ' + e.near.slice(0, 3).map(([p, s]) => `${esc(E[p].label_en)} ${Math.round(s * 100)}%`).join(', ');
+  return ANCHOR_TEXT.free;
 }
 
 function moveTip(e) {
@@ -312,6 +362,11 @@ function showEntity(id) {
     · <a href="index.html#e=${id}">graph</a> · <a href="matrix.html#e=${id}">matrix</a></div>`;
   if (e.precision) html += `<div class="where">${esc(e.precision)}${e.lat != null ? ` · ${e.lat.toFixed(2)}° N, ${e.lon.toFixed(2)}° E` : ''}${e.place_note ? ' · ' + esc(e.place_note) : ''}</div>`;
   if (ext) html += `<div class="extlinks">${ext}</div>`;
+  if (e.homes && e.homes.length) html += `<div class="where"><b>Home</b>, as the text puts it: ` + e.homes.map(h =>
+    `<a data-entity="${h[0]}" style="cursor:pointer">${esc(E[h[0]].label)}</a> <span class="fine">${esc(E[h[0]].label_en)}, ${h[1]}, ${h[2]}.${h[3]}${h[5] ? ': ' + esc(h[5]) : ''}</span>`).join('; ') + '</div>';
+  if (e.kind !== 'place' && e.near && e.near.length) html += `<div class="where"><b>Named near</b> (within three lines): ` + e.near.slice(0, 6).map(([p, share, k]) =>
+    `<a data-entity="${p}" style="cursor:pointer">${esc(E[p].label)}</a> ${Math.round(share * 100)}%`).join(', ') + '</div>';
+  else if (e.kind !== 'place' && !(e.homes && e.homes.length) && e.lat == null) html += `<div class="where">No place is named near it: on the map it is placed only by its hymns.</div>`;
   const onRoutes = D.routes.filter(r => r.stops.some(s => s[0] === id));
   if (onRoutes.length) html += `<div class="where">on ${onRoutes.map(r => `<a class="routelink" data-route="${r.id}" style="color:${r.color};cursor:pointer">${esc(r.en)}</a>`).join(', ')}</div>`;
   for (const [h, ms] of [...byHymn].sort((a, b) => a[0] - b[0])) {
@@ -388,6 +443,11 @@ function legend() {
       relayout();
     });
   lg.append('span').html('<i style="background:#f3ead6;border:1px solid #221d17"></i>hymns');
+  lg.append('div').attr('class', 'anchors').html(
+    '<span title="Pinned at its coordinates (Pleiades)"><i class="a-pin"></i>place</span>' +
+    '<span title="Where the text puts it: born, lives, has its temple there (with the line); a tether to each home"><i class="a-home"></i>home in the text</span>' +
+    '<span title="Drawn toward the places named within three lines of its mentions"><i class="a-near"></i>named near places</span>' +
+    '<span title="No place is named near it: placed only by the links to its hymns"><i class="a-free"></i>free</span>');
 }
 
 function routesList() {

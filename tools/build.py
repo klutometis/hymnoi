@@ -5,12 +5,18 @@
 
 Inputs (data/): hymns.csv, entities.csv, mentions.csv, text/{greek,english}.tsv,
 and, when present, labels.csv (display names), places.csv (coordinates),
-links.csv (Wikidata, Theoi, ...).
+links.csv (Wikidata, Theoi, ...), homes.csv (where the text puts a being), routes.csv.
 
 Output schema:
   hymns:     [{n, numeral, roman, title_grc, title_en, dedicatees: [id], lines}]
   entities:  {id: {kind, subkind, label, label_en, grc (LSJ lemma), en, n (shown mentions),
-                   unnamed, precision?, place_note?, lat?, lon?, links?: {wikidata, theoi, pleiades, ...}}}
+                   unnamed, precision?, place_note?, lat?, lon?, links?: {wikidata, theoi, pleiades, ...},
+                   homes?: [[place, tie, hymn, line, weight, note]],
+                   near?: [[place, share, mentions]]}}
+             `homes`: ties the text states (born, dwells, cult, origin), from data/homes.csv.
+             `near`: the located places named within NEAR lines of the being's (shown) mentions,
+             each weighted 1/(1 + distance in lines), as shares summing to 1; `mentions` is how
+             many of its mentions had that place nearby. Computed here, from the text alone.
              `label` is the display name: Greek, in the hymns' own (epic-Ionic) forms,
              plural for groups, the text's own words for beings it never names.
   mention_cols + mentions: rows of [hymn, line, form, lemma, entity, type, certainty, note, shown]
@@ -58,6 +64,57 @@ ROUTE_TITLES = {  # route id: (Greek, English); order = display order
 }
 
 
+NEAR = 3  # lines either side
+
+
+def located(e):
+    return e and e.get('kind') == 'place' and e.get('lat') is not None and e.get('precision') not in ('unlocated', 'mythical')
+
+
+def line_no(l):
+    return int(''.join(c for c in l if c.isdigit()))
+
+
+def nearby(mentions, ents):
+    """For each non-place entity, the located places named within NEAR lines of its mentions."""
+    by_hymn = collections.defaultdict(list)
+    for m in mentions:
+        if shown(m):
+            by_hymn[m['hymn']].append(m)
+    w = collections.defaultdict(collections.Counter)
+    cnt = collections.defaultdict(collections.Counter)
+    for ms in by_hymn.values():
+        places = [(line_no(m['line']), m['entity']) for m in ms if located(ents.get(m['entity']))]
+        for m in ms:
+            if ents[m['entity']]['kind'] == 'place':
+                continue
+            here = line_no(m['line'])
+            seen = set()
+            for at, p in places:
+                d = abs(at - here)
+                if d <= NEAR:
+                    w[m['entity']][p] += 1 / (1 + d)
+                    seen.add(p)
+            for p in seen:
+                cnt[m['entity']][p] += 1
+    out = {}
+    for k, c in w.items():
+        tot = sum(c.values())
+        out[k] = [[p, round(v / tot, 3), cnt[k][p]] for p, v in c.most_common()]
+    return out
+
+
+def homes(ents):
+    p = D('homes.csv')
+    out = collections.defaultdict(list)
+    if os.path.exists(p):
+        for r in csv.DictReader(open(p)):
+            if r['entity'] in ents and r['place'] in ents:
+                out[r['entity']].append([r['place'], r['tie'], int(r['hymn']), r['line'], float(r['weight'] or 1),
+                                         r.get('note', '')])
+    return out
+
+
 def routes():
     p = D('routes.csv')
     stops = collections.defaultdict(list)
@@ -95,6 +152,10 @@ def main():
         if ln:
             o['links'] = ln
         ents[k] = o
+    for k, v in nearby(mentions, ents).items():
+        ents[k]['near'] = v
+    for k, v in homes(ents).items():
+        ents[k]['homes'] = v
     out = {
         'hymns': [{'n': int(h['hymn']), 'numeral': h['numeral'], 'roman': h['roman'],
                    'title_grc': h['title_grc'], 'title_en': h['title_en'],
@@ -113,7 +174,8 @@ def main():
         json.dump(out, f, ensure_ascii=False, separators=(',', ':'))
     n = sum(1 for m in mentions if shown(m))
     print(f'{OUT}: {len(hymns)} hymns, {len(ents)} entities ({sum(1 for c in count.values() if c)} shown, '
-          f'{len(labels)} labelled, {sum(1 for e in ents.values() if "lat" in e)} located), '
+          f'{len(labels)} labelled, {sum(1 for e in ents.values() if "lat" in e)} located, '
+          f'{sum(1 for e in ents.values() if "homes" in e)} with homes, {sum(1 for e in ents.values() if "near" in e)} with places nearby), '
           f'{len(mentions)} mentions ({n} shown), {os.path.getsize(OUT) // 1024} KB')
 
 
