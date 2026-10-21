@@ -17,3 +17,4 @@ section.poster h2 { margin-top: 0; }
 section.poster p { line-height: 1.45; margin: .5rem 0; }
 .dl { margin-top: .8rem !important; }
 @media (max-width: 40rem) { section.poster { grid-template-columns: 1fr; } }
+article code { font-size: .82em; }
