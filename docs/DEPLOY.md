@@ -8,6 +8,12 @@ Nothing here has been done yet. The GitHub steps need Peter's go-ahead to push
 (the repo is public); DNS and redirects belong to the session that owns the
 domain migration (`mercurial-stele`) or to Peter.
 
+Status 2026-10-21 16:20: all three domains are at Porkbun with DNS on Cloudflare
+(ganz/paige.ns.cloudflare.com), no DS records (the stale Google Domains DNSSEC is
+gone), and **empty zones**. `mercurial-stele` has the records below and is holding
+until step 1 is done: A/AAAA records pointing at GitHub before the repo claims the
+domain would let any Pages site claim hymnoi.org.
+
 ## 1. GitHub Pages (this repo)
 
 The site is static: `site/` as committed, with `site/data/hymnoi.json` built by
