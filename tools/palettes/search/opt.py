@@ -1,5 +1,6 @@
 import sys, math
-sys.path.insert(0, '/home/danenberg/.harness/worktrees/hymnoi/docs/palettes')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))  # colorlib.py
 import numpy as np
 from colorlib import *
 from scipy.optimize import differential_evolution

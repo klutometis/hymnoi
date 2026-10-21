@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Measure the candidate palettes in docs/palettes/*.css and write index.html.
+"""Measure the candidate palettes in site/palettes/*.css and write site/palettes/index.html.
 
-    python3 docs/palettes/build.py
+    python3 site/palettes/build.py
     python3 -m http.server 8790        # from the repo root, then
-    google-chrome --headless=new --screenshot=docs/palettes/palettes.png \
-        --window-size=1500,H http://localhost:8790/docs/palettes/index.html
+    google-chrome --headless=new --screenshot=site/palettes/palettes.png \
+        --window-size=1500,H http://localhost:8790/site/palettes/index.html
 
 Everything in the sheet is computed here, from the CSS files, so the numbers
 and the swatches cannot drift apart.
@@ -15,8 +15,8 @@ import numpy as np
 from colorlib import (KINDS, PAPER, INK, hex2rgb, rgb2hex, rgb2lab, lch, de, contrast,
                       simulate, min_pair, cmyk_roundtrip, lin, delin, M_XYZ, WHITE, PSO_V3)
 
-HERE = pathlib.Path(__file__).resolve().parent
-ROOT = HERE.parent.parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
+HERE = ROOT / 'site' / 'palettes'
 VISIONS = ["normal", "deutan", "protan", "tritan"]
 VNAME = {"normal": "normal vision", "deutan": "deuteranopia", "protan": "protanopia", "tritan": "tritanopia"}
 TARGET = {"normal": 20, "deutan": 10, "protan": 10, "tritan": 10}
@@ -253,9 +253,9 @@ def collisions(m, n=3):
 
 
 CSS = """
-@font-face { font-family: "EB Garamond"; src: url(../../site/fonts/ebgaramond-roman.woff2) format("woff2"); font-style: normal; font-weight: 400 800; }
-@font-face { font-family: "EB Garamond"; src: url(../../site/fonts/ebgaramond-italic.woff2) format("woff2"); font-style: italic; font-weight: 400 800; }
-@font-face { font-family: "GFS Porson"; src: url(../../site/fonts/GFSPorson.otf) format("opentype"); }
+@font-face { font-family: "EB Garamond"; src: url(../fonts/ebgaramond-roman.woff2) format("woff2"); font-style: normal; font-weight: 400 800; }
+@font-face { font-family: "EB Garamond"; src: url(../fonts/ebgaramond-italic.woff2) format("woff2"); font-style: italic; font-weight: 400 800; }
+@font-face { font-family: "GFS Porson"; src: url(../fonts/GFSPorson.otf) format("opentype"); }
 body { background: #faf6ec; color: #221d17; font: 16px/1.4 "EB Garamond", Georgia, serif; margin: 0; padding: 28px 36px 40px; width: 1428px; }
 h1 { font-weight: 500; font-size: 30px; margin: 0 0 4px; } h1 .grc { font-size: 34px; }
 h2 { font-weight: 500; font-size: 24px; margin: 0 0 2px; }
@@ -304,6 +304,8 @@ def main():
     col = collisions(rec_m)
     rec = (REC_TEXT.strip())
     parts = [f"<!doctype html><meta charset=utf-8><title>Hymnoi palettes</title><style>{CSS}</style>",
+             '<p class=sub><a href="../index.html">graph</a> · <a href="../matrix.html">matrix</a> · '
+             '<a href="../map.html">map</a> · <a href="../poster/">posters</a> · <a href="../about.html">about</a></p>',
              '<h1><span class=grc>Ὕμνοι</span> · kind palettes</h1>',
              '<p class=sub>Four candidates for <code>site/palette.css</code>, measured: CIEDE2000 between kinds under normal '
              'vision and three simulated dichromacies, WCAG contrast of labels on the paper <code>#faf6ec</code>, and a '
@@ -330,7 +332,7 @@ def main():
 
 
 REC_TEXT = """
-Adopt <b>pigmenta</b>: <code>cp docs/palettes/pigmenta.css site/palette.css</code>. It is the only
+Adopt <b>pigmenta</b>: <code>cp site/palettes/pigmenta.css site/palette.css</code>. It is the only
 candidate that clears every target and still belongs on cream paper beside EB Garamond: seven pigments a
 Greek painter could have ground (cinnabar, verdigris, yellow ochre, Egyptian blue, murex purple, carbon black,
 green earth), set so that the gods' cinnabar is the most saturated colour on the sheet (C 64) and the places'

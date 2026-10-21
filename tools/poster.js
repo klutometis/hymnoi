@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Hymnoi poster: the "hymns as hubs" graph, laid out offline and set for print at 24 × 24φ in.
 //
-//     node tools/poster.js            # site/data/hymnoi.json -> poster/hymnoi-hubs.{svg,pdf} + preview PNG
+//     node tools/poster.js            # site/data/hymnoi.json -> site/poster/hymnoi-hubs.{svg,pdf} + preview PNG
 //     node tools/poster.js --svg      # stop after the SVG (no Chrome)
 //     node tools/poster.js --no-fill  # leave the paper white instead of the site's cream
 //
@@ -9,12 +9,12 @@
 // Prints the label audit: labels without a clean seat, overlaps (e.g. from hand overrides), missing glyphs.
 //
 // Everything is derived from site/data/hymnoi.json, site/palette.css (kind colours; the paper and ink
-// greys come from site/style.css unless palette.css defines them) and poster/overrides.csv, so when the
+// greys come from site/style.css unless palette.css defines them) and data/poster_overrides.csv, so when the
 // labels or the palette change the poster follows on a re-run.
 //
 // Units: one SVG user unit is one PostScript point (1/72 in); the page is 1728 × 2796 pt.
 //
-// poster/overrides.csv, applied after the simulation (all values in points):
+// data/poster_overrides.csv, applied after the simulation (all values in points):
 //     id,dx,dy,x,y
 //     zeus,12,-8,,          move the node Zeus (and its label with it) by (12, -8)
 //     h3,,,840,1200         put the disc of Hymn 3 at (840, 1200) from the top-left of the page
@@ -37,7 +37,7 @@ const ARGS = new Set(process.argv.slice(2));
 const T0 = Date.now();
 // force tuning (POSTER_TUNE='{"kx":0.08}' to experiment without editing)
 const TUNE = {k1: 0.3, kd: 2.0, dmax: 250, kc: 1.0, kx: 0.08, ky: 0.03, ...JSON.parse(process.env.POSTER_TUNE || '{}')};
-const OUT = process.env.POSTER_OUT ? path.resolve(process.env.POSTER_OUT) : P('poster');   // for experiments
+const OUT = process.env.POSTER_OUT ? path.resolve(process.env.POSTER_OUT) : P('site/poster');   // for experiments
 const BASE = 'hymnoi-hubs';
 
 // ---------------------------------------------------------------- page
@@ -334,7 +334,7 @@ console.log(`simulation: ${Date.now() - T0} ms; ${atBound} nodes in the outer te
 // ---------------------------------------------------------------- overrides
 
 function readOverrides() {
-  const file = P('poster/overrides.csv');
+  const file = P('data/poster_overrides.csv');
   if (!fs.existsSync(file)) fs.writeFileSync(file, 'id,dx,dy,x,y\n');
   const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(l => l.trim() && !l.startsWith('#'));
   const head = lines.shift().split(',').map(s => s.trim());
@@ -581,9 +581,9 @@ const clashes = [];
 
 const linkW = l => l.ded ? 1.1 : 0.45 + Math.sqrt(l.w) * 0.42;
 const style = `
-@font-face { font-family: "EB Garamond"; src: url(../site/fonts/ebgaramond-roman.woff2) format("woff2"); font-style: normal; font-weight: 400 800; }
-@font-face { font-family: "EB Garamond"; src: url(../site/fonts/ebgaramond-italic.woff2) format("woff2"); font-style: italic; font-weight: 400 800; }
-@font-face { font-family: "GFS Porson"; src: url(../site/fonts/GFSPorson.otf) format("opentype"); }
+@font-face { font-family: "EB Garamond"; src: url(../fonts/ebgaramond-roman.woff2) format("woff2"); font-style: normal; font-weight: 400 800; }
+@font-face { font-family: "EB Garamond"; src: url(../fonts/ebgaramond-italic.woff2) format("woff2"); font-style: italic; font-weight: 400 800; }
+@font-face { font-family: "GFS Porson"; src: url(../fonts/GFSPorson.otf) format("opentype"); }
 text { font-family: "EB Garamond", serif; fill: ${C.ink}; }
 .grc { font-family: "GFS Porson", "EB Garamond", serif; }
 .title { font-size: 120px; }

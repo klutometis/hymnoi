@@ -1,0 +1,19 @@
+/* plain pages: posters, about */
+body.page { display: block; height: auto; }
+body.page header { position: sticky; top: 0; background: var(--paper); z-index: 1; }
+a.home { color: inherit; text-decoration: none; }
+article { max-width: 64rem; margin: 0 auto; padding: 1.5rem 1.5rem 4rem; }
+article.prose { max-width: 40rem; line-height: 1.5; }
+article h2 { font-weight: 500; font-size: 1.5rem; margin: 1.8rem 0 .4rem; }
+article h2 .en { font-size: 1rem; color: var(--muted); font-style: italic; margin-left: .4rem; }
+article a { color: var(--ink); }
+article ul { padding-left: 1.2rem; }
+article li { margin: .35rem 0; }
+.lede { font-size: 1.2rem; }
+section.poster { display: grid; grid-template-columns: minmax(12rem, 22rem) 1fr; gap: 1.5rem 2rem;
+  align-items: start; padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+section.poster img { width: 100%; height: auto; display: block; box-shadow: 0 1px 6px rgba(34, 29, 23, .25); }
+section.poster h2 { margin-top: 0; }
+section.poster p { line-height: 1.45; margin: .5rem 0; }
+.dl { margin-top: .8rem !important; }
+@media (max-width: 40rem) { section.poster { grid-template-columns: 1fr; } }

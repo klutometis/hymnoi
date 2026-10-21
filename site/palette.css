@@ -1,6 +1,6 @@
 /* Kind colours, shared by every view and the poster. One file, so a palette is one swap.
    Pigmenta: pigments attested in Greek painting, tuned in CIELAB for colour-vision deficiency
-   and the FOGRA39 gamut, each hue kept inside its pigment's range. See docs/palettes/index.html.
+   and the FOGRA39 gamut, each hue kept inside its pigment's range. See site/palettes/index.html (palettes/ on the site).
    'text #…' is the colour for coloured Greek labels on the paper (>= 4.5:1 WCAG, chosen so the
    seven text colours stay distinct too); the --<kind>-text variables below carry it (style.css falls back to the fill). */
 :root {

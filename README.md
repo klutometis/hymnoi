@@ -40,9 +40,12 @@ data/entities.csv          286 beings, groups and places: kind, subkind, Greek a
 data/mentions.csv          1,399 mentions: hymn, line, form, lemma, entity, type, certainty, note
 data/extract/              the extraction as nine workers delivered it, and its method (SPEC.md)
 data/legacy/               the 2009 graph as CSV, its node-to-entity map, and the audit
-site/                      the d3 views (static; data/hymnoi.json is built)
+site/                      the published site, as is: graph (index.html), matrix, map, about
+site/poster/               the posters (PDF, SVG, previews) and the 2009/2020 poster; index.html lists them
+site/palettes/             the colour candidates and the swatch sheet comparing them
+data/poster_overrides.csv  hand nudges for the poster layout
 tools/                     the scripts that produce all of the above
-docs/                      screenshots
+docs/                      screenshots, DEPLOY.md
 ```
 
 To rebuild and look:
@@ -52,6 +55,10 @@ tools/import_text.py      # data/text from ~/prg/canon (+ fixes)
 tools/merge_extract.py    # data/{mentions,entities,hymns}.csv from data/extract (once; --force to redo)
 tools/audit_legacy.py     # data/legacy/{node_map,audit,new}.csv
 tools/build.py            # site/data/hymnoi.json
+tools/basemap.py          # site/data/basemap.json (Natural Earth, for the map)
+node tools/poster.js      # site/poster/hymnoi-hubs.{svg,pdf,png}
+tools/matrix-print.sh     # site/poster/matrix-24x38.8*.{pdf,png} (needs the site served)
+tools/palettes/build.py   # site/palettes/index.html
 python3 -m http.server 8765 --directory site   # then http://localhost:8765/
 ```
 
