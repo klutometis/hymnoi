@@ -1,7 +1,11 @@
 #!/usr/bin/env node
-// Hymnoi poster: the "hymns as hubs" graph, laid out offline and set for print at 24 × 24φ in.
+// Hymnoi posters, laid out offline and set for print at 24 × 24φ in. Two graphs (as the site's two views):
+//   hymns as hubs (default): the 34 hymns are discs; each names its names, and a dashed line goes to its god;
+//   gods as hubs (--gods):   the topology of the 2009 poster; each hymn folded into its (first) dedicatee, which
+//                            becomes the hub for the names in it; Εἰς Ξένους, sung to no god, stays a hub of its own.
 //
-//     node tools/poster.js            # site/data/hymnoi.json -> site/poster/hymnoi-hubs.{svg,pdf} + preview PNG
+//     node tools/poster.js            # site/data/hymnoi.json -> site/poster/hymnoi-hubs.{svg,html,pdf} + -preview.png
+//     node tools/poster.js --gods     # ... -> site/poster/hymnoi-gods.{svg,html,pdf} + -preview.png
 //     node tools/poster.js --svg      # stop after the SVG (no Chrome)
 //     node tools/poster.js --no-fill  # leave the paper white instead of the site's cream
 //
@@ -9,8 +13,8 @@
 // Prints the label audit: labels without a clean seat, overlaps (e.g. from hand overrides), missing glyphs.
 //
 // Everything is derived from site/data/hymnoi.json, site/palette.css (kind colours; the paper and ink
-// greys come from site/style.css unless palette.css defines them) and data/poster_overrides.csv, so when the
-// labels or the palette change the poster follows on a re-run.
+// greys come from site/style.css unless palette.css defines them) and data/poster_overrides.csv (with --gods:
+// data/poster_overrides_gods.csv), so when the labels or the palette change the poster follows on a re-run.
 //
 // Units: one SVG user unit is one PostScript point (1/72 in); the page is 1728 × 2796 pt.
 //
@@ -19,7 +23,7 @@
 //     zeus,12,-8,,          move the node Zeus (and its label with it) by (12, -8)
 //     h3,,,840,1200         put the disc of Hymn 3 at (840, 1200) from the top-left of the page
 //     zeus.label,0,-6,,     nudge only the label of Zeus (after placement)
-// Ids are entity ids (data/entities.csv) or h1 … h34 for the hymns.
+// Ids are entity ids (data/entities.csv) or h1 … h34 for the hymns (with --gods, only h34: the hub Εἰς Ξένους).
 //
 // Determinism: nodes are sorted by id, start on a phyllotaxis spiral, and d3-force's own seeded LCG
 // supplies the jiggle, so the same data gives the same poster.
@@ -38,7 +42,9 @@ const T0 = Date.now();
 // force tuning (POSTER_TUNE='{"kx":0.08}' to experiment without editing)
 const TUNE = {k1: 0.3, kd: 2.0, dmax: 250, kc: 1.0, kx: 0.08, ky: 0.03, ...JSON.parse(process.env.POSTER_TUNE || '{}')};
 const OUT = process.env.POSTER_OUT ? path.resolve(process.env.POSTER_OUT) : P('site/poster');   // for experiments
-const BASE = 'hymnoi-hubs';
+const MODE = ARGS.has('--gods') ? 'gods' : 'hymns';         // what the hubs are
+const BASE = MODE === 'gods' ? 'hymnoi-gods' : 'hymnoi-hubs';
+const OVERRIDES_CSV = MODE === 'gods' ? 'data/poster_overrides_gods.csv' : 'data/poster_overrides.csv';
 
 // ---------------------------------------------------------------- page
 
@@ -55,11 +61,15 @@ const M = D.mentions.map(r => Object.fromEntries(D.mention_cols.map((c, i) => [c
 const KINDS = ['god', 'nymph', 'hero', 'mortal', 'group', 'creature', 'place'];
 const KIND_PL = {god: 'gods', nymph: 'nymphs', hero: 'heroes', mortal: 'mortals', group: 'groups',
   creature: 'creatures', place: 'places'};
+const HYMN = new Map(D.hymns.map(h => [h.n, h]));
+// the node a hymn's names hang from: the hymn itself, or (gods as hubs) its first dedicatee if it has one
+const hubOf = h => MODE === 'gods' && h.dedicatees[0] || 'h' + h.n;
+const HUBS = [...new Set(D.hymns.map(hubOf))];       // in the order of their first hymn
 
 // The vertical plan. The title hangs from the top margin; the apparatus (legend, key to the hymns, colophon)
 // stands on the bottom margin, built upwards; the graph takes what is left between them.
-const KEY = {fs: 13.5, lead: 19, cols: 3};
-KEY.rows = Math.ceil(D.hymns.length / KEY.cols);
+const KEY = {fs: 13.5, lead: 19, cols: MODE === 'gods' ? 4 : 3};       // a key to the hymns, or to the hubs
+KEY.rows = Math.ceil(HUBS.length / KEY.cols);
 const V = {title: MARGIN + 92, url: H - MARGIN + 6};
 V.sub = V.title + 54;
 V.colo = V.url - 44;                                 // first colophon line; the second is 18 below
@@ -176,7 +186,7 @@ const PORSON = stack(F_PORSON, F_GARAMOND);          // as the CSS: "GFS Porson"
 const GARAMOND = stack(F_GARAMOND, F_PORSON);
 const GARAMOND_I = stack(F_GARAMOND_I, F_PORSON);
 
-// ---------------------------------------------------------------- the graph (as site/hymnoi.js graphData(), default view)
+// ---------------------------------------------------------------- the graph (as site/hymnoi.js graphData(), either view)
 
 const CORE = new Set(['name', 'epithet', 'patronymic', 'adjective', 'ethnic']);
 const PHRASES = true, DOUBTFUL = false;
@@ -193,13 +203,33 @@ function graphData() {
     const l = links.get(key);
     if (ded) l.ded = true; else l.w++;
   };
-  for (const h of D.hymns) nodes.set('h' + h.n, {id: 'h' + h.n, type: 'hymn', hymn: h, n: h.lines});
-  for (const m of M.filter(m => (m.shown || DOUBTFUL) && (PHRASES || CORE.has(m.type)))) {
-    const t = entNode(m.entity);
-    t.n++; t.hymns.add(m.hymn);
-    link('h' + m.hymn, t.id, false);
+  const ms = M.filter(m => (m.shown || DOUBTFUL) && (PHRASES || CORE.has(m.type)));
+  if (MODE === 'hymns') {
+    for (const h of D.hymns) nodes.set('h' + h.n, {id: 'h' + h.n, type: 'hymn', hub: true, hymn: h, n: h.lines});
+    for (const m of ms) {
+      const t = entNode(m.entity);
+      t.n++; t.hymns.add(m.hymn);
+      link('h' + m.hymn, t.id, false);
+    }
+    for (const h of D.hymns) for (const d of h.dedicatees) link('h' + h.n, entNode(d).id, true);
+  } else {
+    // a hub is an entity like any other (a hymn with no dedicatee is a labelled node of its own), and a god
+    // named in its own hymns is no link
+    for (const h of D.hymns) {
+      if (h.dedicatees[0]) entNode(hubOf(h)).hub = true;
+      else nodes.set(hubOf(h), {id: hubOf(h), type: 'entity', hub: true, title: h.title_grc, kind: null, n: 1, hymns: new Set()});
+    }
+    for (const m of ms) {
+      const s = hubOf(HYMN.get(m.hymn)), t = entNode(m.entity);
+      t.n++; t.hymns.add(m.hymn);
+      if (s !== t.id) link(s, t.id, false);
+    }
   }
-  for (const h of D.hymns) for (const d of h.dedicatees) link('h' + h.n, entNode(d).id, true);
+  // the hubs that name a name (its sources); a petal is a name hanging from one hub only
+  for (const n of nodes.values()) if (n.type === 'entity') {
+    n.hubs = new Set([...n.hymns].map(h => hubOf(HYMN.get(h))).filter(id => id !== n.id));
+    n.petal = !n.hub && n.hubs.size === 1;
+  }
   const key = n => n.type === 'hymn' ? 'h' + String(n.hymn.n).padStart(3, '0') : 'e' + n.id;
   const ns = [...nodes.values()].sort((a, b) => d3.ascending(key(a), key(b)));
   const ls = [...links.values()].filter(l => l.w || l.ded)
@@ -223,8 +253,14 @@ for (const n of G.nodes) {
   } else {
     n.r = rEntity(n.n);
     n.rs = 3 + Math.sqrt(n.n) * 1.5;
-    n.label = E[n.ent].label.normalize('NFC');
+    n.label = (n.ent ? E[n.ent].label : n.title).normalize('NFC');
     n.fs = Math.min(30, LABEL_MIN + 1.4 * Math.sqrt(n.n - 1));
+    if (n.hub) {                                      // gods as hubs: as big as a hymn disc of its hymns' length, at least
+      const lines = d3.sum(D.hymns.filter(h => hubOf(h) === n.id), h => h.lines);
+      n.r = Math.max(n.r, 7 + Math.sqrt(lines) * 1.05);
+      n.rs = Math.max(n.rs, 5 + Math.sqrt(lines) * 0.95);
+      n.fs = Math.min(30, Math.max(n.fs || 0, 16 + 0.25 * n.r));   // || 0: a hub never named
+    }
     n.w = PORSON.width(n.label, n.fs) * 1.03 + 0.6;
   }
 }
@@ -234,29 +270,30 @@ for (const n of G.nodes) {
 const S = 2.05;                                       // site px -> paper pt
 // Start: the hymns on a ring, clockwise from the top, kin beside kin (Apollo's, Artemis', Hermes' and Hestia's …),
 // so Hymn 3 opens at the top and Hymn 2 at the foot; each name starts at the mean of its hymns, on a small
-// phyllotaxis spiral. Hymns missing from RING (new data) are appended.
+// phyllotaxis spiral. Hymns missing from RING (new data) are appended. Gods as hubs: each god takes the place of
+// its first hymn in RING (Apollo at the top, the Muses beside him, Demeter at the foot).
 const RING = [3, 21, 25, 27, 9, 4, 18, 29, 24, 19, 20, 28, 11, 8, 31, 32, 14, 30, 13, 2, 22, 12, 23, 16, 15, 17, 33,
   34, 5, 6, 10, 1, 7, 26];
 {
   const golden = Math.PI * (3 - Math.sqrt(5));
-  const hymns = G.nodes.filter(n => n.type === 'hymn');
-  const ring = [...RING.filter(h => byId.has('h' + h)), ...hymns.map(n => n.hymn.n).filter(h => !RING.includes(h))];
-  const names = new Map(hymns.map(n => [n.hymn.n, new Set()]));
-  for (const l of G.links) names.get(l.source.hymn ? l.source.hymn.n : +l.source.slice(1)).add(l.target);
-  const wt = ring.map(h => Math.sqrt(names.get(h).size + 1));
+  const ringIds = [...new Set(RING.filter(h => HYMN.has(h)).map(h => hubOf(HYMN.get(h))))];
+  const ring = [...ringIds, ...HUBS.filter(id => !ringIds.includes(id))];
+  const names = new Map(ring.map(id => [id, new Set()]));
+  for (const l of G.links) names.get(l.source).add(l.target);
+  const wt = ring.map(id => Math.sqrt(names.get(id).size + 1));
   const tot = d3.sum(wt);
   let acc = -wt[0] / 2;
-  ring.forEach((h, i) => {
+  ring.forEach((id, i) => {
     const a = -Math.PI / 2 + (acc + wt[i] / 2) / tot * 2 * Math.PI;
     acc += wt[i];
-    const n = byId.get('h' + h);
+    const n = byId.get(id);
     n.x = GRAPH.cx + Math.cos(a) * GRAPH.ax * 0.55;
     n.y = GRAPH.cy + Math.sin(a) * GRAPH.ay * 0.6;
   });
   G.nodes.forEach((n, i) => {
     n.vx = n.vy = 0;
-    if (n.type === 'hymn') return;
-    const hs = [...n.hymns].map(h => byId.get('h' + h));
+    if (n.hub) return;
+    const hs = [...n.hubs].map(id => byId.get(id));
     if (!hs.length) hs.push({x: GRAPH.cx, y: GRAPH.cy});
     const rad = 4 * Math.sqrt(i + 0.5), a = i * golden;
     n.x = d3.mean(hs, d => d.x) + rad * Math.cos(a);
@@ -285,16 +322,16 @@ function forceBound(strength) {
 }
 
 const TICKS = 3000;
-for (const n of G.nodes) if (n.type === 'hymn') n.single = 0;
-for (const n of G.nodes) if (n.type === 'entity' && n.hymns.size === 1) byId.get('h' + [...n.hymns][0]).single++;
+for (const n of G.nodes) if (n.hub) n.single = 0;
+for (const n of G.nodes) if (n.petal) byId.get([...n.hubs][0]).single++;
 const sim = d3.forceSimulation(G.nodes)
   .alphaMin(0.0005)
   .alphaDecay(1 - Math.pow(0.0005, 1 / TICKS))
   .force('link', d3.forceLink(G.links).id(d => d.id)
     // a name in one hymn only sits on a ring whose radius grows with the number of such names (a sunburst)
-    .distance(l => 18 * S + l.source.r + l.target.r + (l.target.hymns.size === 1 && !l.ded ? TUNE.kd * l.source.single : 0))
+    .distance(l => 18 * S + l.source.r + l.target.r + (l.target.petal && !l.ded ? TUNE.kd * l.source.single : 0))
     // as the site, but a name in one hymn only is held to it harder, so the petals stay petals
-    .strength(l => l.target.hymns.size === 1 && !l.ded ? TUNE.k1 : (l.ded ? 0.6 : 0.25) + Math.min(0.5, l.w * 0.05)))
+    .strength(l => l.target.petal && !l.ded ? TUNE.k1 : (l.ded ? 0.6 : 0.25) + Math.min(0.5, l.w * 0.05)))
   .force('charge', d3.forceManyBody().strength(n => (-30 - n.rs * 14) * S * S * TUNE.kc).distanceMax(TUNE.dmax))
   .force('collide', d3.forceCollide(n => n.r + (n.type === 'hymn' ? 9 : 3 + n.fs * 0.45)).iterations(3))
   .force('x', d3.forceX(GRAPH.cx).strength(TUNE.kx))
@@ -334,7 +371,7 @@ console.log(`simulation: ${Date.now() - T0} ms; ${atBound} nodes in the outer te
 // ---------------------------------------------------------------- overrides
 
 function readOverrides() {
-  const file = P('data/poster_overrides.csv');
+  const file = P(OVERRIDES_CSV);
   if (!fs.existsSync(file)) fs.writeFileSync(file, 'id,dx,dy,x,y\n');
   const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(l => l.trim() && !l.startsWith('#'));
   const head = lines.shift().split(',').map(s => s.trim());
@@ -491,9 +528,11 @@ const furniture = [];                                // svg strings
 // title block
 FURNITURE.push({x0: W / 2 - 500, x1: W / 2 + 500, y0: 0, y1: V.sub + 10});
 furniture.push(`<text class="grc title" x="${W / 2}" y="${V.title}" text-anchor="middle">Ὕμνοι</text>`);
-furniture.push(`<text class="sub" x="${W / 2}" y="${V.sub}" text-anchor="middle">every god, nymph, hero, mortal, group, creature and place named in the Homeric Hymns</text>`);
+furniture.push(`<text class="sub" x="${W / 2}" y="${V.sub}" text-anchor="middle">${MODE === 'gods'
+  ? 'the names in the Homeric Hymns, gathered round the gods the hymns are sung to'
+  : 'every god, nymph, hero, mortal, group, creature and place named in the Homeric Hymns'}</text>`);
 
-// bottom band: legend, hymn key, colophon
+// bottom band: legend, key to the hymns (or the hubs), colophon
 FURNITURE.push({x0: 0, x1: W, y0: V.rule1 - 12, y1: H});
 {
   let y = V.rule1;
@@ -513,40 +552,71 @@ FURNITURE.push({x0: 0, x1: W, y0: V.rule1 - 12, y1: H});
       return s + `<text class="leg" x="${f2(x + wd + 8)}" y="${y}">${txt}</text>`;
     }});
   }
-  items.push({w: 30 + GARAMOND.width('a hymn, by length', LFS), svg: x =>
-    `<circle class="hymn" cx="${f2(x + 10)}" cy="${y - 5}" r="10"/><text class="grc" x="${f2(x + 10)}" y="${y - 1.5}" text-anchor="middle" font-size="10">γʹ</text>` +
-    `<text class="leg" x="${f2(x + 25)}" y="${y}">a hymn, by length</text>`});
-  items.push({w: 34 + GARAMOND.width('names it', LFS), svg: x =>
-    `<line class="link" x1="${x}" x2="${x + 28}" y1="${y - 5}" y2="${y - 5}" stroke-width="1"/><text class="leg" x="${f2(x + 33)}" y="${y}">names it</text>`});
-  items.push({w: 34 + GARAMOND.width('is dedicated to', LFS), svg: x =>
-    `<line class="link ded" x1="${x}" x2="${x + 28}" y1="${y - 5}" y2="${y - 5}"/><text class="leg" x="${f2(x + 33)}" y="${y}">is dedicated to</text>`});
+  if (MODE === 'hymns') {
+    items.push({w: 30 + GARAMOND.width('a hymn, by length', LFS), svg: x =>
+      `<circle class="hymn" cx="${f2(x + 10)}" cy="${y - 5}" r="10"/><text class="grc" x="${f2(x + 10)}" y="${y - 1.5}" text-anchor="middle" font-size="10">γʹ</text>` +
+      `<text class="leg" x="${f2(x + 25)}" y="${y}">a hymn, by length</text>`});
+    items.push({w: 34 + GARAMOND.width('names it', LFS), svg: x =>
+      `<line class="link" x1="${x}" x2="${x + 28}" y1="${y - 5}" y2="${y - 5}" stroke-width="1"/><text class="leg" x="${f2(x + 33)}" y="${y}">names it</text>`});
+    items.push({w: 34 + GARAMOND.width('is dedicated to', LFS), svg: x =>
+      `<line class="link ded" x1="${x}" x2="${x + 28}" y1="${y - 5}" y2="${y - 5}"/><text class="leg" x="${f2(x + 33)}" y="${y}">is dedicated to</text>`});
+  } else {
+    const hubTxt = 'a god the hymns are sung to', linkTxt = 'joins a god to each name in the hymns sung to it';
+    items.push({w: 25 + GARAMOND.width(hubTxt, LFS), svg: x =>
+      `<circle class="node hub" cx="${f2(x + 10)}" cy="${y - 5}" r="10" fill="${C.god}"/><text class="leg" x="${f2(x + 25)}" y="${y}">${hubTxt}</text>`});
+    items.push({w: 34 + GARAMOND.width(linkTxt, LFS), svg: x =>
+      `<line class="link" x1="${x}" x2="${x + 28}" y1="${y - 5}" y2="${y - 5}" stroke-width="1"/><text class="leg" x="${f2(x + 33)}" y="${y}">${linkTxt}</text>`});
+  }
   const gap = 26, tot = d3.sum(items, i => i.w) + gap * (items.length - 1);
   let x = (W - tot) / 2;
   for (const it of items) { furniture.push(it.svg(x)); x += it.w + gap; }
 
-  // the 34 hymns, three columns
   y = V.key;
   const KFS = KEY.fs, LEAD = KEY.lead, COLS = KEY.cols, per = KEY.rows;
-  const wNum = d3.max(D.hymns, h => PORSON.width(h.numeral, KFS));
-  const wGrc = d3.max(D.hymns, h => PORSON.width(h.title_grc, KFS));
-  const wEn = d3.max(D.hymns, h => GARAMOND_I.width(h.title_en, KFS));
-  const wLn = d3.max(D.hymns, h => GARAMOND.width(String(h.lines), KFS));
-  const colW = wNum + 10 + wGrc + 14 + wEn + 12 + wLn;
-  const colGap = (W - 2 * MARGIN - COLS * colW) / (COLS - 1);
-  D.hymns.forEach((h, i) => {
-    const c = Math.floor(i / per), r = i % per;
-    const x0 = MARGIN + c * (colW + colGap), yy = y + r * LEAD;
-    furniture.push(`<g class="key"><text class="grc" x="${f2(x0 + wNum)}" y="${f2(yy)}" text-anchor="end">${esc(h.numeral)}</text>` +
-      `<text class="grc" x="${f2(x0 + wNum + 10)}" y="${f2(yy)}">${esc(h.title_grc)}</text>` +
-      `<text class="en" x="${f2(x0 + wNum + 10 + wGrc + 14)}" y="${f2(yy)}">${esc(h.title_en)}</text>` +
-      `<text class="ln" x="${f2(x0 + colW)}" y="${f2(yy)}" text-anchor="end">${h.lines}</text></g>`);
-  });
+  if (MODE === 'gods') {
+    // the hubs, four columns: name, English name, the numerals of its hymns (and in brackets those it shares as
+    // second dedicatee, whose names hang from the first)
+    const rows = HUBS.map(id => {
+      const own = D.hymns.filter(h => hubOf(h) === id), shared = D.hymns.filter(h => hubOf(h) !== id && h.dedicatees.includes(id));
+      return {grc: byId.get(id).label, en: E[id] ? E[id].label_en : own[0].title_en,
+        nums: [...own.map(h => h.numeral), ...shared.map(h => `(${h.numeral})`)].join(' ')};
+    });
+    const wGrc = d3.max(rows, r => PORSON.width(r.grc, KFS));
+    const wEn = d3.max(rows, r => GARAMOND_I.width(r.en, KFS));
+    const wNums = d3.max(rows, r => PORSON.width(r.nums, KFS));
+    const colW = wGrc + 12 + wEn + 14 + wNums;
+    const colGap = (W - 2 * MARGIN - COLS * colW) / (COLS - 1);
+    rows.forEach((row, i) => {
+      const c = Math.floor(i / per), r = i % per;
+      const x0 = MARGIN + c * (colW + colGap), yy = y + r * LEAD;
+      furniture.push(`<g class="key"><text class="grc" x="${f2(x0)}" y="${f2(yy)}">${esc(row.grc)}</text>` +
+        `<text class="en" x="${f2(x0 + wGrc + 12)}" y="${f2(yy)}">${esc(row.en)}</text>` +
+        `<text class="grc" x="${f2(x0 + colW)}" y="${f2(yy)}" text-anchor="end">${esc(row.nums)}</text></g>`);
+    });
+  } else {
+    // the 34 hymns, three columns
+    const wNum = d3.max(D.hymns, h => PORSON.width(h.numeral, KFS));
+    const wGrc = d3.max(D.hymns, h => PORSON.width(h.title_grc, KFS));
+    const wEn = d3.max(D.hymns, h => GARAMOND_I.width(h.title_en, KFS));
+    const wLn = d3.max(D.hymns, h => GARAMOND.width(String(h.lines), KFS));
+    const colW = wNum + 10 + wGrc + 14 + wEn + 12 + wLn;
+    const colGap = (W - 2 * MARGIN - COLS * colW) / (COLS - 1);
+    D.hymns.forEach((h, i) => {
+      const c = Math.floor(i / per), r = i % per;
+      const x0 = MARGIN + c * (colW + colGap), yy = y + r * LEAD;
+      furniture.push(`<g class="key"><text class="grc" x="${f2(x0 + wNum)}" y="${f2(yy)}" text-anchor="end">${esc(h.numeral)}</text>` +
+        `<text class="grc" x="${f2(x0 + wNum + 10)}" y="${f2(yy)}">${esc(h.title_grc)}</text>` +
+        `<text class="en" x="${f2(x0 + wNum + 10 + wGrc + 14)}" y="${f2(yy)}">${esc(h.title_en)}</text>` +
+        `<text class="ln" x="${f2(x0 + colW)}" y="${f2(yy)}" text-anchor="end">${h.lines}</text></g>`);
+    });
+  }
   furniture.push(`<line class="rule" x1="${MARGIN}" x2="${W - MARGIN}" y1="${V.rule2}" y2="${V.rule2}"/>`);
   // colophon
   y = V.colo;
   const colo = ['Every name in the thirty-four Homeric Hymns, read line by line in the Greek. Text: H. G. Evelyn-White (1914), ' +
     'via the Perseus Digital Library;', 'Hymn 34, <tspan class="grc">Εἰς Ξένους</tspan>, from T. W. Allen (1912). ' +
-    'After a graph drawn by hand by Peter Danenberg in 2009.'];
+    'After a graph drawn by hand by Peter Danenberg in 2009' +
+    (MODE === 'gods' ? ', whose topology this is: each hymn folded into the god it is sung to.' : '.')];
   colo.forEach((t, i) => furniture.push(`<text class="colo" x="${W / 2}" y="${f2(y + i * 18)}" text-anchor="middle">${t}</text>`));
   furniture.push(`<text class="url" x="${W / 2}" y="${f2(V.url)}" text-anchor="middle">hymnoi.org</text>`);
 }
@@ -603,12 +673,13 @@ text { font-family: "EB Garamond", serif; fill: ${C.ink}; }
 .hymn { fill: ${C.hymn}; stroke: ${C.ink}; stroke-width: 1.1; }
 .lab { font-family: "GFS Porson", "EB Garamond", serif; paint-order: stroke; stroke: ${C.paper}; stroke-linejoin: round; }
 .num { font-family: "GFS Porson", "EB Garamond", serif; }
-`;
+` + (MODE === 'gods' ? `.node.hub { stroke: ${C.ink}; stroke-width: 1.1; }
+` : '');
 
 const out = [];
 out.push(`<?xml version="1.0" encoding="UTF-8"?>`);
 out.push(`<svg xmlns="http://www.w3.org/2000/svg" width="24in" height="38.833in" viewBox="0 0 ${W} ${H}">`);
-out.push(`<title>Ὕμνοι: the names in the Homeric Hymns</title>`);
+out.push(`<title>Ὕμνοι: the names in the Homeric Hymns${MODE === 'gods' ? ', gathered round the gods the hymns are sung to' : ''}</title>`);
 out.push(`<style>${style}</style>`);
 if (!ARGS.has('--no-fill')) out.push(`<rect width="${W}" height="${H}" fill="${C.paper}"/>`);
 out.push(`<g id="links">`);
@@ -621,7 +692,7 @@ for (const n of G.nodes) {
   if (n.type === 'hymn')
     out.push(`<g id="${n.id}"><circle class="hymn" cx="${f2(n.x)}" cy="${f2(n.y)}" r="${f2(n.r)}"/>` +
       `<text class="num" x="${f2(n.x)}" y="${f2(n.y + n.fs * 0.3)}" text-anchor="middle" font-size="${f2(n.fs)}">${esc(n.label)}</text></g>`);
-  else out.push(`<circle id="n-${n.id}" class="node" cx="${f2(n.x)}" cy="${f2(n.y)}" r="${f2(n.r)}" fill="${C[n.kind]}"/>`);
+  else out.push(`<circle id="n-${n.id}" class="node${n.hub ? ' hub' : ''}" cx="${f2(n.x)}" cy="${f2(n.y)}" r="${f2(n.r)}" fill="${C[n.kind] || C.hymn}"/>`);
 }
 out.push(`</g><g id="labels">`);
 for (const n of ents) {
@@ -639,7 +710,7 @@ fs.writeFileSync(svgFile, out.join('\n') + '\n');
 // ---------------------------------------------------------------- report, PDF, preview
 
 const missing = [...MISSING];
-console.log(`${G.nodes.length} nodes (${ents.length} names, ${D.hymns.length} hymns), ${G.links.length} links; ` +
+console.log(`${G.nodes.length} nodes (${ents.length} names, ${HUBS.length} hubs), ${G.links.length} links; ` +
   `${placed.size} labels placed, ${[...placed.values()].filter(c => c.lp).length} with leaders, ${unplaced.length} unplaced` +
   (unplaced.length ? ': ' + unplaced.map(n => n.id).join(' ') : ''));
 if (unknown.length) console.log('overrides naming nothing:', unknown.join(' '));

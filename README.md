@@ -57,6 +57,7 @@ tools/audit_legacy.py     # data/legacy/{node_map,audit,new}.csv
 tools/build.py            # site/data/hymnoi.json
 tools/basemap.py          # site/data/basemap.json (Natural Earth, for the map)
 node tools/poster.js      # site/poster/hymnoi-hubs.{svg,pdf,png}
+node tools/poster.js --gods  # site/poster/hymnoi-gods.*: gods as hubs, the 2009 topology
 tools/matrix-print.sh     # site/poster/matrix-24x38.8*.{pdf,png} (needs the site served)
 tools/palettes/build.py   # site/palettes/index.html
 python3 -m http.server 8765 --directory site   # then http://localhost:8765/
