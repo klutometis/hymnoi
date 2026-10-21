@@ -5,6 +5,9 @@
 //     node tools/poster.js --svg      # stop after the SVG (no Chrome)
 //     node tools/poster.js --no-fill  # leave the paper white instead of the site's cream
 //
+// Needs google-chrome (PDF), pdffonts and pdftoppm (poppler); no npm packages. About 40 s.
+// Prints the label audit: labels without a clean seat, overlaps (e.g. from hand overrides), missing glyphs.
+//
 // Everything is derived from site/data/hymnoi.json, site/palette.css (kind colours; the paper and ink
 // greys come from site/style.css unless palette.css defines them) and poster/overrides.csv, so when the
 // labels or the palette change the poster follows on a re-run.
@@ -31,7 +34,10 @@ const ROOT = path.resolve(__dirname, '..');
 const P = (...p) => path.join(ROOT, ...p);
 const d3 = require(P('site/vendor/d3.v7.9.0.min.js'));
 const ARGS = new Set(process.argv.slice(2));
-const OUT = P('poster');
+const T0 = Date.now();
+// force tuning (POSTER_TUNE='{"kx":0.08}' to experiment without editing)
+const TUNE = {k1: 0.3, kd: 2.0, dmax: 250, kc: 1.0, kx: 0.08, ky: 0.03, ...JSON.parse(process.env.POSTER_TUNE || '{}')};
+const OUT = process.env.POSTER_OUT ? path.resolve(process.env.POSTER_OUT) : P('poster');   // for experiments
 const BASE = 'hymnoi-hubs';
 
 // ---------------------------------------------------------------- page
@@ -39,7 +45,6 @@ const BASE = 'hymnoi-hubs';
 const PHI = (1 + Math.sqrt(5)) / 2;
 const W = 24 * 72, H = +(24 * PHI * 72).toFixed(2);          // 1728 × 2795.96 pt
 const MARGIN = 120;                                          // ≈ 1.67 in
-const GRAPH = {cx: W / 2, cy: 1310, ax: 735, ay: 940};       // the graph's superellipse
 const SUPER = 3.2;                                           // exponent: 2 ellipse, → ∞ rectangle
 
 // ---------------------------------------------------------------- data
@@ -50,6 +55,21 @@ const M = D.mentions.map(r => Object.fromEntries(D.mention_cols.map((c, i) => [c
 const KINDS = ['god', 'nymph', 'hero', 'mortal', 'group', 'creature', 'place'];
 const KIND_PL = {god: 'gods', nymph: 'nymphs', hero: 'heroes', mortal: 'mortals', group: 'groups',
   creature: 'creatures', place: 'places'};
+
+// The vertical plan. The title hangs from the top margin; the apparatus (legend, key to the hymns, colophon)
+// stands on the bottom margin, built upwards; the graph takes what is left between them.
+const KEY = {fs: 13.5, lead: 19, cols: 3};
+KEY.rows = Math.ceil(D.hymns.length / KEY.cols);
+const V = {title: MARGIN + 92, url: H - MARGIN + 6};
+V.sub = V.title + 54;
+V.colo = V.url - 44;                                 // first colophon line; the second is 18 below
+V.rule2 = V.colo - 30;
+V.key = V.rule2 - 26 - (KEY.rows - 1) * KEY.lead;    // baseline of the first row of the key
+V.legend = V.key - 46;
+V.rule1 = V.legend - 38;
+const GRAPH = {cx: W / 2, ax: W / 2 - MARGIN};       // the graph's superellipse
+GRAPH.top = V.sub + 66; GRAPH.bottom = V.rule1 - 30;
+GRAPH.cy = (GRAPH.top + GRAPH.bottom) / 2; GRAPH.ay = (GRAPH.bottom - GRAPH.top) / 2;
 
 function cssVars(file) {
   const out = {};
@@ -191,7 +211,8 @@ const G = graphData();
 const byId = new Map(G.nodes.map(n => [n.id, n]));
 
 // sizes, in points on paper
-const LABEL_MIN = 8;
+const rEntity = n => 2.6 + Math.sqrt(n) * 1.35;
+const LABEL_MIN = 9;                                  // pt, a name said once
 for (const n of G.nodes) {
   if (n.type === 'hymn') {
     n.r = 7 + Math.sqrt(n.n) * 1.05;
@@ -200,10 +221,10 @@ for (const n of G.nodes) {
     const w1 = PORSON.width(n.label, 1);
     n.fs = Math.min(n.r * 0.95, 1.5 * n.r / w1);
   } else {
-    n.r = 2.6 + Math.sqrt(n.n) * 1.35;
+    n.r = rEntity(n.n);
     n.rs = 3 + Math.sqrt(n.n) * 1.5;
     n.label = E[n.ent].label.normalize('NFC');
-    n.fs = Math.min(26, LABEL_MIN + 1.2 * Math.sqrt(n.n - 1));
+    n.fs = Math.min(30, LABEL_MIN + 1.4 * Math.sqrt(n.n - 1));
     n.w = PORSON.width(n.label, n.fs) * 1.03 + 0.6;
   }
 }
@@ -214,8 +235,8 @@ const S = 2.05;                                       // site px -> paper pt
 // Start: the hymns on a ring, clockwise from the top, kin beside kin (Apollo's, Artemis', Hermes' and Hestia's …),
 // so Hymn 3 opens at the top and Hymn 2 at the foot; each name starts at the mean of its hymns, on a small
 // phyllotaxis spiral. Hymns missing from RING (new data) are appended.
-const RING = [3, 21, 25, 9, 27, 4, 18, 29, 24, 19, 20, 28, 11, 8, 13, 2, 14, 30, 31, 32, 22, 12, 23, 5, 6, 10, 1, 7, 26,
-  15, 16, 17, 33, 34];
+const RING = [3, 21, 25, 27, 9, 4, 18, 29, 24, 19, 20, 28, 11, 8, 31, 32, 14, 30, 13, 2, 22, 12, 23, 16, 15, 17, 33,
+  34, 5, 6, 10, 1, 7, 26];
 {
   const golden = Math.PI * (3 - Math.sqrt(5));
   const hymns = G.nodes.filter(n => n.type === 'hymn');
@@ -263,20 +284,52 @@ function forceBound(strength) {
   return f;
 }
 
-const TICKS = 4000;
+const TICKS = 3000;
+for (const n of G.nodes) if (n.type === 'hymn') n.single = 0;
+for (const n of G.nodes) if (n.type === 'entity' && n.hymns.size === 1) byId.get('h' + [...n.hymns][0]).single++;
 const sim = d3.forceSimulation(G.nodes)
   .alphaMin(0.0005)
   .alphaDecay(1 - Math.pow(0.0005, 1 / TICKS))
   .force('link', d3.forceLink(G.links).id(d => d.id)
-    .distance(l => 18 * S + l.source.r + l.target.r)
-    .strength(l => (l.ded ? 0.6 : 0.25) + Math.min(0.5, l.w * 0.05)))
-  .force('charge', d3.forceManyBody().strength(n => (-30 - n.rs * 14) * S * S).distanceMax(700 * S))
+    // a name in one hymn only sits on a ring whose radius grows with the number of such names (a sunburst)
+    .distance(l => 18 * S + l.source.r + l.target.r + (l.target.hymns.size === 1 && !l.ded ? TUNE.kd * l.source.single : 0))
+    // as the site, but a name in one hymn only is held to it harder, so the petals stay petals
+    .strength(l => l.target.hymns.size === 1 && !l.ded ? TUNE.k1 : (l.ded ? 0.6 : 0.25) + Math.min(0.5, l.w * 0.05)))
+  .force('charge', d3.forceManyBody().strength(n => (-30 - n.rs * 14) * S * S * TUNE.kc).distanceMax(TUNE.dmax))
   .force('collide', d3.forceCollide(n => n.r + (n.type === 'hymn' ? 9 : 3 + n.fs * 0.45)).iterations(3))
-  .force('x', d3.forceX(GRAPH.cx).strength(0.05))
-  .force('y', d3.forceY(GRAPH.cy).strength(0.032))
+  .force('x', d3.forceX(GRAPH.cx).strength(TUNE.kx))
+  .force('y', d3.forceY(GRAPH.cy).strength(TUNE.ky))
   .force('bound', forceBound(0.5))
   .stop();
+// a component cut off from the rest (Hymn 34 names no one else's names) would drift to the wall: hold it in
+{
+  const comp = new Map(G.nodes.map(n => [n, n]));
+  const find = n => comp.get(n) === n ? n : find(comp.get(n));
+  for (const l of G.links) comp.set(find(l.source), find(l.target));
+  const size = d3.rollup(G.nodes, v => v.length, find);
+  const big = d3.greatest(size, ([, v]) => v)[0];
+  const stray = n => find(n) !== big;
+  sim.force('x').strength(n => stray(n) ? 0.25 : TUNE.kx);
+  sim.force('y').strength(n => stray(n) ? 0.25 : TUNE.ky);
+}
 for (let i = 0; i < TICKS; i++) sim.tick();
+
+// fit to the graph's rectangle: uniform scale, plus up to 12% extra stretch along the slack axis
+{
+  const ext = n => n.type === 'hymn' ? [n.r, n.r] : [n.r + n.w * 0.6, n.r + n.fs];
+  const x0 = d3.min(G.nodes, n => n.x - ext(n)[0]), x1 = d3.max(G.nodes, n => n.x + ext(n)[0]);
+  const y0 = d3.min(G.nodes, n => n.y - ext(n)[1]), y1 = d3.max(G.nodes, n => n.y + ext(n)[1]);
+  const sx = (2 * GRAPH.ax) / (x1 - x0), sy = (2 * GRAPH.ay) / (y1 - y0), s = Math.min(sx, sy);
+  const kx = Math.min(sx, s * 1.12), ky = Math.min(sy, s * 1.12);
+  const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+  for (const n of G.nodes) { n.x = GRAPH.cx + (n.x - mx) * kx; n.y = GRAPH.cy + (n.y - my) * ky; }
+  console.log(`fit: × ${kx.toFixed(3)}, ${ky.toFixed(3)}`);
+}
+const atBound = G.nodes.filter(n => {
+  const u = (n.x - GRAPH.cx) / GRAPH.ax, v = (n.y - GRAPH.cy) / GRAPH.ay;
+  return Math.pow(Math.abs(u), SUPER) + Math.pow(Math.abs(v), SUPER) > Math.pow(0.9, SUPER);
+}).length;
+console.log(`simulation: ${Date.now() - T0} ms; ${atBound} nodes in the outer tenth; x ${d3.extent(G.nodes, n => n.x).map(Math.round)}, y ${d3.extent(G.nodes, n => n.y).map(Math.round)}`);
 
 // ---------------------------------------------------------------- overrides
 
@@ -417,6 +470,15 @@ function placeLabels() {
     }
     if (!moved) break;
   }
+  // no clean seat: set it where it collides least rather than drop a name from the poster, and say so
+  for (const n of order) if (!placed.has(n)) {
+    const all = [...statics.get(n)[0], ...statics.get(n)[1]];
+    const clash = c => d3.sum(placed, ([, o]) => boxHit(c.b, o.b) ? 1 : 0);
+    const c = d3.least(all, c => clash(c) * 100 + c.total) || candidates(n, false)[0];
+    if (!c.lp && c.leader) c.lp = leaderPoints(n, c.b);
+    c.forced = true;
+    placed.set(n, c);
+  }
   return placed;
 }
 
@@ -427,23 +489,30 @@ const f2 = v => +v.toFixed(2);
 const furniture = [];                                // svg strings
 
 // title block
-const TITLE_Y = 250;
-FURNITURE.push({x0: W / 2 - 300, x1: W / 2 + 300, y0: MARGIN, y1: TITLE_Y + 60});
-furniture.push(`<text class="grc title" x="${W / 2}" y="${TITLE_Y}" text-anchor="middle">Ὕμνοι</text>`);
-furniture.push(`<text class="sub" x="${W / 2}" y="${TITLE_Y + 44}" text-anchor="middle">every god, nymph, hero, mortal, group, creature and place named in the Homeric Hymns</text>`);
+FURNITURE.push({x0: W / 2 - 500, x1: W / 2 + 500, y0: 0, y1: V.sub + 10});
+furniture.push(`<text class="grc title" x="${W / 2}" y="${V.title}" text-anchor="middle">Ὕμνοι</text>`);
+furniture.push(`<text class="sub" x="${W / 2}" y="${V.sub}" text-anchor="middle">every god, nymph, hero, mortal, group, creature and place named in the Homeric Hymns</text>`);
 
 // bottom band: legend, hymn key, colophon
-const BAND_Y = GRAPH.cy + GRAPH.ay + 40;
-FURNITURE.push({x0: 0, x1: W, y0: BAND_Y - 20, y1: H});
+FURNITURE.push({x0: 0, x1: W, y0: V.rule1 - 12, y1: H});
 {
-  let y = BAND_Y;
+  let y = V.rule1;
   furniture.push(`<line class="rule" x1="${MARGIN}" x2="${W - MARGIN}" y1="${y}" y2="${y}"/>`);
   // legend: one centred line
-  y += 42;
+  y = V.legend;
   const items = [];
   const LFS = 15;
   for (const k of KINDS) items.push({w: 16 + GARAMOND.width(KIND_PL[k], LFS), svg: x =>
     `<circle cx="${f2(x + 5)}" cy="${y - 5}" r="5" fill="${C[k]}"/><text class="leg" x="${f2(x + 15)}" y="${y}">${KIND_PL[k]}</text>`});
+  {
+    const rs = [1, 10, 100].map(rEntity), txt = 'named 1, 10, 100 times';
+    const wd = d3.sum(rs, r => 2 * r) + 2 * 4;
+    items.push({w: wd + 8 + GARAMOND.width(txt, LFS), svg: x => {
+      let s = '', cx = x;
+      for (const r of rs) { s += `<circle cx="${f2(cx + r)}" cy="${y - 5}" r="${f2(r)}" fill="${C.muted}" fill-opacity="0.55"/>`; cx += 2 * r + 4; }
+      return s + `<text class="leg" x="${f2(x + wd + 8)}" y="${y}">${txt}</text>`;
+    }});
+  }
   items.push({w: 30 + GARAMOND.width('a hymn, by length', LFS), svg: x =>
     `<circle class="hymn" cx="${f2(x + 10)}" cy="${y - 5}" r="10"/><text class="grc" x="${f2(x + 10)}" y="${y - 1.5}" text-anchor="middle" font-size="10">γʹ</text>` +
     `<text class="leg" x="${f2(x + 25)}" y="${y}">a hymn, by length</text>`});
@@ -456,9 +525,8 @@ FURNITURE.push({x0: 0, x1: W, y0: BAND_Y - 20, y1: H});
   for (const it of items) { furniture.push(it.svg(x)); x += it.w + gap; }
 
   // the 34 hymns, three columns
-  y += 46;
-  const KFS = 13.5, LEAD = 19.5, COLS = 3;
-  const per = Math.ceil(D.hymns.length / COLS);
+  y = V.key;
+  const KFS = KEY.fs, LEAD = KEY.lead, COLS = KEY.cols, per = KEY.rows;
   const wNum = d3.max(D.hymns, h => PORSON.width(h.numeral, KFS));
   const wGrc = d3.max(D.hymns, h => PORSON.width(h.title_grc, KFS));
   const wEn = d3.max(D.hymns, h => GARAMOND_I.width(h.title_en, KFS));
@@ -473,21 +541,21 @@ FURNITURE.push({x0: 0, x1: W, y0: BAND_Y - 20, y1: H});
       `<text class="en" x="${f2(x0 + wNum + 10 + wGrc + 14)}" y="${f2(yy)}">${esc(h.title_en)}</text>` +
       `<text class="ln" x="${f2(x0 + colW)}" y="${f2(yy)}" text-anchor="end">${h.lines}</text></g>`);
   });
-  y += per * LEAD + 30;
-  furniture.push(`<line class="rule" x1="${MARGIN}" x2="${W - MARGIN}" y1="${y - 14}" y2="${y - 14}"/>`);
+  furniture.push(`<line class="rule" x1="${MARGIN}" x2="${W - MARGIN}" y1="${V.rule2}" y2="${V.rule2}"/>`);
   // colophon
-  y += 22;
+  y = V.colo;
   const colo = ['Every name in the thirty-four Homeric Hymns, read line by line in the Greek. Text: H. G. Evelyn-White (1914), ' +
     'via the Perseus Digital Library;', 'Hymn 34, <tspan class="grc">Εἰς Ξένους</tspan>, from T. W. Allen (1912). ' +
     'After a graph drawn by hand by Peter Danenberg in 2009.'];
   colo.forEach((t, i) => furniture.push(`<text class="colo" x="${W / 2}" y="${f2(y + i * 18)}" text-anchor="middle">${t}</text>`));
-  furniture.push(`<text class="url" x="${W / 2}" y="${f2(y + 2 * 18 + 22)}" text-anchor="middle">hymnoi.org</text>`);
+  furniture.push(`<text class="url" x="${W / 2}" y="${f2(V.url)}" text-anchor="middle">hymnoi.org</text>`);
 }
 
 // ---------------------------------------------------------------- run placement, label overrides
 
 const placed = placeLabels();
-const unplaced = ents.filter(n => !placed.has(n));
+console.log(`placement: ${Date.now() - T0} ms`);
+const unplaced = ents.filter(n => placed.get(n).forced);
 for (const o of OVERRIDES.filter(o => o.id.endsWith('.label'))) {
   const n = byId.get(o.id.slice(0, -6));
   if (!n || !placed.has(n)) { unknown.push(o.id); continue; }
@@ -497,6 +565,16 @@ for (const o of OVERRIDES.filter(o => o.id.endsWith('.label'))) {
   c.b = {x0, x1: x0 + w, y0, y1: y0 + h};
   const nearDisc = boxCircle(c.b, n.x, n.y, n.r, 6);
   c.lp = nearDisc ? null : leaderPoints(n, c.b);
+}
+// audit the final page (overrides included): label on label, label on disc
+const clashes = [];
+{
+  const ps = [...placed];
+  for (let i = 0; i < ps.length; i++) {
+    const [n, c] = ps[i];
+    for (let j = i + 1; j < ps.length; j++) if (boxHit(c.b, ps[j][1].b, 0)) clashes.push(`${n.id} × ${ps[j][0].id}`);
+    for (const m of G.nodes) if (boxCircle(c.b, m.x, m.y, m.r, m === n ? -0.5 : 0)) clashes.push(`${n.id} on ${m.id}`);
+  }
 }
 
 // ---------------------------------------------------------------- SVG
@@ -565,6 +643,9 @@ console.log(`${G.nodes.length} nodes (${ents.length} names, ${D.hymns.length} hy
   `${placed.size} labels placed, ${[...placed.values()].filter(c => c.lp).length} with leaders, ${unplaced.length} unplaced` +
   (unplaced.length ? ': ' + unplaced.map(n => n.id).join(' ') : ''));
 if (unknown.length) console.log('overrides naming nothing:', unknown.join(' '));
+if (clashes.length) console.log(`WARNING: ${clashes.length} overlaps on the page:`, clashes.join(', '));
+const minFs = d3.min(G.nodes, n => n.fs);
+if (minFs < 6) console.log(`WARNING: smallest type is ${minFs.toFixed(1)} pt`);
 if (missing.length) console.log('glyphs not in the fonts:', missing.join(' '));
 console.log('wrote', path.relative(ROOT, svgFile));
 if (ARGS.has('--svg')) process.exit(0);
@@ -586,8 +667,8 @@ const fonts = execFileSync('pdffonts', [pdf], {encoding: 'utf8'});
 const fontLines = fonts.split('\n').slice(2).filter(Boolean);
 const want = ['Porson', 'Garamond'];
 for (const w of want) if (!fontLines.some(l => l.includes(w) && /\byes\b/.test(l.slice(60))))
-  console.log(`WARNING: ${w} is not embedded:\n${fonts}`);
-console.log('fonts:', fontLines.map(l => l.split(/\s+/)[0]).join(', '));
+  { console.log(`ERROR: ${w} is not embedded (did Chrome print before the fonts loaded?):\n${fonts}`); process.exitCode = 1; }
+console.log('fonts:', [...new Set(fontLines.map(l => `${l.split(/\s+/)[0]} (${l.slice(37, 54).trim()})`))].join(', '));
 const png = path.join(OUT, BASE + '-preview');
 execFileSync('pdftoppm', ['-png', '-singlefile', '-scale-to-x', '1200', '-scale-to-y', '-1', pdf, png]);
 console.log('wrote', path.relative(ROOT, png + '.png'));
