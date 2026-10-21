@@ -28,7 +28,7 @@ const lineNum = l => parseInt(l, 10) + (/[a-z]$/.test(l) ? (l.charCodeAt(l.lengt
 
 const state = {beings: true, hymns: true, links: false, routes: true, doubtful: false, off: new Set(),
   routeOff: new Set(), selected: null, k: 1};
-let D, E, H, M, greekBy, basemap, proj, svg, root, zoom, nodes, links, tethers, sim, nodeSel, linkSel, tetherSel, width, height;
+let D, E, H, M, greekBy, basemap, proj, svg, root, zoom, nodes, links, godLinks, tethers, sim, nodeSel, linkSel, tetherSel, width, height;
 
 Promise.all([fetch('data/hymnoi.json').then(r => r.json()), fetch('data/basemap.json').then(r => r.json())])
   .then(([d, b]) => { D = d; basemap = b; init(); });
@@ -135,6 +135,17 @@ function layout() {
   }
   nodes = [...hymns.values(), ...byId.values()];
   links = [...lmap.values()];
+  // The same mentions with each hymn folded into the god it is sung to (the 2009 edges): what
+  // "links" draws while the hymns are hidden. Hymn 34 has no god; a god's own name is no link.
+  const gmap = new Map();
+  for (const l of links) {
+    const g = byId.get(l.source.hymn.dedicatees[0]);
+    if (!g || g === l.target) continue;
+    const key = g.id + '|' + l.target.id;
+    if (!gmap.has(key)) gmap.set(key, {source: g, target: l.target, w: 0});
+    gmap.get(key).w += l.w;
+  }
+  godLinks = [...gmap.values()];
   tethers = [];
   for (const n of byId.values()) for (const h of n.homes || []) if (byId.has(h)) tethers.push({source: n, target: byId.get(h)});
   // start each hymn at the centroid of its pinned places, each being at the centroid of its hymns
@@ -171,9 +182,7 @@ function layout() {
 }
 
 function draw() {
-  linkSel = root.select('.mlinks').selectAll('line').data(links).join('line')
-    .attr('class', 'mlink').attr('vector-effect', 'non-scaling-stroke')
-    .attr('stroke-width', l => 0.5 + Math.sqrt(l.w) * 0.4);
+  drawLinks();
   tetherSel = root.select('.tethers').selectAll('line').data(tethers).join('line')
     .attr('class', 'tether').attr('vector-effect', 'non-scaling-stroke').attr('stroke', t => color(t.source.kind));
   nodeSel = root.select('.pnodes').selectAll('g.pnode').data(nodes, n => n.id).join(enter => {
@@ -213,6 +222,20 @@ function draw() {
   tick();
 }
 
+// Hymn → name while the hymns are shown; god → name (the 2009 edges) while they are hidden.
+function drawnLinks() { return state.hymns ? links : godLinks; }
+
+function drawLinks() {
+  linkSel = root.select('.mlinks').selectAll('line').data(drawnLinks(), l => l.source.id + '|' + l.target.id)
+    .join('line').attr('class', 'mlink').attr('vector-effect', 'non-scaling-stroke')
+    .attr('stroke-width', l => 0.5 + Math.sqrt(l.w) * 0.4)
+    .attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
+  const box = document.getElementById('links').parentNode;
+  box.title = state.hymns ? 'A line from each hymn to every name in it'
+    : 'A line from each god to every name in the hymns sung to that god (the 2009 edges)';
+  box.lastChild.textContent = state.hymns ? ' links' : ' links (god → name)';
+}
+
 function tick() {
   linkSel.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
   tetherSel.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
@@ -235,11 +258,7 @@ function labels() {
 
 function applyToggles() {
   nodeSel.style('display', n => (n.type === 'hymn' && !state.hymns) || (n.type === 'being' && !state.beings) ? 'none' : null);
-  linkSel.style('display', l => {
-    if (!state.hymns) return 'none';
-    if (l.target.type === 'being' && !state.beings) return 'none';
-    return state.links ? null : 'none';
-  });
+  linkSel.style('display', l => state.links && visibleNode(l.source) && visibleNode(l.target) ? null : 'none');
   root.select('.tethers').style('display', state.beings ? null : 'none');
   root.select('.routes').style('display', state.routes ? null : 'none');
   root.selectAll('.route-g').style('display', r => state.routeOff.has(r.id) ? 'none' : null);
@@ -282,7 +301,7 @@ function highlightRoute(id) {
 
 function neighbours(n) {
   const lit = new Set([n.id]);
-  for (const l of links) {
+  for (const l of drawnLinks()) {
     if (l.source.id === n.id) lit.add(l.target.id);
     if (l.target.id === n.id) lit.add(l.source.id);
   }
@@ -433,7 +452,12 @@ function centreOn(n) {
 
 function controls() {
   for (const id of ['beings', 'hymns', 'links', 'routes']) {
-    document.getElementById(id).addEventListener('change', e => { state[id] = e.target.checked; applyToggles(); });
+    document.getElementById(id).addEventListener('change', e => {
+      state[id] = e.target.checked;
+      if (id === 'hymns') drawLinks();
+      applyToggles();
+      if (state.selected) light(state.selected);
+    });
   }
   document.getElementById('doubtful').addEventListener('change', e => { state.doubtful = e.target.checked; relayout(); });
 }
