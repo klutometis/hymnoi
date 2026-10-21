@@ -345,8 +345,8 @@ chart rather than a book, and it needs six text variants to pigmenta's four. Thr
 Greek labels on the paper (verdigris 4.2:1, ochre 2.9:1, green earth 2.0:1); the CSS comments give text
 colours of the same hue (and a deeper cinnabar for gods, which keeps the god and hero labels apart for
 deutans) that reach 4.6:1 or more and stay ≥ 21.7 apart, ≥ 10.8 under each simulation. The node labels in the
-graph are ink, so these matter only in the reading panel, and using them needs a <code>--&lt;kind&gt;-text</code>
-hook in <code>style.css</code>.
+graph are ink, so these matter only in the reading panel, where they are used, as the
+<code>--&lt;kind&gt;-text</code> variables. <b>Adopted 2026-10-21.</b>
 """
 NOTES = """
 <section class=pal><h2>Method</h2><ul class=notes>
