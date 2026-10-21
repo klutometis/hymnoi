@@ -25,6 +25,8 @@ on it.
 ## Layout
 
 ```
+README.md                  this file
+REVIEW.md                  the judgement calls still open, with the defaults the views apply
 legacy/2009/hymnoi.dot     the graph as written in 2009 (git history intact)
 legacy/2009/TODO           "png with image map; need links to all places, people, gods"
 legacy/2020/hymnoi.dot     the 2020 restyle (same nodes and edges)
@@ -33,9 +35,24 @@ legacy/2020/hymnoi.dot.png an abandoned render with `dot` instead of `fdp`
 legacy/2020/hymnoi-preview.png
 data/text/greek.tsv        the Greek, one row per line (hymn, line, text, note)
 data/text/english.tsv      Evelyn-White's English, one row per paragraph
-data/legacy/{nodes,edges}.csv  the 2009 graph, flattened
-data/extract/              the 2026 extraction pass (SPEC.md is the method)
+data/hymns.csv             the 34 hymns: numerals, titles, dedicatees, length
+data/entities.csv          286 beings, groups and places: kind, subkind, Greek and English names
+data/mentions.csv          1,399 mentions: hymn, line, form, lemma, entity, type, certainty, note
+data/extract/              the extraction as nine workers delivered it, and its method (SPEC.md)
+data/legacy/               the 2009 graph as CSV, its node-to-entity map, and the audit
+site/                      the d3 views (static; data/hymnoi.json is built)
 tools/                     the scripts that produce all of the above
+docs/                      screenshots
+```
+
+To rebuild and look:
+
+```
+tools/import_text.py      # data/text from ~/prg/canon (+ fixes)
+tools/merge_extract.py    # data/{mentions,entities,hymns}.csv from data/extract (once; --force to redo)
+tools/audit_legacy.py     # data/legacy/{node_map,audit,new}.csv
+tools/build.py            # site/data/hymnoi.json
+python3 -m http.server 8765 --directory site   # then http://localhost:8765/
 ```
 
 The 2009 files are kept in a folder rather than left in git history: the
@@ -97,30 +114,39 @@ itself, which stays as it was.
    several of which then write τέλος τῶν ὕμνων Ὁμήρου; Evelyn-White prints it
    among Homer's Epigrams. The rebuild treats it as Hymn 34.
 
-### Checked against the Greek (first pass, October 2026)
+### Checked against the Greek (October 2026)
 
-A crude automatic pass, matching names against the capitalized words of the
-Perseus Greek (see `data/text`), found **416 of the 433 edges** in a hymn to the
-right god. Seven of the misses are names that are in the text, but in a
-different hymn, and every one fits a misread Roman numeral in the index:
+`data/legacy/audit.csv` gives every 2009 edge a status against the full
+extraction:
+
+| status | edges | meaning |
+|---|---|---|
+| confirmed | 414 | the name is in a hymn to that god, at the lines given |
+| confirmed_entity | 7 | the being is there under another spelling or name: Ῥέη (Ῥείη), Αἰνιῆνες (Ἐνιῆνες), Εἰρεσίαι (Πειρεσιαί), Βάγχειος, Κυλλήνιος under Hestia (Hymn 29 has Hermes as Ἀργειφόντης) |
+| confirmed_doubtful | 1 | Ἥρη in Εἰς Ξένους, which may be a nymph |
+| elsewhere | 8 | in the Hymns, but in a different hymn: the Roman-numeral slips below |
+| absent | 3 | Ἀμάρυνθος, Κυδνή, Ἀτλαντίς: not in this text |
+
+Every misplaced edge fits a misread Roman numeral in the index:
 
 | 2009 edge | Where the name is | Probable slip |
 |---|---|---|
 | athene → Ἄτλας, Κυλλήνη, Κυλλήνιος | 18.1–4 (Hermes) | XVIII read as XXVIII |
 | athene → Φοῖβος | 21.1 (Apollo) | XXI read as XI |
 | here → Ποσειδάων | 22.1 (Poseidon) | XXII read as XII |
-| hestie → Κυλλήνιος | 19.31 (Pan) | XIX read as XXIX |
 | artemis → Παλλάς | 11.1 (Athena) | XI read as IX |
 | apollon → Θορικός | 2.126 (Demeter) | II read as III |
 | dionusos → Θρύον | 3.423 (Apollo) | III read as I |
 
-Ἀμάρυνθος, Κυδνή and Ἀτλαντίς are not in this text at all, and the 2009
-spellings Δώς, Εἰρεσίαι, Αἰνιῆνες and Ῥέη differ from it (it has Δωσώ,
-Πειρεσίαι, Ἐνιῆνες, Ῥείη): the book of 2009 printed a different Greek text.
-The same pass found dozens of names in the Greek that the index never
-listed (Eos, the Nymphs, Zephyros, Notos, Echo, the Keres, Hades' epithets,
-Hermes in Hymn 2, Zeus in Hymn 14, Poseidon in his own Hymn 22, …). The full
-extraction in `data/extract` supersedes this pass.
+The 2009 spellings Δώς, Εἰρεσίαι, Αἰνιῆνες and Ῥέη differ from this text
+(Δωσώ, Πειρεσιαί, Ἐνιῆνες, Ῥείη): the book of 2009 printed a different Greek
+text. Δώς is the manuscript reading at 2.122, which Evelyn-White emends.
+
+`data/legacy/new.csv` lists what the text has and 2009 lacks: 19 (hymn, being)
+pairs counting only names and epithets (Eos in Hymns 4, 5 and 31; the Nymphs in
+5, 19 and 26; Zephyros, the Keres, the Centaurs, Gaia and Ouranos in Hymn 3,
+Zeus in 14, Atlas in 18, the drakaina), and many more once periphrases are
+counted. In all, the extraction has 1,399 mentions where 2009 had 433 edges.
 
 ## The text
 
@@ -170,7 +196,10 @@ lowercase names, epithets used as names, periphrases and personifications are
 recorded with a certainty and a note. The doubtful ones become a short list of
 judgement calls for Peter.
 
-### Views (planned)
+### Views
+
+Built so far (`site/`): **hymns as hubs** and **gods as hubs (2009)**, with a reader
+pane for each name and each hymn. Planned:
 
 - **Hymns as hubs**: a force layout with the 34 hymns as nodes; names in a single hymn
   petal around it, shared ones (Zeus, the Muses, Olympos) pull to the middle.

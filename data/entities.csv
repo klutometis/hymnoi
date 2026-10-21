@@ -53,7 +53,7 @@ dioskouroi,hero,dioskouroi,Τυνδαρίδης,the Dioskouroi (Kastor and Polyd
 dolichos,mortal,eleusinian lord,Δόλιχος,Dolichos
 dotion,place,plain,Δώτιον,Dotian plain (Thessaly)
 doulichion,place,island,Δουλίχιον,Doulichion
-drakaina,creature,serpent,δράκαινα,the Pythian drakaina
+drakaina,creature,serpent,δράκαινα,the drakaina (Python)
 drakanon,place,promontory,Δράκανον,"Drakanon (headland, Ikaros or Kos)"
 dryope,nymph,nymph,νύμφη,daughter of Dryops (mother of Pan; later called Dryope)
 dryops,mortal,king,Δρύοψ,Dryops
@@ -83,7 +83,7 @@ gaia,god,primordial,Γαῖα,Gaia (Earth)
 galaxaura,nymph,oceanid,Γαλαξαύρα,Galaxaura
 ganymedes,hero,deified mortal,Γανυμήδης,Ganymede
 geras,god,personification,γῆρας,Geras (Old Age)
-geron_onchestos,mortal,farmer,γέρων,the old man of Onchestos (Battos in later tradition)
+geron_onchestos,mortal,farmer,γέρων,the old man of Onchestos
 hades,god,chthonic,Ἅιδης,Hades
 haliartos,place,city,Ἁλίαρτος,Haliartos
 harmonia,god,goddess,Ἁρμονία,Harmonia
@@ -100,7 +100,7 @@ hermos,place,river,Ἕρμος,Hermos (river)
 hesperos,god,astral,ἕσπερος,Hesperos (Evening Star)
 hestia,god,olympian,Ἑστίη,Hestia
 himeros,god,personification,ἵμερος,Himeros (Desire)
-homeros,mortal,poet,ἀνήρ,Homer (the blind singer of Chios)
+homeros,mortal,poet,ἀνήρ,the blind man of Chios
 horai,group,horai,Ὥρα,the Horai (Seasons)
 hyperboreoi,group,people,Ὑπερβόρεοι,Hyperboreans
 hyperion_titan,god,titan,Ὑπερίων,"Hyperion (Titan, father of Helios)"
@@ -145,7 +145,7 @@ korykos,place,mountain,Κώρυκος,"Mount Korykos (Ionia, near Erythrai)"
 kos,place,island,Κῶς,Kos
 krete,place,island,Κρήτη,Crete
 kretes,group,people,Κρής,Cretans
-kreton_agos,mortal,cretan,ἀγός,leader of the Cretans (unnamed)
+kreton_agos,mortal,cretan,ἀγός,the leader of the Cretans
 krisa,place,city,Κρίσα,Krisa
 krisaioi,group,people,Κρισαῖος,Krisaians (people of Krisa)
 kronos,god,titan,Κρόνος,Kronos
@@ -162,7 +162,7 @@ lesbos,place,island,Λέσβος,Lesbos
 leto,god,titan,Λητώ,Leto
 leukippe,nymph,oceanid,Λευκίππη,Leukippe
 leukippos,mortal,,Λεύκιππος,Leukippos
-leukippos_wife,mortal,,δάμαρ,wife of Leukippos (unnamed)
+leukippos_wife,mortal,,δάμαρ,the wife of Leukippos
 lilaia,place,city,Λίλαια,Lilaia
 lykia,place,region,Λυκία,Lycia
 maia,nymph,pleiad,Μαιάς,Maia
@@ -268,7 +268,7 @@ themis,god,titan,Θέμις,Themis
 thetis,nymph,nereid,Θέτις,Thetis
 thorikos,place,city,Θορικός,Thorikos (in Attica)
 thrake,place,region,Θρηΐκιος,Thrace
-thriai,nymph,bee-maidens,Θριαί,the Thriai (bee-maidens of Parnassus)
+thriai,nymph,bee-maidens,Θριαί,the three sisters (Thriai)
 thryon,place,city,Θρύον,"Thryon (Thryoessa), ford of the Alpheios"
 titanes,group,titans,Τιτάν,the Titans
 tithonos,hero,trojan prince,Τιθωνός,Tithonos

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ὕμνοι · the names in the Homeric Hymns</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1><span class="grc">Ὕμνοι</span> <small>the gods, mortals and places named in the Homeric Hymns</small></h1>
+  <nav id="controls">
+    <span class="group" role="radiogroup" aria-label="Hubs">
+      <label><input type="radio" name="hubs" value="hymns" checked> hymns as hubs</label>
+      <label><input type="radio" name="hubs" value="gods"> gods as hubs (2009)</label>
+    </span>
+    <span class="group">
+      <label title="Periphrases (Κρόνου πολυώνυμος υἱός) and personifications (Γαῖα)"><input type="checkbox" id="phrases" checked> periphrases</label>
+      <label title="Mentions marked uncertain, and collectives hidden by default (REVIEW.md)"><input type="checkbox" id="doubtful"> doubtful</label>
+      <label title="Label every node, not only the larger ones"><input type="checkbox" id="alllabels"> all labels</label>
+    </span>
+    <span class="group"><input type="search" id="find" placeholder="find a name…" autocomplete="off" list="names"><datalist id="names"></datalist></span>
+  </nav>
+</header>
+<main>
+  <div id="chart"><svg id="graph"></svg><div id="legend"></div><div id="tip" hidden></div></div>
+  <aside id="panel">
+    <div id="intro">
+      <p>Every name in the thirty-four Homeric Hymns, read line by line in the Greek. The numbered discs are the
+      hymns, sized by length; every other node is a god, nymph, hero, mortal, group, creature or place, sized by how often
+      it is named. A line joins a hymn to each name in it.</p>
+      <p>Hover to trace a node’s links; click one to read the lines that name it. <em>Gods as hubs</em> folds the
+      hymns into their gods, as Peter Danenberg’s hand-drawn graph of 2009 did.</p>
+      <p class="fine">Greek: Evelyn-White (1914), via Perseus; Hymn 34, Εἰς Ξένους, from Allen (1912).
+      A draft: see REVIEW.md for the judgement calls still open.</p>
+    </div>
+    <div id="detail" hidden></div>
+  </aside>
+</main>
+<script src="vendor/d3.v7.9.0.min.js"></script>
+<script src="hymnoi.js"></script>
+</body>
+</html>
