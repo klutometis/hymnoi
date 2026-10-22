@@ -20,6 +20,23 @@ being restored so GitHub's periodic re-check keeps passing. Records sent to
 `mercurial-stele` to add. Remaining: DNS (2, 3), then HTTPS enforcement and the
 checks in 4.
 
+Status 2026-10-21 17:12: **live.** `mercurial-stele` added the records at 16:59
+(and keeps them in `~/prg/domains/tools/cloudflare_sync.py`). GitHub's health check
+had cached the empty zone and requested no certificate; removing and re-adding the
+custom domain made it request one (Let's Encrypt, hymnoi.org + www, approved in
+about ten seconds, expires 2027-01-19, renewed by GitHub). That detaches the
+deployment, so hymnoi.org returned 404 until the workflow was re-run (`gh workflow
+run pages.yml`): **after touching the custom domain, redeploy.** HTTPS enforced.
+olympioi.org redirects with **302**, not 301, on purpose: it may get a site of its
+own, and browsers cache a 301 indefinitely. Make it 301 if that is ever settled.
+
+Checked: https://hymnoi.org/ and every page, the JSON and the PDFs return 200
+(JSON and PDF byte-identical to the local build); www.hymnoi.org, hymnoi.com and
+www.hymnoi.com 301 to https://hymnoi.org with path and query kept; olympioi.org and
+www 302 likewise; certificate CN=hymnoi.org, issuer Let's Encrypt.
+
+From now on, `git push origin hymnoi:master` (or merge to master) deploys.
+
 Verification record (hymnoi.org zone):
 
 | Type | Name | Content |

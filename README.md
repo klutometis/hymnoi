@@ -1,5 +1,7 @@
 # Hymnoi
 
+**https://hymnoi.org**
+
 *Ὕμνοι*: a graph of every god, mortal and place named in the Homeric Hymns.
 
 Peter Danenberg compiled it by hand in 2009: one edge for each name in each
@@ -21,6 +23,7 @@ on it.
 | 2013-02-02 | Pushed to GitHub as "first pass sans history"; the commit carries the 2009 date. |
 | 2020-09-06/07 | `hymnoi.dot` restyled (title at the top, dotted legend, `dpi=600`) and rendered to `hymnoi.pdf`. Same data as 2009. Kept on Drive under `glaptop4/prg/hymnoi`. |
 | 2026-10 | Rebuild begins: this README, `legacy/`, `data/`, `tools/`. |
+| 2026-10-21 | Published at **https://hymnoi.org** (GitHub Pages; hymnoi.com and olympioi.org redirect to it). See `docs/DEPLOY.md`. |
 
 ## Layout
 
