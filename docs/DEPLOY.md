@@ -35,7 +35,11 @@ Checked: https://hymnoi.org/ and every page, the JSON and the PDFs return 200
 www.hymnoi.com 301 to https://hymnoi.org with path and query kept; olympioi.org and
 www 302 likewise; certificate CN=hymnoi.org, issuer Let's Encrypt.
 
-From now on, `git push origin hymnoi:master` (or merge to master) deploys.
+From now on, a push to `main` deploys (`git push origin hymnoi:main` from the worktree).
+
+2026-10-22: the default branch was renamed `master` → `main` (GitHub's rename, which
+redirects the old name); the workflow trigger and the `github-pages` environment's
+deployment-branch policy, which the rename does not update, were moved to `main` by hand.
 
 Verification record (hymnoi.org zone):
 
@@ -47,7 +51,7 @@ Verification record (hymnoi.org zone):
 
 The site is static: `site/` as committed, with `site/data/hymnoi.json` built by
 `tools/build.py`. `.github/workflows/pages.yml` rebuilds the JSON and publishes
-`site/` on every push to `master`.
+`site/` on every push to `main`.
 
 ```
 gh api -X POST repos/klutometis/hymnoi/pages -f build_type=workflow   # done 2026-10-21 (before the push, so it deploys)
